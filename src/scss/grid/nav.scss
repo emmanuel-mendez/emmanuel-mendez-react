@@ -1,0 +1,92 @@
+.nav{
+    position: fixed;
+    top: $headerHeightS;
+    right: -75%;
+    width: 75%;
+    height: calc(100% - #{$headerHeightS});
+    background:#232323;
+    transition: right .5s;
+    z-index: var(--zFixed);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    @include from(l){
+        position: relative;
+        left: 0;
+        top: 0;
+        background: transparent;
+        padding-top: 0;
+        height: auto;
+        width: auto;
+    }
+
+    &__menu{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        list-style: none;
+    
+        @include from(l){
+            display: flex;
+        }
+    }
+
+    &__copyright{
+        padding-bottom: .25rem;
+        @include from(l){
+            display: none;
+        }
+    }
+
+    &__copyrightDescription{
+        padding-bottom: .25rem;
+        color: white;
+        font-size: .6rem;
+        text-align: center;
+    }
+}
+
+.menuShow{
+    right: 0;
+}
+
+.menu{
+
+    &__item{
+        padding: 1.5rem 1.5rem;
+        border-bottom: 2px solid #283e4a;
+        color: white;
+
+        @include from(l){
+            padding: .7rem 1.1rem;
+            border-bottom: none;
+        }
+    }
+
+    &__link{
+        color: $borderColor;
+        font-size: 1rem;
+    
+        @include from(l){
+            color: $textColor;
+            font-size: 1rem;
+        }
+    }
+
+}
+
+.menu__login:hover{
+
+    @include from(l){
+        background-color: #1192ee;
+    }
+}
+
+.menu__loginLink:hover{
+
+    @include from(l){
+        color: white;
+    }
+}

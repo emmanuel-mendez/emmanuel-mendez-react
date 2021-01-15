@@ -1,0 +1,53 @@
+$maxWidth: 1024px;
+$headerHeightS: 6.5rem;
+$headerHeightSDesktop: 4.6rem;
+
+
+$navLinkColor: #00cbff;
+
+$footerHeightS: 8rem;
+$footerHeightDesktop: 14rem;
+
+$footerBackgroundColor: #2a3b47;
+$footerColor: #00cbff;
+
+
+$borderColor: #ccc;
+$textColor: #53575A;
+$darkColor: #141618;
+
+$breakpoints: (
+    l:960px
+);
+
+
+//PALETA DE COLORES
+:root{
+    --firstColor: #007BDF;
+}
+
+
+//VARIABLES DE APILAMIENTO
+:root{
+    --zBack: -10;
+    --zNormal: 1;
+    --zTooltip: 10;
+    --zFixed: 100;
+    --zModal: 1000;
+}
+
+
+//VARIABLES DE TIPOGRAFÍA
+:root{
+    --h1FontSize: 2rem;
+    --h2FontSize: 1.5rem;
+    --bodyFontSize: .1rem;
+    --smallFontSize: .75rem;
+
+    @include from(l){
+        --h1FontSize: 2.5rem;
+        --h2FontSize: 2rem;
+        --bodyFontSize: 1rem;
+        --smallFontSize: .8rem;
+    }
+}
