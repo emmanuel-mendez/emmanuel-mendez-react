@@ -1,5 +1,11 @@
 $breakpoints: (
-    l: 960px
+  ms: 320px,
+	mm: 375px,
+	ml: 425px,
+	t: 768px,
+	l: 1024px,
+	ll: 1440px,
+	4k: 2560px
 );
 
 @mixin from($bp){

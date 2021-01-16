@@ -1,12 +1,13 @@
-$maxWidth: 1024px;
-$headerHeightS: 6.5rem;
-$headerHeightSDesktop: 4.6rem;
+$widthL: 1024px;
+
+$headerHeightM: 6rem;
+$headerHeightL: 7rem;
+
+$footerHeightM: 6rem;
+$footerHeightL: 7rem;
 
 
 $navLinkColor: #00cbff;
-
-$footerHeightS: 8rem;
-$footerHeightDesktop: 14rem;
 
 $footerBackgroundColor: #2a3b47;
 $footerColor: #00cbff;
@@ -17,7 +18,13 @@ $textColor: #53575A;
 $darkColor: #141618;
 
 $breakpoints: (
-    l:960px
+	ms: 320px,
+	mm: 375px,
+	ml: 425px,
+	t: 768px,
+	l: 1024px,
+	ll: 1440px,
+	4k: 2560px
 );
 
 

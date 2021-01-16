@@ -1,9 +1,9 @@
 .nav{
     position: fixed;
-    top: $headerHeightS;
+    top: $headerHeightM;
     right: -75%;
     width: 75%;
-    height: calc(100% - #{$headerHeightS});
+    height: calc(100% - #{$headerHeightM});
     background:#232323;
     transition: right .5s;
     z-index: var(--zFixed);

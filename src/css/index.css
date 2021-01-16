@@ -16,7 +16,7 @@
   --bodyFontSize: .1rem;
   --smallFontSize: .75rem;
 }
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 1024px) {
   :root {
     --h1FontSize: 2.5rem;
     --h2FontSize: 2rem;
@@ -156,16 +156,17 @@ h1 {
 }
 
 .header {
-  height: 6.5rem;
+  height: 6rem;
   background-color: #283e4a;
   width: 100vw;
   position: fixed;
 }
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 1024px) {
   .header {
     position: fixed;
-    height: 4.6rem;
+    height: 7rem;
     display: flex;
+    flex-direction: column;
     justify-content: center;
   }
 }
@@ -179,15 +180,33 @@ h1 {
   justify-content: flex-end;
   align-items: center;
 }
+@media screen and (min-width: 768px) {
+  .header__languajes {
+    padding: 0 2rem;
+  }
+}
+.header__languajesContainer {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.header__languajesLink {
+  color: #ccc;
+}
+.header__languajesEnglish {
+  padding-right: 0.2rem;
+}
+.header__languajesSpanish {
+  padding-left: 0.2rem;
+}
 .header__container {
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding: 0 1.5rem;
   justify-content: space-between;
   align-items: center;
   height: 70%;
   display: flex;
 }
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 1024px) {
   .header__container {
     width: 1024px;
     justify-content: space-between;
@@ -206,7 +225,7 @@ h1 {
   justify-content: center;
   align-items: center;
 }
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 1024px) {
   .header__logoContainer {
     height: 100%;
     padding: 0.2rem 0 0.2rem 0;
@@ -232,7 +251,7 @@ h1 {
   justify-content: center;
   align-items: center;
 }
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 1024px) {
   .header__menuToggle {
     display: none;
   }
@@ -247,10 +266,10 @@ h1 {
 
 .nav {
   position: fixed;
-  top: 6.5rem;
+  top: 6rem;
   right: -75%;
   width: 75%;
-  height: calc(100% - 6.5rem);
+  height: calc(100% - 6rem);
   background: #232323;
   transition: right 0.5s;
   z-index: var(--zFixed);
@@ -259,7 +278,7 @@ h1 {
   align-items: center;
   justify-content: space-between;
 }
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 1024px) {
   .nav {
     position: relative;
     left: 0;
@@ -276,7 +295,7 @@ h1 {
   width: 100%;
   list-style: none;
 }
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 1024px) {
   .nav__menu {
     display: flex;
   }
@@ -284,7 +303,7 @@ h1 {
 .nav__copyright {
   padding-bottom: 0.25rem;
 }
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 1024px) {
   .nav__copyright {
     display: none;
   }
@@ -305,7 +324,7 @@ h1 {
   border-bottom: 2px solid #283e4a;
   color: white;
 }
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 1024px) {
   .menu__item {
     padding: 0.7rem 1.1rem;
     border-bottom: none;
@@ -315,34 +334,34 @@ h1 {
   color: #ccc;
   font-size: 1rem;
 }
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 1024px) {
   .menu__link {
     color: #53575A;
     font-size: 1rem;
   }
 }
 
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 1024px) {
   .menu__login:hover {
     background-color: #1192ee;
   }
 }
 
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 1024px) {
   .menu__loginLink:hover {
     color: white;
   }
 }
 
 .article {
-  margin-top: 6.5rem;
-  min-height: calc(100% - 6.5rem );
+  margin-top: 6rem;
+  min-height: calc(100% - 6rem - 6rem);
   padding: 1.5rem 1rem;
 }
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 1024px) {
   .article {
-    margin-top: 4.6rem;
-    min-height: calc(100% - 14rem);
+    margin-top: 7rem;
+    min-height: calc(100% - 7rem - 7rem);
   }
 }
 .article__container {
@@ -352,7 +371,7 @@ h1 {
   display: flex;
   flex-direction: column;
 }
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 1024px) {
   .article__container {
     max-width: 1024px;
     justify-content: space-between;
@@ -396,32 +415,22 @@ h1 {
 
 .footer {
   background-color: white;
-  margin-top: auto;
-  min-height: 8rem;
+  min-height: 6rem;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  font-size: 0.8rem;
-  display: none;
+  align-items: center;
+  justify-content: flex-start;
 }
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 1024px) {
   .footer {
-    height: 14rem;
-    min-height: 8rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: 0.8rem;
+    min-height: 7rem;
   }
 }
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 1024px) {
   .footer__container {
     box-sizing: border-box;
     height: 100%;
-    width: 1024px;
-    padding: 0 1rem 1rem 1rem;
+    max-width: 1024px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -432,23 +441,23 @@ h1 {
   width: 100%;
   border-top: 1px solid #ccc;
 }
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 1024px) {
   .footer__topDesktop {
     width: 100%;
     display: flex;
     justify-content: center;
   }
 }
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 1024px) {
   .footer__section {
     display: flex;
     justify-content: center;
-    width: 40%;
+    width: 1024px;
     flex-direction: column;
-    padding-top: 1rem;
+    padding: 1rem 0;
   }
 }
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 1024px) {
   .footer__sectionContainer {
     display: flex;
     flex-wrap: wrap;
@@ -459,7 +468,7 @@ h1 {
 .footer__location {
   display: none;
 }
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 1024px) {
   .footer__location {
     display: block;
   }
@@ -508,19 +517,20 @@ h1 {
 }
 .footer__h2 {
   width: 100%;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: #0073b1;
-  padding-bottom: 0.4em;
+  padding: 0.4rem 0;
 }
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 1024px) {
   .footer__h2 {
+    padding: 0 0 0.4rem 0;
     display: flex;
     justify-content: center;
     align-items: center;
   }
 }
 .footer__underline {
-  padding-left: 0.35em;
+  padding-left: 0.35rem;
   border-left: 1px solid #FFFFFF80;
 }
 .footer__social {
@@ -535,7 +545,7 @@ h1 {
   width: 100%;
   padding-bottom: 0.2rem;
 }
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 1024px) {
   .footer__linkContainer {
     width: 70%;
   }
@@ -549,7 +559,7 @@ h1 {
   flex-direction: column;
   justify-content: center;
 }
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 1024px) {
   .footer__copyright {
     height: auto;
   }

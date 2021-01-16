@@ -1,33 +1,22 @@
 .footer{
     background-color: white;
-    margin-top: auto;
 
-    min-height: $footerHeightS;
+    min-height: $footerHeightM;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    font-size: .8rem;
-    display: none;
+    align-items: center;
+    justify-content: flex-start;
 
     @include from(l){
-        height: $footerHeightDesktop;
-        min-height: $footerHeightS;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        font-size: .8rem;
+        min-height: $footerHeightL;
     }
 
     &__container{
         
-
         @include from(l){
             box-sizing: border-box;
             height: 100%;
-            width: $maxWidth;
-            padding: 0 1rem 1rem 1rem;
+            max-width: $widthL;
             display: flex;
             flex-wrap: wrap;
             flex-direction: row;
@@ -53,9 +42,9 @@
         @include from(l){
             display: flex;
             justify-content: center;
-            width: 40%;
+            width: $widthL;
             flex-direction: column;
-            padding-top: 1rem;
+            padding: 1rem 0;
 
         }
     }
@@ -137,11 +126,12 @@
 
     &__h2{
         width: 100%;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         color: #0073b1;
-        padding-bottom: .4em;
+        padding: .4rem 0;
 
         @include from(l){
+						padding: 0 0 .4rem 0;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -149,7 +139,7 @@
     }
 
     &__underline{
-        padding-left: .35em;
+        padding-left: .35rem;
         border-left: 1px solid #FFFFFF80;
 
     }

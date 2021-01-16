@@ -1,11 +1,11 @@
 .article{
-    margin-top: $headerHeightS;
-    min-height: calc(100% - #{$headerHeightS} );
+    margin-top: $headerHeightM;
+    min-height: calc(100% - #{$headerHeightM} - #{$footerHeightM});
     padding: 1.5rem 1rem;
 
     @include from(l){
-        margin-top: $headerHeightSDesktop;
-        min-height: calc(100% - #{$footerHeightDesktop});
+        margin-top: $headerHeightL;
+        min-height: calc(100% - #{$footerHeightL} - #{$footerHeightL});
     }
 
     &__container{
@@ -16,7 +16,7 @@
         flex-direction: column;
 
         @include from(l){
-        max-width: $maxWidth;
+        max-width: $widthL;
         justify-content: space-between;
         margin: auto;
         }
