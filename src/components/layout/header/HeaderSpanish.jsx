@@ -26,7 +26,7 @@ export const HeaderSpanish = ({ toggle, setToggle }) => {
 
 			<div className="header__container" >
 				<div className="header__logoContainer">
-					<Link className="header__link menu__link" exact to="/es/" >
+					<Link className="header__link menu__link" to="/es/" >
 						<img className="header__logo" src={process.env.PUBLIC_URL + '/favicon.ico'} alt="Logo" />
 					</Link>
 				</div>

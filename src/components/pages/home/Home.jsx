@@ -1,18 +1,53 @@
-import React, { useRef } from 'react'
+import React, { useRef, useState, useEffect } from 'react'
 import { usePathname } from '../../hooks/usePathname'
 
 export const Home = () => {
+
+	const [scrollDir, setScrollDir] = useState(null);
+
+	useEffect(() => {
+		const threshold = 1;
+		let lastScrollY = window.pageYOffset;
+		let ticking = false;
+
+		const updateScrollDir = () => {
+			const scrollY = window.pageYOffset;
+
+			if (Math.abs(scrollY - lastScrollY) <= threshold) {
+				ticking = false;
+				return;
+			}
+			setScrollDir(scrollY > lastScrollY ? false : true);
+			lastScrollY = scrollY > 0 ? scrollY : 0;
+			ticking = false;
+		};
+
+		const onScroll = () => {
+			if (!ticking) {
+				window.requestAnimationFrame(updateScrollDir);
+				ticking = true;
+			}
+		};
+
+		window.addEventListener("scroll", onScroll);
+		console.log(scrollDir);
+
+	}, [scrollDir]);
 
 	const section = useRef(null)
 
 	const path = usePathname()
 
 	const goToSection = () => {
-		window.scrollTo({
-			top: section.current.offsetTop - 112,
-			behavior: "smooth"
-		})
+		if (scrollDir === false) {
+			window.scrollTo({
+				top: section.current.offsetTop - 112,
+				behavior: "smooth"
+			})
+		}
 	}
+
+	goToSection()
 
 	const goToBottom = () => {
 		window.scrollTo({
