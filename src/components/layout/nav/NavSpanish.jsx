@@ -10,31 +10,31 @@ export const NavSpanish = ({ toggle, setToggle }) => {
 		})}>
 
 			<ul className="nav__menu" onClick={() => setToggle(!toggle)}>
-				<NavLink className="menu__link" to="/es/profile" >
+				<NavLink className="menu__link" activeClassName="selectedMenuLink" to="/es/profile" >
 					<li className="menu__item">
 						Perfil
 					</li>
 				</NavLink>
 
-				<NavLink className="menu__link" to="/es/projects" >
+				<NavLink className="menu__link" activeClassName="selectedMenuLink" to="/es/projects" >
 					<li className="menu__item">
 						Proyectos
 					</li>
 				</NavLink>
 
-				<NavLink className="menu__link" to="/es/skills" >
+				<NavLink className="menu__link" activeClassName="selectedMenuLink" to="/es/skills" >
 					<li className="menu__item">
 						Habilidades
 					</li>
 				</NavLink>
 
-				<NavLink className="menu__link" to="/es/hobbies" >
+				<NavLink className="menu__link" activeClassName="selectedMenuLink" to="/es/hobbies" >
 					<li className="menu__item">
 						Aficiones
 					</li>
 				</NavLink>
 
-				<NavLink className="menu__link" to="/es/contact" >
+				<NavLink className="menu__link" activeClassName="selectedMenuLink" to="/es/contact" >
 					<li className="menu__item">
 						Contacto
 					</li>
