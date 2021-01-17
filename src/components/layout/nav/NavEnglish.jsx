@@ -42,7 +42,7 @@ export const NavEnglish = ({ toggle, setToggle }) => {
 			</ul>
 
 			<div className="nav__copyright">
-				<p className="nav__copyrightDescription">Copyright © 2021 http://emmanelos.github.io/portfolio</p>
+				<p className="nav__copyrightDescription">Copyright © 2021 https://emmanuelmendez.netlify.app</p>
 				<p className="nav__copyrightDescription">All rights reserved</p>
 			</div>
 		</nav>
