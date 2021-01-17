@@ -20,7 +20,7 @@ export const HomeSpanish = () => {
 
 						<p className="section__descriptionParagraph">Nacionalidad: Venezolano</p>
 
-						<p className="section__descriptionParagraph">Languajes: English / Spanish</p>
+						<p className="section__descriptionParagraph">Languajes: Ingles / Español</p>
 
 					</div>
 
