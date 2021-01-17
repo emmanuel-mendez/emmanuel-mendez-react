@@ -3,17 +3,7 @@ import { usePathname } from '../../hooks/usePathname'
 
 export const Home = () => {
 
-
 	const path = usePathname()
-
-
-
-	const goToBottom = () => {
-		window.scrollTo({
-			top: document.documentElement.scrollHeight,
-			behavior: "smooth"
-		})
-	}
 
 	let Lang
 
@@ -29,7 +19,6 @@ export const Home = () => {
 
 						<div className="section__descriptionText">
 
-							<button onClick={goToBottom}>bottom</button>
 
 							<h2 className="section__descriptionTitle">EMMANUEL FABIÁN MÉNDEZ MARTINEZ en</h2>
 
