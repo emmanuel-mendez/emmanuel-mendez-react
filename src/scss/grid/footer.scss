@@ -24,9 +24,14 @@
 		}
 		
 		&__copyright{
-			font-size: .5rem;
-			padding-top: .2rem;
+			font-size: .8rem;
+			padding-top: .3rem;
 			color: $textColor;
+
+			@include from(l){
+				font-size: 1rem;
+				padding-top: .5rem;
+			}
 		}
 
 }

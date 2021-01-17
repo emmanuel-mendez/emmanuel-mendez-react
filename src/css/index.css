@@ -438,7 +438,7 @@ body::-webkit-scrollbar {
 @media screen and (min-width: 1024px) {
   .article {
     margin-top: 7rem;
-    min-height: calc(100% - 7rem - 7rem);
+    min-height: calc(100% - 5rem - 5rem);
   }
 }
 .article__container {
@@ -610,7 +610,7 @@ body::-webkit-scrollbar {
 }
 @media screen and (min-width: 1024px) {
   .footer {
-    min-height: 7rem;
+    min-height: 5rem;
   }
 }
 .footer__container {
@@ -626,9 +626,15 @@ body::-webkit-scrollbar {
   }
 }
 .footer__copyright {
-  font-size: 0.5rem;
-  padding-top: 0.2rem;
+  font-size: 0.8rem;
+  padding-top: 0.3rem;
   color: #53575A;
+}
+@media screen and (min-width: 1024px) {
+  .footer__copyright {
+    font-size: 1rem;
+    padding-top: 0.5rem;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
