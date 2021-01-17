@@ -18,8 +18,10 @@
         top: 0;
         background: transparent;
         padding-top: 0;
-        height: auto;
-        width: auto;
+        height: 100%;
+				width: auto;
+				display: flex;
+				justify-content: center;
     }
 
     &__menu{
@@ -29,6 +31,7 @@
         list-style: none;
     
         @include from(l){
+						height: 100%;
             display: flex;
         }
     }
@@ -57,36 +60,39 @@
     &__item{
         padding: 1.5rem 1.5rem;
         border-bottom: 2px solid #283e4a;
-        color: white;
+				color: white;
+				
 
         @include from(l){
             padding: .7rem 1.1rem;
-            border-bottom: none;
+						border-bottom: none;
+						height: 100%;
+						width: 7rem;
+						display: flex;
+						align-items: center;
+						justify-content: center;
         }
     }
 
     &__link{
         color: $borderColor;
-        font-size: 1rem;
+				font-size: 1rem;
     
         @include from(l){
             color: $textColor;
-            font-size: 1rem;
+						font-size: 1rem;
         }
     }
 
 }
 
-.menu__login:hover{
+.menu__item:hover{
 
     @include from(l){
-        background-color: #1192ee;
+			background: rgba(0,0,0,0.09)
     }
 }
 
-.menu__loginLink:hover{
-
-    @include from(l){
-        color: white;
-    }
+.selectedMenuLink{
+	background: rgba(0,0,0,0.2)
 }

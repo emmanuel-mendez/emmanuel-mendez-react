@@ -16,12 +16,15 @@ import { Skills } from './components/pages/skills/Skills'
 
 import Layout from './components/layout/Layout'
 
+import ScrollToTop from './components/scroll/scrollRestoration';
+
 export const App = () => {
 
 	return (
 		<div className="App">
 
 			<Router>
+				<ScrollToTop />
 				<Layout>
 					<Switch>
 						<Route component={Home} exact path={["/", "/es/"]} />

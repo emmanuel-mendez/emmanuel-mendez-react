@@ -10,31 +10,31 @@ export const NavEnglish = ({ toggle, setToggle }) => {
 		})}>
 
 			<ul className="nav__menu" onClick={() => setToggle(!toggle)}>
-				<NavLink className="menu__link" to="/profile" >
+				<NavLink className="menu__link" activeClassName="selectedMenuLink" to="/profile" >
 					<li className="menu__item">
 						Profile
 					</li>
 				</NavLink>
 
-				<NavLink className="menu__link" to="/projects" >
+				<NavLink className="menu__link" activeClassName="selectedMenuLink" to="/projects" >
 					<li className="menu__item">
 						Projects
 					</li>
 				</NavLink>
 
-				<NavLink className="menu__link" to="/skills" >
+				<NavLink className="menu__link" activeClassName="selectedMenuLink" to="/skills" >
 					<li className="menu__item">
 						Skills
 					</li>
 				</NavLink>
 
-				<NavLink className="menu__link" to="/hobbies" >
+				<NavLink className="menu__link" activeClassName="selectedMenuLink" to="/hobbies" >
 					<li className="menu__item">
 						Hobbies
 					</li>
 				</NavLink>
 
-				<NavLink className="menu__link" to="/contact" >
+				<NavLink className="menu__link" activeClassName="selectedMenuLink" to="/contact" >
 					<li className="menu__item">
 						Contact
 					</li>

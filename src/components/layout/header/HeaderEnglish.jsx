@@ -14,11 +14,11 @@ export const HeaderEnglish = ({ toggle, setToggle }) => {
 
 			<div className="header__languajes">
 				<p className="header__languajesContainer">
-					<NavLink to="/" className="header__languajesLink header__languajesEnglish">
+					<NavLink exact to="/" className="header__languajesLink header__languajesEnglish" activeClassName="header__languajesSelected">
 						English
 					</NavLink>
 		|
-					<NavLink to="/es/" className="header__languajesLink header__languajesSpanish">
+					<NavLink exact to="/es/" className="header__languajesLink header__languajesSpanish" activeClassName="header__languajesSelected">
 						Spanish
 					</NavLink>
 				</p>
@@ -26,8 +26,8 @@ export const HeaderEnglish = ({ toggle, setToggle }) => {
 
 			<div className="header__container" >
 				<div className="header__logoContainer">
-					<Link className="menu__link" to="/" >
-						<h1 className="header__title">Emmanuel Méndez</h1>
+					<Link className="header__link menu__link" exact to="/" >
+						<img className="header__logo" src={process.env.PUBLIC_URL + '/favicon.ico'} alt="Logo" />
 					</Link>
 				</div>
 

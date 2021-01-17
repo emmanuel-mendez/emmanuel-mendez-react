@@ -3,11 +3,11 @@
 }
 
 html{
-    scroll-behavior: smooth;
-    height: 100%;
+    min-height: 100%;
 }
 
 body{
+		overflow-y: scroll;
     font-family: 'Lato', sans-serif;
     height: 100%;
     font-size: var(--bodyFontSize);
@@ -18,7 +18,7 @@ body{
 }
 
 .App{
-    height:100%;
+    min-height:100%;
     display: flex;
     flex-direction: column;
 }
@@ -34,4 +34,49 @@ img{
 
 h1{
     font-size: var(--h1FontSize);
+}
+
+.container{
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+body::-webkit-scrollbar {
+	display: none;
+}
+
+.scrollToTop{
+	position: fixed;
+	z-index: var(--zFixed);
+	bottom: 1.25rem;
+	right: 1.25rem;
+	background-color: #283e4a;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 100%;
+	width: 2.5rem;
+	height: 2.5rem;
+
+	@include from(l){
+		bottom: 3rem;
+		right: 3rem;
+}
+
+.scrollToTopArrow{
+	color: white;
+	font-size: 1rem;
+	animation: scrollTop 0.5s alternate ease infinite;
+}
+
+@keyframes scrollTop{
+	from{
+		transform: translateY(.2rem);
+	}
+	to{
+		transform: translateY(-.2rem);
+	}
+}
+
 }
