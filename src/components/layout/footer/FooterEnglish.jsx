@@ -7,7 +7,7 @@ export const FooterEnglish = () => {
 
 			<div className="footer__container">
 
-				<p>Designed and built by Emmanuel Méndez</p>
+				<p className="footer__copyright">Designed and built by Emmanuel Méndez</p>
 
 			</div>
 		</footer>
