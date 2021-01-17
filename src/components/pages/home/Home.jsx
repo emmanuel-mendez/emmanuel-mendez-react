@@ -1,4 +1,4 @@
-import React, { useRef, useState, useEffect } from 'react'
+import React from 'react'
 import { usePathname } from '../../hooks/usePathname'
 
 export const Home = () => {
