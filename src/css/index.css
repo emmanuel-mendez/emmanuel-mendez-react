@@ -175,8 +175,8 @@ body::-webkit-scrollbar {
   justify-content: center;
   align-items: center;
   border-radius: 100%;
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 2.8rem;
+  height: 2.8rem;
   cursor: pointer;
 }
 @media screen and (min-width: 1024px) {
@@ -189,8 +189,13 @@ body::-webkit-scrollbar {
 }
 .scrollToTop .scrollToTopArrow {
   color: white;
-  font-size: 1rem;
+  font-size: 1.2rem;
   animation: scrollTop 0.5s alternate ease infinite;
+}
+@media screen and (min-width: 1024px) {
+  .scrollToTop .scrollToTopArrow {
+    font-size: 1.8rem;
+  }
 }
 @keyframes scrollTop {
   from {
