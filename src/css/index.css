@@ -177,6 +177,7 @@ body::-webkit-scrollbar {
   border-radius: 100%;
   width: 2.5rem;
   height: 2.5rem;
+  cursor: pointer;
 }
 @media screen and (min-width: 1024px) {
   .scrollToTop {
