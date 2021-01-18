@@ -1,14 +1,14 @@
-import React, { useState } from 'react'
-import { usePathname } from '../../hooks/usePathname'
+import React from 'react'
+
 
 import { HeaderEnglish } from './HeaderEnglish'
 import { HeaderSpanish } from './HeaderSpanish'
 
-export const Header = () => {
+import { usePathname } from '../../hooks/usePathname'
+
+export const Header = ({ toggle, setToggle }) => {
 
 	const path = usePathname()
-
-	const [toggle, setToggle] = useState(false)
 
 	return (
 		<>

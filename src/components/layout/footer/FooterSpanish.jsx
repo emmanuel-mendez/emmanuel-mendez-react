@@ -1,11 +1,29 @@
 import React from 'react'
+import { NavLink } from "react-router-dom";
+
 
 export const FooterSpanish = () => {
 	return (
 		<footer className="footer">
 			<div className="footer__container">
 
-				<p className="footer__copyright">Diseñado y desarrollado por Emmanuel Méndez</p>
+				<div className="footer__copyright">
+					<p className="footer__copyrightDescription">
+						Diseñado y desarrollado por Emmanuel Méndez
+					</p>
+				</div>
+
+				<div className="footer__languajes">
+					<p className="footer__languajesContainer">
+						<NavLink exact to="/" className="footer__languajesLink footer__languajesEnglish" activeClassName="footer__languajesSelected">
+							English
+					</NavLink>
+					|
+					<NavLink exact to="/es/" className="footer__languajesLink footer__languajesSpanish" activeClassName="footer__languajesSelected">
+							Spanish
+					</NavLink>
+					</p>
+				</div>
 
 			</div>
 		</footer>

@@ -1,28 +1,15 @@
 import React from 'react'
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { NavEnglish } from '../nav/NavEnglish'
 
 export const HeaderEnglish = ({ toggle, setToggle }) => {
 
-	function updateState() {
-		const state = toggle
-		setToggle(!state)
+	function setToggleFromToggleMenu() {
+		setToggle(!toggle)
 	}
 
 	return (
 		<header className="header">
-
-			<div className="header__languajes">
-				<p className="header__languajesContainer">
-					<NavLink exact to="/" className="header__languajesLink header__languajesEnglish" activeClassName="header__languajesSelected">
-						English
-					</NavLink>
-		|
-					<NavLink exact to="/es/" className="header__languajesLink header__languajesSpanish" activeClassName="header__languajesSelected">
-						Spanish
-					</NavLink>
-				</p>
-			</div>
 
 			<div className="header__container" >
 				<div className="header__logoContainer">
@@ -32,7 +19,7 @@ export const HeaderEnglish = ({ toggle, setToggle }) => {
 				</div>
 
 				<div className="header__menuToggleContainer">
-					<i className="fas fa-bars header__menuToggle" as="button" onClick={updateState}></i>
+					<i className="fas fa-bars header__menuToggle" as="button" onClick={setToggleFromToggleMenu}></i>
 				</div>
 
 				<NavEnglish toggle={toggle} setToggle={setToggle} />

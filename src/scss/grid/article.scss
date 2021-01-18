@@ -1,7 +1,7 @@
 .article{
     margin-top: $headerHeightM;
     min-height: calc(100% - #{$headerHeightM} - #{$footerHeightM});
-		padding: 1.5rem 1rem;
+		padding: 2rem 1rem;
 
     @include from(l){
         margin-top: $headerHeightL;
