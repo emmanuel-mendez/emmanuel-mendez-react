@@ -2,14 +2,22 @@ import React from 'react'
 import { NavLink } from "react-router-dom";
 import classNames from 'classnames';
 
-export const NavEnglish = ({ toggle, setToggle }) => {
+export const NavEnglish = ({ toggleMenu, setToggleMenu, scrollToTopButton, setScrollToTopButton }) => {
+
+	const toggle = () => {
+		setToggleMenu(!toggleMenu)
+		if (scrollToTopButton) {
+			setScrollToTopButton(!scrollToTopButton)
+		}
+	}
 
 	return (
 		<nav className={classNames('nav', {
-			'menuShow': toggle
+			'menuShow': toggleMenu,
+			'menuHide': toggleMenu === false
 		})}>
 
-			<ul className="nav__menu" onClick={() => setToggle(!toggle)}>
+			<ul className="nav__menu" onClick={toggle}>
 				<NavLink className="menu__link" activeClassName="selectedMenuLink" to="/profile" >
 					<li className="menu__item">
 						Profile
@@ -40,11 +48,6 @@ export const NavEnglish = ({ toggle, setToggle }) => {
 					</li>
 				</NavLink>
 			</ul>
-
-			<div className="nav__copyright">
-				<p className="nav__copyrightDescription">Copyright © 2021 https://emmanuelmendez.netlify.app</p>
-				<p className="nav__copyrightDescription">All rights reserved</p>
-			</div>
 		</nav>
 	)
 }

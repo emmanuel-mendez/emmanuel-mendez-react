@@ -14,7 +14,7 @@ import { Profile } from './components/pages/profile/Profile'
 import { Projects } from './components/pages/projects/Projects'
 import { Skills } from './components/pages/skills/Skills'
 
-import Layout from './components/layout/Layout'
+import { Layout } from './components/layout/Layout'
 
 import ScrollToTop from './components/scroll/scrollRestoration';
 

@@ -3,6 +3,7 @@
 	margin-bottom: $footerHeightM;
 	min-height: calc(100% - #{$headerHeightM} - #{$footerHeightM});
 	padding: 2rem 1rem;
+	animation: fromLeft ease 0.5s;
 
 	@include from(l) {
 		margin-top: $headerHeightL;
@@ -60,6 +61,15 @@
 
 	&__elemento10 {
 		grid-column: 1/4;
+	}
+}
+
+@keyframes fromLeft {
+	from {
+		transform: translateX(-100%);
+	}
+	to {
+		transform: translateX(0);
 	}
 }
 

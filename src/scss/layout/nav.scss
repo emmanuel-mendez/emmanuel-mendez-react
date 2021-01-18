@@ -1,98 +1,95 @@
-.nav{
-    position: fixed;
-    top: $headerHeightM;
-    right: -75%;
-    width: 75%;
-    height: calc(100% - #{$headerHeightM});
-    background:#232323;
-    transition: right .5s;
-    z-index: var(--zFixed);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
+.nav {
+	position: fixed;
+	top: $headerHeightM;
+	right: -75%;
+	width: 75%;
+	height: calc(100% - #{$headerHeightM} - #{$footerHeightM});
+	background: #232323;
+	transition: right 0.5s;
+	z-index: var(--zFixed);
 
-    @include from(l){
-        position: relative;
-        left: 0;
-        top: 0;
-        background: transparent;
-        padding-top: 0;
-        height: 100%;
-				width: auto;
-				display: flex;
-				justify-content: center;
-    }
+	@include from(l) {
+		position: relative;
+		left: 0;
+		top: 0;
+		background: transparent;
+		padding-top: 0;
+		height: 100%;
+		width: auto;
+		display: flex;
+		justify-content: center;
+	}
 
-    &__menu{
-        margin: 0;
-        padding: 0;
-        width: 100%;
-        list-style: none;
-    
-        @include from(l){
-						height: 100%;
-            display: flex;
-        }
-    }
-
-    &__copyright{
-        padding-bottom: .25rem;
-        @include from(l){
-            display: none;
-        }
-    }
-
-    &__copyrightDescription{
-        padding-bottom: .25rem;
-        color: white;
-        font-size: .5rem;
-        text-align: center;
-    }
+	&__menu {
+		@include from(l) {
+			height: 100%;
+			display: flex;
+		}
+	}
 }
 
-.menuShow{
-    right: 0;
+.menuShow {
+	right: 0;
+	animation: menuShow ease 0.5s;
 }
 
-.menu{
-
-    &__item{
-        padding: 1.5rem 1.5rem;
-        border-bottom: 2px solid #283e4a;
-				color: white;
-				
-
-        @include from(l){
-            padding: .7rem 1.1rem;
-						border-bottom: none;
-						height: 100%;
-						width: 7rem;
-						display: flex;
-						align-items: center;
-						justify-content: center;
-        }
-    }
-
-    &__link{
-        color: $borderColor;
-				font-size: 1rem;
-    
-        @include from(l){
-            color: $textColor;
-						font-size: 1rem;
-        }
-    }
-
+.menuHide {
+	right: -75%;
+	animation: menuHide ease 0.5s;
 }
 
-.menu__item:hover{
-
-    @include from(l){
-			background: rgba(0,0,0,0.09)
-    }
+@keyframes menuShow {
+	from {
+		right: -75%;
+	}
+	to {
+		right: 0;
+	}
 }
 
-.selectedMenuLink{
-	background: rgba(0,0,0,0.2)
+@keyframes menuHide {
+	from {
+		right: 0;
+	}
+	to {
+		right: -75%;
+	}
+}
+
+.menu {
+	&__item {
+		padding: 1.5rem 1.5rem;
+		border-bottom: 2px solid #283e4a;
+		color: white;
+
+		@include from(l) {
+			padding: 0.7rem 1.1rem;
+			border-bottom: none;
+			height: 100%;
+			width: 7rem;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+	}
+
+	&__link {
+		color: $borderColor;
+		font-size: 1rem;
+
+		@include from(l) {
+			color: $textColor;
+			font-size: 1rem;
+		}
+	}
+}
+
+.menu__item:hover {
+	@include from(l) {
+		background: rgba(0, 0, 0, 0.09);
+	}
+}
+
+.selectedMenuLink {
+	background: rgba(0, 0, 0, 0.2);
 }

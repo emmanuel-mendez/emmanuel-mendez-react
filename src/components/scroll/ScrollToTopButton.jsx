@@ -1,25 +1,10 @@
-import React, { useState, useEffect } from 'react'
-import { useWindowScroll } from 'react-use'
+import React from 'react'
 
-export const ScrollToTopButton = () => {
 
-	const { y: pageYOffset } = useWindowScroll()
-	const [visible, setVisible] = useState(false)
+export const ScrollToTopButton = ({ scrollToTopButton, scrollToTop }) => {
 
-	useEffect(() => {
-		if (pageYOffset > 112) {
-			setVisible(true)
-		} else {
-			setVisible(false)
-		}
-	}, [pageYOffset])
-
-	const scrollToTop = () => {
-		window.scrollTo({ top: 0, behavior: 'smooth' })
-	}
-
-	if (!visible) {
-		return false
+	if (!scrollToTopButton) {
+		return null
 	}
 
 	return (

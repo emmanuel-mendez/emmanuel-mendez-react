@@ -6,17 +6,17 @@ import { HeaderSpanish } from './HeaderSpanish'
 
 import { usePathname } from '../../hooks/usePathname'
 
-export const Header = ({ toggle, setToggle }) => {
+export const Header = ({ toggleMenu, setToggleMenu, scrollToTopButton, setScrollToTopButton, pageYOffset }) => {
 
 	const path = usePathname()
 
 	return (
 		<>
 			{ path.startsWith("/es/") ? (
-				<HeaderSpanish toggle={toggle} setToggle={setToggle} />
+				<HeaderSpanish toggleMenu={toggleMenu} setToggleMenu={setToggleMenu} scrollToTopButton={scrollToTopButton} setScrollToTopButton={setScrollToTopButton} pageYOffset={pageYOffset} />
 
 			) : (
-					<HeaderEnglish toggle={toggle} setToggle={setToggle} />
+					<HeaderEnglish toggleMenu={toggleMenu} setToggleMenu={setToggleMenu} scrollToTopButton={scrollToTopButton} setScrollToTopButton={setScrollToTopButton} pageYOffset={pageYOffset} />
 				)}
 		</>
 	)

@@ -8,9 +8,8 @@ body::-webkit-scrollbar {
 
 .scrollToTop {
 	position: fixed;
-	z-index: var(--zFixed);
-	bottom: 0.8rem;
-	right: 0.8rem;
+	bottom: calc(#{$footerHeightM} + 0.5rem);
+	right: 1.8rem;
 	background-color: #283e4a;
 	display: flex;
 	justify-content: center;
@@ -19,6 +18,7 @@ body::-webkit-scrollbar {
 	width: 3rem;
 	height: 3rem;
 	cursor: pointer;
+	animation: fadeIn 0.5s ease-in;
 
 	@include from(l) {
 		bottom: 3rem;
@@ -37,12 +37,27 @@ body::-webkit-scrollbar {
 		}
 	}
 
-	@keyframes scrollTop {
-		from {
-			transform: translateY(0.2rem);
+	@keyframes fadeIn {
+		0% {
+			opacity: 0;
 		}
-		to {
-			transform: translateY(-0.2rem);
+		25% {
+			opacity: 0;
 		}
+		75% {
+			opacity: 0.5;
+		}
+		100% {
+			opacity: 1;
+		}
+	}
+}
+
+@keyframes scrollTop {
+	from {
+		transform: translateY(0.2rem);
+	}
+	to {
+		transform: translateY(-0.2rem);
 	}
 }
