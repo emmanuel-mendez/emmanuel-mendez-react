@@ -65,8 +65,6 @@
 	}
 
 	&__menuToggleContainer {
-		width: auto;
-		height: 100%;
 		padding-right: 1.5rem;
 	}
 
@@ -78,6 +76,7 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		cursor: pointer;
 
 		@include from(l) {
 			display: none;
@@ -94,6 +93,8 @@
 }
 
 .header__logo:hover {
+	transition: transform 0.1s ease;
+	transform: scale(1.1);
 	@include from(l) {
 		transition: transform 0.1s ease;
 		transform: scale(1.1);

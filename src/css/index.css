@@ -228,8 +228,6 @@ h1 {
   width: 100%;
 }
 .header__menuToggleContainer {
-  width: auto;
-  height: 100%;
   padding-right: 1.5rem;
 }
 .header__menuToggle {
@@ -240,6 +238,7 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 @media screen and (min-width: 1024px) {
   .header__menuToggle {
@@ -254,6 +253,10 @@ h1 {
   align-items: center;
 }
 
+.header__logo:hover {
+  transition: transform 0.1s ease;
+  transform: scale(1.1);
+}
 @media screen and (min-width: 1024px) {
   .header__logo:hover {
     transition: transform 0.1s ease;
@@ -270,7 +273,7 @@ h1 {
   background: #232323;
   transition: right ease 0.5s;
   box-shadow: -2px 0 5px 1px rgba(0, 0, 0, 0.2);
-  opacity: 0.98;
+  opacity: 0.97;
 }
 @media screen and (min-width: 1024px) {
   .nav {

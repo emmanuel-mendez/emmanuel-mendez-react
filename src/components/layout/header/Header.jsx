@@ -1,23 +1,70 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import { Link } from "react-router-dom";
 
-
-import { HeaderEnglish } from './HeaderEnglish'
-import { HeaderSpanish } from './HeaderSpanish'
+import { NavEnglish } from '../nav/NavEnglish'
+import { NavSpanish } from '../nav/NavSpanish'
 
 import { usePathname } from '../../hooks/usePathname'
 
 export const Header = ({ toggleMenu, setToggleMenu, scrollToTopButton, setScrollToTopButton, pageYOffset }) => {
 
-	const path = usePathname()
+	useEffect(() => {
+		if (pageYOffset > 112 && scrollToTopButton === false && toggleMenu === false) {
+			setScrollToTopButton(true)
+		} else if (pageYOffset < 112) {
+			setScrollToTopButton(false)
+		} // eslint-disable-next-line
+	}, [pageYOffset])
+
+	const setToggleFromToggleMenu = () => {
+		setToggleMenu(!toggleMenu)
+		if (scrollToTopButton) {
+			setScrollToTopButton(false)
+		} else if (scrollToTopButton === false && pageYOffset > 112) {
+			setScrollToTopButton(true)
+		}
+	}
+
+	const setToggleFromLogo = () => {
+		if (toggleMenu) {
+			setToggleMenu(!toggleMenu)
+		}
+	}
+
+	let path = usePathname()
+
+	const linkTo = () => {
+		if (path.startsWith("/es/")) {
+			return "/es/"
+		} else {
+			return "/"
+		}
+	}
 
 	return (
-		<>
-			{ path.startsWith("/es/") ? (
-				<HeaderSpanish toggleMenu={toggleMenu} setToggleMenu={setToggleMenu} scrollToTopButton={scrollToTopButton} setScrollToTopButton={setScrollToTopButton} pageYOffset={pageYOffset} />
 
-			) : (
-					<HeaderEnglish toggleMenu={toggleMenu} setToggleMenu={setToggleMenu} scrollToTopButton={scrollToTopButton} setScrollToTopButton={setScrollToTopButton} pageYOffset={pageYOffset} />
-				)}
-		</>
+		<header className="header">
+			<div className="header__container" >
+
+				<div className="header__logoContainer">
+					<Link className="header__link menu__link" to={linkTo} >
+						<img className="header__logo" src={process.env.PUBLIC_URL + '/favicon.ico'} alt="Logo" onClick={setToggleFromLogo} />
+					</Link>
+				</div>
+
+				<div className="header__menuToggleContainer">
+					<i className="fas fa-bars header__menuToggle" as="button" onClick={setToggleFromToggleMenu}></i>
+				</div>
+
+				{path.startsWith("/es/") ? (
+					<NavSpanish toggleMenu={toggleMenu} setToggleMenu={setToggleMenu} scrollToTopButton={scrollToTopButton} setScrollToTopButton={setScrollToTopButton} />
+
+				) : (
+						<NavEnglish toggleMenu={toggleMenu} setToggleMenu={setToggleMenu} scrollToTopButton={scrollToTopButton} setScrollToTopButton={setScrollToTopButton} />
+					)}
+
+			</div>
+		</header>
+
 	)
 }
