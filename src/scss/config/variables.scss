@@ -3,18 +3,16 @@ $widthL: 1024px;
 $headerHeightM: 4.2rem;
 $headerHeightL: 4.9rem;
 
-$footerHeightM: 2rem;
+$footerHeightM: 4rem;
 $footerHeightL: 5rem;
-
 
 $navLinkColor: #00cbff;
 
 $footerBackgroundColor: #2a3b47;
 $footerColor: #00cbff;
 
-
 $borderColor: #ccc;
-$textColor: #53575A;
+$textColor: #53575a;
 $darkColor: #141618;
 
 $breakpoints: (
@@ -24,37 +22,34 @@ $breakpoints: (
 	t: 768px,
 	l: 1024px,
 	ll: 1440px,
-	4k: 2560px
+	4k: 2560px,
 );
 
-
 //PALETA DE COLORES
-:root{
-    --firstColor: #007BDF;
+:root {
+	--firstColor: #007bdf;
 }
-
 
 //VARIABLES DE APILAMIENTO
-:root{
-    --zBack: -10;
-    --zNormal: 1;
-    --zTooltip: 10;
-    --zFixed: 100;
-    --zModal: 1000;
+:root {
+	--zBack: -10;
+	--zNormal: 1;
+	--zTooltip: 10;
+	--zFixed: 100;
+	--zModal: 1000;
 }
 
-
 //VARIABLES DE TIPOGRAFÍA
-:root{
-    --h1FontSize: 2rem;
-    --h2FontSize: 1.5rem;
-    --bodyFontSize: .1rem;
-    --smallFontSize: .75rem;
+:root {
+	--h1FontSize: 2rem;
+	--h2FontSize: 1.5rem;
+	--bodyFontSize: 0.1rem;
+	--smallFontSize: 0.75rem;
 
-    @include from(l){
-        --h1FontSize: 2.5rem;
-        --h2FontSize: 2rem;
-        --bodyFontSize: 1rem;
-        --smallFontSize: .8rem;
-    }
+	@include from(l) {
+		--h1FontSize: 2.5rem;
+		--h2FontSize: 2rem;
+		--bodyFontSize: 1rem;
+		--smallFontSize: 0.8rem;
+	}
 }

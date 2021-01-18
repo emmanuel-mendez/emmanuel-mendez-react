@@ -1,5 +1,5 @@
 :root {
-  --firstColor: #007BDF;
+  --firstColor: #007bdf;
 }
 
 :root {
@@ -13,15 +13,15 @@
 :root {
   --h1FontSize: 2rem;
   --h2FontSize: 1.5rem;
-  --bodyFontSize: .1rem;
-  --smallFontSize: .75rem;
+  --bodyFontSize: 0.1rem;
+  --smallFontSize: 0.75rem;
 }
 @media screen and (min-width: 1024px) {
   :root {
     --h1FontSize: 2.5rem;
     --h2FontSize: 2rem;
     --bodyFontSize: 1rem;
-    --smallFontSize: .8rem;
+    --smallFontSize: 0.8rem;
   }
 }
 
@@ -339,7 +339,7 @@ h1 {
 }
 @media screen and (min-width: 1024px) {
   .menu__link {
-    color: #53575A;
+    color: #53575a;
     font-size: 1rem;
   }
 }
@@ -356,7 +356,8 @@ h1 {
 
 .article {
   margin-top: 4.2rem;
-  min-height: calc(100% - 4.2rem - 2rem);
+  margin-bottom: 4rem;
+  min-height: calc(100% - 4.2rem - 4rem);
   padding: 2rem 1rem;
 }
 @media screen and (min-width: 1024px) {
@@ -390,7 +391,7 @@ h1 {
 }
 .article__grid {
   padding-top: 1rem;
-  height: calc( 100% - 1.2rem);
+  height: calc(100% - 1.2rem);
   width: 100%;
   display: grid;
   gap: 0.8rem;
@@ -490,7 +491,7 @@ h1 {
 }
 .contact__underline {
   padding-left: 0.35rem;
-  border-left: 1px solid #FFFFFF80;
+  border-left: 1px solid #ffffff80;
 }
 .contact__social {
   padding: 0;
@@ -525,7 +526,12 @@ h1 {
 }
 
 .footer {
-  min-height: 2rem;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: var(--zFixed);
+  background-color: white;
+  height: 4rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -538,8 +544,9 @@ h1 {
   }
 }
 .footer__container {
-  padding: 0 1.5rem 0.5rem 1.5rem;
+  padding: 0 1rem 0.5rem 1rem;
   width: 100%;
+  height: 4rem;
 }
 @media screen and (min-width: 1024px) {
   .footer__container {
@@ -562,7 +569,7 @@ h1 {
   }
 }
 .footer__copyrightDescription {
-  color: #53575A;
+  color: #53575a;
   font-size: 0.8rem;
   text-align: center;
   width: 11rem;
@@ -589,7 +596,7 @@ h1 {
   height: 100%;
   display: flex;
   align-items: center;
-  color: #53575A;
+  color: #53575a;
 }
 .footer__languajesLink {
   color: #ccc;
@@ -601,7 +608,7 @@ h1 {
   padding-left: 0.2rem;
 }
 .footer__languajesSelected {
-  color: #53575A;
+  color: #53575a;
 }
 
 body {
@@ -615,8 +622,8 @@ body::-webkit-scrollbar {
 .scrollToTop {
   position: fixed;
   z-index: var(--zFixed);
-  bottom: 1.25rem;
-  right: 1.25rem;
+  bottom: 0.8rem;
+  right: 0.8rem;
   background-color: #283e4a;
   display: flex;
   justify-content: center;

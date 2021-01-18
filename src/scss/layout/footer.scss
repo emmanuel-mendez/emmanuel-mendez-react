@@ -1,5 +1,10 @@
 .footer {
-	min-height: $footerHeightM;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	z-index: var(--zFixed);
+	background-color: white;
+	height: $footerHeightM;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -11,8 +16,9 @@
 	}
 
 	&__container {
-		padding: 0 1.5rem 0.5rem 1.5rem;
+		padding: 0 1rem 0.5rem 1rem;
 		width: 100%;
+		height: $footerHeightM;
 
 		@include from(l) {
 			box-sizing: border-box;
