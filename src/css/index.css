@@ -272,7 +272,6 @@ h1 {
   height: calc(100% - 4.2rem);
   background: #232323;
   transition: right ease 0.5s;
-  box-shadow: -2px 0 5px 1px rgba(0, 0, 0, 0.2);
   opacity: 0.97;
 }
 @media screen and (min-width: 1024px) {
@@ -299,6 +298,7 @@ h1 {
   right: 0;
   animation: menuShow ease 0.5s;
   height: 100vh;
+  box-shadow: -2px 0 5px 1px rgba(0, 0, 0, 0.2);
 }
 
 .menuHide {

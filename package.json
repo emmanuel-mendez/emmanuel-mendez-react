@@ -3,16 +3,27 @@
 	"version": "0.1.0",
 	"private": true,
 	"dependencies": {
-		"@testing-library/jest-dom": "^4.2.4",
-		"@testing-library/react": "^9.5.0",
-		"@testing-library/user-event": "^7.2.1",
+		"@testing-library/jest-dom": "^5.11.9",
+		"@testing-library/react": "^11.2.3",
+		"@testing-library/user-event": "^12.6.0",
 		"classnames": "^2.2.6",
-		"react": "^16.13.1",
-		"react-dom": "^16.13.1",
+		"react": "^17.0.1",
+		"react-dom": "^17.0.1",
 		"react-router-dom": "^5.2.0",
 		"react-scripts": "^4.0.1",
 		"react-use": "^15.3.8",
-		"serve": "^11.3.2"
+		"workbox-background-sync": "^6.0.2",
+		"workbox-broadcast-update": "^6.0.2",
+		"workbox-cacheable-response": "^6.0.2",
+		"workbox-core": "^6.0.2",
+		"workbox-expiration": "^6.0.2",
+		"workbox-google-analytics": "^6.0.2",
+		"workbox-navigation-preload": "^6.0.2",
+		"workbox-precaching": "^6.0.2",
+		"workbox-range-requests": "^6.0.2",
+		"workbox-routing": "^6.0.2",
+		"workbox-strategies": "^6.0.2",
+		"workbox-streams": "^6.0.2"
 	},
 	"scripts": {
 		"start": "react-scripts start",
@@ -22,7 +33,10 @@
 		"eject": "react-scripts eject"
 	},
 	"eslintConfig": {
-		"extends": "react-app"
+		"extends": [
+			"react-app",
+			"react-app/jest"
+		]
 	},
 	"browserslist": {
 		"production": [
