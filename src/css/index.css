@@ -167,6 +167,8 @@ h1 {
   background-color: #283e4a;
   width: 100vw;
   position: fixed;
+  z-index: var(--zFixed);
+  box-shadow: 0 2px 4px 1px rgba(0, 0, 0, 0.2);
 }
 @media screen and (min-width: 1024px) {
   .header {
@@ -262,12 +264,13 @@ h1 {
 .nav {
   position: fixed;
   top: 4.2rem;
-  right: -75%;
+  right: calc(-75% - 2px);
   width: 75%;
-  height: calc(100% - 4.2rem - 4.25rem);
+  height: calc(100% - 4.2rem);
   background: #232323;
-  transition: right 0.5s;
-  z-index: var(--zFixed);
+  transition: right ease 0.5s;
+  box-shadow: -2px 0 5px 1px rgba(0, 0, 0, 0.2);
+  opacity: 0.98;
 }
 @media screen and (min-width: 1024px) {
   .nav {
@@ -292,6 +295,7 @@ h1 {
 .menuShow {
   right: 0;
   animation: menuShow ease 0.5s;
+  height: 100vh;
 }
 
 .menuHide {
@@ -624,6 +628,7 @@ body::-webkit-scrollbar {
   justify-content: center;
   align-items: center;
   border-radius: 100%;
+  clip-path: circle(50% at 50% 50%);
   width: 3rem;
   height: 3rem;
   cursor: pointer;

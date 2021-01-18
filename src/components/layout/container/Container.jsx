@@ -17,8 +17,8 @@ export const Container = ({ toggleMenu, setToggleMenu, props, pageYOffset, scrol
 		<>
 			<div className="container" onClick={setToggleFromContainer}>
 				{props.children}
+				<Footer />
 			</div>
-			<Footer />
 		</>
 	)
 }

@@ -1,100 +1,101 @@
-.header{
-    height: $headerHeightM;
-    background-color: #283e4a;
-    width: 100vw;
-    position: fixed;
+.header {
+	height: $headerHeightM;
+	background-color: #283e4a;
+	width: 100vw;
+	position: fixed;
+	z-index: var(--zFixed);
+	box-shadow: 0 2px 4px 1px rgba(0, 0, 0, 0.2);
 
-    @include from(l){
-        position: fixed;
-        height: $headerHeightL;
-				display: flex;
-				flex-direction: column;
-        justify-content: center;
-    }
+	@include from(l) {
+		position: fixed;
+		height: $headerHeightL;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
 
-    &__container{
-        justify-content: space-between;
-        align-items: center;
-        height: 100%;
-        display: flex;
+	&__container {
+		justify-content: space-between;
+		align-items: center;
+		height: 100%;
+		display: flex;
 
-        @include from(l){
-				width: 100%;
-				padding: 0 0 0 0;
-        justify-content: space-between;
-        margin: auto;
-        }
-    }
-    
-    &__title{
-        font-size: 1rem;
-        color: white;
-    }
-
-    &__logoContainer{
-				height: 100%;
-				padding-left: 1.5rem;
-        width: auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        @include from(l){
-            padding-left: 2rem;
-            width: auto;
-        }
+		@include from(l) {
+			width: 100%;
+			padding: 0 0 0 0;
+			justify-content: space-between;
+			margin: auto;
 		}
-		
-		&__link{
-			display: flex;
-			justify-content: center;
-			height: 3rem;
-			width: 3rem;
+	}
 
-				@include from(l){
-					height: 3.5rem;
-					width: 3.5rem;
-			}
+	&__title {
+		font-size: 1rem;
+		color: white;
+	}
+
+	&__logoContainer {
+		height: 100%;
+		padding-left: 1.5rem;
+		width: auto;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		@include from(l) {
+			padding-left: 2rem;
+			width: auto;
 		}
+	}
 
-    &__logo{
-        height: 100%;
-				width: 100%;
-    }
+	&__link {
+		display: flex;
+		justify-content: center;
+		height: 3rem;
+		width: 3rem;
 
-    &__menuToggleContainer{
-        width: auto;
-				height: 100%;
-				padding-right: 1.5rem;
-    }
+		@include from(l) {
+			height: 3.5rem;
+			width: 3.5rem;
+		}
+	}
 
-    &__menuToggle{
-        width: 100%;
-        height: 100%;
-        font-size: 2rem;
-        color: white;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+	&__logo {
+		height: 100%;
+		width: 100%;
+	}
 
-        @include from(l){
-            display: none;
-        }
-    }
+	&__menuToggleContainer {
+		width: auto;
+		height: 100%;
+		padding-right: 1.5rem;
+	}
 
-    &__menuToggle::before{
-        height: 100%;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+	&__menuToggle {
+		width: 100%;
+		height: 100%;
+		font-size: 2rem;
+		color: white;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		@include from(l) {
+			display: none;
+		}
+	}
+
+	&__menuToggle::before {
+		height: 100%;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
 }
 
-.header__logo:hover{
-
-	@include from(l){
-		transition: transform .1s ease;
+.header__logo:hover {
+	@include from(l) {
+		transition: transform 0.1s ease;
 		transform: scale(1.1);
 	}
 }

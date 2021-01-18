@@ -1,12 +1,13 @@
 .nav {
 	position: fixed;
 	top: $headerHeightM;
-	right: -75%;
+	right: calc(-75% - 2px);
 	width: 75%;
-	height: calc(100% - #{$headerHeightM} - #{$footerHeightM});
+	height: calc(100% - #{$headerHeightM});
 	background: #232323;
-	transition: right 0.5s;
-	z-index: var(--zFixed);
+	transition: right ease 0.5s;
+	box-shadow: -2px 0 5px 1px rgba(0, 0, 0, 0.2);
+	opacity: 0.98;
 
 	@include from(l) {
 		position: relative;
@@ -31,6 +32,7 @@
 .menuShow {
 	right: 0;
 	animation: menuShow ease 0.5s;
+	height: 100vh;
 }
 
 .menuHide {
