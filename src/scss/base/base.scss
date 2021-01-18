@@ -1,89 +1,44 @@
-*,*::before,*::after{
-    box-sizing: border-box;
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
 }
 
-html{
-    min-height: 100%;
+html {
+	min-height: 100%;
 }
 
-body{
-		overflow-y: scroll;
-    font-family: 'Lato', sans-serif;
-    height: 100%;
-    font-size: var(--bodyFontSize);
+body {
+	font-family: "Lato", sans-serif;
+	height: 100%;
+	font-size: var(--bodyFontSize);
 }
 
-#root{
-    height: 100%;
+#root {
+	height: 100%;
 }
 
-.App{
-    min-height:100%;
-    display: flex;
-    flex-direction: column;
-}
-
-a{
-    text-decoration: none;
-}
-
-img{
-    height: 100%;
-    max-width: 100%;
-}
-
-h1{
-    font-size: var(--h1FontSize);
-}
-
-.container{
-	min-height: 100vh;
+.App {
+	min-height: 100%;
 	display: flex;
 	flex-direction: column;
 }
 
-body::-webkit-scrollbar {
-	display: none;
+a {
+	text-decoration: none;
 }
 
-.scrollToTop{
-	position: fixed;
-	z-index: var(--zFixed);
-	bottom: 1.25rem;
-	right: 1.25rem;
-	background-color: #283e4a;
+img {
+	height: 100%;
+	max-width: 100%;
+}
+
+h1 {
+	font-size: var(--h1FontSize);
+}
+
+.container {
+	min-height: 100vh;
 	display: flex;
-	justify-content: center;
-	align-items: center;
-	border-radius: 100%;
-	width: 3rem;
-	height: 3rem;
-	cursor: pointer;
-
-	@include from(l){
-		bottom: 3rem;
-		right: 3rem;
-		width: 3.5rem;
-		height: 3.5rem;
-}
-
-.scrollToTopArrow{
-	color: white;
-	font-size: 1.2rem;
-	animation: scrollTop 0.5s alternate ease infinite;
-
-	@include from(l){
-		font-size: 1.8rem;
-}
-}
-
-@keyframes scrollTop{
-	from{
-		transform: translateY(.2rem);
-	}
-	to{
-		transform: translateY(-.2rem);
-	}
-}
-
+	flex-direction: column;
 }

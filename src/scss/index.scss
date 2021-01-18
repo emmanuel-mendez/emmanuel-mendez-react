@@ -3,9 +3,10 @@
 @import "reformat/reset";
 
 @import "base/base";
-@import "layout/layout";
 
-@import "grid/header";
-@import "grid/nav";
-@import "grid/article";
-@import "grid/footer";
+@import "layout/header";
+@import "layout/nav";
+@import "layout/article";
+@import "layout/footer";
+
+@import "scroll/scorll";

@@ -1,0 +1,48 @@
+body {
+	overflow-y: scroll;
+}
+
+body::-webkit-scrollbar {
+	display: none;
+}
+
+.scrollToTop {
+	position: fixed;
+	z-index: var(--zFixed);
+	bottom: 1.25rem;
+	right: 1.25rem;
+	background-color: #283e4a;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 100%;
+	width: 3rem;
+	height: 3rem;
+	cursor: pointer;
+
+	@include from(l) {
+		bottom: 3rem;
+		right: 3rem;
+		width: 3.5rem;
+		height: 3.5rem;
+	}
+
+	.scrollToTopArrow {
+		color: white;
+		font-size: 1.2rem;
+		animation: scrollTop 0.5s alternate ease infinite;
+
+		@include from(l) {
+			font-size: 1.8rem;
+		}
+	}
+
+	@keyframes scrollTop {
+		from {
+			transform: translateY(0.2rem);
+		}
+		to {
+			transform: translateY(-0.2rem);
+		}
+	}
+}
