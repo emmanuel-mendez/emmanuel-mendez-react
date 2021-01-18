@@ -617,7 +617,7 @@ body::-webkit-scrollbar {
   }
 }
 .footer__languajes {
-  padding-top: 0.6rem;
+  padding-top: 0.8rem;
   color: #ccc;
   font-size: 0.6rem;
   display: flex;

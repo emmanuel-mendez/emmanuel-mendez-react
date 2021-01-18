@@ -14,7 +14,7 @@ export const FooterEnglish = () => {
 
 				<div className="footer__languajes">
 					<p className="footer__languajesContainer">
-						<NavLink exact to="/" className="footer__languajesLink footer__languajesEnglish" activeClassName="footer__languajesSelected">
+						<NavLink exact to="/" className="footer__languajesLink footer__languajesEnglish footer__languajesSelected" activeClassName="footer__languajesSelected">
 							English
 					</NavLink>
 		|

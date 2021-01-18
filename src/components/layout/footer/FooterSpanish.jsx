@@ -15,11 +15,11 @@ export const FooterSpanish = () => {
 
 				<div className="footer__languajes">
 					<p className="footer__languajesContainer">
-						<NavLink exact to="/" className="footer__languajesLink footer__languajesEnglish" activeClassName="footer__languajesSelected">
+						<NavLink exact to="/" className="footer__languajesLink footer__languajesEnglish">
 							English
 					</NavLink>
 					|
-					<NavLink exact to="/es/" className="footer__languajesLink footer__languajesSpanish" activeClassName="footer__languajesSelected">
+					<NavLink exact to="/es/" className="footer__languajesLink footer__languajesSpanish footer__languajesSelected" activeClassName="footer__languajesSelected">
 							Spanish
 					</NavLink>
 					</p>
