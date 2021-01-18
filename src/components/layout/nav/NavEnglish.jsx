@@ -13,8 +13,7 @@ export const NavEnglish = ({ toggleMenu, setToggleMenu, scrollToTopButton, setSc
 
 	return (
 		<nav className={classNames('nav', {
-			'menuShow': toggleMenu,
-			'menuHide': toggleMenu === false
+			'menuShow': toggleMenu
 		})}>
 
 			<ul className="nav__menu" onClick={toggle}>

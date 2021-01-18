@@ -35,7 +35,6 @@
 
 .menuHide {
 	right: -75%;
-	animation: menuHide ease 0.5s;
 }
 
 @keyframes menuShow {
@@ -44,15 +43,6 @@
 	}
 	to {
 		right: 0;
-	}
-}
-
-@keyframes menuHide {
-	from {
-		right: 0;
-	}
-	to {
-		right: -75%;
 	}
 }
 

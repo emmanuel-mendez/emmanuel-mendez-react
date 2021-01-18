@@ -3,7 +3,7 @@
 	margin-bottom: $footerHeightM;
 	min-height: calc(100% - #{$headerHeightM} - #{$footerHeightM});
 	padding: 2rem 1rem;
-	animation: fromLeft ease 0.5s;
+	animation: fromLeft ease 0.6s;
 
 	@include from(l) {
 		margin-top: $headerHeightL;
