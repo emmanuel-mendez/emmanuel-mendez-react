@@ -92,11 +92,13 @@
 	}
 
 	&__menuToggle:hover {
-		animation: activeLogo alternate ease 0.6s infinite;
+		animation: activeLogo alternate ease 0.4s;
+		animation-iteration-count: 2;
 	}
 
 	&__logo:hover {
-		animation: activeLogo alternate ease 0.6s infinite;
+		animation: activeLogo alternate ease 0.4s 2;
+		animation-iteration-count: 2;
 	}
 }
 

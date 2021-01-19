@@ -253,10 +253,12 @@ h1 {
   align-items: center;
 }
 .header__menuToggle:hover {
-  animation: activeLogo alternate ease 0.6s infinite;
+  animation: activeLogo alternate ease 0.4s;
+  animation-iteration-count: 2;
 }
 .header__logo:hover {
-  animation: activeLogo alternate ease 0.6s infinite;
+  animation: activeLogo alternate ease 0.4s 2;
+  animation-iteration-count: 2;
 }
 
 @keyframes activeLogo {
@@ -561,6 +563,7 @@ h1 {
 }
 .footer__container {
   width: 100%;
+  padding: 0 1rem;
   height: 4.4rem;
 }
 @media screen and (min-width: 1024px) {
