@@ -1,9 +1,7 @@
 import React, { useEffect } from 'react'
 import { NavLink } from "react-router-dom";
-
 import { NavEnglish } from '../nav/NavEnglish'
 import { NavSpanish } from '../nav/NavSpanish'
-
 import { usePathname } from '../../hooks/usePathname'
 
 export const Header = ({ toggleMenu, setToggleMenu, scrollToTopButton, setScrollToTopButton, pageYOffset }) => {

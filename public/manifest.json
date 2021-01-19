@@ -5,7 +5,8 @@
 		{
 			"src": "/logo.svg",
 			"sizes": "512x512",
-			"type": "image/png"
+			"type": "image/svg+xml",
+			"purpose": "maskable"
 		}
 	],
 	"start_url": "/",
