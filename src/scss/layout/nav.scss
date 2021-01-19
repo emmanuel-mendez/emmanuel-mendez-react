@@ -31,8 +31,12 @@
 .menuShow {
 	right: 0;
 	animation: menuShow ease 0.5s;
-	height: 100vh;
+	height: 100%;
 	box-shadow: -2px 0 5px 1px rgba(0, 0, 0, 0.2);
+
+	@include from(l) {
+		box-shadow: none;
+	}
 }
 
 .menuHide {
