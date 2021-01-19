@@ -3,7 +3,7 @@
 	"name": "Emmanuel Méndez Portfolio",
 	"icons": [
 		{
-			"src": "/icon.png",
+			"src": "/logo.svg",
 			"sizes": "512x512",
 			"type": "image/png"
 		}

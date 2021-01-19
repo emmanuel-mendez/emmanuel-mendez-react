@@ -48,7 +48,7 @@ export const Header = ({ toggleMenu, setToggleMenu, scrollToTopButton, setScroll
 
 				<div className="header__logoContainer">
 					<Link className="header__link menu__link" to={linkTo} >
-						<img className="header__logo" src={process.env.PUBLIC_URL + '/favicon.ico'} alt="Logo" onClick={setToggleFromLogo} />
+						<img className="header__logo" src={process.env.PUBLIC_URL + '/logo.svg'} alt="Logo" onClick={setToggleFromLogo} />
 					</Link>
 				</div>
 
