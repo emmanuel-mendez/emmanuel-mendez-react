@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 import { NavEnglish } from '../nav/NavEnglish'
 import { NavSpanish } from '../nav/NavSpanish'
 import { usePathname } from '../../hooks/usePathname'
+import logo from '../../../logo.svg';
 
 export const Header = ({ toggleMenu, setToggleMenu, scrollToTopButton, setScrollToTopButton, pageYOffset }) => {
 
@@ -46,7 +47,7 @@ export const Header = ({ toggleMenu, setToggleMenu, scrollToTopButton, setScroll
 
 				<div className="header__logoContainer">
 					<NavLink className="header__link menu__link" exact to={linkTo} >
-						<img className="header__logo" src={process.env.PUBLIC_URL + '/logo.svg'} alt="Logo" onClick={setToggleFromLogo} />
+						<img className="header__logo" src={logo} alt="Logo" onClick={setToggleFromLogo} />
 					</NavLink>
 				</div>
 

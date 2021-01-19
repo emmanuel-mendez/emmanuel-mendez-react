@@ -15,9 +15,33 @@
    version="1.1"
    id="svg8"
    inkscape:version="1.0.2 (e86c870879, 2021-01-15, custom)"
-   sodipodi:docname="logo.svg">
+   sodipodi:docname="logox.svg">
   <defs
      id="defs2">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient2634">
+      <stop
+         style="stop-color:#22323b;stop-opacity:1;"
+         offset="0"
+         id="stop2630" />
+      <stop
+         style="stop-color:#22323b;stop-opacity:0;"
+         offset="1"
+         id="stop2632" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient2575">
+      <stop
+         style="stop-color:#22323b;stop-opacity:1;"
+         offset="0"
+         id="stop2571" />
+      <stop
+         style="stop-color:#22323b;stop-opacity:0;"
+         offset="1"
+         id="stop2573" />
+    </linearGradient>
     <rect
        x="-10.583333"
        y="-10.583333"
@@ -72,18 +96,6 @@
          d="M 0,0 5,-5 -12.5,0 5,5 Z"
          id="path1053" />
     </marker>
-    <linearGradient
-       inkscape:collect="always"
-       id="linearGradient1049">
-      <stop
-         style="stop-color:#22323b;stop-opacity:1;"
-         offset="0"
-         id="stop1045" />
-      <stop
-         style="stop-color:#22323b;stop-opacity:0;"
-         offset="1"
-         id="stop1047" />
-    </linearGradient>
     <rect
        x="10.583333"
        y="-21.166668"
@@ -92,13 +104,24 @@
        id="rect884" />
     <linearGradient
        inkscape:collect="always"
-       xlink:href="#linearGradient1049"
-       id="linearGradient1051"
-       x1="89.958336"
-       y1="121.98646"
-       x2="395.88699"
-       y2="43.174713"
-       gradientUnits="userSpaceOnUse" />
+       xlink:href="#linearGradient2575"
+       id="linearGradient2577"
+       x1="275.16666"
+       y1="222.25"
+       x2="631.22021"
+       y2="-147.41072"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.2093981,0,0,1.2027842,-50.87529,-52.022784)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient2634"
+       id="linearGradient2636"
+       x1="116.41666"
+       y1="381"
+       x2="1068.9166"
+       y2="-560.91669"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.4109642,0,0,1.4032481,-102.07313,-102.94064)" />
   </defs>
   <sodipodi:namedview
      id="base"
@@ -108,8 +131,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.35"
-     inkscape:cx="690.72047"
-     inkscape:cy="987.83448"
+     inkscape:cx="1076.8286"
+     inkscape:cy="810.78892"
      inkscape:document-units="mm"
      inkscape:current-layer="layer2"
      inkscape:document-rotation="0"
@@ -123,7 +146,12 @@
      inkscape:showpageshadow="true"
      units="mm"
      borderlayer="true"
-     width="512mm">
+     width="512mm"
+     inkscape:object-nodes="true"
+     inkscape:snap-global="true"
+     inkscape:snap-nodes="true"
+     inkscape:snap-others="false"
+     inkscape:object-paths="true">
     <inkscape:grid
        type="xygrid"
        id="grid867" />
@@ -136,650 +164,86 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="Capa 0">
+    <rect
+       style="fill:url(#linearGradient2636);fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:2.11066;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect2552"
+       width="507.71207"
+       height="504.93558"
+       x="2.4557974"
+       y="3.9868672"
+       ry="175.24229"
+       rx="179.19246" />
+  </g>
   <g
      inkscape:label="Capa 1"
      inkscape:groupmode="layer"
      id="layer1">
     <rect
-       style="fill:#547688;fill-opacity:0.40000001;fill-rule:evenodd;stroke:#efb810;stroke-width:1.5;stroke-linejoin:round"
-       id="rect905"
-       width="529.16669"
-       height="529.16669"
-       x="-10.583333"
-       y="-10.583333"
-       ry="6.0476074" />
-    <text
-       xml:space="preserve"
-       id="text920"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;white-space:pre;shape-inside:url(#rect922);fill:#808080;fill-opacity:1;stroke:none;"
-       transform="matrix(0.99054635,0,0,0.78136464,62.65482,60.064862)"><tspan
-         x="-10.583984"
-         y="4.4617118"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">import React, { useEffect } from 'react'
-</tspan></tspan><tspan
-         x="-10.583984"
-         y="25.076088"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">import { NavLink } from &quot;react-router-dom&quot;;
-</tspan></tspan><tspan
-         x="-10.583984"
-         y="45.690464"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">import { NavEnglish } from '../nav/NavEnglish'
-</tspan></tspan><tspan
-         x="-10.583984"
-         y="66.30484"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">import { NavSpanish } from '../nav/NavSpanish'
-</tspan></tspan><tspan
-         x="-10.583984"
-         y="86.919216"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">import { usePathname } from '../../hooks/usePathname'
-</tspan></tspan><tspan
-         x="-10.583984"
-         y="107.5336"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">
-</tspan></tspan><tspan
-         x="-10.583984"
-         y="128.14798"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">export const Header = ({ toggleMenu, setToggleMenu, </tspan></tspan><tspan
-         x="-10.583984"
-         y="148.76236"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">scrollToTopButton, setScrollToTopButton, pageYOffset }) =&gt; {
-</tspan></tspan><tspan
-         x="-10.583984"
-         y="169.37674"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">
-</tspan></tspan><tspan
-         x="-10.583984"
-         y="189.99112"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">	</tspan><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">useEffect(() =&gt; {
-</tspan></tspan><tspan
-         x="-10.583984"
-         y="210.6055"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">	</tspan><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">	</tspan><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">if (pageYOffset &gt; 112 &amp;&amp; scrollToTopButton === false &amp;&amp; </tspan></tspan><tspan
-         x="-10.583984"
-         y="231.21988"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">toggleMenu === false) {
-</tspan></tspan><tspan
-         x="-10.583984"
-         y="251.83426"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">	</tspan><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">	</tspan><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">	</tspan><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">setScrollToTopButton(true)
-</tspan></tspan><tspan
-         x="-10.583984"
-         y="272.44862"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">	</tspan><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">	</tspan><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">} else if (pageYOffset &lt; 112) {
-</tspan></tspan><tspan
-         x="-10.583984"
-         y="293.063"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">	</tspan><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">	</tspan><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">	</tspan><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">setScrollToTopButton(false)
-</tspan></tspan><tspan
-         x="-10.583984"
-         y="313.67738"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">	</tspan><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">	</tspan><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">} // eslint-disable-next-line
-</tspan></tspan><tspan
-         x="-10.583984"
-         y="334.29176"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">	</tspan><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">}, [pageYOffset])
-</tspan></tspan><tspan
-         x="-10.583984"
-         y="354.90614"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">
-</tspan></tspan><tspan
-         x="-10.583984"
-         y="375.52052"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">	</tspan><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">const setToggleFromToggleMenu = () =&gt; {
-</tspan></tspan><tspan
-         x="-10.583984"
-         y="396.1349"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">	</tspan><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">	</tspan><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">setToggleMenu(!toggleMenu)
-</tspan></tspan><tspan
-         x="-10.583984"
-         y="416.74928"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">	</tspan><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">	</tspan><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">if (scrollToTopButton) {
-</tspan></tspan><tspan
-         x="-10.583984"
-         y="437.36366"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">	</tspan><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">	</tspan><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">	</tspan><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">setScrollToTopButton(false)
-</tspan></tspan><tspan
-         x="-10.583984"
-         y="457.97804"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">	</tspan><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">	</tspan><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">} else if (scrollToTopButton === false &amp;&amp; pageYOffset &gt; </tspan></tspan><tspan
-         x="-10.583984"
-         y="478.59242"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">112) {
-</tspan></tspan><tspan
-         x="-10.583984"
-         y="499.2068"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">	</tspan><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">	</tspan><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">	</tspan><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">setScrollToTopButton(true)
-</tspan></tspan><tspan
-         style="visibility:hidden"
-         x="-10.583984"
-         y="533.62968"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">	</tspan><tspan
-           dx="8.6744194"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">	</tspan><tspan
-           dx="8.6744194 10.468239"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">}
-</tspan></tspan><tspan
-         style="visibility:hidden"
-         x="-10.583984"
-         y="554.24406"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">	</tspan><tspan
-           dx="8.6744194 10.468239"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">}
-</tspan></tspan><tspan
-         style="visibility:hidden"
-         x="-10.583984"
-         y="574.85843"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">
-</tspan></tspan><tspan
-         style="visibility:hidden"
-         x="-10.583984"
-         y="595.47281"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">	</tspan><tspan
-           dx="8.6744194 8.5920067 10.009247 10.436028 8.5920067 6.4983597 5.7977943 8.5920029 9.8240471 6.4983559 8.3906975 10.009251 10.274982 10.274982 4.5255013 9.8240395 9.477787 7.0378761 10.009251 16.040562 9.1798439 10.009251 10.274982 10.009251 5.7977943 13.495991 5.7977943 7.4888191 7.4888039 5.7977791 13.49596 13.49596 5.7977791 10.46825"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">const setToggleFromLogo = () =&gt; {
-</tspan></tspan><tspan
-         style="visibility:hidden"
-         x="-10.583984"
-         y="616.08718"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">	</tspan><tspan
-           dx="8.6744194"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">	</tspan><tspan
-           dx="8.6744194 4.5254993 5.7977943 5.7977924 7.4888153 6.4983578 10.009245 10.274979 10.274979 4.5254974 9.8240433 13.898598 9.8240356 10.436028 10.436035 7.4888077 5.7977829 10.468254"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">if (toggleMenu) {
-</tspan></tspan><tspan
-         style="visibility:hidden"
-         x="-10.583984"
-         y="636.70156"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">	</tspan><tspan
-           dx="8.6744194"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">	</tspan><tspan
-           dx="8.6744194"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">	</tspan><tspan
-           dx="8.6744194 8.5920067 9.8240395 6.4983597 8.3906975 10.009239 10.274975 10.274975 4.5254936 9.8240471 13.898594 9.8240318 10.436031 10.436024 7.4888115 6.4903069 6.4983482 10.009243 10.274975 10.274975 4.5254936 9.8240471 13.898586 9.8240318 10.436031 10.436031 7.4888115"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">setToggleMenu(!toggleMenu)
-</tspan></tspan><tspan
-         style="visibility:hidden"
-         x="-10.583984"
-         y="657.31594"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">	</tspan><tspan
-           dx="8.6744194"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">	</tspan><tspan
-           dx="8.6744194 10.468239"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">}
-</tspan></tspan><tspan
-         style="visibility:hidden"
-         x="-10.583984"
-         y="677.93031"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">	</tspan><tspan
-           dx="8.6744194 10.468239"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">}
-</tspan></tspan><tspan
-         style="visibility:hidden"
-         x="-10.583984"
-         y="698.54469"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">
-</tspan></tspan><tspan
-         style="visibility:hidden"
-         x="-10.583984"
-         y="719.15907"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">	</tspan><tspan
-           dx="8.6744194 4.5254993 9.8240395 6.4983597 5.7977924 10.274979 9.9045639 6.4983597 10.436024 5.7977867 13.495983 5.7977943 10.436024 8.5920067 9.8240318 9.542202 9.9045677 6.4983559 10.436039 10.436024 9.9045753 16.040562 9.8240395 7.4888191 7.4888191"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">let path = usePathname()
-</tspan></tspan><tspan
-         style="visibility:hidden"
-         x="-10.583984"
-         y="739.77344"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">
-</tspan></tspan><tspan
-         style="visibility:hidden"
-         x="-10.583984"
-         y="760.38782"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">	</tspan><tspan
-           dx="8.6744194 8.5920067 10.009247 10.436028 8.5920067 6.4983597 5.7977943 4.5255013 4.5255013 10.436024 9.7596245 8.3906898 10.009243 5.7977867 13.495983 5.7977943 7.4888191 7.4888191 5.7977943 13.495991 13.495975 5.7977943 10.468235"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">const linkTo = () =&gt; {
-</tspan></tspan><tspan
-         style="visibility:hidden"
-         x="-10.583984"
-         y="781.00219"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">	</tspan><tspan
-           dx="8.6744194"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">	</tspan><tspan
-           dx="8.6744194 4.5254993 5.7977943 5.7977924 7.4888153 10.274977 9.9045639 6.4983597 10.436028 5.9991074 8.5920029 6.4983673 9.9045639 7.0378723 6.4983597 8.5920029 16.306297 4.5254898 6.4983749 10.436012 7.4888229 7.5693436 7.4888229 9.8240433 8.5920181 7.4888077 7.5693283 7.4888229 7.4888077 5.7978134 10.468239"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">if (path.startsWith(&quot;/es/&quot;)) {
-</tspan></tspan><tspan
-         style="visibility:hidden"
-         x="-10.583984"
-         y="801.61657"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">	</tspan><tspan
-           dx="8.6744194"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">	</tspan><tspan
-           dx="8.6744194"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">	</tspan><tspan
-           dx="8.6744194 7.0378761 9.8240395 6.4983597 10.436028 7.0378761 10.436028 5.7977982 7.5693398 7.4888115 9.8240318 8.5920067 7.4888115 7.5693474"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">return &quot;/es/&quot;
-</tspan></tspan><tspan
-         style="visibility:hidden"
-         x="-10.583984"
-         y="822.23095"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">	</tspan><tspan
-           dx="8.6744194"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">	</tspan><tspan
-           dx="8.6744194 10.468239 5.7977905 9.8240376 4.5255013 8.5920067 9.8240395 5.7977982 10.468235"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">} else {
-</tspan></tspan><tspan
-         style="visibility:hidden"
-         x="-10.583984"
-         y="842.84532"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">	</tspan><tspan
-           dx="8.6744194"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">	</tspan><tspan
-           dx="8.6744194"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">	</tspan><tspan
-           dx="8.6744194 7.0378761 9.8240395 6.4983597 10.436028 7.0378761 10.436028 5.7977982 7.5693398 7.4888115 7.5693321"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">return &quot;/&quot;
-</tspan></tspan><tspan
-         style="visibility:hidden"
-         x="-10.583984"
-         y="863.4597"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">	</tspan><tspan
-           dx="8.6744194"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">	</tspan><tspan
-           dx="8.6744194 10.468239"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">}
-</tspan></tspan><tspan
-         style="visibility:hidden"
-         x="-10.583984"
-         y="884.07407"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">	</tspan><tspan
-           dx="8.6744194 10.468239"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">}
-</tspan></tspan><tspan
-         style="visibility:hidden"
-         x="-10.583984"
-         y="904.68845"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">
-</tspan></tspan><tspan
-         style="visibility:hidden"
-         x="-10.583984"
-         y="925.30283"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">	</tspan><tspan
-           dx="8.6744194 7.0378761 9.8240395 6.4983597 10.436028 7.0378761 10.436028 5.7977905 7.4888115"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">return (
-</tspan></tspan><tspan
-         style="visibility:hidden"
-         x="-10.583984"
-         y="945.9172"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">
-</tspan></tspan><tspan
-         style="visibility:hidden"
-         x="-10.583984"
-         y="966.53158"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">	</tspan><tspan
-           dx="8.6744194"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">	</tspan><tspan
-           dx="8.6744194 13.495975 10.436028 9.8240395 9.9045639 10.274979 9.8240395 7.0378799 5.7977905 8.5920105 4.5254974 9.9045639 8.5920029 8.5920029 12.336418 9.9045792 16.040565 9.8240433 13.495979 7.5693436 10.436028 9.8240433 9.9045639 10.274971 9.824028 7.0378647 7.5693588 13.495979"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">&lt;header className=&quot;header&quot;&gt;
-</tspan></tspan><tspan
-         style="visibility:hidden"
-         x="-10.583984"
-         y="987.14595"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">	</tspan><tspan
-           dx="8.6744194"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">	</tspan><tspan
-           dx="8.6744194"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">	</tspan><tspan
-           dx="8.6744194 13.495975 10.274979 4.5254993 9.7596207 5.7977905 8.5920105 4.5254974 9.9045715 8.5919991 8.5920067 12.336407 9.9045677 16.040554 9.8240318 13.495968 7.5693474 10.436016 9.8240318 9.9045677 10.274975 9.8240318 7.0378685 10.484341 10.484356 8.5920219 10.009258 10.436016 6.4983482 9.9045677 4.5255089 10.436001 9.8240623 7.0378685 7.5693321 5.7977867 13.495968"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">&lt;div className=&quot;header__container&quot; &gt;
-</tspan></tspan><tspan
-         style="visibility:hidden"
-         x="-10.583984"
-         y="1007.7603"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">
-</tspan></tspan><tspan
-         style="visibility:hidden"
-         x="-10.583984"
-         y="1028.3747"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">	</tspan><tspan
-           dx="8.6744194"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">	</tspan><tspan
-           dx="8.6744194"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">	</tspan><tspan
-           dx="8.6744194"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">	</tspan><tspan
-           dx="8.6744194 13.495975 10.274975 4.5254974 9.7596245 5.7977943 8.5920143 4.5255013 9.9045677 8.5920029 8.5920105 12.336411 9.9045715 16.040558 9.8240356 13.495972 7.5693512 10.43602 9.8240356 9.9045715 10.274979 9.8240356 7.0378723 10.484344 10.484344 4.5255127 10.009232 10.275009 10.009232 11.51506 10.009232 10.43602 6.4983368 9.9045868 4.5254669 10.43602 9.8240204 7.0378876 7.5693512 13.495956"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">&lt;div className=&quot;header__logoContainer&quot;&gt;
-</tspan></tspan><tspan
-         style="visibility:hidden"
-         x="-10.583984"
-         y="1048.9891"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">	</tspan><tspan
-           dx="8.6744194"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">	</tspan><tspan
-           dx="8.6744194"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">	</tspan><tspan
-           dx="8.6744194"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">	</tspan><tspan
-           dx="8.6744194"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">	</tspan><tspan
-           dx="8.6744194 13.495975 12.336411 9.7757225 9.7596207 9.1798325 4.5255013 10.436028 9.7596092 5.797802 8.5919991 4.5255089 9.9045601 8.5920067 8.5920143 12.336414 9.9045753 16.040562 9.8240395 13.495975 7.569355 10.436024 9.8240395 9.9045753 10.274967 9.8240242 7.0378609 10.484364 10.484348 4.525486 4.5255165 10.436008 9.7596474 5.7977943 16.040562 9.8240395 10.436039 10.436008 10.484348 10.484348 4.5255165 4.525486 10.436039 9.7596169 7.5693703 5.7977943 9.8240395 9.7596169 9.9045753 8.5920143 6.4983559 5.7977943 6.4983559 10.00922 13.495945 10.468235 4.525486 4.525425 10.436008 9.7596169 8.3906593 10.00919 10.468235 5.7977638 13.495945"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">&lt;NavLink className=&quot;header__link menu__link&quot; exact to={linkTo} &gt;
-</tspan></tspan><tspan
-         style="visibility:hidden"
-         x="-10.583984"
-         y="1069.6035"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">	</tspan><tspan
-           dx="8.6744194"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">	</tspan><tspan
-           dx="8.6744194"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">	</tspan><tspan
-           dx="8.6744194"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">	</tspan><tspan
-           dx="8.6744194"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">	</tspan><tspan
-           dx="8.6744194"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">	</tspan><tspan
-           dx="8.6744194 13.495972 4.5255013 16.040558 10.274979 5.7977905 8.5920067 4.5254974 9.9045601 8.5920181 8.5920181 12.336403 9.9045639 16.040558 9.824028 13.495964 7.5693588 10.436012 9.824028 9.9045639 10.274986 9.8240433 7.0378799 10.484352 10.484352 4.5254898 10.009239 10.274956 10.009239 7.5693588 5.7977829 8.5920029 7.0378647 8.5920029 13.495964 10.468224 10.274956 7.0378952 10.009239 8.5919724 9.8240585 8.5919724 8.5920029 5.9991074 9.824028 10.274986 8.3101425 5.9991074 9.9448166 12.070671 11.305717 9.1798325 6.9412766 11.515099 10.484337 12.070702 11.466728 9.1798019 5.7978439 13.495964 5.7977829 4.4288254 7.4888229 4.5255051 10.009209 10.274956 9.8481979 5.9991379 8.5919724 9.7596359 10.274956 4.4288864 10.468193 5.7977829 9.9045944 4.525444 6.4984055 13.495964 7.5693283 9.1798019 10.00927 10.274956 10.009209 7.5693283 5.7977829 10.00927 10.436028 11.515068 4.525444 4.5255051 8.5920334 9.7595749 13.495964 10.468254 8.5919724 9.824028 6.4984055 8.3906784 10.009209 10.274956 10.275017 4.525444 9.824028 9.4777756 7.0378952 10.009209 16.040581 9.179924 10.009209 10.275017 10.009331 10.468193 5.7978439 7.4888229 13.495964"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">&lt;img className=&quot;header__logo&quot; src={process.env.PUBLIC_URL + '/logo.svg'} alt=&quot;Logo&quot; onClick={setToggleFromLogo} /&gt;
-</tspan></tspan><tspan
-         style="visibility:hidden"
-         x="-10.583984"
-         y="1090.2178"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">	</tspan><tspan
-           dx="8.6744194"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">	</tspan><tspan
-           dx="8.6744194"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">	</tspan><tspan
-           dx="8.6744194"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">	</tspan><tspan
-           dx="8.6744194"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">	</tspan><tspan
-           dx="8.6744194 13.495975 7.4888153 12.336411 9.7757225 9.7596169 9.1798401 4.5255051 10.436024 9.7596092 13.495983"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">&lt;/NavLink&gt;
-</tspan></tspan><tspan
-         style="visibility:hidden"
-         x="-10.583984"
-         y="1110.8322"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">	</tspan><tspan
-           dx="8.6744194"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">	</tspan><tspan
-           dx="8.6744194"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">	</tspan><tspan
-           dx="8.6744194"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">	</tspan><tspan
-           dx="8.6744194 13.495975 7.4888153 10.274975 4.5254936 9.7596245 13.495975"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">&lt;/div&gt;
-</tspan></tspan><tspan
-         style="visibility:hidden"
-         x="-10.583984"
-         y="1131.4466"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">
-</tspan></tspan><tspan
-         style="visibility:hidden"
-         x="-10.583984"
-         y="1152.061"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">	</tspan><tspan
-           dx="8.6744194"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">	</tspan><tspan
-           dx="8.6744194"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">	</tspan><tspan
-           dx="8.6744194"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">	</tspan><tspan
-           dx="8.6744194 13.495975 10.274975 4.5254974 9.7596245 5.7977943 8.5920143 4.5255013 9.9045677 8.5920029 8.5920105 12.336411 9.9045715 16.040558 9.8240356 13.495972 7.5693512 10.43602 9.8240356 9.9045715 10.274979 9.8240356 7.0378723 10.484344 10.484344 16.040558 9.8240662 10.43605 10.435989 8.3907318 10.009232 10.274948 10.274948 4.5254974 9.8240204 11.51506 10.009262 10.435989 6.4983978 9.9045563 4.525528 10.43605 9.8240509 7.0378571 7.5693207 13.495956"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">&lt;div className=&quot;header__menuToggleContainer&quot;&gt;
-</tspan></tspan><tspan
-         style="visibility:hidden"
-         x="-10.583984"
-         y="1172.6753"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">	</tspan><tspan
-           dx="8.6744194"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">	</tspan><tspan
-           dx="8.6744194"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">	</tspan><tspan
-           dx="8.6744194"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">	</tspan><tspan
-           dx="8.6744194"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">	</tspan><tspan
-           dx="8.6744194 13.495975 4.5254974 5.7977867 8.5920067 4.5254974 9.9045677 8.5920067 8.5920029 12.336422 9.9045601 16.040554 9.8240471 13.495975 7.5693398 5.7978096 9.9045601 8.5920143 5.7977943 5.7977943 9.9045753 7.4888191 10.274982 9.9045601 7.0378761 8.5919991 5.7977943 10.436024 9.8240395 9.9045753 10.274967 9.8240395 7.0379066 10.484348 10.484318 16.040592 9.8240395 10.436008 10.436039 8.3906898 10.009251 10.274998 10.274967 4.5255165 9.8240395 7.5693398 5.7977943 9.9045753 8.5920143 13.495975 7.5693398 10.274967 10.436008 6.4983559 6.4983253 10.009251 10.435978 7.5693092 5.7977638 10.009251 10.436008 11.515049 4.525425 4.525486 8.5920143 9.7595558 13.495945 10.468235 8.5919533 9.8240089 6.4983864 8.3906593 10.00919 10.274937 10.274998 4.525425 9.8240089 9.4777565 7.0378761 10.009251 16.040501 8.3906593 10.009251 10.274937 10.274937 4.525486 9.8240089 13.898594 9.8240089 10.436008 10.435947 10.468235 13.495945 13.495945 7.4888039 4.525486 13.495945"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">&lt;i className=&quot;fas fa-bars header__menuToggle&quot; as=&quot;button&quot; onClick={setToggleFromToggleMenu}&gt;&lt;/i&gt;
-</tspan></tspan><tspan
-         style="visibility:hidden"
-         x="-10.583984"
-         y="1193.2897"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">	</tspan><tspan
-           dx="8.6744194"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">	</tspan><tspan
-           dx="8.6744194"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">	</tspan><tspan
-           dx="8.6744194"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">	</tspan><tspan
-           dx="8.6744194 13.495975 7.4888153 10.274975 4.5254936 9.7596245 13.495975"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">&lt;/div&gt;
-</tspan></tspan><tspan
-         style="visibility:hidden"
-         x="-10.583984"
-         y="1213.9041"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">
-</tspan></tspan><tspan
-         style="visibility:hidden"
-         x="-10.583984"
-         y="1234.5185"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">	</tspan><tspan
-           dx="8.6744194"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">	</tspan><tspan
-           dx="8.6744194"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">	</tspan><tspan
-           dx="8.6744194"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">	</tspan><tspan
-           dx="8.6744194 10.468239 10.274979 9.9045639 6.4983597 10.436028 5.9990997 8.5920067 6.4983597 9.9045639 7.0378799 6.4983597 8.5920105 16.30629 4.5254974 6.4983673 10.43602 7.4888153 7.5693512 7.4888153 9.8240356 8.5920105 7.4888153 7.5693359 7.4888153 5.7977905 8.9946289 5.7978058 7.4888"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">{path.startsWith(&quot;/es/&quot;) ? (
-</tspan></tspan><tspan
-         style="visibility:hidden"
-         x="-10.583984"
-         y="1255.1328"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">	</tspan><tspan
-           dx="8.6744194"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">	</tspan><tspan
-           dx="8.6744194"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">	</tspan><tspan
-           dx="8.6744194"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">	</tspan><tspan
-           dx="8.6744194"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">	</tspan><tspan
-           dx="8.6744194 13.495975 12.336411 9.7757225 9.7596207 11.273491 10.274982 9.9045601 10.436031 4.5255013 8.5920143 10.436024 5.7977867 6.4983635 10.009251 10.274982 10.274982 4.5255013 9.8240395 13.898609 9.8240395 10.436024 10.436039 13.49596 10.46825 6.4983559 10.009251 10.274967 10.274998 4.5255165 9.8240395 13.898594 9.8240395 10.436039 10.436039 10.468235 5.7977943 8.5920143 9.8240395 6.4983559 8.3906898 10.009251 10.274998 10.274967 4.5255165 9.8240395 13.898594 9.8240395 10.436039 10.436039 13.495975 10.468204 8.5920143 9.8240395 6.4983253 8.3906593 10.00919 10.274998 10.274937 4.525486 9.8240089 13.898533 9.8240089 10.436008 10.436008 10.468235 5.7977638 8.5919533 8.5920143 7.0378151 10.009251 4.525486 4.525425 8.3906593 10.009251 8.3906593 10.009251 10.274937 11.305637 10.436008 6.4983253 6.4983253 10.009251 10.436008 13.495945 10.468235 8.5919533 8.5919533 7.0378761 10.00919 4.525486 4.525486 8.3906593 10.009251 8.3906593 10.00919 10.274998 11.305637 10.436008 6.4983253 6.4983253 10.009251 10.436008 10.468174 5.7977638 8.5920143 9.8240089 6.4983864 11.273472 8.5920143 7.0378761 10.009251 4.5253639 4.525486 8.3907204 10.009251 8.3905983 10.009251 10.274998 11.305637 10.436008 6.4982643 6.4983864 10.009251 10.436008 13.495945 10.468113 8.5920143 9.82407 6.4982643 11.273533 8.5918922 7.0379372 10.009129 4.525486 4.525486 8.3907204 10.009251 8.3905983 10.009251 10.274998 11.305637 10.436008 6.4982643 6.4983864 10.009251 10.436008 10.468113 5.7978249 7.4887428 13.495945"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">&lt;NavSpanish toggleMenu={toggleMenu} setToggleMenu={setToggleMenu} scrollToTopButton={scrollToTopButton} setScrollToTopButton={setScrollToTopButton} /&gt;
-</tspan></tspan><tspan
-         style="visibility:hidden"
-         x="-10.583984"
-         y="1275.7472"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">
-</tspan></tspan><tspan
-         style="visibility:hidden"
-         x="-10.583984"
-         y="1296.3616"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">	</tspan><tspan
-           dx="8.6744194"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">	</tspan><tspan
-           dx="8.6744194"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">	</tspan><tspan
-           dx="8.6744194"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">	</tspan><tspan
-           dx="8.6744194 7.4888153 5.7977943 7.4888153 5.7977943 7.4888153"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">) : (
-</tspan></tspan><tspan
-         style="visibility:hidden"
-         x="-10.583984"
-         y="1316.976"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">	</tspan><tspan
-           dx="8.6744194"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">	</tspan><tspan
-           dx="8.6744194"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">	</tspan><tspan
-           dx="8.6744194"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">	</tspan><tspan
-           dx="8.6744194"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">	</tspan><tspan
-           dx="8.6744194"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">	</tspan><tspan
-           dx="8.6744194 13.495972 12.336418 9.7757263 9.7596169 10.427975 10.436028 10.274971 4.5255051 4.5254898 8.5920029 10.436028 5.7977905 6.4983597 10.009232 10.274986 10.274971 4.5255051 9.8240433 13.898598 9.824028 10.436028 10.436028 13.495979 10.468239 6.4983444 10.009239 10.274986 10.274956 4.5255051 9.824028 13.898582 9.824028 10.436028 10.436028 10.468224 5.7977829 8.5920029 9.824028 6.4983444 8.3907089 10.009209 10.274986 10.274956 4.5255051 9.824028 13.898582 9.824028 10.436028 10.436028 13.495964 10.468254 8.5920029 9.824028 6.4983444 8.3906784 10.00927 10.274956 10.274956 4.5255051 9.824028 13.898613 9.824028 10.436028 10.436028 10.468193 5.7977829 8.5920334 8.5919724 7.0378952 10.009209 4.5255051 4.5255051 8.3906784 10.009209 8.3907394 10.009209 10.274956 11.305717 10.436028 6.4983444 6.4983444 10.00927 10.435966 13.495964 10.468254 8.5920334 8.5919724 7.0378952 10.009209 4.5255051 4.5255051 8.3906784 10.009209 8.3906784 10.00927 10.274956 11.305717 10.436028 6.4983444 6.4983444 10.009209 10.436028 10.468254 5.7977829 8.5919724 9.824028 6.4984055 11.273491 8.5920334 7.0378342 10.00927 4.5255051 4.5255051 8.3906174 10.00927 8.3907394 10.009148 10.275017 11.305656 10.436028 6.4984055 6.4982834 10.00927 10.436028 13.495964 10.468254 8.5919113 9.8240891 6.4984055 11.27343 8.5920334 7.0378342 10.00927 4.5255051 4.5255051 8.3906174 10.00927 8.3906174 10.00927 10.275017 11.305656 10.436028 6.4984055 6.4982834 10.00927 10.436028 10.468254 5.7977219 7.488884 13.495964"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">&lt;NavEnglish toggleMenu={toggleMenu} setToggleMenu={setToggleMenu} scrollToTopButton={scrollToTopButton} setScrollToTopButton={setScrollToTopButton} /&gt;
-</tspan></tspan><tspan
-         style="visibility:hidden"
-         x="-10.583984"
-         y="1337.5903"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">	</tspan><tspan
-           dx="8.6744194"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">	</tspan><tspan
-           dx="8.6744194"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">	</tspan><tspan
-           dx="8.6744194"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">	</tspan><tspan
-           dx="8.6744194"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">	</tspan><tspan
-           dx="8.6744194 7.4888153 10.468239"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">)}
-</tspan></tspan><tspan
-         style="visibility:hidden"
-         x="-10.583984"
-         y="1358.2047"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">
-</tspan></tspan><tspan
-         style="visibility:hidden"
-         x="-10.583984"
-         y="1378.8191"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">	</tspan><tspan
-           dx="8.6744194"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">	</tspan><tspan
-           dx="8.6744194"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">	</tspan><tspan
-           dx="8.6744194 13.495975 7.4888153 10.274979 4.5254974 9.7596207 13.495972"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">&lt;/div&gt;
-</tspan></tspan><tspan
-         style="visibility:hidden"
-         x="-10.583984"
-         y="1399.4335"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">	</tspan><tspan
-           dx="8.6744194"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">	</tspan><tspan
-           dx="8.6744194 13.495975 7.4888153 10.436028 9.8240395 9.9045639 10.274979 9.8240356 7.0378799 13.495972"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">&lt;/header&gt;
-</tspan></tspan><tspan
-         style="visibility:hidden"
-         x="-10.583984"
-         y="1420.0479"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">
-</tspan></tspan><tspan
-         style="visibility:hidden"
-         x="-10.583984"
-         y="1440.6622"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">	</tspan><tspan
-           dx="8.6744194 7.4888153"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">)
-</tspan></tspan><tspan
-         style="visibility:hidden"
-         x="-10.583984"
-         y="1461.2766"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.4915px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;fill-opacity:1">}</tspan></tspan></text>
+       style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:7.538;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0"
+       id="rect2580"
+       width="447.98111"
+       height="445.53125"
+       x="32.321217"
+       y="30.718752"
+       rx="159.99326"
+       ry="158.3226" />
   </g>
   <g
      inkscape:groupmode="layer"
      id="layer2"
      inkscape:label="Capa 2">
-    <path
-       sodipodi:type="star"
-       style="opacity:1;mix-blend-mode:normal;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#232323;stroke-width:1.02147;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
-       id="path871"
-       sodipodi:sides="6"
-       sodipodi:cx="72.663933"
-       sodipodi:cy="134.78169"
-       sodipodi:r1="147.02837"
-       sodipodi:r2="127.11159"
-       sodipodi:arg1="-0.52807445"
-       sodipodi:arg2="0.027802919"
-       inkscape:flatsided="false"
-       inkscape:rounded="0"
-       inkscape:randomized="0"
-       d="m 199.66393,60.698359 0.0625,77.616951 0.59559,69.40994 -67.18702,38.86257 -59.812978,35.22077 -67.249483,-38.75439 -60.408567,-34.18917 -0.06246,-77.61696 -0.595587,-69.409937 67.187021,-38.862569 59.812979,-35.220765 67.249486,38.754383 z"
-       transform="matrix(1.393606,0.00591046,-0.00587311,1.2236726,155.96674,91.816865)"
-       inkscape:transform-center-y="-5.7735468e-06"
-       inkscape:transform-center-x="2.6825657e-06" />
-    <path
-       sodipodi:type="star"
-       style="opacity:1;fill:url(#linearGradient1051);fill-opacity:1;stroke-width:0.264583"
-       id="path878"
-       sodipodi:sides="6"
-       sodipodi:cx="89.958328"
-       sodipodi:cy="121.98646"
-       sodipodi:r1="116.62349"
-       sodipodi:r2="100.51332"
-       sodipodi:arg1="-0.0010225347"
-       sodipodi:arg2="0.52788396"
-       inkscape:flatsided="false"
-       inkscape:rounded="0"
-       inkscape:randomized="0"
-       d="m 206.58176,121.86721 -29.7925,50.74846 -28.41594,50.31001 -58.845709,-0.42682 -57.777722,0.54608 L 2.6966797,171.86965 -26.6651,122.10571 3.1273965,71.357247 31.543339,21.047232 90.389045,21.47406 148.16677,20.92798 177.21998,72.10327 Z"
-       transform="matrix(1.4361751,-0.73140221,0.82721797,1.2700276,26.28118,168.04458)"
-       inkscape:transform-center-x="-2.9976423e-05"
-       inkscape:transform-center-y="-1.6210499e-05" />
+    <ellipse
+       id="path1429"
+       style="fill:#ffff00;stroke:#232323;stroke-width:0.331074"
+       cx="327.1608"
+       cy="453.60242"
+       rx="0.4956919"
+       ry="0.45038438" />
+    <rect
+       style="fill:url(#linearGradient2577);fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.80917;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0"
+       id="rect2555"
+       width="358.38483"
+       height="356.42499"
+       x="77.119331"
+       y="75.271866"
+       ry="118.80834"
+       rx="119.46164" />
+    <text
+       xml:space="preserve"
+       id="text3694"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.5833px;line-height:1.25;font-family:Impact;-inkscape-font-specification:'Impact, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;white-space:pre;shape-inside:url(#rect3696);opacity:1;fill:#000000;fill-opacity:0.0766129;stroke:none;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;"
+       transform="matrix(20.257313,0,0,34.329512,-2258.3952,-6868.1549)"><tspan
+         x="116.41602"
+         y="211.67874"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.5833px;font-family:Impact;-inkscape-font-specification:'Impact, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:0.0766129;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none">&lt;/&gt;</tspan></tspan></text>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer4"
+     inkscape:label="Capa 3">
     <text
        xml:space="preserve"
        id="text882"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.5833px;line-height:1.25;font-family:Georgia;-inkscape-font-specification:'Georgia, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;white-space:pre;shape-inside:url(#rect884);fill:#ffffff;fill-opacity:1;stroke:#232323;stroke-width:0.0943349;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;"
-       transform="matrix(22.269126,0,0,21.401475,-54.450792,586.88031)"><tspan
+       transform="matrix(31.420941,0,0,30.03158,-178.90123,720.59809)"><tspan
          x="10.583984"
          y="-11.617548"><tspan
            style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.5833px;font-family:Georgia;-inkscape-font-specification:'Georgia, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;stroke:#232323;stroke-width:0.0943349;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">E</tspan></tspan></text>
-    <ellipse
-       id="path1429"
-       style="fill:#ffff00;stroke:#232323;stroke-width:0.23529"
-       cx="304.2131"
-       cy="396.61044"
-       rx="0.35131431"
-       ry="0.3209585" />
-    <ellipse
-       style="opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#283e4a;stroke-width:0.879177;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
-       id="path3692"
-       cx="360.44809"
-       cy="387.42429"
-       rx="52.723679"
-       ry="49.672195" />
-    <text
-       xml:space="preserve"
-       id="text3694"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.5833px;line-height:1.25;font-family:Impact;-inkscape-font-specification:'Impact, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;white-space:pre;shape-inside:url(#rect3696);fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;"
-       transform="matrix(4.0904774,0,0,6.1024,-146.67697,-878.42447)"><tspan
-         x="116.41602"
-         y="211.67874"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.5833px;font-family:Impact;-inkscape-font-specification:'Impact, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none">&lt;/&gt;</tspan></tspan></text>
   </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer5"
+     inkscape:label="Capa 4" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer6"
+     inkscape:label="Capa 5" />
 </svg>
