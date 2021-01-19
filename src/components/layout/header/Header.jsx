@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 import { NavEnglish } from '../nav/NavEnglish'
 import { NavSpanish } from '../nav/NavSpanish'
@@ -47,9 +47,9 @@ export const Header = ({ toggleMenu, setToggleMenu, scrollToTopButton, setScroll
 			<div className="header__container" >
 
 				<div className="header__logoContainer">
-					<Link className="header__link menu__link" to={linkTo} >
+					<NavLink className="header__link menu__link" exact to={linkTo} >
 						<img className="header__logo" src={process.env.PUBLIC_URL + '/logo.svg'} alt="Logo" onClick={setToggleFromLogo} />
-					</Link>
+					</NavLink>
 				</div>
 
 				<div className="header__menuToggleContainer">

@@ -90,13 +90,30 @@
 		justify-content: center;
 		align-items: center;
 	}
+
+	&__menuToggle:hover {
+		animation: activeLogo alternate ease 0.6s infinite;
+	}
+
+	&__logo:hover {
+		animation: activeLogo alternate ease 0.6s infinite;
+	}
 }
 
-.header__logo:hover {
-	transition: transform 0.1s ease;
-	transform: scale(1.1);
-	@include from(l) {
-		transition: transform 0.1s ease;
+@keyframes activeLogo {
+	0% {
+		transform: scale(1);
+	}
+	25% {
+		transform: scale(1.05);
+	}
+	50% {
 		transform: scale(1.1);
+	}
+	75% {
+		transform: scale(1.05);
+	}
+	100% {
+		transform: scale(1);
 	}
 }
