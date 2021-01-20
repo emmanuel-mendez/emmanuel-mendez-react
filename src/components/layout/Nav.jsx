@@ -1,7 +1,7 @@
 import React from 'react'
 import { NavLink } from "react-router-dom";
 import classNames from 'classnames';
-import { useNavLang } from '../../hooks/useNavLang'
+import { useNavLang } from '../../components/hooks/useNavLang'
 
 export const Nav = ({ toggleMenu, setToggleMenu, scrollToTopButton, setScrollToTopButton }) => {
 
@@ -18,34 +18,35 @@ export const Nav = ({ toggleMenu, setToggleMenu, scrollToTopButton, setScrollToT
 		})}>
 
 			<ul className="nav__menu" onClick={toggle}>
-				<li className="menu__item">
-					<NavLink className="menu__link" activeClassName="selectedMenuLink" exact to={useNavLang("profile")} >
-						{useNavLang("profile") ? ('Perfil') : ('Profile')}
-					</NavLink>
-				</li>
 
 				<li className="menu__item">
 					<NavLink className="menu__link" activeClassName="selectedMenuLink" exact to={useNavLang("projects")} >
-						{useNavLang("projects") ? ('Proyectos') : ('Projects')}
+						{useNavLang("projects") === "/es/projects" ? ('Proyectos') : ('Projects')}
 					</NavLink>
 				</li>
 
 				<li className="menu__item">
 					<NavLink className="menu__link" activeClassName="selectedMenuLink" exact to={useNavLang("skills")} >
-						{useNavLang("skills") ? ('Habilidades') : ('Skills')}
+						{useNavLang("skills") === "/es/skills" ? ('Habilidades') : ('Skills')}
 					</NavLink>
 				</li>
 
 				<li className="menu__item">
 					<NavLink className="menu__link" activeClassName="selectedMenuLink" exact to={useNavLang("hobbies")} >
-						{useNavLang("hobbies") ? ('Aficiones') : ('Hobbies')}
+						{useNavLang("hobbies") === "/es/hobbies" ? ('Aficiones') : ('Hobbies')}
 					</NavLink>
 				</li>
 
 				<li className="menu__item">
 					<NavLink className="menu__link" activeClassName="selectedMenuLink" exact to={useNavLang("contact")} >
-						{useNavLang("contact") ? ('Contacto') : ('Contact')}
+						{useNavLang("contact") === "/es/contact" ? ('Contacto') : ('Contact')}
 					</NavLink>
+				</li>
+
+				<li className="menu__item">
+					<a className="menu__link" href={process.env.PUBLIC_URL + '/emmanuelMendez.pdf'} target="blank">
+						{useNavLang("curriculum") === "/es/curriculum" ? ('Curriculum vitae') : ('Curriculum vitae')}
+					</a>
 				</li>
 			</ul>
 		</nav>

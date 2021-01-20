@@ -1,8 +1,9 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { useWindowScroll } from 'react-use'
+import { useLocation } from "react-router-dom";
 
-import { Header } from './header/Header';
-import { Container } from './container/Container'
+import { Header } from './Header';
+import { Footer } from './Footer'
 
 import { ScrollToTopButton } from '../scroll/ScrollToTopButton'
 
@@ -13,11 +14,24 @@ export const Layout = (props) => {
 
 	const { y: pageYOffset } = useWindowScroll()
 
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, [useLocation()]); // eslint-disable-line
+
+	const setToggleFromContainer = () => {
+		if (toggleMenu === true) {
+			setToggleMenu(!toggleMenu)
+		}
+	}
+
 	return (
 		<React.Fragment>
 			<Header toggleMenu={toggleMenu} setToggleMenu={setToggleMenu} pageYOffset={pageYOffset} scrollToTopButton={scrollToTopButton} setScrollToTopButton={setScrollToTopButton} />
 
-			<Container toggleMenu={toggleMenu} setToggleMenu={setToggleMenu} props={props} />
+			<div className="layout" onClick={setToggleFromContainer}>
+				{props.children}
+				<Footer />
+			</div>
 
 			<ScrollToTopButton scrollToTopButton={scrollToTopButton} pageYOffset={pageYOffset} />
 		</React.Fragment>

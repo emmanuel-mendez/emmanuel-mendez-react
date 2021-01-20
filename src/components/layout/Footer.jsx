@@ -2,7 +2,7 @@ import React from 'react'
 import { NavLink } from "react-router-dom";
 import classNames from 'classnames';
 
-import { usePathname } from '../../hooks/usePathname'
+import { usePathname } from '../hooks/usePathname'
 
 export const Footer = () => {
 

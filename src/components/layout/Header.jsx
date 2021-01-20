@@ -1,11 +1,11 @@
 import React, { useEffect } from 'react'
 import { NavLink } from "react-router-dom";
 
-import { useLogoLink } from '../../hooks/useLogoLink'
+import { useLogoLink } from '../../components/hooks/useLogoLink'
 
-import { Nav } from '../nav/Nav'
+import { Nav } from './Nav'
 
-import logo from '../../../logo.svg';
+import logo from '../../logo.svg';
 
 export const Header = ({ toggleMenu, setToggleMenu, scrollToTopButton, setScrollToTopButton, pageYOffset }) => {
 

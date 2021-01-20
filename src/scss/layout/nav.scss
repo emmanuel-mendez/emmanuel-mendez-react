@@ -1,12 +1,12 @@
 .nav {
 	position: fixed;
 	top: $headerHeightM;
-	right: calc(-75% - 2px);
-	width: 75%;
+	right: calc(-70% - 2px);
+	width: 70%;
 	height: calc(100% - #{$headerHeightM});
 	background: #232323;
 	transition: right ease 0.5s;
-	opacity: 0.97;
+	opacity: 0.99;
 
 	@include from(l) {
 		position: relative;
@@ -18,6 +18,7 @@
 		width: auto;
 		display: flex;
 		justify-content: center;
+		padding-right: 1rem;
 	}
 
 	&__menu {
@@ -40,7 +41,7 @@
 
 	@keyframes menuShow {
 		from {
-			right: -75%;
+			right: -70%;
 		}
 		to {
 			right: 0;
@@ -49,7 +50,7 @@
 }
 
 .menuHide {
-	right: -75%;
+	right: -70%;
 }
 
 .menu {

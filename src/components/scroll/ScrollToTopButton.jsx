@@ -13,9 +13,14 @@ export const ScrollToTopButton = ({ scrollToTopButton, pageYOffset }) => {
 		}
 	}
 
-	return (
-		<div className={classNames()} onClick={scrollToTop}>
-			<i className="scrollToTopArrow fas fa-chevron-up"></i>
-		</div>
-	)
+	if (scrollToTopButton) {
+		return (
+			<div className={classNames()} onClick={scrollToTop}>
+				<i className="scrollToTopArrow fas fa-chevron-up"></i>
+			</div>
+		)
+	} else {
+		return null
+	}
+
 }
