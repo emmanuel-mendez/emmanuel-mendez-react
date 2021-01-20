@@ -1,25 +1,25 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import { useLocation } from "react-router-dom";
 
 import { Footer } from '../footer/Footer';
 
-export const Container = ({ toggleMenu, setToggleMenu, props, pageYOffset, scrollToTopButton, setScrollToTopButton }) => {
+export const Container = ({ toggleMenu, setToggleMenu, props }) => {
+
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, [useLocation()]); // eslint-disable-line
 
 	function setToggleFromContainer() {
 		if (toggleMenu === true) {
 			setToggleMenu(!toggleMenu)
-			if (pageYOffset > 112) {
-				setScrollToTopButton(!scrollToTopButton)
-			}
 		}
 	}
 
 	return (
-		<>
-			<div className="container" onClick={setToggleFromContainer}>
-				{props.children}
-				<Footer />
-			</div>
-		</>
+		<div className="container" onClick={setToggleFromContainer}>
+			{props.children}
+			<Footer />
+		</div>
 	)
 }
 

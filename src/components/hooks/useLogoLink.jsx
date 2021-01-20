@@ -1,10 +1,9 @@
 import { usePathname } from './usePathname'
 
-export const useNavLang = (link) => {
-
+export const useLogoLink = () => {
 	if (usePathname().startsWith("/es/")) {
-		return `/es/${link}`
+		return "/es/"
 	} else {
-		return `/${link}`
+		return "/"
 	}
 }

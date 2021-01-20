@@ -1,28 +1,21 @@
 import React, { useEffect } from 'react'
 import { NavLink } from "react-router-dom";
+
+import { useLogoLink } from '../../hooks/useLogoLink'
+
 import { Nav } from '../nav/Nav'
-import { usePathname } from '../../hooks/usePathname'
+
 import logo from '../../../logo.svg';
 
 export const Header = ({ toggleMenu, setToggleMenu, scrollToTopButton, setScrollToTopButton, pageYOffset }) => {
-
-	let path = usePathname()
-
-	const linkTo = () => {
-		if (path.startsWith("/es/")) {
-			return "/es/"
-		} else {
-			return "/"
-		}
-	}
 
 	useEffect(() => {
 		if (pageYOffset > 112 && scrollToTopButton === false && toggleMenu === false) {
 			setScrollToTopButton(true)
 		} else if (pageYOffset < 112) {
 			setScrollToTopButton(false)
-		} // eslint-disable-next-line
-	}, [pageYOffset])
+		}
+	}, [pageYOffset]) // eslint-disable-line
 
 	const setToggleFromToggleMenu = () => {
 		setToggleMenu(!toggleMenu)
@@ -45,7 +38,7 @@ export const Header = ({ toggleMenu, setToggleMenu, scrollToTopButton, setScroll
 			<div className="header__container" >
 
 				<div className="header__logoContainer">
-					<NavLink className="header__link" exact to={linkTo} >
+					<NavLink className="header__link" exact to={useLogoLink()} >
 						<img className="header__logo" src={logo} alt="Logo" onClick={setToggleFromLogo} />
 					</NavLink>
 				</div>

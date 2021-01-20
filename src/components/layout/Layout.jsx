@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
 import { useWindowScroll } from 'react-use'
-import { ScrollToTopButton } from '../scroll/ScrollToTopButton'
 
 import { Header } from './header/Header';
-
 import { Container } from './container/Container'
+
+import { ScrollToTopButton } from '../scroll/ScrollToTopButton'
 
 export const Layout = (props) => {
 
@@ -13,23 +13,13 @@ export const Layout = (props) => {
 
 	const { y: pageYOffset } = useWindowScroll()
 
-	const scrollToTop = () => {
-		window.scrollTo({ top: 0, behavior: 'smooth' })
-	}
-
-	const setToggleFromContainer = () => {
-		if (toggleMenu) {
-			setToggleMenu(!toggleMenu)
-		}
-	}
-
 	return (
 		<React.Fragment>
 			<Header toggleMenu={toggleMenu} setToggleMenu={setToggleMenu} pageYOffset={pageYOffset} scrollToTopButton={scrollToTopButton} setScrollToTopButton={setScrollToTopButton} />
 
-			<Container toggleMenu={toggleMenu} setToggleMenu={setToggleMenu} setToggleFromContainer={setToggleFromContainer} props={props} pageYOffset={pageYOffset} scrollToTopButton={scrollToTopButton} setScrollToTopButton={setScrollToTopButton} />
+			<Container toggleMenu={toggleMenu} setToggleMenu={setToggleMenu} props={props} />
 
-			<ScrollToTopButton scrollToTopButton={scrollToTopButton} scrollToTop={scrollToTop} />
+			<ScrollToTopButton scrollToTopButton={scrollToTopButton} pageYOffset={pageYOffset} />
 		</React.Fragment>
 
 	);

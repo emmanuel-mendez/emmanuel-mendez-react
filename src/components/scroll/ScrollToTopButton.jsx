@@ -1,12 +1,15 @@
 import React from 'react'
 
-export const ScrollToTopButton = ({ scrollToTopButton, scrollToTop }) => {
+export const ScrollToTopButton = ({ scrollToTopButton, pageYOffset }) => {
+
+
+	const scrollToTop = () => {
+		window.scrollTo({ top: 0, behavior: 'smooth' })
+	}
 
 	const classNames = () => {
 		if (scrollToTopButton) {
 			return "scrollToTop"
-		} else {
-			return "scrollToTop hideScrollToTopButton"
 		}
 	}
 

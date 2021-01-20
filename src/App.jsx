@@ -5,7 +5,7 @@ import {
 	Route,
 } from "react-router-dom";
 
-import './App.css';
+import { Layout } from './components/layout/Layout'
 
 import { Contact } from './components/pages/contact/Contact'
 import { Hobbies } from './components/pages/hobbies/Hobbies'
@@ -14,9 +14,7 @@ import { Profile } from './components/pages/profile/Profile'
 import { Projects } from './components/pages/projects/Projects'
 import { Skills } from './components/pages/skills/Skills'
 
-import { Layout } from './components/layout/Layout'
-
-import ScrollToTop from './components/scroll/scrollRestoration';
+import './App.css';
 
 export const App = () => {
 
@@ -24,7 +22,6 @@ export const App = () => {
 		<div className="App">
 
 			<Router>
-				<ScrollToTop />
 				<Layout>
 					<Switch>
 						<Route component={Home} exact path={["/", "/es/"]} />
