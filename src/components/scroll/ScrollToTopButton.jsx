@@ -1,14 +1,17 @@
 import React from 'react'
 
-
 export const ScrollToTopButton = ({ scrollToTopButton, scrollToTop }) => {
 
-	if (!scrollToTopButton) {
-		return null
+	const classNames = () => {
+		if (scrollToTopButton) {
+			return "scrollToTop"
+		} else {
+			return "scrollToTop hideScrollToTopButton"
+		}
 	}
 
 	return (
-		<div className="scrollToTop" onClick={scrollToTop}>
+		<div className={classNames()} onClick={scrollToTop}>
 			<i className="scrollToTopArrow fas fa-chevron-up"></i>
 		</div>
 	)

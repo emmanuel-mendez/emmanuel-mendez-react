@@ -1,11 +1,20 @@
 import React, { useEffect } from 'react'
 import { NavLink } from "react-router-dom";
-import { NavEnglish } from '../nav/NavEnglish'
-import { NavSpanish } from '../nav/NavSpanish'
+import { Nav } from '../nav/Nav'
 import { usePathname } from '../../hooks/usePathname'
 import logo from '../../../logo.svg';
 
 export const Header = ({ toggleMenu, setToggleMenu, scrollToTopButton, setScrollToTopButton, pageYOffset }) => {
+
+	let path = usePathname()
+
+	const linkTo = () => {
+		if (path.startsWith("/es/")) {
+			return "/es/"
+		} else {
+			return "/"
+		}
+	}
 
 	useEffect(() => {
 		if (pageYOffset > 112 && scrollToTopButton === false && toggleMenu === false) {
@@ -30,23 +39,13 @@ export const Header = ({ toggleMenu, setToggleMenu, scrollToTopButton, setScroll
 		}
 	}
 
-	let path = usePathname()
-
-	const linkTo = () => {
-		if (path.startsWith("/es/")) {
-			return "/es/"
-		} else {
-			return "/"
-		}
-	}
-
 	return (
 
 		<header className="header">
 			<div className="header__container" >
 
 				<div className="header__logoContainer">
-					<NavLink className="header__link menu__link" exact to={linkTo} >
+					<NavLink className="header__link" exact to={linkTo} >
 						<img className="header__logo" src={logo} alt="Logo" onClick={setToggleFromLogo} />
 					</NavLink>
 				</div>
@@ -55,12 +54,7 @@ export const Header = ({ toggleMenu, setToggleMenu, scrollToTopButton, setScroll
 					<i className="fas fa-bars header__menuToggle" as="button" onClick={setToggleFromToggleMenu}></i>
 				</div>
 
-				{path.startsWith("/es/") ? (
-					<NavSpanish toggleMenu={toggleMenu} setToggleMenu={setToggleMenu} scrollToTopButton={scrollToTopButton} setScrollToTopButton={setScrollToTopButton} />
-
-				) : (
-						<NavEnglish toggleMenu={toggleMenu} setToggleMenu={setToggleMenu} scrollToTopButton={scrollToTopButton} setScrollToTopButton={setScrollToTopButton} />
-					)}
+				<Nav toggleMenu={toggleMenu} setToggleMenu={setToggleMenu} scrollToTopButton={scrollToTopButton} setScrollToTopButton={setScrollToTopButton} />
 
 			</div>
 		</header>

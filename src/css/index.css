@@ -253,11 +253,11 @@ h1 {
   align-items: center;
 }
 .header__menuToggle:hover {
-  animation: activeLogo alternate ease 0.4s;
+  animation: activeLogo alternate ease 0.25s;
   animation-iteration-count: 2;
 }
 .header__logo:hover {
-  animation: activeLogo alternate ease 0.4s 2;
+  animation: activeLogo alternate ease 0.25s;
   animation-iteration-count: 2;
 }
 
@@ -266,13 +266,13 @@ h1 {
     transform: scale(1);
   }
   25% {
-    transform: scale(1.05);
+    transform: scale(1.03);
   }
   50% {
-    transform: scale(1.1);
+    transform: scale(1.06);
   }
   75% {
-    transform: scale(1.05);
+    transform: scale(1.03);
   }
   100% {
     transform: scale(1);
@@ -310,20 +310,15 @@ h1 {
 
 .menuShow {
   right: 0;
-  animation: menuShow ease 0.5s;
   height: 100%;
   box-shadow: -2px 0 5px 1px rgba(0, 0, 0, 0.2);
+  animation: menuShow ease 0.5s;
 }
 @media screen and (min-width: 1024px) {
   .menuShow {
     box-shadow: none;
   }
 }
-
-.menuHide {
-  right: -75%;
-}
-
 @keyframes menuShow {
   from {
     right: -75%;
@@ -332,14 +327,18 @@ h1 {
     right: 0;
   }
 }
+
+.menuHide {
+  right: -75%;
+}
+
 .menu__item {
-  padding: 1.5rem 1.5rem;
   border-bottom: 2px solid #283e4a;
-  color: white;
+  cursor: pointer;
+  height: 4rem;
 }
 @media screen and (min-width: 1024px) {
   .menu__item {
-    padding: 0.7rem 1.1rem;
     border-bottom: none;
     height: 100%;
     width: 7rem;
@@ -349,13 +348,19 @@ h1 {
   }
 }
 .menu__link {
-  color: #ccc;
+  color: white;
   font-size: 1rem;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 1.5rem;
 }
 @media screen and (min-width: 1024px) {
   .menu__link {
-    color: #53575a;
     font-size: 1rem;
+    padding-left: 0;
+    justify-content: center;
   }
 }
 
@@ -374,7 +379,7 @@ h1 {
   margin-bottom: 4.4rem;
   min-height: calc(100% - 4.2rem - 4.4rem);
   padding: 2rem 1rem;
-  animation: fromLeft ease 0.6s;
+  animation: fadeIn ease 0.25s;
 }
 @media screen and (min-width: 1024px) {
   .article {
@@ -431,12 +436,12 @@ h1 {
   grid-column: 1/4;
 }
 
-@keyframes fromLeft {
+@keyframes fadeIn {
   from {
-    transform: translateX(-100%);
+    opacity: 0;
   }
   to {
-    transform: translateX(0);
+    opacity: 1;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -665,16 +670,6 @@ body::-webkit-scrollbar {
     height: 3.5rem;
   }
 }
-.scrollToTop .scrollToTopArrow {
-  color: white;
-  font-size: 1.2rem;
-  animation: scrollTop 0.5s alternate ease infinite;
-}
-@media screen and (min-width: 1024px) {
-  .scrollToTop .scrollToTopArrow {
-    font-size: 1.8rem;
-  }
-}
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -690,12 +685,77 @@ body::-webkit-scrollbar {
   }
 }
 
+.scrollToTopArrow {
+  color: white;
+  font-size: 1.2rem;
+  animation: scrollTop 0.5s alternate ease infinite;
+}
+@media screen and (min-width: 1024px) {
+  .scrollToTopArrow {
+    font-size: 1.8rem;
+  }
+}
 @keyframes scrollTop {
   from {
     transform: translateY(0.2rem);
   }
   to {
     transform: translateY(-0.2rem);
+  }
+}
+
+.hideScrollToTopButton {
+  right: -20%;
+  opacity: 0;
+  animation: hideScrollToTopButtonM 0.5s ease;
+}
+@media screen and (min-width: 1024px) {
+  .hideScrollToTopButton {
+    animation: hideScrollToTopButtonL 0.5s ease;
+  }
+}
+@keyframes hideScrollToTopButtonM {
+  0% {
+    right: 1.8rem;
+    opacity: 1;
+  }
+  25% {
+    right: 1.8rem;
+    opacity: 0.75;
+  }
+  50% {
+    right: 1.8rem;
+    opacity: 0.25;
+  }
+  75% {
+    right: 1.8rem;
+    opacity: 0;
+  }
+  100% {
+    right: 1.8rem;
+    opacity: 0;
+  }
+}
+@keyframes hideScrollToTopButtonL {
+  0% {
+    right: 3rem;
+    opacity: 1;
+  }
+  25% {
+    right: 3rem;
+    opacity: 0.75;
+  }
+  50% {
+    right: 3rem;
+    opacity: 0.25;
+  }
+  75% {
+    right: 3rem;
+    opacity: 0;
+  }
+  100% {
+    right: 3rem;
+    opacity: 0;
   }
 }
 

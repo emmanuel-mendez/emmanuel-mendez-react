@@ -92,12 +92,12 @@
 	}
 
 	&__menuToggle:hover {
-		animation: activeLogo alternate ease 0.4s;
+		animation: activeLogo alternate ease 0.25s;
 		animation-iteration-count: 2;
 	}
 
 	&__logo:hover {
-		animation: activeLogo alternate ease 0.4s 2;
+		animation: activeLogo alternate ease 0.25s;
 		animation-iteration-count: 2;
 	}
 }
@@ -107,13 +107,13 @@
 		transform: scale(1);
 	}
 	25% {
-		transform: scale(1.05);
+		transform: scale(1.03);
 	}
 	50% {
-		transform: scale(1.1);
+		transform: scale(1.06);
 	}
 	75% {
-		transform: scale(1.05);
+		transform: scale(1.03);
 	}
 	100% {
 		transform: scale(1);
