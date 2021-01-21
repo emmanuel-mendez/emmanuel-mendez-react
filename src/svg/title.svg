@@ -99,7 +99,7 @@
        x2="631.22021"
        y2="-147.41072"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(20.071434,0,0,2.449646,-1954.8927,-121.56581)" />
+       gradientTransform="matrix(20.54625,0,0,2.4497628,-2005.1613,-121.59552)" />
   </defs>
   <sodipodi:namedview
      id="base"
@@ -108,11 +108,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.087500002"
-     inkscape:cx="8201.6293"
-     inkscape:cy="2738.125"
+     inkscape:zoom="0.12374369"
+     inkscape:cx="21338.265"
+     inkscape:cy="1936.796"
      inkscape:document-units="mm"
-     inkscape:current-layer="layer3"
+     inkscape:current-layer="layer2"
      inkscape:document-rotation="0"
      showgrid="true"
      inkscape:window-width="1680"
@@ -164,13 +164,13 @@
        rx="532.39966"
        ry="490.99524" />
     <rect
-       style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.995433;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.00578;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect883"
-       width="6079.0557"
+       width="6206.0684"
        height="859.12921"
        x="101.59834"
        y="67.74572"
-       rx="483.22977"
+       rx="493.32614"
        ry="429.56461" />
   </g>
   <g
@@ -185,14 +185,14 @@
        rx="0.98138577"
        ry="0.81716943" />
     <rect
-       style="fill:url(#linearGradient2577);fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:10.5183;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0"
+       style="fill:url(#linearGradient2577);fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:10.6422;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0"
        id="rect2555"
-       width="5947.833"
-       height="725.9115"
-       x="169.33333"
-       y="137.68837"
-       ry="362.95575"
-       rx="389.81427" />
+       width="6088.5371"
+       height="725.94617"
+       x="169.31598"
+       y="137.67102"
+       ry="362.97308"
+       rx="399.03586" />
     <text
        xml:space="preserve"
        id="text3694"

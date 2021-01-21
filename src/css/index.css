@@ -184,8 +184,8 @@ a {
 }
 .header__logoContainer {
   height: 100%;
-  padding-left: 1rem;
-  width: 80%;
+  padding-left: 0.8rem;
+  width: 85%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -214,7 +214,7 @@ a {
 }
 .header__menuToggleContainer {
   height: 100%;
-  padding-right: 1rem;
+  padding-right: 0.8rem;
 }
 .header__menuToggle {
   width: 1.8rem;
