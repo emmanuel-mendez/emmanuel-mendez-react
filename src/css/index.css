@@ -368,6 +368,9 @@ a {
   }
 }
 
+.contact__socialNetwork {
+  display: none;
+}
 @media screen and (min-width: 1024px) {
   .contact__socialNetwork {
     display: flex;

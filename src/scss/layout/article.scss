@@ -12,6 +12,7 @@
 
 .contact {
 	&__socialNetwork {
+		display: none;
 		@include from(l) {
 			display: flex;
 			justify-content: center;
