@@ -22,7 +22,7 @@
 	"start_url": "/",
 	"scope": "/",
 	"display": "standalone",
-	"theme_color": "#232323",
+	"theme_color": "#283e4a",
 	"background_color": "#ffffff",
 	"related_applications": [],
 	"prefer_related_aplications": false

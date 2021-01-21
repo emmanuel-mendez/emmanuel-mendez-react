@@ -152,7 +152,7 @@ a {
 }
 
 .header {
-  height: 3.2rem;
+  height: 3.5rem;
   background-color: #283e4a;
   width: 100vw;
   position: fixed;
@@ -219,9 +219,11 @@ a {
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 1.2rem;
   color: white;
-  padding: 0.4rem;
+  padding: 0.3rem;
   border: 0.1rem solid white;
   border-radius: 2rem;
+  background-color: #22323bff;
+  font-weight: normal;
 }
 .header__menuToggleContainer {
   height: 100%;
@@ -271,10 +273,10 @@ a {
 }
 .nav {
   position: fixed;
-  top: 3.2rem;
+  top: 3.5rem;
   right: calc(-70% - 2px);
   width: 70%;
-  height: calc(100% - 3.2rem);
+  height: calc(100% - 3.5rem);
   background: #232323;
   transition: right ease 0.5s;
   opacity: 0.99;
@@ -367,9 +369,9 @@ a {
 }
 
 .article {
-  margin-top: 3.2rem;
+  margin-top: 3.5rem;
   margin-bottom: 4.4rem;
-  min-height: calc(100% - 3.2rem - 4.4rem);
+  min-height: calc(100% - 3.5rem - 4.4rem);
   animation: fadeIn ease 0.25s;
 }
 @media screen and (min-width: 1024px) {
@@ -577,10 +579,10 @@ a {
 }
 
 .home {
-  min-height: calc(100vh - 3.2rem - 4.4rem);
+  min-height: calc(100vh - 3.5rem - 4.4rem);
 }
 .home__container {
-  min-height: calc(100vh - 3.2rem - 4.4rem);
+  min-height: calc(100vh - 3.5rem - 4.4rem);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -620,10 +622,10 @@ a {
   width: 90%;
 }
 .home__links {
-  min-height: calc(100vh - 3.2rem - 4.4rem);
+  min-height: calc(100vh - 3.5rem - 4.4rem);
 }
 .home__linksList {
-  min-height: calc(100vh - 3.2rem - 4.4rem);
+  min-height: calc(100vh - 3.5rem - 4.4rem);
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
