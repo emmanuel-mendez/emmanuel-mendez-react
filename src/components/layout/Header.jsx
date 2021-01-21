@@ -46,7 +46,7 @@ export const Header = ({ toggleMenu, setToggleMenu, scrollToTopButton, setScroll
 				</div>
 
 				<div className="header__menuToggleContainer">
-					<img className="header__menuToggle" src={menu} alt="menu" onClick={setToggleFromToggleMenu} />
+					<img className="header__menuToggle" width="512" height="512" src={menu} alt="menu" onClick={setToggleFromToggleMenu} />
 				</div>
 
 				<Nav toggleMenu={toggleMenu} setToggleMenu={setToggleMenu} scrollToTopButton={scrollToTopButton} setScrollToTopButton={setScrollToTopButton} />

@@ -230,6 +230,7 @@ a {
 }
 .header__menuToggle {
   width: 1.8rem;
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -514,6 +515,7 @@ a {
 }
 .bottomMenu__icon {
   width: 40%;
+  height: auto;
   padding-bottom: 0.4rem;
 }
 .bottomMenu__iconName {
