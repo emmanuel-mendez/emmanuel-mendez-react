@@ -5,7 +5,7 @@ import { useLogoLink } from '../../components/hooks/useLogoLink'
 
 import { Nav } from './Nav'
 
-import title from '../../svg/title.svg';
+// import title from '../../svg/title.svg';
 
 import menu from '../../svg/menu.svg';
 
@@ -41,7 +41,9 @@ export const Header = ({ toggleMenu, setToggleMenu, scrollToTopButton, setScroll
 
 				<div className="header__logoContainer">
 					<NavLink className="header__link" exact to={useLogoLink()} >
-						<img className="header__logo" src={title} alt="title" onClick={setToggleFromLogo} />
+						<div className="header__logo" onClick={setToggleFromLogo} >
+							<h1 className="header__h1">Emmanuel Méndez</h1>
+						</div>
 					</NavLink>
 				</div>
 

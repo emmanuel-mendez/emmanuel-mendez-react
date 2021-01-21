@@ -184,8 +184,8 @@ a {
 }
 .header__logoContainer {
   height: 100%;
-  padding-left: 0.8rem;
-  width: 85%;
+  padding-left: 1rem;
+  width: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -211,10 +211,21 @@ a {
 .header__logo {
   height: 100%;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header__h1 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1.2rem;
+  color: white;
+  padding: 0.4rem;
+  border: 0.1rem solid white;
+  border-radius: 2rem;
 }
 .header__menuToggleContainer {
   height: 100%;
-  padding-right: 0.8rem;
+  padding-right: 1rem;
 }
 .header__menuToggle {
   width: 1.8rem;
