@@ -5,17 +5,19 @@ import {
 	Route,
 } from "react-router-dom";
 
-import { Layout } from './components/layout/Layout'
+import Layout from './components/layout/Layout'
 
-import { Contact } from './components/pages/contact/Contact'
-import { Hobbies } from './components/pages/hobbies/Hobbies'
-import { Home } from './components/pages/home/Home'
-import { Portfolio } from './components/pages/portfolio/Portfolio'
-import { Skills } from './components/pages/skills/Skills'
+import Contact from './components/pages/contact/Contact'
+import Hobbies from './components/pages/hobbies/Hobbies'
+import Home from './components/pages/home/Home'
+import Portfolio from './components/pages/portfolio/Portfolio'
+import Skills from './components/pages/skills/Skills'
+
+
 
 import './App.css';
 
-export const App = () => {
+const App = () => {
 
 	return (
 		<div className="App">
@@ -35,3 +37,5 @@ export const App = () => {
 		</div>
 	);
 }
+
+export default App

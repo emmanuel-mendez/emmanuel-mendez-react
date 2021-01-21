@@ -2,7 +2,7 @@ import React from 'react'
 import { usePathname } from '../../hooks/usePathname'
 import { Link } from "react-router-dom";
 
-export const Home = () => {
+const Home = () => {
 
 	const useLang = () => {
 		if (usePathname().startsWith("/es/")) {
@@ -86,3 +86,5 @@ export const Home = () => {
 		</article >
 	)
 }
+
+export default Home

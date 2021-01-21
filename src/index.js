@@ -1,12 +1,15 @@
-import React from 'react';
+import React, { Suspense, lazy } from 'react';
 import ReactDOM from 'react-dom';
 import './css/index.css';
-import { App } from './App';
 import * as serviceWorker from './serviceWorkerRegistration';
+
+const App = lazy(() => import('./App.jsx'))
 
 ReactDOM.render(
 	<React.StrictMode>
-		<App />
+		<Suspense fallback={<div class="spinner"></div>}>
+			<App />
+		</Suspense>
 	</React.StrictMode>,
 	document.getElementById('root')
 );

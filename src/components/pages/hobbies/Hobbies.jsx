@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const Hobbies = () => {
+const Hobbies = () => {
 	return (
 		<article className="article">
 
@@ -19,3 +19,6 @@ export const Hobbies = () => {
 		</article>
 	)
 }
+
+
+export default Hobbies

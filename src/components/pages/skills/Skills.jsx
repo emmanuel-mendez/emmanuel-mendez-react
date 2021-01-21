@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const Skills = () => {
+const Skills = () => {
 	return (
 		<article className="article">
 
@@ -72,3 +72,5 @@ export const Skills = () => {
 		</article>
 	)
 }
+
+export default Skills
