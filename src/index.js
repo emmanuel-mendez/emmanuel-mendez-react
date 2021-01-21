@@ -7,7 +7,11 @@ const App = lazy(() => import('./App.jsx'))
 
 ReactDOM.render(
 	<React.StrictMode>
-		<Suspense fallback={<div class="spinner"></div>}>
+		<Suspense fallback={
+			<div className="loader">
+				<div className="spinner"></div>
+			</div>
+		}>
 			<App />
 		</Suspense>
 	</React.StrictMode>,
