@@ -1,6 +1,8 @@
-import React from 'react'
+import React, { lazy, Suspense } from 'react'
 import { usePathname } from '../../hooks/usePathname'
 import { Link } from "react-router-dom";
+
+const HomeImage = lazy(() => import('./HomeImage'))
 
 const Home = () => {
 
@@ -22,7 +24,13 @@ const Home = () => {
 						<p>{"<Emmanuel"}</p><p className="home__titleLastName">{"Méndez/>"}</p>
 					</h2>
 
-					<img src={process.env.PUBLIC_URL + '/emmanuelMendez.webp'} width="512" height="512" alt="Emmanuel Méndez" className="home__image" />
+					<Suspense fallback={
+						<div className="loader__homeImage">
+							<div className="spinner"></div>
+						</div>
+					}>
+						<HomeImage />
+					</Suspense>
 
 					<div className="home__descriptionContainer">
 
