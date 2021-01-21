@@ -22,7 +22,7 @@ export const Home = () => {
 						<p>{"<Emmanuel"}</p><p className="home__titleLastName">{"Méndez/>"}</p>
 					</h2>
 
-					<img src={process.env.PUBLIC_URL + '/emmanuelMendez.webp'} alt="Emmanuel Méndez" className="home__image" />
+					<img src={process.env.PUBLIC_URL + '/emmanuelMendez.webp'} width="512" height="512" alt="Emmanuel Méndez" className="home__image" />
 
 					<div className="home__descriptionContainer">
 
