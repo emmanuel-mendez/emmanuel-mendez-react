@@ -5,7 +5,9 @@ import { useLogoLink } from '../../components/hooks/useLogoLink'
 
 import { Nav } from './Nav'
 
-import logo from '../../logo.svg';
+import title from '../../svg/title.svg';
+
+import menu from '../../svg/menu.svg';
 
 export const Header = ({ toggleMenu, setToggleMenu, scrollToTopButton, setScrollToTopButton, pageYOffset }) => {
 
@@ -39,12 +41,12 @@ export const Header = ({ toggleMenu, setToggleMenu, scrollToTopButton, setScroll
 
 				<div className="header__logoContainer">
 					<NavLink className="header__link" exact to={useLogoLink()} >
-						<img className="header__logo" src={logo} alt="Logo" onClick={setToggleFromLogo} />
+						<img className="header__logo" src={title} alt="title" onClick={setToggleFromLogo} />
 					</NavLink>
 				</div>
 
 				<div className="header__menuToggleContainer">
-					<i className="fas fa-bars header__menuToggle" as="button" onClick={setToggleFromToggleMenu}></i>
+					<img className="header__menuToggle" src={menu} alt="menu" onClick={setToggleFromToggleMenu} />
 				</div>
 
 				<Nav toggleMenu={toggleMenu} setToggleMenu={setToggleMenu} scrollToTopButton={scrollToTopButton} setScrollToTopButton={setScrollToTopButton} />

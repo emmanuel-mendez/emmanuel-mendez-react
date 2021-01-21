@@ -28,15 +28,10 @@
 		}
 	}
 
-	&__title {
-		font-size: 1rem;
-		color: white;
-	}
-
 	&__logoContainer {
 		height: 100%;
-		padding-left: 1.5rem;
-		width: auto;
+		padding-left: 1rem;
+		width: 70%;
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -50,8 +45,8 @@
 	&__link {
 		display: flex;
 		justify-content: center;
-		height: 3rem;
-		width: 3rem;
+		height: 100%;
+		width: auto;
 
 		@include from(l) {
 			height: 3.5rem;
@@ -65,14 +60,13 @@
 	}
 
 	&__menuToggleContainer {
-		padding-right: 1.5rem;
+		height: 100%;
+		padding-right: 1rem;
 	}
 
 	&__menuToggle {
-		width: 100%;
+		width: 1.8rem;
 		height: 100%;
-		font-size: 2rem;
-		color: white;
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -95,11 +89,6 @@
 		animation: activeLogo alternate ease 0.25s;
 		animation-iteration-count: 2;
 	}
-
-	&__logo:hover {
-		animation: activeLogo alternate ease 0.25s;
-		animation-iteration-count: 2;
-	}
 }
 
 @keyframes activeLogo {
@@ -107,13 +96,13 @@
 		transform: scale(1);
 	}
 	25% {
-		transform: scale(1.03);
+		transform: scale(1.02);
 	}
 	50% {
-		transform: scale(1.06);
+		transform: scale(1.04);
 	}
 	75% {
-		transform: scale(1.03);
+		transform: scale(1.02);
 	}
 	100% {
 		transform: scale(1);
