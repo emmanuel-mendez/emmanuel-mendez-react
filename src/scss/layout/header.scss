@@ -29,7 +29,6 @@
 	}
 
 	&__logoContainer {
-		height: 100%;
 		padding-left: 1rem;
 		width: auto;
 		display: flex;
@@ -74,13 +73,12 @@
 	}
 
 	&__menuToggleContainer {
-		height: 100%;
 		padding-right: 1rem;
+		display: flex;
 	}
 
 	&__menuToggle {
 		width: 1.8rem;
-		height: 100%;
 		display: flex;
 		justify-content: center;
 		align-items: center;

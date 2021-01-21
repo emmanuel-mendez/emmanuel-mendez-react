@@ -183,7 +183,6 @@ a {
   }
 }
 .header__logoContainer {
-  height: 100%;
   padding-left: 1rem;
   width: auto;
   display: flex;
@@ -226,12 +225,11 @@ a {
   font-weight: normal;
 }
 .header__menuToggleContainer {
-  height: 100%;
   padding-right: 1rem;
+  display: flex;
 }
 .header__menuToggle {
   width: 1.8rem;
-  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
