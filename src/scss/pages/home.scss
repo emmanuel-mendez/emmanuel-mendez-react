@@ -1,8 +1,8 @@
 .home {
-	min-height: calc(100vh - #{$headerHeightM} - #{$footerHeightM});
+	min-height: calc(100vh - #{$headerHeightM} - #{$bottomMenuHeightM});
 
 	&__container {
-		min-height: calc(100vh - #{$headerHeightM} - #{$footerHeightM});
+		min-height: calc(100vh - #{$headerHeightM} - #{$bottomMenuHeightM});
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -50,11 +50,11 @@
 	}
 
 	&__links {
-		min-height: calc(100vh - #{$headerHeightM} - #{$footerHeightM});
+		min-height: calc(100vh - #{$headerHeightM} - #{$bottomMenuHeightM});
 	}
 
 	&__linksList {
-		min-height: calc(100vh - #{$headerHeightM} - #{$footerHeightM});
+		min-height: calc(100vh - #{$headerHeightM} - #{$bottomMenuHeightM});
 		display: flex;
 		flex-direction: column;
 		justify-content: space-evenly;

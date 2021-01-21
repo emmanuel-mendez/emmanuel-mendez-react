@@ -5,8 +5,6 @@ import { useLogoLink } from '../../components/hooks/useLogoLink'
 
 import { Nav } from './Nav'
 
-// import title from '../../svg/title.svg';
-
 import menu from '../../svg/menu.svg';
 
 export const Header = ({ toggleMenu, setToggleMenu, scrollToTopButton, setScrollToTopButton, pageYOffset }) => {

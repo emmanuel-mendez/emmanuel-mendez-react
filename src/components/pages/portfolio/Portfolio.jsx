@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const Projects = () => {
+export const Portfolio = () => {
 	return (
 		<article className="article">
 

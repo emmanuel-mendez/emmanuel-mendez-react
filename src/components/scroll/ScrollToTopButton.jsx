@@ -1,5 +1,7 @@
 import React from 'react'
 
+import upload from '../../svg/upload.svg';
+
 export const ScrollToTopButton = ({ scrollToTopButton, pageYOffset }) => {
 
 
@@ -16,7 +18,7 @@ export const ScrollToTopButton = ({ scrollToTopButton, pageYOffset }) => {
 	if (scrollToTopButton) {
 		return (
 			<div className={classNames()} onClick={scrollToTop}>
-				<i className="scrollToTopArrow fas fa-chevron-up"></i>
+				<img className="scrollToTopArrow" alt="scrollToTopArrow" src={upload} />
 			</div>
 		)
 	} else {
