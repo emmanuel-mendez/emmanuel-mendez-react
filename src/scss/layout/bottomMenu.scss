@@ -16,21 +16,27 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		justify-content: center;
+		justify-content: flex-end;
 		color: black;
 	}
 
 	&__icon {
-		width: 40%;
+		fill: white;
+		width: 30%;
 		height: auto;
 		padding-bottom: 0.4rem;
 	}
 
 	&__iconName {
 		font-size: 0.6rem;
+		padding-bottom: 0.4rem;
 	}
 
 	&__selected {
-		background: rgba(0, 0, 0, 0.1);
+		color: #283e4a;
+	}
+
+	&__iconSelected {
+		fill: #283e4a;
 	}
 }

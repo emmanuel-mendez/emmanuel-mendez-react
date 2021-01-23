@@ -1,12 +1,12 @@
 .article {
 	margin-top: $headerHeightM;
 
-	min-height: calc(100% - #{$headerHeightM});
+	height: calc(100% - #{$headerHeightM});
 	animation: fadeIn ease 0.25s;
 
 	@include from(l) {
 		margin-top: $headerHeightL;
-		min-height: calc(100% - #{$footerHeightL} - #{$footerHeightL});
+		height: calc(100% - #{$footerHeightL} - #{$footerHeightL});
 	}
 }
 

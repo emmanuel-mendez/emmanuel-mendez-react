@@ -8,7 +8,7 @@ body::-webkit-scrollbar {
 
 .scrollToTop {
 	position: fixed;
-	bottom: calc(#{$footerHeightM} + 0.5rem);
+	bottom: calc(#{$footerHeightM});
 	right: 1.8rem;
 	background-color: #283e4a;
 	display: flex;
@@ -45,6 +45,7 @@ body::-webkit-scrollbar {
 }
 
 .scrollToTopArrow {
+	fill: white;
 	height: 50%;
 	width: 40%;
 	animation: scrollTop 0.5s alternate ease infinite;

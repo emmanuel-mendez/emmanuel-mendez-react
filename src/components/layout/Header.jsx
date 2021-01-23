@@ -5,7 +5,7 @@ import { useLogoLink } from '../../components/hooks/useLogoLink'
 
 import { Nav } from './Nav'
 
-import menu from '../../svg/menu.svg';
+import { ReactComponent as Menu } from '../../svg/menu.svg';
 
 export const Header = ({ toggleMenu, setToggleMenu, scrollToTopButton, setScrollToTopButton, pageYOffset }) => {
 
@@ -46,7 +46,7 @@ export const Header = ({ toggleMenu, setToggleMenu, scrollToTopButton, setScroll
 				</div>
 
 				<div className="header__menuToggleContainer">
-					<img className="header__menuToggle" width="512" height="512" src={menu} alt="menu" onClick={setToggleFromToggleMenu} />
+					<Menu className="header__menuToggle" width="512" height="512" onClick={setToggleFromToggleMenu} />
 				</div>
 
 				<Nav toggleMenu={toggleMenu} setToggleMenu={setToggleMenu} scrollToTopButton={scrollToTopButton} setScrollToTopButton={setScrollToTopButton} />

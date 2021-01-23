@@ -1,8 +1,8 @@
 .home {
-	min-height: calc(100vh - #{$headerHeightM} - #{$bottomMenuHeightM});
+	height: calc(100vh - #{$headerHeightM} - #{$bottomMenuHeightM});
 
 	&__container {
-		min-height: calc(100vh - #{$headerHeightM} - #{$bottomMenuHeightM});
+		height: 100%;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
