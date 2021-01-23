@@ -3,8 +3,8 @@ import { useWindowScroll } from 'react-use'
 import { useLocation } from "react-router-dom";
 
 import { Header } from './Header';
+
 import { Footer } from './Footer'
-import { BottomMenu } from './BottomMenu'
 
 import { ScrollToTopButton } from '../scroll/ScrollToTopButton'
 
@@ -32,7 +32,6 @@ const Layout = (props) => {
 			<div className="layout" onClick={setToggleFromContainer}>
 				{props.children}
 				<Footer />
-				<BottomMenu />
 			</div>
 
 			<ScrollToTopButton scrollToTopButton={scrollToTopButton} pageYOffset={pageYOffset} />

@@ -1,6 +1,6 @@
 .article {
 	margin-top: $headerHeightM;
-
+	margin-bottom: $footerHeightM;
 	height: calc(100% - #{$headerHeightM});
 	animation: fadeIn ease 0.25s;
 

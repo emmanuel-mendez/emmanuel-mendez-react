@@ -1,5 +1,5 @@
 .home {
-	height: calc(100vh - #{$headerHeightM} - #{$bottomMenuHeightM});
+	height: calc(100vh - #{$headerHeightM} - #{$footerHeightM});
 
 	&__container {
 		height: 100%;
@@ -50,11 +50,11 @@
 	}
 
 	&__links {
-		min-height: calc(100vh - #{$headerHeightM} - #{$bottomMenuHeightM});
+		min-height: calc(100vh - #{$headerHeightM} - #{$footerHeightM});
 	}
 
 	&__linksList {
-		min-height: calc(100vh - #{$headerHeightM} - #{$bottomMenuHeightM});
+		min-height: calc(100vh - #{$headerHeightM} - #{$footerHeightM});
 		display: flex;
 		flex-direction: column;
 		justify-content: space-evenly;

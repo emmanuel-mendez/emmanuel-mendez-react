@@ -2,6 +2,7 @@ import React from 'react'
 import { NavLink } from "react-router-dom";
 import classNames from 'classnames';
 import { useLang } from '../hooks/useLang'
+import { usePathname } from '../hooks/usePathname'
 
 export const Nav = ({ toggleMenu, setToggleMenu, scrollToTopButton, setScrollToTopButton }) => {
 
@@ -49,6 +50,35 @@ export const Nav = ({ toggleMenu, setToggleMenu, scrollToTopButton, setScrollToT
 					</a>
 				</li>
 			</ul>
+
+			<div className="copyright">
+
+				<div className="copyright__container">
+
+					<div className="copyright__copyright">
+						<p className="copyright__copyrightDescription">{usePathname().startsWith("/es/")
+							? ('Diseñado y desarrollado por Emmanuel Méndez')
+							: ('Designed and built by Emmanuel Méndez')}</p>
+					</div>
+
+					<div className="copyright__languajes">
+						<p className="copyright__languajesContainer">
+							<NavLink exact to="/" className={classNames('copyright__languajesLink copyright__languajesEnglish  activeClassName="copyright__languajesSelected', {
+								"copyright__languajesSelected": usePathname().startsWith("/es/") === false
+							})}>
+								English
+						</NavLink>
+				|
+						<NavLink exact to="/es/" className={classNames('copyright__languajesLink copyright__languajesSpanish activeClassName="copyright__languajesSelected', {
+								"copyright__languajesSelected": usePathname().startsWith("/es/")
+							})}>
+								Spanish
+						</NavLink>
+						</p>
+					</div>
+
+				</div>
+			</div>
 		</nav>
 	)
 }

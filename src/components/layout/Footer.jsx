@@ -1,41 +1,96 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { NavLink } from "react-router-dom";
-import classNames from 'classnames';
 
-import { usePathname } from '../hooks/usePathname'
+import { useLang } from '../hooks/useLang'
+
+import { ReactComponent as Home } from '../../svg/home.svg';
+import { ReactComponent as Skills } from '../../svg/skills.svg';
+import { ReactComponent as Portfolio } from '../../svg/portfolio.svg';
+import { ReactComponent as Cv } from '../../svg/cv.svg';
+import { ReactComponent as Contact } from '../../svg/contact.svg';
 
 export const Footer = () => {
 
-	return (
+	const [home, setHome] = useState()
+	const [skills, setSkills] = useState()
+	const [portfolio, setPorfolio] = useState()
+	const [cv, setCv] = useState()
+	const [contact, setContact] = useState()
 
+	return (
 		<footer className="footer">
 
-			<div className="footer__container">
+			<NavLink exact to={useLang("")} className="footer__container" activeClassName="footer__selected"
+				isActive={(match, location) => {
+					if (match) {
+						setHome("footer__iconSelected")
+					} else {
+						setHome()
+					}
+				}}>
 
-				<div className="footer__copyright">
-					<p className="footer__copyrightDescription">{usePathname().startsWith("/es/")
-						? ('Diseñado y desarrollado por Emmanuel Méndez')
-						: ('Designed and built by Emmanuel Méndez')}</p>
-				</div>
+				<Home className={`footer__icon ${home}`} />
+				<p className="footer__iconName">
+					{useLang() === "/es/" ? ('Inicio') : ('Home')}
+				</p>
+			</NavLink>
 
-				<div className="footer__languajes">
-					<p className="footer__languajesContainer">
-						<NavLink exact to="/" className={classNames('footer__languajesLink footer__languajesEnglish  activeClassName="footer__languajesSelected', {
-							"footer__languajesSelected": usePathname().startsWith("/es/") === false
-						})}>
-							English
-						</NavLink>
-				|
-						<NavLink exact to="/es/" className={classNames('footer__languajesLink footer__languajesSpanish activeClassName="footer__languajesSelected', {
-							"footer__languajesSelected": usePathname().startsWith("/es/")
-						})}>
-							Spanish
-						</NavLink>
-					</p>
-				</div>
+			<NavLink exact to={useLang("skills")} className="footer__container" activeClassName="footer__selected"
+				isActive={(match, location) => {
+					if (match) {
+						setSkills("footer__iconSelected")
+					} else {
+						setSkills()
+					}
+				}}>
+				<Skills className={`footer__icon ${skills}`} />
+				<p className="footer__iconName">
+					{useLang("skills") === "/es/skills" ? ('Habilidades') : ('Skills')}
+				</p>
+			</NavLink>
 
-			</div>
+			<NavLink exact to={useLang("portfolio")} className="footer__container" activeClassName="footer__selected"
+				isActive={(match, location) => {
+					if (match) {
+						setPorfolio("footer__iconSelected")
+					} else {
+						setPorfolio()
+					}
+				}}>
+				<Portfolio className={`footer__icon ${portfolio}`} />
+				<p className="footer__iconName">
+					{useLang("portfolio") === "/es/portfolio" ? ('Portafolio') : ('Portfolio')}
+				</p>
+			</NavLink>
+
+			<NavLink exact to={useLang("cv")} className="footer__container" activeClassName="footer__selected"
+				isActive={(match, location) => {
+					if (match) {
+						setCv("footer__iconSelected")
+					} else {
+						setCv()
+					}
+				}}>
+				<Cv className={`footer__icon ${cv}`} />
+				<p className="footer__iconName">
+					CV
+				</p>
+			</NavLink>
+
+			<NavLink exact to={useLang("contact")} className="footer__container" activeClassName="footer__selected"
+				isActive={(match, location) => {
+					if (match) {
+						setContact("footer__iconSelected")
+					} else {
+						setContact()
+					}
+				}}>
+				<Contact className={`footer__icon ${contact}`} />
+				<p className="footer__iconName">
+					{useLang("contact") === "/es/contact" ? ('Contacto') : ('Contact')}
+				</p>
+			</NavLink>
+
 		</footer>
-
 	)
 }

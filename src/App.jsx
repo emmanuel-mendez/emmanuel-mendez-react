@@ -7,12 +7,12 @@ import {
 
 import Layout from './components/layout/Layout'
 
-import Contact from './components/pages/contact/Contact'
-import Hobbies from './components/pages/hobbies/Hobbies'
-import Home from './components/pages/home/Home'
-import Portfolio from './components/pages/portfolio/Portfolio'
-import Skills from './components/pages/skills/Skills'
-
+import Contact from './components/routes/contact/Contact'
+import Hobbies from './components/routes/hobbies/Hobbies'
+import Home from './components/routes/home/Home'
+import Portfolio from './components/routes/portfolio/Portfolio'
+import Skills from './components/routes/skills/Skills'
+import Cv from './components/routes/cv/Cv'
 
 
 import './App.css';
@@ -30,6 +30,7 @@ const App = () => {
 						<Route component={Skills} exact path={["/skills", "/es/skills"]} />
 						<Route component={Hobbies} exact path={["/hobbies", "/es/hobbies"]} />
 						<Route component={Contact} exact path={["/contact", "/es/contact"]} />
+						<Route component={Cv} exact path={["/cv", "/es/cv"]} />
 					</Switch>
 				</Layout>
 			</Router>

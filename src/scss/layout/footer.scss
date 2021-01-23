@@ -1,83 +1,46 @@
-.footer {
-	height: $footerHeightM;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: flex-start;
-	margin-top: auto;
-	margin-bottom: $bottomMenuHeightM;
+.my-svg-alternate {
+	display: none;
+}
 
-	@include from(l) {
-		height: $footerHeightL;
-	}
+.footer {
+	position: fixed;
+	width: 100%;
+	background-color: #f5fcff;
+	height: $footerHeightM;
+	bottom: 0;
+	border-top: 1px solid $borderColor;
+	display: flex;
 
 	&__container {
-		width: 80%;
-		height: $footerHeightM;
-
-		@include from(l) {
-			box-sizing: border-box;
-			height: 100%;
-			max-width: $widthL;
-			display: flex;
-			flex-direction: column;
-		}
-	}
-
-	&__copyright {
-		border-top: 1px solid $borderColor;
-		padding-top: 0.5rem;
+		width: 100%;
 		display: flex;
-		justify-content: center;
-
-		@include from(l) {
-			padding-top: 0.5rem;
-		}
-	}
-
-	&__copyrightDescription {
-		font-size: 0.8rem;
-		text-align: center;
-		width: 11rem;
-
-		@include from(l) {
-			font-size: 1rem;
-		}
-	}
-
-	&__languajes {
-		padding-top: 0.9rem;
-		color: $borderColor;
-		font-size: 0.7rem;
-		display: flex;
-		justify-content: center;
+		flex-direction: column;
 		align-items: center;
-
-		@include from(t) {
-			font-size: 0.8rem;
-		}
-	}
-
-	&__languajesContainer {
-		height: 100%;
-		display: flex;
-		align-items: center;
-		color: $textColor;
-	}
-
-	&__languajesLink {
-		color: rgb(118, 118, 118);
-	}
-
-	&__languajesEnglish {
-		padding-right: 0.2rem;
-	}
-
-	&__languajesSpanish {
-		padding-left: 0.2rem;
-	}
-
-	&__languajesSelected {
+		justify-content: flex-end;
 		color: black;
+	}
+
+	&__icon {
+		fill: white;
+		width: 30%;
+		height: auto;
+		padding-bottom: 0.4rem;
+	}
+
+	&__iconName {
+		font-size: 0.6rem;
+		padding-bottom: 0.4rem;
+	}
+
+	&__selected {
+		color: #283e4a;
+	}
+
+	&__iconSelected {
+		fill: #283e4a;
+	}
+
+	&__cv:active {
+		background-color: #283e4a;
 	}
 }

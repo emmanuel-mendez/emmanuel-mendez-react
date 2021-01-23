@@ -398,6 +398,7 @@ a {
 
 .article {
   margin-top: 3.5rem;
+  margin-bottom: 3rem;
   height: calc(100% - 3.5rem);
   animation: fadeIn ease 0.25s;
 }
@@ -525,7 +526,7 @@ a {
   display: none;
 }
 
-.bottomMenu {
+.footer {
   position: fixed;
   width: 100%;
   background-color: #f5fcff;
@@ -534,7 +535,7 @@ a {
   border-top: 1px solid #ccc;
   display: flex;
 }
-.bottomMenu__container {
+.footer__container {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -542,25 +543,28 @@ a {
   justify-content: flex-end;
   color: black;
 }
-.bottomMenu__icon {
+.footer__icon {
   fill: white;
   width: 30%;
   height: auto;
   padding-bottom: 0.4rem;
 }
-.bottomMenu__iconName {
+.footer__iconName {
   font-size: 0.6rem;
   padding-bottom: 0.4rem;
 }
-.bottomMenu__selected {
+.footer__selected {
   color: #283e4a;
 }
-.bottomMenu__iconSelected {
+.footer__iconSelected {
   fill: #283e4a;
 }
+.footer__cv:active {
+  background-color: #283e4a;
+}
 
-.footer {
-  height: 4.4rem;
+.copyright {
+  height: 3rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -569,16 +573,16 @@ a {
   margin-bottom: 3rem;
 }
 @media screen and (min-width: 1024px) {
-  .footer {
+  .copyright {
     height: 5rem;
   }
 }
-.footer__container {
+.copyright__container {
   width: 80%;
-  height: 4.4rem;
+  height: 3rem;
 }
 @media screen and (min-width: 1024px) {
-  .footer__container {
+  .copyright__container {
     box-sizing: border-box;
     height: 100%;
     max-width: 1024px;
@@ -586,28 +590,28 @@ a {
     flex-direction: column;
   }
 }
-.footer__copyright {
+.copyright__copyright {
   border-top: 1px solid #ccc;
   padding-top: 0.5rem;
   display: flex;
   justify-content: center;
 }
 @media screen and (min-width: 1024px) {
-  .footer__copyright {
+  .copyright__copyright {
     padding-top: 0.5rem;
   }
 }
-.footer__copyrightDescription {
+.copyright__copyrightDescription {
   font-size: 0.8rem;
   text-align: center;
   width: 11rem;
 }
 @media screen and (min-width: 1024px) {
-  .footer__copyrightDescription {
+  .copyright__copyrightDescription {
     font-size: 1rem;
   }
 }
-.footer__languajes {
+.copyright__languajes {
   padding-top: 0.9rem;
   color: #ccc;
   font-size: 0.7rem;
@@ -616,26 +620,26 @@ a {
   align-items: center;
 }
 @media screen and (min-width: 768px) {
-  .footer__languajes {
+  .copyright__languajes {
     font-size: 0.8rem;
   }
 }
-.footer__languajesContainer {
+.copyright__languajesContainer {
   height: 100%;
   display: flex;
   align-items: center;
   color: #53575a;
 }
-.footer__languajesLink {
+.copyright__languajesLink {
   color: #767676;
 }
-.footer__languajesEnglish {
+.copyright__languajesEnglish {
   padding-right: 0.2rem;
 }
-.footer__languajesSpanish {
+.copyright__languajesSpanish {
   padding-left: 0.2rem;
 }
-.footer__languajesSelected {
+.copyright__languajesSelected {
   color: black;
 }
 
@@ -718,7 +722,7 @@ body::-webkit-scrollbar {
 
 .scrollToTop {
   position: fixed;
-  bottom: calc(4.4rem);
+  bottom: calc(3rem + 0.5rem);
   right: 1.8rem;
   background-color: #283e4a;
   display: flex;
