@@ -4,12 +4,11 @@
 
 @import "base/base";
 
-@import "layout/header";
-@import "layout/nav";
-@import "layout/article";
-@import "layout/footer";
-@import "layout/copyright";
+@import "layout/layout";
+
+@import "dark-mode/darkMode.scss";
 
 @import "routes/home";
 
+@import "loader/loader";
 @import "scroll/scorll";

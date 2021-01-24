@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import {
 	BrowserRouter as Router,
 	Switch,
@@ -19,13 +19,28 @@ import './App.css';
 
 const App = () => {
 
+	const getInitialMode = () => {
+		const savedMode = JSON.parse(localStorage.getItem('dark'))
+		return savedMode || false
+	}
+
+	const [darkMode, setDarkMode] = useState(getInitialMode())
+
+	useEffect(() => {
+		localStorage.setItem('dark', JSON.stringify(darkMode))
+	}, [darkMode])
+
 	return (
-		<div className="App">
+		<div id="App" className={darkMode
+			? "App darkMode"
+			: "App"}>
 
 			<Router>
-				<Layout>
+				<Layout darkMode={darkMode} setDarkMode={setDarkMode}>
 					<Switch>
-						<Route component={Home} exact path={["/", "/es/"]} />
+						<Route exact path={["/", "/es/"]} >
+							<Home darkMode={darkMode} setDarkMode={setDarkMode} />
+						</Route>
 						<Route component={Portfolio} exact path={["/portfolio", "/es/portfolio"]} />
 						<Route component={Skills} exact path={["/skills", "/es/skills"]} />
 						<Route component={Hobbies} exact path={["/hobbies", "/es/hobbies"]} />
@@ -38,5 +53,6 @@ const App = () => {
 		</div>
 	);
 }
+
 
 export default App

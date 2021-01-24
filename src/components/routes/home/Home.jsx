@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const HomeImage = lazy(() => import('./HomeImage'))
 
-const Home = () => {
+const Home = ({ darkMode, setDarkMode }) => {
 
 	const useLang = () => {
 		if (usePathname().startsWith("/es/")) {
@@ -20,7 +20,7 @@ const Home = () => {
 
 				<div className="home__container">
 
-					<h2 className="home__title">
+					<h2 className="home__title" onClick={() => setDarkMode(!darkMode)}>
 						<p>{"<Emmanuel"}</p><p className="home__titleLastName">{"Méndez/>"}</p>
 					</h2>
 

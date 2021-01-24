@@ -1,0 +1,27 @@
+.darkMode {
+	.nav {
+		background: var(--darkColor);
+		border-left: none;
+		animation: dark ease 0.5s;
+	}
+
+	.menu {
+		&__link {
+			color: white;
+		}
+	}
+
+	.copyright {
+		&__copyrightDescription {
+			color: white;
+		}
+
+		&__languajes {
+			color: $textColor;
+		}
+
+		&__languajesSelected {
+			color: white;
+		}
+	}
+}

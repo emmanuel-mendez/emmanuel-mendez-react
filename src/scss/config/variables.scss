@@ -12,8 +12,7 @@ $footerBackgroundColor: #2a3b47;
 $footerColor: #00cbff;
 
 $borderColor: #ccc;
-$textColor: #53575a;
-$darkColor: #141618;
+$textColor: rgb(118, 118, 118);
 
 $breakpoints: (
 	ms: 320px,
@@ -27,7 +26,10 @@ $breakpoints: (
 
 //PALETA DE COLORES
 :root {
-	--firstColor: #007bdf;
+	--firstColor: #283e4a;
+
+	--darkColor: #232323;
+	--darkFlyer1: #18191a;
 }
 
 //VARIABLES DE APILAMIENTO

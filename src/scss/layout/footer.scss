@@ -1,15 +1,12 @@
-.my-svg-alternate {
-	display: none;
-}
-
 .footer {
 	position: fixed;
 	width: 100%;
-	background-color: #f5fcff;
+	background-color: white;
 	height: $footerHeightM;
 	bottom: 0;
 	border-top: 1px solid $borderColor;
 	display: flex;
+	animation: light 0.5s ease;
 
 	&__container {
 		width: 100%;
@@ -17,7 +14,6 @@
 		flex-direction: column;
 		align-items: center;
 		justify-content: flex-end;
-		color: black;
 	}
 
 	&__icon {
@@ -33,14 +29,10 @@
 	}
 
 	&__selected {
-		color: #283e4a;
+		color: var(--firstColor);
 	}
 
 	&__iconSelected {
-		fill: #283e4a;
-	}
-
-	&__cv:active {
-		background-color: #283e4a;
+		fill: var(--firstColor);
 	}
 }

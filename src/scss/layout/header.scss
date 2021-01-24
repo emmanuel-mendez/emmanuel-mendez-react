@@ -1,6 +1,6 @@
 .header {
 	height: $headerHeightM;
-	background-color: #283e4a;
+	background-color: var(--firstColor);
 	width: 100vw;
 	position: fixed;
 	z-index: var(--zFixed);
@@ -37,7 +37,6 @@
 
 		@include from(l) {
 			padding-left: 2rem;
-			width: auto;
 		}
 	}
 
@@ -46,11 +45,6 @@
 		justify-content: center;
 		height: 100%;
 		width: auto;
-
-		@include from(l) {
-			height: 3.5rem;
-			width: 3.5rem;
-		}
 	}
 
 	&__logo {

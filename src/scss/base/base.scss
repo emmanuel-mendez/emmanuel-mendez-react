@@ -20,48 +20,52 @@ body {
 	flex-direction: column;
 }
 
-a {
-	text-decoration: none;
-}
-
-.layout {
-	height: 100%;
-}
-
-.loader {
-	&__index {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		height: 100vh;
-		width: 100%;
-	}
-
-	&__homeImage {
-		display: flex;
-		justify-content: center;
-		align-items: center;
+.switch {
+	background: #343d5b;
+	border-radius: 10rem;
+	border: none;
+	position: relative;
+	cursor: pointer;
+	display: flex;
+	outline: none;
+	&::after {
+		content: "";
+		display: block;
+		width: 50%;
 		height: 100%;
-		width: 100%;
+		position: absolute;
+		background: #f1f1f1;
+		top: 0;
+		left: 0;
+		right: unset;
+		border-radius: 100%;
+		transition: 0.3s ease all;
+		box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+	}
+	&.dark {
+		background: orange;
+		color: #000;
+		&::after {
+			right: 0;
+			left: unset;
+		}
 	}
 }
 
-.spinner {
-	border: 4px solid rgba(0, 0, 0, 0.1);
-	width: 8vh;
-	height: 8vh;
-	border-radius: 50%;
-	border-top-color: #283e4a;
-
-	animation: spin 1s ease infinite;
+.switchIcon {
+	width: 1.5rem;
+	height: 1.5rem;
+	display: block;
+	fill: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-@keyframes spin {
-	0% {
-		transform: rotate(0deg);
-	}
+.darkDescription {
+	padding-right: 1rem;
+}
 
-	100% {
-		transform: rotate(360deg);
-	}
+.switchsvg {
+	height: 1rem;
 }

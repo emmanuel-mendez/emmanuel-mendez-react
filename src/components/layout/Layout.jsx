@@ -8,7 +8,7 @@ import { Footer } from './Footer'
 
 import { ScrollToTopButton } from '../scroll/ScrollToTopButton'
 
-const Layout = (props) => {
+const Layout = ({ children, darkMode, setDarkMode }) => {
 
 	const [toggleMenu, setToggleMenu] = useState(false)
 	const [scrollToTopButton, setScrollToTopButton] = useState(false)
@@ -27,10 +27,10 @@ const Layout = (props) => {
 
 	return (
 		<React.Fragment>
-			<Header toggleMenu={toggleMenu} setToggleMenu={setToggleMenu} pageYOffset={pageYOffset} scrollToTopButton={scrollToTopButton} setScrollToTopButton={setScrollToTopButton} />
+			<Header toggleMenu={toggleMenu} setToggleMenu={setToggleMenu} pageYOffset={pageYOffset} scrollToTopButton={scrollToTopButton} setScrollToTopButton={setScrollToTopButton} darkMode={darkMode} setDarkMode={setDarkMode} />
 
 			<div className="layout" onClick={setToggleFromContainer}>
-				{props.children}
+				{children}
 				<Footer />
 			</div>
 

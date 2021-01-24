@@ -7,7 +7,7 @@ import { Nav } from './Nav'
 
 import { ReactComponent as Menu } from '../../svg/menu.svg';
 
-export const Header = ({ toggleMenu, setToggleMenu, scrollToTopButton, setScrollToTopButton, pageYOffset }) => {
+export const Header = ({ toggleMenu, setToggleMenu, scrollToTopButton, setScrollToTopButton, pageYOffset, darkMode, setDarkMode }) => {
 
 	useEffect(() => {
 		if (pageYOffset > 112 && scrollToTopButton === false && toggleMenu === false) {
@@ -49,7 +49,7 @@ export const Header = ({ toggleMenu, setToggleMenu, scrollToTopButton, setScroll
 					<Menu className="header__menuToggle" width="512" height="512" onClick={setToggleFromToggleMenu} />
 				</div>
 
-				<Nav toggleMenu={toggleMenu} setToggleMenu={setToggleMenu} scrollToTopButton={scrollToTopButton} setScrollToTopButton={setScrollToTopButton} />
+				<Nav toggleMenu={toggleMenu} setToggleMenu={setToggleMenu} scrollToTopButton={scrollToTopButton} setScrollToTopButton={setScrollToTopButton} darkMode={darkMode} setDarkMode={setDarkMode} />
 
 			</div>
 		</header>

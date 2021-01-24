@@ -1,0 +1,24 @@
+.darkMode {
+	.footer {
+		background-color: var(--darkColor);
+		opacity: 0.99;
+		border-top: none;
+		animation: dark 0.5s ease;
+
+		&__icon {
+			fill: #a8abaf;
+		}
+
+		&__iconName {
+			color: #a8abaf;
+		}
+
+		&__selected {
+			color: white;
+		}
+
+		&__iconSelected {
+			fill: white;
+		}
+	}
+}

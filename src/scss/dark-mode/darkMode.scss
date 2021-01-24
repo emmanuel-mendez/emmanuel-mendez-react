@@ -1,0 +1,20 @@
+@import "./layout/layout";
+@import "./routes/routes";
+
+@keyframes dark {
+	from {
+		background: white;
+	}
+	to {
+		background: var(--darkColor);
+	}
+}
+
+@keyframes light {
+	from {
+		background: var(--darkColor);
+	}
+	to {
+		background: white;
+	}
+}

@@ -1,12 +1,18 @@
 .nav {
 	position: fixed;
 	top: $headerHeightM;
-	right: calc(-70% - 2px);
+	right: -70%;
 	width: 70%;
 	height: calc(100% - #{$headerHeightM});
-	background: #232323;
+	background: #fafafa;
 	transition: right ease 0.5s;
 	opacity: 0.99;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	border-left: 1px solid $borderColor;
+	padding: 1rem;
+	animation: light 0.5s ease;
 
 	@include from(l) {
 		position: relative;
@@ -18,7 +24,8 @@
 		width: auto;
 		display: flex;
 		justify-content: center;
-		padding-right: 1rem;
+		border-left: none;
+		padding: 0 1rem 0 0;
 	}
 
 	&__menu {
@@ -31,21 +38,11 @@
 
 .menuShow {
 	right: 0;
-	height: 100%;
-	box-shadow: -2px 0 5px 1px rgba(0, 0, 0, 0.2);
-	animation: menuShow ease 0.5s;
+	height: calc(100% - #{$headerHeightM});
+	box-shadow: -5px 0 5px 1px rgba(0, 0, 0, 0.2);
 
 	@include from(l) {
 		box-shadow: none;
-	}
-
-	@keyframes menuShow {
-		from {
-			right: -70%;
-		}
-		to {
-			right: 0;
-		}
 	}
 }
 
@@ -55,9 +52,9 @@
 
 .menu {
 	&__item {
-		border-bottom: 2px solid #283e4a;
+		border-bottom: 2px solid var(--firstColor);
 		cursor: pointer;
-		height: 4rem;
+		height: 3rem;
 
 		@include from(l) {
 			border-bottom: none;
@@ -70,28 +67,83 @@
 	}
 
 	&__link {
-		color: white;
 		font-size: 1rem;
 		height: 100%;
 		width: 100%;
 		display: flex;
 		align-items: center;
-		padding-left: 1.5rem;
+		padding-left: 1rem;
+		padding-right: 1rem;
 
 		@include from(l) {
 			font-size: 1rem;
 			padding-left: 0;
 			justify-content: center;
+			color: white;
 		}
-	}
-}
-
-.menu__item:hover {
-	@include from(l) {
-		background: rgba(0, 0, 0, 0.09);
 	}
 }
 
 .selectedMenuLink {
 	background: rgba(0, 0, 0, 0.2);
+}
+
+.copyright {
+	width: 100%;
+
+	@include from(l) {
+		display: none;
+	}
+
+	&__copyright {
+		width: 100%;
+
+		@include from(l) {
+			padding-top: 0.5rem;
+		}
+	}
+
+	&__copyrightDescription {
+		font-size: 0.8rem;
+		text-align: center;
+
+		@include from(l) {
+			font-size: 1rem;
+		}
+	}
+
+	&__languajes {
+		padding-top: 0.9rem;
+		color: $textColor;
+		font-size: 0.7rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		@include from(t) {
+			font-size: 0.8rem;
+		}
+	}
+
+	&__languajesContainer {
+		height: 100%;
+		display: flex;
+		align-items: center;
+	}
+
+	&__languajesLink {
+		color: $textColor;
+	}
+
+	&__languajesEnglish {
+		padding-right: 0.2rem;
+	}
+
+	&__languajesSpanish {
+		padding-left: 0.2rem;
+	}
+
+	&__languajesSelected {
+		color: black;
+	}
 }

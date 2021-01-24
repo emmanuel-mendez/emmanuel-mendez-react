@@ -10,7 +10,7 @@ body::-webkit-scrollbar {
 	position: fixed;
 	bottom: calc(#{$footerHeightM} + 0.5rem);
 	right: 1.8rem;
-	background-color: #283e4a;
+	background-color: var(--firstColor);
 	display: flex;
 	justify-content: center;
 	align-items: center;
