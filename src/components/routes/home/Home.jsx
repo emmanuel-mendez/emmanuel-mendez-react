@@ -1,7 +1,8 @@
-import React, { lazy, Suspense } from 'react'
-import { useLang } from '../../hooks/useLang'
+// import React, { lazy, Suspense } from 'react'
+import React from 'react'
+// import { useLang } from '../../hooks/useLang'
 
-const HomeImage = lazy(() => import('./HomeImage'))
+// const HomeImage = lazy(() => import('./HomeImage'))
 
 const Home = () => {
 
