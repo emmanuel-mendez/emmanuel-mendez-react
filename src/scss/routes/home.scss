@@ -1,5 +1,5 @@
 .home {
-	height: calc(100vh - #{$headerHeightM} - #{$footerHeightM});
+	min-height: calc(100vh - #{$headerHeightM} - #{$footerHeightM});
 	width: 100%;
 	display: flex;
 	flex-direction: column;
@@ -22,12 +22,12 @@
 	}
 
 	&__subtitle {
-		font-size: 2rem;
-		color: var(--firstColor);
+		font-size: 1.75rem;
+		color: #767676;
 		padding-bottom: 1.5rem;
 	}
 
-	&__getInTouch {
+	&__getInTouchButton {
 		font-size: 1rem;
 		font-weight: bold;
 		background-color: white;
@@ -36,5 +36,51 @@
 		border-radius: 3px;
 		padding: 1rem;
 		align-self: flex-start;
+		width: auto;
+	}
+
+	&__image {
+		align-self: flex-end;
+		width: 70%;
+		height: auto;
+	}
+}
+
+.aboutMe {
+	min-height: calc(100vh - #{$headerHeightM});
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+	padding: 0 1rem 2.5rem 1rem;
+
+	&__title {
+		font-size: 1.75rem;
+		color: var(--firstColor);
+		padding-bottom: 1rem;
+	}
+
+	&__introduce {
+		padding-bottom: 0.5rem;
+	}
+
+	&__description {
+		font-size: 1.2rem;
+	}
+
+	&__imageContainer {
+		background: var(--firstColor);
+		height: auto;
+		width: 50%;
+		border-radius: 100%;
+	}
+
+	&__image {
+		height: 100%;
+		width: 100%;
+
+		border-radius: 100%;
+		object-fit: cover;
 	}
 }

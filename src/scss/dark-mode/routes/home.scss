@@ -1,15 +1,37 @@
 .darkMode {
-	.route {
+	.home {
 		&__title {
-			color: #e4e6eb;
+			color: white;
 		}
 
-		&__link {
+		&__subtitle {
 			color: #e4e6eb;
 		}
 
 		&__description {
 			color: #a8abaf;
+		}
+
+		&__getInTouchButton {
+			background-color: var(--firstColor);
+			color: #e4e6eb;
+			border: 1px solid #a8abaf;
+		}
+
+		&__image {
+			fill: #e4e6eb;
+		}
+	}
+
+	.aboutMe {
+		color: #a8abaf;
+
+		&__title {
+			color: white;
+		}
+
+		&__imageContainer {
+			border: 1px solid #a8abaf;
 		}
 	}
 }

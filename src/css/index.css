@@ -521,7 +521,7 @@ body {
 .article {
   margin-top: 3.5rem;
   margin-bottom: 3rem;
-  height: calc(100% - 3.5rem);
+  min-height: calc(100% - 3.5rem);
   animation: fadeIn ease 0.25s;
 }
 @media screen and (min-width: 1024px) {
@@ -580,8 +580,11 @@ body {
 .darkMode .copyright__copyrightDescription {
   color: white;
 }
+.darkMode .copyright__languajesLink {
+  color: #a5a8ac;
+}
 .darkMode .copyright__languajes {
-  color: #767676;
+  color: #a5a8ac;
 }
 .darkMode .copyright__languajesSelected {
   color: white;
@@ -614,14 +617,31 @@ body {
   fill: white;
 }
 
-.darkMode .route__title {
+.darkMode .home__title {
+  color: white;
+}
+.darkMode .home__subtitle {
   color: #e4e6eb;
 }
-.darkMode .route__link {
-  color: #e4e6eb;
-}
-.darkMode .route__description {
+.darkMode .home__description {
   color: #a8abaf;
+}
+.darkMode .home__getInTouchButton {
+  background-color: var(--firstColor);
+  color: #e4e6eb;
+  border: 1px solid #a8abaf;
+}
+.darkMode .home__image {
+  fill: #e4e6eb;
+}
+.darkMode .aboutMe {
+  color: #a8abaf;
+}
+.darkMode .aboutMe__title {
+  color: white;
+}
+.darkMode .aboutMe__imageContainer {
+  border: 1px solid #a8abaf;
 }
 
 @keyframes dark {
@@ -649,7 +669,7 @@ body {
   }
 }
 .home {
-  height: calc(100vh - 3.5rem - 3rem);
+  min-height: calc(100vh - 3.5rem - 3rem);
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -669,11 +689,11 @@ body {
   padding-bottom: 0.5rem;
 }
 .home__subtitle {
-  font-size: 2rem;
-  color: var(--firstColor);
+  font-size: 1.75rem;
+  color: #767676;
   padding-bottom: 1.5rem;
 }
-.home__getInTouch {
+.home__getInTouchButton {
   font-size: 1rem;
   font-weight: bold;
   background-color: white;
@@ -682,10 +702,49 @@ body {
   border-radius: 3px;
   padding: 1rem;
   align-self: flex-start;
+  width: auto;
+}
+.home__image {
+  align-self: flex-end;
+  width: 70%;
+  height: auto;
+}
+
+.aboutMe {
+  min-height: calc(100vh - 3.5rem);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0 1rem 2.5rem 1rem;
+}
+.aboutMe__title {
+  font-size: 1.75rem;
+  color: var(--firstColor);
+  padding-bottom: 1rem;
+}
+.aboutMe__introduce {
+  padding-bottom: 0.5rem;
+}
+.aboutMe__description {
+  font-size: 1.2rem;
+}
+.aboutMe__imageContainer {
+  background: var(--firstColor);
+  height: auto;
+  width: 50%;
+  border-radius: 100%;
+}
+.aboutMe__image {
+  height: 100%;
+  width: 100%;
+  border-radius: 100%;
+  object-fit: cover;
 }
 
 .route {
-  height: calc(100vh - 3.5rem - 3rem);
+  min-height: calc(100vh - 3.5rem - 3rem);
   width: 100%;
   display: flex;
   flex-direction: column;

@@ -42,7 +42,7 @@ export const Header = ({ toggleMenu, setToggleMenu, scrollToTopButton, setScroll
 
 				<div className="header__logoContainer">
 					<NavLink className="header__link" exact to={useLogoLink()} >
-						<img className="header__logo" src={logo} alt="Logo" onClick={setToggleFromLogo} />
+						<img className="header__logo" src={logo} alt="Logo" width="512" height="512" onClick={setToggleFromLogo} />
 					</NavLink>
 				</div>
 
