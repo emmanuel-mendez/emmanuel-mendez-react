@@ -15,11 +15,10 @@
 
 		&__iconColor {
 			fill: var(--darkColor);
-			animation: darkIcon 0.5s ease;
 		}
 
 		&__selected {
-			color: white;
+			fill: white;
 		}
 
 		&__iconSelected {

@@ -608,10 +608,9 @@ body {
 }
 .darkMode .footer__iconColor {
   fill: var(--darkColor);
-  animation: darkIcon 0.5s ease;
 }
 .darkMode .footer__selected {
-  color: white;
+  fill: white;
 }
 .darkMode .footer__iconSelected {
   fill: white;
@@ -660,14 +659,6 @@ body {
     background: white;
   }
 }
-@keyframes darkIcon {
-  from {
-    fill: white;
-  }
-  to {
-    fill: var(--darkColor);
-  }
-}
 .home {
   min-height: calc(100vh - 3.5rem - 3rem);
   width: 100%;
@@ -711,7 +702,7 @@ body {
 }
 
 .aboutMe {
-  min-height: calc(100vh - 3.5rem);
+  min-height: calc(100vh - 3.5rem - 3rem);
   width: 100%;
   display: flex;
   flex-direction: column;

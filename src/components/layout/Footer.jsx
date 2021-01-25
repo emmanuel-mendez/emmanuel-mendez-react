@@ -66,7 +66,7 @@ export const Footer = () => {
 			<NavLink exact to={useLang("cv")} className="footer__container" activeClassName="footer__selected"
 				isActive={(match, location) => {
 					if (match) {
-						setCv("footer__iconSelected footer__iconColor")
+						setCv("footer__iconSelected")
 					} else {
 						setCv()
 					}
