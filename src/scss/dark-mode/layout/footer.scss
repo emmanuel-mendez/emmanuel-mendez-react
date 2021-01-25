@@ -1,7 +1,7 @@
 .darkMode {
 	.footer {
 		background-color: var(--darkColor);
-		opacity: 0.99;
+		opacity: 0.98;
 		border-top: none;
 		animation: dark 0.5s ease;
 
@@ -11,6 +11,10 @@
 
 		&__iconName {
 			color: #a8abaf;
+		}
+
+		&__iconColor {
+			fill: var(--darkColor);
 		}
 
 		&__selected {

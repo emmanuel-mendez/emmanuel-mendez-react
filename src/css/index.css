@@ -598,7 +598,7 @@ body {
 
 .darkMode .footer {
   background-color: var(--darkColor);
-  opacity: 0.99;
+  opacity: 0.98;
   border-top: none;
   animation: dark 0.5s ease;
 }
@@ -607,6 +607,9 @@ body {
 }
 .darkMode .footer__iconName {
   color: #a8abaf;
+}
+.darkMode .footer__iconColor {
+  fill: var(--darkColor);
 }
 .darkMode .footer__selected {
   color: white;

@@ -38,7 +38,7 @@ export const Footer = () => {
 			<NavLink exact to={useLang("skills")} className="footer__container" activeClassName="footer__selected"
 				isActive={(match, location) => {
 					if (match) {
-						setSkills("footer__iconSelected")
+						setSkills("footer__iconSelected footer__iconColor")
 					} else {
 						setSkills()
 					}
@@ -66,7 +66,7 @@ export const Footer = () => {
 			<NavLink exact to={useLang("cv")} className="footer__container" activeClassName="footer__selected"
 				isActive={(match, location) => {
 					if (match) {
-						setCv("footer__iconSelected")
+						setCv("footer__iconSelected footer__iconColor")
 					} else {
 						setCv()
 					}
