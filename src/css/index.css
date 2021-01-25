@@ -598,7 +598,7 @@ body {
 
 .darkMode .footer {
   background-color: var(--darkColor);
-  opacity: 0.98;
+  opacity: 0.99;
   border-top: none;
   animation: dark 0.5s ease;
 }
