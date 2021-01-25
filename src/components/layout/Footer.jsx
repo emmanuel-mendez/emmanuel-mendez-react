@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { NavLink } from "react-router-dom";
 
-import { useLang } from '../hooks/useLang'
+import { useLang } from '../hooks/useRoute'
 
 import { ReactComponent as Home } from '../../svg/home.svg';
 import { ReactComponent as Skills } from '../../svg/skills.svg';

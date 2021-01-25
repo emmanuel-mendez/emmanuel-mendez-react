@@ -1,10 +1,7 @@
 import { usePathname } from './usePathname'
 
-export const useLang = (link) => {
-
+export const useLang = () => {
 	if (usePathname().startsWith("/es/")) {
-		return `/es/${link}`
-	} else {
-		return `/${link}`
+		return true
 	}
 }

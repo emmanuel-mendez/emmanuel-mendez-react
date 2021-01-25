@@ -1,0 +1,9 @@
+@import "./home";
+
+.route {
+	height: calc(100vh - #{$headerHeightM} - #{$footerHeightM});
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}

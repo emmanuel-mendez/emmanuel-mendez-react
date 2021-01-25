@@ -1,80 +1,40 @@
 .home {
 	height: calc(100vh - #{$headerHeightM} - #{$footerHeightM});
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+	padding: 0 1rem;
 
-	&__container {
-		height: 100%;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: space-evenly;
+	&__description {
+		font-size: 1.2rem;
+	}
 
-		width: 80%;
-		margin: 0 auto;
-		background-color: #283e4a81;
-		box-shadow: 0 -20px 20px 1px rgba(0, 0, 0, 0.3);
+	&__introduce {
+		padding-bottom: 1rem;
 	}
 
 	&__title {
-		width: 80%;
 		font-size: 2rem;
-		color: #162229;
-		text-align: center;
-	}
-
-	&__titleLastName {
-		text-align: center;
-		padding-left: 1rem;
-	}
-
-	&__image {
-		width: 70%;
-		height: auto;
-		clip-path: circle(50% at 50% 50%);
-	}
-
-	&__descriptionContainer {
-		display: flex;
-		flex-direction: column;
-		width: 80%;
-		align-items: center;
-	}
-
-	&__description {
-		font-size: 0.9rem;
+		color: var(--firstColor);
 		padding-bottom: 0.5rem;
-		width: 90%;
 	}
 
-	&__university {
-		width: 90%;
+	&__subtitle {
+		font-size: 2rem;
+		color: var(--firstColor);
+		padding-bottom: 1.5rem;
 	}
 
-	&__links {
-		min-height: calc(100vh - #{$headerHeightM} - #{$footerHeightM});
-	}
-
-	&__linksList {
-		min-height: calc(100vh - #{$headerHeightM} - #{$footerHeightM});
-		display: flex;
-		flex-direction: column;
-		justify-content: space-evenly;
-		align-items: center;
-		list-style: none;
-	}
-
-	&__itemLink {
-		background-color: #283e4a81;
-		width: 80%;
-		height: 10vh;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		color: black;
+	&__getInTouch {
 		font-size: 1rem;
-		box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.3);
-	}
-
-	&__link {
-		color: black;
+		font-weight: bold;
+		background-color: white;
+		color: var(--firstColor);
+		border: 2px solid var(--firstColor);
+		border-radius: 3px;
+		padding: 1rem;
+		align-self: flex-start;
 	}
 }

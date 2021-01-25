@@ -30,10 +30,10 @@
 
 	&__logoContainer {
 		padding-left: 1rem;
-		width: auto;
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		height: 100%;
 
 		@include from(l) {
 			padding-left: 2rem;
@@ -42,14 +42,14 @@
 
 	&__link {
 		display: flex;
-		justify-content: center;
-		height: 100%;
+		align-items: center;
+		height: 80%;
 		width: auto;
 	}
 
 	&__logo {
 		height: 100%;
-		width: 100%;
+		width: auto;
 		display: flex;
 		justify-content: center;
 		align-items: center;

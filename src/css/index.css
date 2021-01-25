@@ -214,56 +214,6 @@ body {
   flex-direction: column;
 }
 
-.switch {
-  background: #343d5b;
-  border-radius: 10rem;
-  border: none;
-  position: relative;
-  cursor: pointer;
-  display: flex;
-  outline: none;
-}
-.switch::after {
-  content: "";
-  display: block;
-  width: 50%;
-  height: 100%;
-  position: absolute;
-  background: #f1f1f1;
-  top: 0;
-  left: 0;
-  right: unset;
-  border-radius: 100%;
-  transition: 0.3s ease all;
-  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
-}
-.switch.dark {
-  background: orange;
-  color: #000;
-}
-.switch.dark::after {
-  right: 0;
-  left: unset;
-}
-
-.switchIcon {
-  width: 1.5rem;
-  height: 1.5rem;
-  display: block;
-  fill: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.darkDescription {
-  padding-right: 1rem;
-}
-
-.switchsvg {
-  height: 1rem;
-}
-
 .header {
   height: 3.5rem;
   background-color: var(--firstColor);
@@ -297,10 +247,10 @@ body {
 }
 .header__logoContainer {
   padding-left: 1rem;
-  width: auto;
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100%;
 }
 @media screen and (min-width: 1024px) {
   .header__logoContainer {
@@ -309,13 +259,13 @@ body {
 }
 .header__link {
   display: flex;
-  justify-content: center;
-  height: 100%;
+  align-items: center;
+  height: 80%;
   width: auto;
 }
 .header__logo {
   height: 100%;
-  width: 100%;
+  width: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -461,6 +411,51 @@ body {
     justify-content: center;
     color: white;
   }
+}
+
+.switch {
+  background: #343d5b;
+  border-radius: 10rem;
+  border: none;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  outline: none;
+}
+.switch::after {
+  content: "";
+  display: block;
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  background: #f1f1f1;
+  top: 0;
+  left: 0;
+  right: unset;
+  border-radius: 100%;
+  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+}
+.switch.dark::after {
+  right: 0;
+  left: unset;
+}
+
+.switchIcon {
+  width: 1.5rem;
+  height: 1.5rem;
+  display: block;
+  fill: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.darkDescription {
+  padding-right: 1rem;
+}
+
+.switchsvg {
+  height: 1rem;
 }
 
 .selectedMenuLink {
@@ -610,6 +605,7 @@ body {
 }
 .darkMode .footer__iconColor {
   fill: var(--darkColor);
+  animation: darkIcon 0.5s ease;
 }
 .darkMode .footer__selected {
   color: white;
@@ -618,13 +614,13 @@ body {
   fill: white;
 }
 
-.darkMode .home__title {
+.darkMode .route__title {
   color: #e4e6eb;
 }
-.darkMode .home__link {
+.darkMode .route__link {
   color: #e4e6eb;
 }
-.darkMode .home__description {
+.darkMode .route__description {
   color: #a8abaf;
 }
 
@@ -644,73 +640,56 @@ body {
     background: white;
   }
 }
+@keyframes darkIcon {
+  from {
+    fill: white;
+  }
+  to {
+    fill: var(--darkColor);
+  }
+}
 .home {
   height: calc(100vh - 3.5rem - 3rem);
-}
-.home__container {
-  height: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  width: 80%;
-  margin: 0 auto;
-  background-color: #283e4a81;
-  box-shadow: 0 -20px 20px 1px rgba(0, 0, 0, 0.3);
-}
-.home__title {
-  width: 80%;
-  font-size: 2rem;
-  color: #162229;
-  text-align: center;
-}
-.home__titleLastName {
-  text-align: center;
-  padding-left: 1rem;
-}
-.home__image {
-  width: 70%;
-  height: auto;
-  clip-path: circle(50% at 50% 50%);
-}
-.home__descriptionContainer {
-  display: flex;
-  flex-direction: column;
-  width: 80%;
-  align-items: center;
+  padding: 0 1rem;
 }
 .home__description {
-  font-size: 0.9rem;
+  font-size: 1.2rem;
+}
+.home__introduce {
+  padding-bottom: 1rem;
+}
+.home__title {
+  font-size: 2rem;
+  color: var(--firstColor);
   padding-bottom: 0.5rem;
-  width: 90%;
 }
-.home__university {
-  width: 90%;
+.home__subtitle {
+  font-size: 2rem;
+  color: var(--firstColor);
+  padding-bottom: 1.5rem;
 }
-.home__links {
-  min-height: calc(100vh - 3.5rem - 3rem);
+.home__getInTouch {
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: white;
+  color: var(--firstColor);
+  border: 2px solid var(--firstColor);
+  border-radius: 3px;
+  padding: 1rem;
+  align-self: flex-start;
 }
-.home__linksList {
-  min-height: calc(100vh - 3.5rem - 3rem);
+
+.route {
+  height: calc(100vh - 3.5rem - 3rem);
+  width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
   align-items: center;
-  list-style: none;
-}
-.home__itemLink {
-  background-color: #283e4a81;
-  width: 80%;
-  height: 10vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: black;
-  font-size: 1rem;
-  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.3);
-}
-.home__link {
-  color: black;
 }
 
 .loader__index {
@@ -755,7 +734,7 @@ body::-webkit-scrollbar {
 
 .scrollToTop {
   position: fixed;
-  bottom: calc(3rem + 0.5rem);
+  bottom: calc(3rem + 1rem);
   right: 1.8rem;
   background-color: var(--firstColor);
   display: flex;

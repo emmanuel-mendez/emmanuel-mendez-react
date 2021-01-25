@@ -5,6 +5,7 @@ import { useLogoLink } from '../../components/hooks/useLogoLink'
 
 import { Nav } from './Nav'
 
+import logo from '../../svg/logo.svg';
 import { ReactComponent as Menu } from '../../svg/menu.svg';
 
 export const Header = ({ toggleMenu, setToggleMenu, scrollToTopButton, setScrollToTopButton, pageYOffset, darkMode, setDarkMode }) => {
@@ -27,8 +28,10 @@ export const Header = ({ toggleMenu, setToggleMenu, scrollToTopButton, setScroll
 	}
 
 	const setToggleFromLogo = () => {
-		if (toggleMenu) {
-			setToggleMenu(!toggleMenu)
+		if (toggleMenu === true) {
+			setToggleMenu(false)
+		} else {
+			return null
 		}
 	}
 
@@ -39,9 +42,7 @@ export const Header = ({ toggleMenu, setToggleMenu, scrollToTopButton, setScroll
 
 				<div className="header__logoContainer">
 					<NavLink className="header__link" exact to={useLogoLink()} >
-						<div className="header__logo" onClick={setToggleFromLogo} >
-							<h1 className="header__h1">Emmanuel Méndez</h1>
-						</div>
+						<img className="header__logo" src={logo} alt="Logo" onClick={setToggleFromLogo} />
 					</NavLink>
 				</div>
 

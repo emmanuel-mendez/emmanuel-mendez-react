@@ -1,95 +1,35 @@
 import React, { lazy, Suspense } from 'react'
-import { usePathname } from '../../hooks/usePathname'
-import { Link } from "react-router-dom";
+import { useLang } from '../../hooks/useLang'
 
 const HomeImage = lazy(() => import('./HomeImage'))
 
-const Home = ({ darkMode, setDarkMode }) => {
-
-	const useLang = () => {
-		if (usePathname().startsWith("/es/")) {
-			return true
-		}
-	}
+const Home = () => {
 
 	return (
 
 		<article className="article">
 
-			<section className="home">
+			<div className="route">
 
-				<div className="home__container">
+				<section className="home">
 
-					<h2 className="home__title" onClick={() => setDarkMode(!darkMode)}>
-						<p>{"<Emmanuel"}</p><p className="home__titleLastName">{"Méndez/>"}</p>
-					</h2>
+					<div className="home__description">
+						<p className="home__introduce">Hi, my name is</p>
 
-					<Suspense fallback={
-						<div className="loader__homeImage">
-							<div className="spinner"></div>
-						</div>
-					}>
-						<HomeImage />
-					</Suspense>
+						<h2 className="home__title">Emmanuel Méndez.</h2>
 
-					<div className="home__descriptionContainer">
+						<h3 className="home__subtitle">Web developer.</h3>
 
-						<p className="home__description">{useLang()
-							? ("Desarrollador web")
-							: ("Web developer")}</p>
-
-						<p className="home__description">{useLang()
-							? ("Estudiante en la Universidad Nacional Experimental de la Gran Caracas")
-							: ("Student at Universidad Nacional Experimental de la Gran Caracas")}</p>
-
-						<p className="home__description">{useLang()
-							? ("Nacionalidad: Venezolano")
-							: ("Nationality: Venezolan")}</p>
-
-						<p className="home__description">{useLang()
-							? ("Lenguajes: Ingles / Español")
-							: ("Languajes: English / Spanish")}</p>
+						<p> I specialize in designing and building exceptional websites, databases and cross-platform applications</p>
 					</div>
 
-				</div>
+					<button className="home__getInTouch">
+						Get in touch
+					</button>
 
-			</section>
+				</section>
 
-			<section className="home__links">
-
-				<ul className="home__linksList">
-
-					<li className="home__itemLink">
-						<Link className="home__link" to="/projects">{useLang()
-							? ("Proyectos")
-							: ("Projects")}</Link >
-					</li>
-
-					<li className="home__itemLink">
-						<Link className="home__link" to="/skills">{useLang()
-							? ("Habilidades")
-							: ("Skills")}</Link>
-					</li>
-
-					<li className="home__itemLink">
-						<Link className="home__link" to="/hobbies">{useLang()
-							? ("Aficiones")
-							: ("Hobbies")}</Link>
-					</li>
-
-					<li className="home__itemLink">
-						<Link className="home__link" to="/contact">{useLang()
-							? ("Contacto")
-							: ("Contact")}</Link>
-					</li>
-
-					<li className="home__itemLink">
-						<a className="home__link" href={process.env.PUBLIC_URL + '/emmanuelMendez.pdf'} target="blank">Curriculum vitae</a>
-					</li>
-
-				</ul>
-
-			</section>
+			</div>
 
 		</article >
 	)

@@ -4,7 +4,7 @@ const Portfolio = () => {
 	return (
 		<article className="article">
 
-			<div className="article__container">
+			<div className="route">
 
 				<section className="section__history">
 					<section className="section__experience">

@@ -1,7 +1,7 @@
 import React from 'react'
 import { NavLink } from "react-router-dom";
 import classNames from 'classnames';
-import { useLang } from '../hooks/useLang'
+import { useLang } from '../hooks/useRoute'
 import { usePathname } from '../hooks/usePathname'
 
 import { ReactComponent as Sun } from '../../svg/sun.svg';
