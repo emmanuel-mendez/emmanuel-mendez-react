@@ -638,6 +638,10 @@ body {
 .darkMode .aboutMe__title {
   color: white;
 }
+.darkMode .aboutMe__unexca {
+  font-weight: bold;
+  color: #e4e6eb;
+}
 .darkMode .aboutMe__imageContainer {
   border: 1px solid #a8abaf;
 }
@@ -668,7 +672,7 @@ body {
   padding: 0 1rem;
 }
 .home__description {
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 .home__introduce {
   padding-bottom: 1rem;
@@ -683,6 +687,9 @@ body {
   color: #767676;
   padding-bottom: 1.5rem;
 }
+.home__paragraph {
+  padding-bottom: 1rem;
+}
 .home__getInTouchButton {
   font-size: 1rem;
   font-weight: bold;
@@ -692,11 +699,11 @@ body {
   border-radius: 3px;
   padding: 1rem;
   align-self: flex-start;
-  width: auto;
+  width: max-content;
 }
 .home__image {
   align-self: flex-end;
-  width: 70%;
+  width: 60%;
   height: auto;
 }
 
@@ -707,7 +714,12 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  padding: 0 1rem 2.5rem 1rem;
+  padding: 0 1rem;
+}
+.aboutMe__description {
+  font-size: 1rem;
+  width: 95%;
+  align-self: start;
 }
 .aboutMe__title {
   font-size: 1.75rem;
@@ -717,13 +729,14 @@ body {
 .aboutMe__introduce {
   padding-bottom: 0.5rem;
 }
-.aboutMe__description {
-  font-size: 1.2rem;
+.aboutMe__unexca {
+  font-weight: bold;
+  color: var(--firstColor);
 }
 .aboutMe__imageContainer {
   background: var(--firstColor);
   height: auto;
-  width: 50%;
+  width: 70%;
   border-radius: 100%;
 }
 .aboutMe__image {
@@ -731,6 +744,104 @@ body {
   width: 100%;
   border-radius: 100%;
   object-fit: cover;
+}
+
+.skills {
+  min-height: calc(100vh - 3.5rem - 3rem);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0 1rem;
+}
+.skills__description {
+  font-size: 1rem;
+  width: 88%;
+}
+.skills__title {
+  font-size: 1.75rem;
+  color: var(--firstColor);
+  padding-bottom: 1rem;
+}
+.skills__advantages {
+  color: var(--firstColor);
+}
+.skills__advantage {
+  padding-top: 0.5rem;
+  color: black;
+}
+.skills__image {
+  align-self: flex-end;
+  width: 70%;
+  height: auto;
+}
+
+.frontend {
+  min-height: calc(100vh - 3.5rem - 3rem);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0 1rem;
+}
+.frontend__description {
+  font-size: 1rem;
+  width: 88%;
+}
+.frontend__title {
+  font-size: 1.75rem;
+  color: var(--firstColor);
+  padding-bottom: 1rem;
+}
+.frontend__skills {
+  color: var(--firstColor);
+}
+.frontend__skill {
+  padding-top: 0.5rem;
+}
+.frontend__image {
+  align-self: center;
+  width: 50%;
+  height: auto;
+}
+
+.backend {
+  min-height: calc(100vh - 3.5rem - 3rem);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1rem;
+}
+.backend__description {
+  font-size: 1rem;
+  width: 88%;
+}
+.backend__title {
+  font-size: 1.75rem;
+  color: var(--firstColor);
+  padding-bottom: 1rem;
+  width: 100%;
+}
+.backend__skills {
+  color: var(--firstColor);
+}
+.backend__skill {
+  padding-top: 0.5rem;
+}
+.backend__databases {
+  padding-top: 0.2rem;
+}
+.backend__image {
+  align-self: center;
+  width: 40%;
+  height: auto;
+  position: absolute;
+  right: 1rem;
+  padding-top: 12rem;
 }
 
 .route {

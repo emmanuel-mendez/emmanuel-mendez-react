@@ -5,33 +5,38 @@
 		}
 
 		&__subtitle {
-			color: #e4e6eb;
+			color: $subtitleColor;
 		}
 
 		&__description {
-			color: #a8abaf;
+			color: $darkTextColor;
 		}
 
 		&__getInTouchButton {
 			background-color: var(--firstColor);
-			color: #e4e6eb;
-			border: 1px solid #a8abaf;
+			color: $subtitleColor;
+			border: 1px solid $darkTextColor;
 		}
 
 		&__image {
-			fill: #e4e6eb;
+			fill: $subtitleColor;
 		}
 	}
 
 	.aboutMe {
-		color: #a8abaf;
+		color: $darkTextColor;
 
 		&__title {
 			color: white;
 		}
 
+		&__unexca {
+			font-weight: bold;
+			color: $subtitleColor;
+		}
+
 		&__imageContainer {
-			border: 1px solid #a8abaf;
+			border: 1px solid $darkTextColor;
 		}
 	}
 }
