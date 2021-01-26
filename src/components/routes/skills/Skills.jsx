@@ -178,7 +178,6 @@ const Skills = () => {
 								<p>Javascript</p>
 								<p>Typescript</p>
 								<p>PHP</p>
-								<p>C++</p>
 							</li>
 
 							<li className="backend__skill">

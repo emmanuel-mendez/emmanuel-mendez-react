@@ -4,8 +4,7 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: space-evenly;
-	padding: 0 1rem;
+	padding: 1.5rem 1rem 0 1rem;
 
 	&__description {
 		font-size: 1rem;
@@ -18,13 +17,17 @@
 		padding-bottom: 1rem;
 	}
 
-	&__advantages {
-		color: var(--firstColor);
+	&__advantage {
+		padding-top: 0.3rem;
+		color: black;
 	}
 
-	&__advantage {
-		padding-top: 0.5rem;
-		color: black;
+	&__advantage:nth-child(1) {
+		padding-top: 0;
+	}
+
+	&__advantage::marker {
+		color: var(--firstColor);
 	}
 
 	&__image {
@@ -40,8 +43,7 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: space-evenly;
-	padding: 0 1rem;
+	padding: 1.5rem 1rem 0 1rem;
 
 	&__description {
 		font-size: 1rem;
@@ -51,15 +53,20 @@
 	&__title {
 		font-size: 1.75rem;
 		color: var(--firstColor);
-		padding-bottom: 1rem;
+		padding-bottom: 1.5rem;
 	}
 
 	&__skills {
 		color: var(--firstColor);
+		padding-bottom: 1rem;
 	}
 
 	&__skill {
-		padding-top: 0.5rem;
+		padding-top: 0.3rem;
+	}
+
+	&__skill:nth-child(1) {
+		padding-top: 0;
 	}
 
 	&__image {
@@ -75,8 +82,7 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: center;
-	padding: 0 1rem;
+	padding: 1.5rem 1rem 0 1rem;
 
 	&__description {
 		font-size: 1rem;
@@ -95,7 +101,11 @@
 	}
 
 	&__skill {
-		padding-top: 0.5rem;
+		padding-top: 0.3rem;
+	}
+
+	&__skill:nth-child(1) {
+		padding-top: 0;
 	}
 
 	&__databases {
@@ -108,6 +118,6 @@
 		height: auto;
 		position: absolute;
 		right: 1rem;
-		padding-top: 12rem;
+		bottom: -140%;
 	}
 }

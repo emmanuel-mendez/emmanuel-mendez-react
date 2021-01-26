@@ -1,5 +1,6 @@
 @import "./home";
 @import "./skills";
+@import "./portfolio";
 
 .route {
 	min-height: calc(100vh - #{$headerHeightM} - #{$footerHeightM});

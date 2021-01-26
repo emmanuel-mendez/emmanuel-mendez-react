@@ -1,0 +1,55 @@
+.darkMode {
+	.skills {
+		&__title {
+			color: white;
+		}
+
+		&__advantage {
+			color: $darkTextColor;
+		}
+
+		&__advantage::marker {
+			color: var(--firstColor);
+		}
+
+		&__image {
+			fill: $subtitleColor;
+		}
+	}
+
+	.frontend {
+		&__title {
+			color: white;
+		}
+
+		&__skill {
+			color: $darkTextColor;
+		}
+
+		&__skill::marker {
+			color: var(--firstColor);
+		}
+
+		&__image {
+			fill: $subtitleColor;
+		}
+	}
+
+	.backend {
+		&__title {
+			color: white;
+		}
+
+		&__skill {
+			color: $darkTextColor;
+		}
+
+		&__skill::marker {
+			color: var(--firstColor);
+		}
+
+		&__image {
+			fill: $subtitleColor;
+		}
+	}
+}

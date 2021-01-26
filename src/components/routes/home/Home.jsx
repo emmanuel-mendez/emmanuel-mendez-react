@@ -51,8 +51,6 @@ const Home = () => {
 						</div>
 					</div>
 
-
-
 					<HomeImage className="home__image" />
 
 
@@ -72,15 +70,15 @@ const Home = () => {
 
 						<p className="aboutMe__introduce">
 							{useLang()
-								? "Hola, soy Emmanuel Méndez, un desarrollador web residente en Caracas, Venezuela"
-								: "Hello, I'm Emmanuel Méndez, a web developer based in Caracas, Venezuela"
+								? "Hola, soy Emmanuel Méndez, un desarrollador web residente en Caracas, Venezuela."
+								: "Hello, I'm Emmanuel Méndez, a web developer based in Caracas, Venezuela."
 							}
 						</p>
 
 						<p>
 							{useLang()
-								? <span>Soy un estudiante de la <a className="aboutMe__unexca" href="http://www.unexca.edu.ve/">Universidad Nacional Experimental de la Gran Caracas</a> que ama crear landing pages, single-page applications, ecommerce, progressive web apps, bases de datos SQL y NoSQL,  APISs REST y APIs GraphQL</span>
-								: <span>I'm a student at <a className="aboutMe__unexca" href="http://www.unexca.edu.ve/">Universidad Nacional Experimental de la Gran Caracas</a> that love create landing pages, single-page applications, ecommerce, progressive web apps, SQL and NoSQL databases, REST APISs and GraphQL APIs</span>
+								? <span>Soy un estudiante de la <a className="aboutMe__unexca" href="http://www.unexca.edu.ve/">Universidad Nacional Experimental de la Gran Caracas</a> que ama crear landing pages, single-page applications, ecommerce, progressive web apps, bases de datos SQL y NoSQL,  APISs REST y APIs GraphQL.</span>
+								: <span>I'm a student at <a className="aboutMe__unexca" href="http://www.unexca.edu.ve/">Universidad Nacional Experimental de la Gran Caracas</a> that love create landing pages, single-page applications, ecommerce, progressive web apps, SQL and NoSQL databases, REST APISs and GraphQL APIs.</span>
 							}</p>
 
 					</div>

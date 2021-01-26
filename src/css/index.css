@@ -646,6 +646,43 @@ body {
   border: 1px solid #a8abaf;
 }
 
+.darkMode .skills__title {
+  color: white;
+}
+.darkMode .skills__advantage {
+  color: #a8abaf;
+}
+.darkMode .skills__advantage::marker {
+  color: var(--firstColor);
+}
+.darkMode .skills__image {
+  fill: #e4e6eb;
+}
+.darkMode .frontend__title {
+  color: white;
+}
+.darkMode .frontend__skill {
+  color: #a8abaf;
+}
+.darkMode .frontend__skill::marker {
+  color: var(--firstColor);
+}
+.darkMode .frontend__image {
+  fill: #e4e6eb;
+}
+.darkMode .backend__title {
+  color: white;
+}
+.darkMode .backend__skill {
+  color: #a8abaf;
+}
+.darkMode .backend__skill::marker {
+  color: var(--firstColor);
+}
+.darkMode .backend__image {
+  fill: #e4e6eb;
+}
+
 @keyframes dark {
   from {
     background: white;
@@ -668,8 +705,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
-  padding: 0 1rem;
+  padding: 1.5rem 1rem 0 1rem;
 }
 .home__description {
   font-size: 1rem;
@@ -713,13 +749,13 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
-  padding: 0 1rem;
+  padding: 1.5rem 1rem 0 1rem;
 }
 .aboutMe__description {
   font-size: 1rem;
   width: 95%;
   align-self: start;
+  padding-bottom: 1rem;
 }
 .aboutMe__title {
   font-size: 1.75rem;
@@ -752,8 +788,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
-  padding: 0 1rem;
+  padding: 1.5rem 1rem 0 1rem;
 }
 .skills__description {
   font-size: 1rem;
@@ -764,12 +799,15 @@ body {
   color: var(--firstColor);
   padding-bottom: 1rem;
 }
-.skills__advantages {
-  color: var(--firstColor);
-}
 .skills__advantage {
-  padding-top: 0.5rem;
+  padding-top: 0.3rem;
   color: black;
+}
+.skills__advantage:nth-child(1) {
+  padding-top: 0;
+}
+.skills__advantage::marker {
+  color: var(--firstColor);
 }
 .skills__image {
   align-self: flex-end;
@@ -783,8 +821,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
-  padding: 0 1rem;
+  padding: 1.5rem 1rem 0 1rem;
 }
 .frontend__description {
   font-size: 1rem;
@@ -793,13 +830,17 @@ body {
 .frontend__title {
   font-size: 1.75rem;
   color: var(--firstColor);
-  padding-bottom: 1rem;
+  padding-bottom: 1.5rem;
 }
 .frontend__skills {
   color: var(--firstColor);
+  padding-bottom: 1rem;
 }
 .frontend__skill {
-  padding-top: 0.5rem;
+  padding-top: 0.3rem;
+}
+.frontend__skill:nth-child(1) {
+  padding-top: 0;
 }
 .frontend__image {
   align-self: center;
@@ -813,8 +854,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  padding: 0 1rem;
+  padding: 1.5rem 1rem 0 1rem;
 }
 .backend__description {
   font-size: 1rem;
@@ -830,7 +870,10 @@ body {
   color: var(--firstColor);
 }
 .backend__skill {
-  padding-top: 0.5rem;
+  padding-top: 0.3rem;
+}
+.backend__skill:nth-child(1) {
+  padding-top: 0;
 }
 .backend__databases {
   padding-top: 0.2rem;
@@ -841,7 +884,59 @@ body {
   height: auto;
   position: absolute;
   right: 1rem;
-  padding-top: 12rem;
+  bottom: -140%;
+}
+
+.portfolio {
+  min-height: calc(100vh - 3.5rem - 3rem);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0 1rem;
+}
+.portfolio__description {
+  font-size: 1rem;
+  width: 88%;
+}
+.portfolio__title {
+  font-size: 1.75rem;
+  color: var(--firstColor);
+  padding-bottom: 1rem;
+}
+.portfolio__itemTitle {
+  font-size: 1.75rem;
+  color: #767676;
+  padding-bottom: 1rem;
+}
+.portfolio__itemTitle::marker {
+  color: var(--firstColor);
+}
+.portfolio__itemDescription {
+  padding-bottom: 1.5rem;
+}
+.portfolio__itemParagraph {
+  padding-top: 0.2rem;
+}
+.portfolio__image {
+  align-self: flex-end;
+  width: 70%;
+  height: auto;
+}
+.portfolio__itemImageContainer {
+  background: var(--firstColor);
+  height: auto;
+  width: 100%;
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.portfolio__itemImage {
+  width: 80%;
+  height: auto;
+  object-fit: cover;
 }
 
 .route {
