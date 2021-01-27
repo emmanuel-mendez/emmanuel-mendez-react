@@ -1,0 +1,50 @@
+.darkMode {
+	.portfolio {
+		&__title {
+			color: white;
+		}
+
+		&__paragraph {
+			color: $darkTextColor;
+		}
+
+		&__subtitle {
+			color: $subtitleColor;
+		}
+
+		&__originalityAndConfidentiality {
+			color: $darkTextColor;
+		}
+
+		&__image {
+			fill: $subtitleColor;
+		}
+
+		&__item {
+			min-height: 100%;
+		}
+
+		&__itemTitle {
+			color: $subtitleColor;
+		}
+
+		&__itemParagraph {
+			color: $darkTextColor;
+		}
+
+		&__itemResume {
+			color: $darkTextColor;
+		}
+
+		&__itemImageContainer {
+			border: 1px solid $darkTextColor;
+		}
+
+		&__itemImage {
+			height: auto;
+			width: 100%;
+			padding: 1.5rem;
+			object-fit: cover;
+		}
+	}
+}

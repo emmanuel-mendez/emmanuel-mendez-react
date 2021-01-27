@@ -520,7 +520,7 @@ body {
 
 .article {
   margin-top: 3.5rem;
-  margin-bottom: 3rem;
+  margin-bottom: 3.2rem;
   min-height: calc(100% - 3.5rem);
   animation: fadeIn ease 0.25s;
 }
@@ -535,11 +535,10 @@ body {
   position: fixed;
   width: 100%;
   background-color: white;
-  height: 3rem;
+  height: 3.2rem;
   bottom: 0;
   border-top: 1px solid #ccc;
   display: flex;
-  animation: light 0.5s ease;
 }
 .footer__container {
   width: 100%;
@@ -597,7 +596,6 @@ body {
 .darkMode .footer {
   background-color: var(--darkColor);
   border-top: none;
-  animation: dark 0.5s ease;
 }
 .darkMode .footer__icon {
   fill: #a8abaf;
@@ -683,6 +681,43 @@ body {
   fill: #e4e6eb;
 }
 
+.darkMode .portfolio__title {
+  color: white;
+}
+.darkMode .portfolio__paragraph {
+  color: #a8abaf;
+}
+.darkMode .portfolio__subtitle {
+  color: #e4e6eb;
+}
+.darkMode .portfolio__originalityAndConfidentiality {
+  color: #a8abaf;
+}
+.darkMode .portfolio__image {
+  fill: #e4e6eb;
+}
+.darkMode .portfolio__item {
+  min-height: 100%;
+}
+.darkMode .portfolio__itemTitle {
+  color: #e4e6eb;
+}
+.darkMode .portfolio__itemParagraph {
+  color: #a8abaf;
+}
+.darkMode .portfolio__itemResume {
+  color: #a8abaf;
+}
+.darkMode .portfolio__itemImageContainer {
+  border: 1px solid #a8abaf;
+}
+.darkMode .portfolio__itemImage {
+  height: auto;
+  width: 100%;
+  padding: 1.5rem;
+  object-fit: cover;
+}
+
 @keyframes dark {
   from {
     background: white;
@@ -700,7 +735,7 @@ body {
   }
 }
 .home {
-  min-height: calc(100vh - 3.5rem - 3rem);
+  min-height: calc(100vh - 3.5rem - 3.2rem);
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -744,7 +779,7 @@ body {
 }
 
 .aboutMe {
-  min-height: calc(100vh - 3.5rem - 3rem);
+  min-height: calc(100vh - 3.5rem - 3.2rem);
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -783,7 +818,7 @@ body {
 }
 
 .skills {
-  min-height: calc(100vh - 3.5rem - 3rem);
+  min-height: calc(100vh - 3.5rem - 3.2rem);
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -816,7 +851,7 @@ body {
 }
 
 .frontend {
-  min-height: calc(100vh - 3.5rem - 3rem);
+  min-height: calc(100vh - 3.5rem - 3.2rem);
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -849,7 +884,7 @@ body {
 }
 
 .backend {
-  min-height: calc(100vh - 3.5rem - 3rem);
+  min-height: calc(100vh - 3.5rem - 3.2rem);
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -888,29 +923,54 @@ body {
 }
 
 .portfolio {
-  min-height: calc(100vh - 3.5rem - 3rem);
+  min-height: calc(100vh - 3.5rem - 3.2rem);
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
-  padding: 0 1rem;
+  padding: 1.5rem 1rem 0 1rem;
 }
 .portfolio__description {
   font-size: 1rem;
-  width: 88%;
 }
 .portfolio__title {
   font-size: 1.75rem;
   color: var(--firstColor);
   padding-bottom: 1rem;
+  margin-left: 0;
+}
+.portfolio__paragraph {
+  padding-bottom: 1.5rem;
+}
+.portfolio__subtitle {
+  font-size: 1.25rem;
+  color: #767676;
+  text-align: center;
+  padding-bottom: 0.5rem;
+}
+.portfolio__originalityAndConfidentiality {
+  font-size: 0.7rem;
+  text-align: justify;
+  padding-bottom: 1.5rem;
+}
+.portfolio__image {
+  align-self: center;
+  width: 60%;
+  height: auto;
+}
+.portfolio__worksDescription {
+  font-size: 1rem;
+  width: 88%;
+}
+.portfolio__item {
+  min-height: 100%;
 }
 .portfolio__itemTitle {
   font-size: 1.75rem;
-  color: #767676;
+  color: var(--firstColor);
   padding-bottom: 1rem;
 }
-.portfolio__itemTitle::marker {
+.portfolio__item::marker {
   color: var(--firstColor);
 }
 .portfolio__itemDescription {
@@ -919,28 +979,27 @@ body {
 .portfolio__itemParagraph {
   padding-top: 0.2rem;
 }
-.portfolio__image {
-  align-self: flex-end;
-  width: 70%;
-  height: auto;
+.portfolio__itemParagraph:nth-child(1) {
+  padding-top: 0;
+}
+.portfolio__itemResume {
+  padding-top: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
 }
 .portfolio__itemImageContainer {
   background: var(--firstColor);
-  height: auto;
-  width: 100%;
-  border-radius: 0.5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  border-radius: 1rem;
 }
 .portfolio__itemImage {
-  width: 80%;
   height: auto;
+  width: 100%;
+  padding: 1.5rem;
   object-fit: cover;
 }
 
 .route {
-  min-height: calc(100vh - 3.5rem - 3rem);
+  min-height: calc(100vh - 3.5rem - 3.2rem);
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -989,7 +1048,7 @@ body::-webkit-scrollbar {
 
 .scrollToTop {
   position: fixed;
-  bottom: calc(3rem + 1rem);
+  bottom: calc(3.2rem + 1rem);
   right: 1.8rem;
   background-color: var(--firstColor);
   display: flex;

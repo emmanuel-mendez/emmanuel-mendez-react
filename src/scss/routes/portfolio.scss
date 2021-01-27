@@ -4,27 +4,58 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: space-evenly;
-	padding: 0 1rem;
+	padding: 1.5rem 1rem 0 1rem;
 
 	&__description {
 		font-size: 1rem;
-		width: 88%;
 	}
 
 	&__title {
 		font-size: 1.75rem;
 		color: var(--firstColor);
 		padding-bottom: 1rem;
+		margin-left: 0;
+	}
+
+	&__paragraph {
+		padding-bottom: 1.5rem;
+	}
+
+	&__subtitle {
+		font-size: 1.25rem;
+		color: #767676;
+		text-align: center;
+		padding-bottom: 0.5rem;
+	}
+
+	&__originalityAndConfidentiality {
+		font-size: 0.7rem;
+		text-align: justify;
+		padding-bottom: 1.5rem;
+	}
+
+	&__image {
+		align-self: center;
+		width: 60%;
+		height: auto;
+	}
+
+	&__worksDescription {
+		font-size: 1rem;
+		width: 88%;
+	}
+
+	&__item {
+		min-height: 100%;
 	}
 
 	&__itemTitle {
 		font-size: 1.75rem;
-		color: #767676;
+		color: var(--firstColor);
 		padding-bottom: 1rem;
 	}
 
-	&__itemTitle::marker {
+	&__item::marker {
 		color: var(--firstColor);
 	}
 
@@ -36,25 +67,25 @@
 		padding-top: 0.2rem;
 	}
 
-	&__image {
-		align-self: flex-end;
-		width: 70%;
-		height: auto;
+	&__itemParagraph:nth-child(1) {
+		padding-top: 0;
+	}
+
+	&__itemResume {
+		padding-top: 1rem;
+		text-align: center;
+		font-size: 0.9rem;
 	}
 
 	&__itemImageContainer {
 		background: var(--firstColor);
-		height: auto;
-		width: 100%;
-		border-radius: 0.5rem;
-		display: flex;
-		justify-content: center;
-		align-items: center;
+		border-radius: 1rem;
 	}
 
 	&__itemImage {
-		width: 80%;
 		height: auto;
+		width: 100%;
+		padding: 1.5rem;
 		object-fit: cover;
 	}
 }

@@ -38,7 +38,7 @@ const Home = () => {
 							{
 								useLang()
 									? "Me especializo en el diseño de sitios web excepcionales, desarrollo de aplicaciones multiplataforma y la administración bases de datos."
-									: "I specialize in designing exceptional websites, building cross-platform applications and manage databases."
+									: "I specialize in designing exceptional websites, building cross-platform applications and managing databases."
 							}
 						</p>
 
