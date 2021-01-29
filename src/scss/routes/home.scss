@@ -49,9 +49,10 @@
 
 	&__image {
 		align-self: flex-end;
-		width: 55%;
+		width: 60%;
 		height: auto;
-		padding-right: 1rem;
+		padding-top: 1rem;
+		padding-right: 1.5rem;
 	}
 }
 
@@ -61,6 +62,7 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	justify-content: center;
 	padding: 1.5rem 1rem 0 1rem;
 	scroll-snap-align: start;
 

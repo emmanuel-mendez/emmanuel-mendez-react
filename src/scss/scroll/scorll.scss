@@ -65,15 +65,16 @@ body::-webkit-scrollbar {
 }
 
 .scrollDown {
-	height: 100%;
+	height: max-content;
 	width: 1rem;
 	writing-mode: vertical-lr;
-	font-size: 0.7rem;
+	font-size: 0.8rem;
 	color: var(--firstColor);
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
 	padding-bottom: 1rem;
+	margin-top: auto;
 
 	&__svg {
 		height: 100%;
