@@ -1,17 +1,27 @@
-import React, { lazy, Suspense } from 'react'
+import React, { lazy, Suspense, useEffect } from 'react'
 import { useLang } from '../../hooks/useLang'
+
 
 import { ReactComponent as HomeImage } from '../../../svg/homeImage.svg';
 
 const AboutMeImage = lazy(() => import('./AboutMeImage'))
 
-const Home = () => {
+const Home = ({ scrollToTopButton, setScrollToTopButton, toggleMenu, y, scrollRef }) => {
+
+
+	useEffect(() => {
+		if (y > 1 && scrollToTopButton === false) {
+			setScrollToTopButton(true)
+		} else if (y < 1) {
+			setScrollToTopButton(false)
+		}
+	}, [y]) // eslint-disable-line
 
 	return (
 
 		<article className="article">
 
-			<div className="route">
+			<div className="route" ref={scrollRef}>
 
 				<section className="home">
 
@@ -23,6 +33,8 @@ const Home = () => {
 									: "Hi, my name is"
 							}
 						</p>
+
+						<p>{y}</p>
 
 						<h2 className="home__title">Emmanuel Méndez.</h2>
 

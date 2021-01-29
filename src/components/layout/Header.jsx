@@ -8,21 +8,23 @@ import { Nav } from './Nav'
 import logo from '../../svg/logo.svg';
 import { ReactComponent as Menu } from '../../svg/menu.svg';
 
-export const Header = ({ toggleMenu, setToggleMenu, scrollToTopButton, setScrollToTopButton, pageYOffset, darkMode, setDarkMode }) => {
+export const Header = ({ toggleMenu, setToggleMenu, scrollToTopButton, setScrollToTopButton, darkMode, setDarkMode, y, scrollRef }) => {
+
+	console.log(scrollRef);
 
 	useEffect(() => {
-		if (pageYOffset > 112 && scrollToTopButton === false && toggleMenu === false) {
+		if (scrollRef > 1 && scrollToTopButton === false && toggleMenu === false) {
 			setScrollToTopButton(true)
-		} else if (pageYOffset < 112) {
+		} else if (scrollRef < 1) {
 			setScrollToTopButton(false)
 		}
-	}, [pageYOffset]) // eslint-disable-line
+	}, [scrollRef]) // eslint-disable-line
 
 	const setToggleFromToggleMenu = () => {
 		setToggleMenu(!toggleMenu)
 		if (scrollToTopButton) {
 			setScrollToTopButton(false)
-		} else if (scrollToTopButton === false && pageYOffset > 112) {
+		} else if (scrollToTopButton === false) {
 			setScrollToTopButton(true)
 		}
 	}

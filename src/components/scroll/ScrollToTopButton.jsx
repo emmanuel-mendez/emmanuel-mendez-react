@@ -4,7 +4,6 @@ import { ReactComponent as Upload } from '../../svg/upload.svg';
 
 export const ScrollToTopButton = ({ scrollToTopButton, pageYOffset }) => {
 
-
 	const scrollToTop = () => {
 		window.scrollTo({ top: 0, behavior: 'smooth' })
 	}
