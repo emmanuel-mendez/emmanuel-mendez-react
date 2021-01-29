@@ -735,15 +735,16 @@ body {
   }
 }
 .home {
-  min-height: calc(100vh - 3.5rem - 3.2rem);
+  height: calc(100vh - 3.5rem - 3.2rem);
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 1.5rem 1rem 0 1rem;
+  scroll-snap-align: start;
 }
 .home__description {
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 .home__introduce {
   padding-bottom: 1rem;
@@ -779,15 +780,16 @@ body {
 }
 
 .aboutMe {
-  min-height: calc(100vh - 3.5rem - 3.2rem);
+  height: calc(100vh - 3.5rem - 3.2rem);
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 1.5rem 1rem 0 1rem;
+  scroll-snap-align: start;
 }
 .aboutMe__description {
-  font-size: 1rem;
+  font-size: 0.9rem;
   width: 95%;
   align-self: start;
   padding-bottom: 1rem;
@@ -826,8 +828,9 @@ body {
   padding: 1.5rem 1rem 0 1rem;
 }
 .skills__description {
-  font-size: 1rem;
+  font-size: 0.9rem;
   width: 88%;
+  padding-bottom: 1rem;
 }
 .skills__title {
   font-size: 1.75rem;
@@ -846,7 +849,7 @@ body {
 }
 .skills__image {
   align-self: flex-end;
-  width: 70%;
+  width: 85%;
   height: auto;
 }
 
@@ -859,7 +862,7 @@ body {
   padding: 1.5rem 1rem 0 1rem;
 }
 .frontend__description {
-  font-size: 1rem;
+  font-size: 0.9rem;
   width: 88%;
 }
 .frontend__title {
@@ -892,7 +895,7 @@ body {
   padding: 1.5rem 1rem 0 1rem;
 }
 .backend__description {
-  font-size: 1rem;
+  font-size: 0.9rem;
   width: 88%;
 }
 .backend__title {
@@ -951,7 +954,7 @@ body {
 .portfolio__originalityAndConfidentiality {
   font-size: 0.7rem;
   text-align: justify;
-  padding-bottom: 1.5rem;
+  padding-bottom: 2rem;
 }
 .portfolio__image {
   align-self: center;
@@ -999,11 +1002,10 @@ body {
 }
 
 .route {
-  min-height: calc(100vh - 3.5rem - 3.2rem);
+  height: calc(100vh - 3.5rem - 3.2rem);
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
 }
 
 .loader__index {

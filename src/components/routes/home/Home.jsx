@@ -70,8 +70,8 @@ const Home = () => {
 
 						<p className="aboutMe__introduce">
 							{useLang()
-								? "Hola, soy Emmanuel Méndez, un desarrollador web residente en Caracas, Venezuela."
-								: "Hello, I'm Emmanuel Méndez, a web developer based in Caracas, Venezuela."
+								? "Hola, soy Emmanuel Méndez, un desarrollador web residente en el Distrito Capital, Venezuela."
+								: "Hello, I'm Emmanuel Méndez, a web developer based in Distrito Capital, Venezuela."
 							}
 						</p>
 

@@ -1,11 +1,11 @@
 @import "./home";
 @import "./skills";
 @import "./portfolio";
+@import "./cv";
 
 .route {
-	min-height: calc(100vh - #{$headerHeightM} - #{$footerHeightM});
+	height: calc(100vh - #{$headerHeightM} - #{$footerHeightM});
 	width: 100%;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+	overflow-y: scroll;
+	scroll-snap-type: y mandatory;
 }
