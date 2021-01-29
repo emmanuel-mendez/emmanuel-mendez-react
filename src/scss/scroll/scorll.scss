@@ -63,3 +63,24 @@ body::-webkit-scrollbar {
 		}
 	}
 }
+
+.scrollDown {
+	width: 1rem;
+	height: auto;
+	writing-mode: vertical-lr;
+	font-size: 0.7rem;
+	color: var(--firstColor);
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	padding-bottom: 1rem;
+
+	&__svg {
+		height: 10%;
+		width: 100%;
+	}
+}
+
+.scrollDown p {
+	padding-bottom: 0.2rem;
+}

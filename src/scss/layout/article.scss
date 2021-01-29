@@ -2,7 +2,7 @@
 	margin-top: $headerHeightM;
 	margin-bottom: $footerHeightM;
 	min-height: calc(100% - #{$headerHeightM});
-	animation: fadeIn ease 0.25s;
+	animation: fadeIn ease 0.3s;
 
 	@include from(l) {
 		margin-top: $headerHeightL;

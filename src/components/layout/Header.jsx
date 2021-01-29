@@ -10,12 +10,10 @@ import { ReactComponent as Menu } from '../../svg/menu.svg';
 
 export const Header = ({ toggleMenu, setToggleMenu, scrollToTopButton, setScrollToTopButton, darkMode, setDarkMode, y, scrollRef }) => {
 
-	console.log(scrollRef);
-
 	useEffect(() => {
-		if (scrollRef > 1 && scrollToTopButton === false && toggleMenu === false) {
+		if (scrollRef > 112 && scrollToTopButton === false && toggleMenu === false) {
 			setScrollToTopButton(true)
-		} else if (scrollRef < 1) {
+		} else if (scrollRef < 112) {
 			setScrollToTopButton(false)
 		}
 	}, [scrollRef]) // eslint-disable-line

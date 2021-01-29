@@ -4,15 +4,17 @@ import { useLang } from '../../hooks/useLang'
 
 import { ReactComponent as HomeImage } from '../../../svg/homeImage.svg';
 
+import { ReactComponent as ScrollDown } from '../../../svg/scrollDown.svg';
+
 const AboutMeImage = lazy(() => import('./AboutMeImage'))
 
 const Home = ({ scrollToTopButton, setScrollToTopButton, toggleMenu, y, scrollRef }) => {
 
 
 	useEffect(() => {
-		if (y > 1 && scrollToTopButton === false) {
+		if (y > 112 && scrollToTopButton === false) {
 			setScrollToTopButton(true)
-		} else if (y < 1) {
+		} else if (y < 112) {
 			setScrollToTopButton(false)
 		}
 	}, [y]) // eslint-disable-line
@@ -25,45 +27,51 @@ const Home = ({ scrollToTopButton, setScrollToTopButton, toggleMenu, y, scrollRe
 
 				<section className="home">
 
-					<div className="home__description">
-						<p className="home__introduce">
-							{
-								useLang()
-									? "Hola, mi nombre es"
-									: "Hi, my name is"
-							}
-						</p>
+					<div className="home__container">
+						<div className="home__description">
+							<p className="home__introduce">
+								{
+									useLang()
+										? "Hola, mi nombre es"
+										: "Hi, my name is"
+								}
+							</p>
 
-						<p>{y}</p>
+							<h2 className="home__title">Emmanuel Méndez.</h2>
 
-						<h2 className="home__title">Emmanuel Méndez.</h2>
+							<h3 className="home__subtitle">
+								{
+									useLang()
+										? "Soy un desarrollador web."
+										: "I'm a web developer."
+								}
+							</h3>
 
-						<h3 className="home__subtitle">
-							{
-								useLang()
-									? "Soy un desarrollador web."
-									: "I'm a web developer."
-							}
-						</h3>
+							<p className="home__paragraph">
+								{
+									useLang()
+										? "Me especializo en el diseño de sitios web excepcionales, desarrollo de aplicaciones multiplataforma y la administración bases de datos."
+										: "I specialize in designing exceptional websites, building cross-platform applications and managing databases."
+								}
+							</p>
 
-						<p className="home__paragraph">
-							{
-								useLang()
-									? "Me especializo en el diseño de sitios web excepcionales, desarrollo de aplicaciones multiplataforma y la administración bases de datos."
-									: "I specialize in designing exceptional websites, building cross-platform applications and managing databases."
-							}
-						</p>
-
-						<div className="home__getInTouchButton">
-							{
-								useLang()
-									? "Contáctame"
-									: "Get in touch"
-							}
+							<div className="home__getInTouchButton">
+								{
+									useLang()
+										? "Contáctame"
+										: "Get in touch"
+								}
+							</div>
 						</div>
+
+						<HomeImage className="home__image" />
 					</div>
 
-					<HomeImage className="home__image" />
+					<div className="scrollDown">
+						<p>SCROLL</p>
+						<p>DOWN</p>
+						<ScrollDown className="scrollDown__svg" />
+					</div>
 
 
 				</section>
