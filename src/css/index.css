@@ -1111,8 +1111,8 @@ body::-webkit-scrollbar {
 }
 
 .scrollDown {
+  height: 100%;
   width: 1rem;
-  height: auto;
   writing-mode: vertical-lr;
   font-size: 0.7rem;
   color: var(--firstColor);
@@ -1122,12 +1122,14 @@ body::-webkit-scrollbar {
   padding-bottom: 1rem;
 }
 .scrollDown__svg {
-  height: 10%;
+  height: 100%;
   width: 100%;
+  display: none;
 }
 
 .scrollDown p {
   padding-bottom: 0.2rem;
+  height: auto;
 }
 
 /*# sourceMappingURL=index.css.map */

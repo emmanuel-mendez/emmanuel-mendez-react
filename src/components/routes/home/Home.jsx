@@ -68,8 +68,8 @@ const Home = ({ scrollToTopButton, setScrollToTopButton, toggleMenu, y, scrollRe
 					</div>
 
 					<div className="scrollDown">
-						<p>SCROLL</p>
-						<p>DOWN</p>
+						<p>{"< SCROLL"}</p>
+						<p>{"DOWN />"}</p>
 						<ScrollDown className="scrollDown__svg" />
 					</div>
 
