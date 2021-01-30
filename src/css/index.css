@@ -778,7 +778,7 @@ body {
 }
 .home__image {
   align-self: flex-end;
-  width: 60%;
+  width: 50%;
   height: auto;
   padding-top: 1rem;
   padding-right: 1.5rem;
@@ -829,19 +829,25 @@ body {
   min-height: calc(100vh - 3.5rem - 3.2rem);
   width: 100%;
   display: flex;
-  flex-direction: column;
   align-items: center;
   padding: 1.5rem 1rem 0 1rem;
+  scroll-snap-align: start;
+}
+.skills__container {
+  display: flex;
+  flex-direction: column;
 }
 .skills__description {
   font-size: 0.9rem;
-  width: 88%;
   padding-bottom: 1rem;
 }
 .skills__title {
   font-size: 1.75rem;
   color: var(--firstColor);
   padding-bottom: 1rem;
+}
+.skills__advantages {
+  padding-left: 1rem;
 }
 .skills__advantage {
   padding-top: 0.3rem;
@@ -863,9 +869,13 @@ body {
   min-height: calc(100vh - 3.5rem - 3.2rem);
   width: 100%;
   display: flex;
-  flex-direction: column;
   align-items: center;
   padding: 1.5rem 1rem 0 1rem;
+  scroll-snap-align: start;
+}
+.frontend__container {
+  display: flex;
+  flex-direction: column;
 }
 .frontend__description {
   font-size: 0.9rem;
@@ -879,6 +889,7 @@ body {
 .frontend__skills {
   color: var(--firstColor);
   padding-bottom: 1rem;
+  padding-left: 1rem;
 }
 .frontend__skill {
   padding-top: 0.3rem;
@@ -899,6 +910,7 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 1.5rem 1rem 0 1rem;
+  scroll-snap-align: start;
 }
 .backend__description {
   font-size: 0.9rem;
@@ -926,9 +938,9 @@ body {
   align-self: center;
   width: 40%;
   height: auto;
-  position: absolute;
-  right: 1rem;
-  bottom: -140%;
+  position: relative;
+  left: calc(3.2rem + 2rem);
+  bottom: calc(3.2rem + 2rem);
 }
 
 .portfolio {
@@ -938,6 +950,7 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 1.5rem 1rem 0 1rem;
+  scroll-snap-align: start;
 }
 .portfolio__description {
   font-size: 1rem;
@@ -973,6 +986,7 @@ body {
 }
 .portfolio__item {
   min-height: 100%;
+  scroll-snap-align: start;
 }
 .portfolio__itemTitle {
   font-size: 1.75rem;
@@ -1057,7 +1071,7 @@ body::-webkit-scrollbar {
 .scrollToTop {
   position: fixed;
   bottom: calc(3.2rem + 1rem);
-  right: 1.8rem;
+  right: 1.2rem;
   background-color: var(--firstColor);
   display: flex;
   justify-content: center;
@@ -1116,7 +1130,7 @@ body::-webkit-scrollbar {
   height: max-content;
   width: 1rem;
   writing-mode: vertical-lr;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   color: var(--firstColor);
   display: flex;
   justify-content: flex-end;
@@ -1124,14 +1138,14 @@ body::-webkit-scrollbar {
   padding-bottom: 1rem;
   margin-top: auto;
 }
-.scrollDown__svg {
-  height: 100%;
-  width: 100%;
-  display: none;
+.scrollDown__line {
+  height: 10vh;
+  width: 0.01rem;
+  background-color: var(--firstColor);
 }
 
 .scrollDown p {
-  padding-bottom: 0.2rem;
+  padding-bottom: 0.3rem;
   height: auto;
 }
 

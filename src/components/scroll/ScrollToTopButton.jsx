@@ -2,10 +2,12 @@ import React from 'react'
 
 import { ReactComponent as Upload } from '../../svg/upload.svg';
 
-export const ScrollToTopButton = ({ scrollToTopButton, pageYOffset }) => {
+export const ScrollToTopButton = ({ scrollToTopButton }) => {
 
 	const scrollToTop = () => {
-		window.scrollTo({ top: 0, behavior: 'smooth' })
+
+		let a = document.getElementById("ref");
+		a.scrollTo({ top: 0, behavior: 'smooth' })
 	}
 
 	const classNames = () => {

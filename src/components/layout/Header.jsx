@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import { NavLink } from "react-router-dom";
 
 import { useLogoLink } from '../../components/hooks/useLogoLink'
@@ -8,23 +8,10 @@ import { Nav } from './Nav'
 import logo from '../../svg/logo.svg';
 import { ReactComponent as Menu } from '../../svg/menu.svg';
 
-export const Header = ({ toggleMenu, setToggleMenu, scrollToTopButton, setScrollToTopButton, darkMode, setDarkMode, y, scrollRef }) => {
-
-	useEffect(() => {
-		if (scrollRef > 112 && scrollToTopButton === false && toggleMenu === false) {
-			setScrollToTopButton(true)
-		} else if (scrollRef < 112) {
-			setScrollToTopButton(false)
-		}
-	}, [scrollRef]) // eslint-disable-line
+export const Header = ({ toggleMenu, setToggleMenu, scrollToTopButton, setScrollToTopButton, darkMode, setDarkMode }) => {
 
 	const setToggleFromToggleMenu = () => {
 		setToggleMenu(!toggleMenu)
-		if (scrollToTopButton) {
-			setScrollToTopButton(false)
-		} else if (scrollToTopButton === false) {
-			setScrollToTopButton(true)
-		}
 	}
 
 	const setToggleFromLogo = () => {

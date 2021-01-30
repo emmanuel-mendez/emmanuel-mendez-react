@@ -2,6 +2,8 @@ import React from 'react'
 
 import { useLang } from '../../hooks/useLang'
 
+import { ScrollDown } from '../../scroll/ScrollDown'
+
 import { ReactComponent as SkillsImage } from '../../../svg/skillsImage.svg';
 
 import { ReactComponent as Frontend } from '../../../svg/frontend.svg';
@@ -10,12 +12,11 @@ import { ReactComponent as Backend } from '../../../svg/backend.svg';
 
 const Skills = () => {
 	return (
-		<article className="article">
 
-			<div className="route">
+		<>
+			<section className="skills">
 
-				<section className="skills">
-
+				<div className="skills__conatiner">
 					<div className="skills__description">
 						<h2 className="skills__title">{
 							useLang()
@@ -76,10 +77,15 @@ const Skills = () => {
 					</div>
 
 					<SkillsImage className="skills__image" />
+				</div>
 
-				</section>
+				<ScrollDown />
 
-				<section className="frontend">
+			</section>
+
+			<section className="frontend">
+
+				<div className="frontend__container">
 
 					<div className="frontend__description">
 
@@ -153,95 +159,92 @@ const Skills = () => {
 					</div>
 
 					<Frontend className="frontend__image" />
+				</div>
 
+			</section>
 
-				</section>
+			<section className="backend">
 
-				<section className="backend">
+				<div className="backend__description">
 
-					<div className="backend__description">
+					<h2 className="backend__title">{
+						useLang()
+							? "Habilidades en backend."
+							: "Backend skills."
+					}</h2>
 
-						<h2 className="backend__title">{
-							useLang()
-								? "Habilidades en backend."
-								: "Backend skills."
-						}</h2>
+					<ul className="backend__skills">
 
-						<ul className="backend__skills">
+						<li className="backend__skill">
+							<h3>{
+								useLang()
+									? "Leguajes de programación"
+									: "Programming languages"
+							}</h3>
+							<p>Javascript</p>
+							<p>Typescript</p>
+							<p>PHP</p>
+						</li>
 
-							<li className="backend__skill">
-								<h3>{
-									useLang()
-										? "Leguajes de programación"
-										: "Programming languages"
-								}</h3>
-								<p>Javascript</p>
-								<p>Typescript</p>
-								<p>PHP</p>
-							</li>
+						<li className="backend__skill">
+							<h3>{
+								useLang()
+									? "Entorno de desarrollo para Javascript"
+									: "Runtime enviroment for Javascript"
+							}</h3>
+							<p>Node.js</p>
+						</li>
 
-							<li className="backend__skill">
-								<h3>{
-									useLang()
-										? "Entorno de desarrollo para Javascript"
-										: "Runtime enviroment for Javascript"
-								}</h3>
-								<p>Node.js</p>
-							</li>
+						<li className="backend__skill">
+							<h3>{
+								useLang()
+									? "Entorno de desarrollo para Typescript"
+									: "Runtime enviroment for Typescript"
+							}</h3>
+							<p>Deno</p>
+						</li>
 
-							<li className="backend__skill">
-								<h3>{
-									useLang()
-										? "Entorno de desarrollo para Typescript"
-										: "Runtime enviroment for Typescript"
-								}</h3>
-								<p>Deno</p>
-							</li>
+						<li className="backend__skill">
+							<h3>APIs</h3>
+							<p>REST</p>
+							<p>GraphQL</p>
+						</li>
 
-							<li className="backend__skill">
-								<h3>APIs</h3>
-								<p>REST</p>
-								<p>GraphQL</p>
-							</li>
+						<li className="backend__skill">
+							<h3>{
+								useLang()
+									? "Servidor de GraphQL"
+									: "GraphQL server"
+							}</h3>
+							<p>Apollo server</p>
+						</li>
 
-							<li className="backend__skill">
-								<h3>{
-									useLang()
-										? "Servidor de GraphQL"
-										: "GraphQL server"
-								}</h3>
-								<p>Apollo server</p>
-							</li>
+						<li className="backend__skill">
+							<h3>{
+								useLang()
+									? "Bases de datos"
+									: "Databases"
+							}</h3>
 
-							<li className="backend__skill">
-								<h3>{
-									useLang()
-										? "Bases de datos"
-										: "Databases"
-								}</h3>
+							<div className="backend__databases">
+								<h4>SQL</h4>
+								<p>MySQL</p>
+							</div>
 
-								<div className="backend__databases">
-									<h4>SQL</h4>
-									<p>MySQL</p>
-								</div>
+							<div className="backend__databases">
+								<h4>NoSQL</h4>
+								<p>MongoDB</p>
+							</div>
+						</li>
 
-								<div className="backend__databases">
-									<h4>NoSQL</h4>
-									<p>MongoDB</p>
-								</div>
-							</li>
+					</ul>
 
-						</ul>
+				</div>
 
-					</div>
+				<Backend className="backend__image" />
 
-					<Backend className="backend__image" />
-
-				</section>
-
-			</div>
-
-		</article>
+			</section>
+		</>
 
 	)
 }

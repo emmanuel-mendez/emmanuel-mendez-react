@@ -4,7 +4,6 @@ import {
 	Switch,
 	Route,
 } from "react-router-dom";
-import { useScroll } from 'react-use';
 
 import Layout from './components/layout/Layout'
 
@@ -18,13 +17,6 @@ import Cv from './components/routes/cv/Cv'
 import './App.css';
 
 const App = () => {
-
-	const scrollRef = React.useRef(null);
-	const { y } = useScroll(scrollRef);
-
-
-	const [toggleMenu, setToggleMenu] = useState(false)
-	const [scrollToTopButton, setScrollToTopButton] = useState(false)
 
 	const getInitialMode = () => {
 		const savedMode = JSON.parse(localStorage.getItem('dark'))
@@ -43,11 +35,11 @@ const App = () => {
 			: "App"}>
 
 			<Router>
-				<Layout darkMode={darkMode} setDarkMode={setDarkMode} toggleMenu={toggleMenu} setToggleMenu={setToggleMenu} scrollToTopButton={scrollToTopButton} setScrollToTopButton={setScrollToTopButton} y={y} scrollRef={scrollRef}>
+				<Layout darkMode={darkMode} setDarkMode={setDarkMode}>
 					<Switch>
 
 						<Route exact path={["/", "/es/"]} >
-							<Home scrollToTopButton={scrollToTopButton} setScrollToTopButton={setScrollToTopButton} y={y} scrollRef={scrollRef} />
+							<Home />
 						</Route>
 
 						<Route exact path={["/skills", "/es/skills"]} >

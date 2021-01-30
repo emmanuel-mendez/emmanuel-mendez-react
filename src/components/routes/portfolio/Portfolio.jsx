@@ -8,96 +8,92 @@ import { ReactComponent as PortfolioImage } from '../../../svg/portfolioImage.sv
 
 const Portfolio = () => {
 	return (
-		<article className="article">
 
-			<div className="route">
+		<>
+			<section className="portfolio">
 
-				<section className="portfolio">
+				<div className="portfolio__description">
+					<h2 className="portfolio__title">{
+						useLang()
+							? "Portafolio."
+							: "Portfolio."
+					}</h2>
 
-					<div className="portfolio__description">
-						<h2 className="portfolio__title">{
+					<p className="portfolio__paragraph">
+						{
 							useLang()
-								? "Portafolio."
-								: "Portfolio."
-						}</h2>
+								? "Esta es la colección de los proyectos que representan mi trabajo como desarrollador web."
+								: "This is the collection of projects that represent my work as a web developer."
+						}
+					</p>
 
-						<p className="portfolio__paragraph">
-							{
-								useLang()
-									? "Esta es la colección de los proyectos que representan mi trabajo como desarrollador web."
-									: "This is the collection of projects that represent my work as a web developer."
-							}
-						</p>
+					<h3 className="portfolio__subtitle">{
+						useLang()
+							? "Declaración de originalidad y confidencialidad."
+							: "Statement of Originality and Confidentiality."
+					}</h3>
 
-						<h3 className="portfolio__subtitle">{
+					<p className="portfolio__originalityAndConfidentiality">
+						{
 							useLang()
-								? "Declaración de originalidad y confidencialidad."
-								: "Statement of Originality and Confidentiality."
-						}</h3>
+								? "Este portafolio es obra de Emmanuel Méndez. Por favor no copie sin permiso. Algunas de las exhibiciones, muestras de trabajo y / o muestras de servicios son propiedad de la organización cuyo nombre aparece en el documento. Cada uno ha otorgado permiso para que este producto se utilice como demostración de mi trabajo."
+								: "This portfolio is the work of Emmanuel Méndez. Please do not copy without permission. Some of the exhibits, work samples, and/or service samples are the proprietary property of the organization whose name appears on the document. Each has granted permission for this product to be used as a demonstration of my work."
+						}
+					</p>
 
-						<p className="portfolio__originalityAndConfidentiality">
-							{
-								useLang()
-									? "Este portafolio es obra de Emmanuel Méndez. Por favor no copie sin permiso. Algunas de las exhibiciones, muestras de trabajo y / o muestras de servicios son propiedad de la organización cuyo nombre aparece en el documento. Cada uno ha otorgado permiso para que este producto se utilice como demostración de mi trabajo."
-									: "This portfolio is the work of Emmanuel Méndez. Please do not copy without permission. Some of the exhibits, work samples, and/or service samples are the proprietary property of the organization whose name appears on the document. Each has granted permission for this product to be used as a demonstration of my work."
-							}
-						</p>
+				</div>
 
-					</div>
+				<PortfolioImage className="portfolio__image" />
 
-					<PortfolioImage className="portfolio__image" />
+			</section>
 
-				</section>
+			<section className="portfolio">
 
-				<section className="portfolio">
+				<div className="portfolio__worksDescription">
 
-					<div className="portfolio__worksDescription">
+					<ul className="portfolio__list">
+						<li className="portfolio__item">
+							<a href="https://quimicos-mayulu-client.herokuapp.com/" target="blank">
+								<h3 className="portfolio__itemTitle">Mayulu shop</h3>
 
-						<ul className="portfolio__list">
-							<li className="portfolio__item">
-								<a href="https://quimicos-mayulu-client.herokuapp.com/" target="blank">
-									<h3 className="portfolio__itemTitle">Mayulu shop</h3>
+								<div className="portfolio__itemDescription">
 
-									<div className="portfolio__itemDescription">
-
-										<p className="portfolio__itemParagraph">Químicos Mayulu C.A.</p>
-										<p className="portfolio__itemParagraph">{
-											useLang()
-												? "Ene 2020 - Dic 2020"
-												: "Jan 2020 – Dic 2020"
-										}</p>
-										<p className="portfolio__itemParagraph">Caracas, Venezuela</p>
-										<p className="portfolio__itemParagraph">{
-											useLang()
-												? "Desarrollador web"
-												: "Web developer"
-										}</p>
-
-									</div>
-
-									<div className="portfolio__itemImageContainer">
-
-										<QuimicosMayuluImage />
-
-									</div>
-
-									<p className="portfolio__itemResume">{
+									<p className="portfolio__itemParagraph">Químicos Mayulu C.A.</p>
+									<p className="portfolio__itemParagraph">{
 										useLang()
-											? "Desarrollar una aplicación web que agiliza el proceso de divulgación, actualización y venta de los productos de limpieza de la empresa."
-											: "Develop a web application that speeds up the process of disclosure, updating and sale of cleaning products of the company."
+											? "Ene 2020 - Dic 2020"
+											: "Jan 2020 – Dic 2020"
 									}</p>
-								</a>
-							</li>
+									<p className="portfolio__itemParagraph">Caracas, Venezuela</p>
+									<p className="portfolio__itemParagraph">{
+										useLang()
+											? "Desarrollador web"
+											: "Web developer"
+									}</p>
 
-						</ul>
+								</div>
 
-					</div>
+								<div className="portfolio__itemImageContainer">
 
-				</section>
+									<QuimicosMayuluImage />
 
-			</div>
+								</div>
 
-		</article>
+								<p className="portfolio__itemResume">{
+									useLang()
+										? "Desarrollar una aplicación web que agiliza el proceso de divulgación, actualización y venta de los productos de limpieza de la empresa."
+										: "Develop a web application that speeds up the process of disclosure, updating and sale of cleaning products of the company."
+								}</p>
+							</a>
+						</li>
+
+					</ul>
+
+				</div>
+
+			</section>
+		</>
+
 	)
 }
 

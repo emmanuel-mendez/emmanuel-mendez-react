@@ -9,7 +9,7 @@ body::-webkit-scrollbar {
 .scrollToTop {
 	position: fixed;
 	bottom: calc(#{$footerHeightM} + 1rem);
-	right: 1.8rem;
+	right: 1.2rem;
 	background-color: var(--firstColor);
 	display: flex;
 	justify-content: center;
@@ -68,7 +68,7 @@ body::-webkit-scrollbar {
 	height: max-content;
 	width: 1rem;
 	writing-mode: vertical-lr;
-	font-size: 0.8rem;
+	font-size: 0.7rem;
 	color: var(--firstColor);
 	display: flex;
 	justify-content: flex-end;
@@ -76,14 +76,14 @@ body::-webkit-scrollbar {
 	padding-bottom: 1rem;
 	margin-top: auto;
 
-	&__svg {
-		height: 100%;
-		width: 100%;
-		display: none;
+	&__line {
+		height: 10vh;
+		width: 0.01rem;
+		background-color: var(--firstColor);
 	}
 }
 
 .scrollDown p {
-	padding-bottom: 0.2rem;
+	padding-bottom: 0.3rem;
 	height: auto;
 }

@@ -76,7 +76,7 @@ export const Nav = ({ toggleMenu, setToggleMenu, scrollToTopButton, setScrollToT
 						</div>)}</div>
 				</div>
 
-				<div className="copyright__languajes">
+				<div className="copyright__languajes" onClick={toggle}>
 					<p className="copyright__languajesContainer">
 						<NavLink exact to="/" className={classNames('copyright__languajesLink copyright__languajesEnglish  activeClassName="copyright__languajesSelected', {
 							"copyright__languajesSelected": usePathname().startsWith("/es/") === false
