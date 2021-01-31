@@ -2,13 +2,17 @@
 	min-height: calc(100vh - #{$headerHeightM} - #{$footerHeightM});
 	width: 100%;
 	display: flex;
-	flex-direction: column;
 	align-items: center;
 	padding: 1.5rem 1rem 0 1rem;
 	scroll-snap-align: start;
 
+	&__container {
+		display: flex;
+		flex-direction: column;
+	}
+
 	&__description {
-		font-size: 1rem;
+		font-size: 0.7rem;
 	}
 
 	&__title {
@@ -30,7 +34,6 @@
 	}
 
 	&__originalityAndConfidentiality {
-		font-size: 0.7rem;
 		text-align: justify;
 		padding-bottom: 2rem;
 	}
@@ -41,9 +44,20 @@
 		height: auto;
 	}
 
+	&__works {
+		min-height: calc(100vh - #{$headerHeightM} - #{$footerHeightM});
+		width: 100%;
+		display: flex;
+		align-items: flex-start;
+		padding: 1.5rem 1rem 0 1rem;
+	}
+
 	&__worksDescription {
 		font-size: 1rem;
-		width: 88%;
+	}
+
+	&__list {
+		padding: 0 1rem;
 	}
 
 	&__item {

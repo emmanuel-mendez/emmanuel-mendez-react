@@ -2,6 +2,8 @@ import React from 'react'
 
 import { useLang } from '../../hooks/useLang'
 
+import { ScrollDown } from '../../scroll/ScrollDown'
+
 import QuimicosMayuluImage from './QuimicosMayuluImage'
 
 import { ReactComponent as PortfolioImage } from '../../../svg/portfolioImage.svg';
@@ -12,42 +14,46 @@ const Portfolio = () => {
 		<>
 			<section className="portfolio">
 
-				<div className="portfolio__description">
-					<h2 className="portfolio__title">{
-						useLang()
-							? "Portafolio."
-							: "Portfolio."
-					}</h2>
-
-					<p className="portfolio__paragraph">
-						{
+				<div className="portfolio__container">
+					<div className="portfolio__description">
+						<h2 className="portfolio__title">{
 							useLang()
-								? "Esta es la colección de los proyectos que representan mi trabajo como desarrollador web."
-								: "This is the collection of projects that represent my work as a web developer."
-						}
-					</p>
+								? "Portafolio."
+								: "Portfolio."
+						}</h2>
 
-					<h3 className="portfolio__subtitle">{
-						useLang()
-							? "Declaración de originalidad y confidencialidad."
-							: "Statement of Originality and Confidentiality."
-					}</h3>
+						<p className="portfolio__paragraph">
+							{
+								useLang()
+									? "Esta es la colección de los proyectos que representan mi trabajo como desarrollador web."
+									: "This is the collection of projects that represent my work as a web developer."
+							}
+						</p>
 
-					<p className="portfolio__originalityAndConfidentiality">
-						{
+						<h3 className="portfolio__subtitle">{
 							useLang()
-								? "Este portafolio es obra de Emmanuel Méndez. Por favor no copie sin permiso. Algunas de las exhibiciones, muestras de trabajo y / o muestras de servicios son propiedad de la organización cuyo nombre aparece en el documento. Cada uno ha otorgado permiso para que este producto se utilice como demostración de mi trabajo."
-								: "This portfolio is the work of Emmanuel Méndez. Please do not copy without permission. Some of the exhibits, work samples, and/or service samples are the proprietary property of the organization whose name appears on the document. Each has granted permission for this product to be used as a demonstration of my work."
-						}
-					</p>
+								? "Declaración de originalidad y confidencialidad."
+								: "Statement of Originality and Confidentiality."
+						}</h3>
 
+						<p className="portfolio__originalityAndConfidentiality">
+							{
+								useLang()
+									? "Este portafolio es obra de Emmanuel Méndez. Por favor no copie sin permiso. Algunas de las exhibiciones, muestras de trabajo y / o muestras de servicios son propiedad de la organización cuyo nombre aparece en el documento. Cada uno ha otorgado permiso para que este producto se utilice como demostración de mi trabajo."
+									: "This portfolio is the work of Emmanuel Méndez. Please do not copy without permission. Some of the exhibits, work samples, and/or service samples are the proprietary property of the organization whose name appears on the document. Each has granted permission for this product to be used as a demonstration of my work."
+							}
+						</p>
+
+					</div>
+
+					<PortfolioImage className="portfolio__image" />
 				</div>
 
-				<PortfolioImage className="portfolio__image" />
+				<ScrollDown />
 
 			</section>
 
-			<section className="portfolio">
+			<section className="portfolio__works">
 
 				<div className="portfolio__worksDescription">
 

@@ -32,7 +32,6 @@ const Layout = ({ children, darkMode, setDarkMode }) => {
 	const setToggleFromContainer = () => {
 		if (toggleMenu === true) {
 			setToggleMenu(!toggleMenu)
-			setScrollToTopButton(!scrollToTopButton)
 		}
 	}
 
