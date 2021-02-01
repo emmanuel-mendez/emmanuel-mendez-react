@@ -3,7 +3,7 @@
 	width: 100%;
 	display: flex;
 	align-items: center;
-	padding: 1.5rem 1rem 0 1rem;
+	padding: 0 1rem;
 	scroll-snap-align: start;
 
 	&__container {
@@ -12,7 +12,7 @@
 	}
 
 	&__description {
-		font-size: 0.7rem;
+		font-size: 0.9rem;
 	}
 
 	&__title {
@@ -36,6 +36,7 @@
 	&__originalityAndConfidentiality {
 		text-align: justify;
 		padding-bottom: 2rem;
+		font-size: 0.7rem;
 	}
 
 	&__image {
@@ -53,7 +54,7 @@
 	}
 
 	&__worksDescription {
-		font-size: 1rem;
+		font-size: 0.9rem;
 	}
 
 	&__list {

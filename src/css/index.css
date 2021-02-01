@@ -739,7 +739,7 @@ body {
   width: 100%;
   display: flex;
   align-items: center;
-  padding: 1.5rem 1rem 0 1rem;
+  padding: 0 1rem;
   scroll-snap-align: start;
 }
 .home__container {
@@ -791,12 +791,11 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 1.5rem 1rem 0 1rem;
+  padding: 0 1rem;
   scroll-snap-align: start;
 }
 .aboutMe__description {
   font-size: 0.9rem;
-  width: 95%;
   align-self: start;
   padding-bottom: 1rem;
 }
@@ -830,12 +829,13 @@ body {
   width: 100%;
   display: flex;
   align-items: center;
-  padding: 1.5rem 1rem 0 1rem;
+  padding: 0 1rem;
   scroll-snap-align: start;
 }
 .skills__container {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 .skills__description {
   font-size: 0.9rem;
@@ -870,7 +870,7 @@ body {
   width: 100%;
   display: flex;
   align-items: center;
-  padding: 1.5rem 1rem 0 1rem;
+  padding: 0 1rem;
   scroll-snap-align: start;
 }
 .frontend__container {
@@ -879,7 +879,6 @@ body {
 }
 .frontend__description {
   font-size: 0.9rem;
-  width: 88%;
 }
 .frontend__title {
   font-size: 1.75rem;
@@ -907,14 +906,16 @@ body {
   min-height: calc(100vh - 3.5rem - 3.2rem);
   width: 100%;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  padding: 1.5rem 1rem 0 1rem;
+  padding: 0 1rem;
   scroll-snap-align: start;
+}
+.backend__container {
+  display: flex;
+  flex-direction: column;
 }
 .backend__description {
   font-size: 0.9rem;
-  width: 88%;
 }
 .backend__title {
   font-size: 1.75rem;
@@ -924,6 +925,7 @@ body {
 }
 .backend__skills {
   color: var(--firstColor);
+  padding-left: 1rem;
 }
 .backend__skill {
   padding-top: 0.3rem;
@@ -934,13 +936,14 @@ body {
 .backend__databases {
   padding-top: 0.2rem;
 }
+.backend__databases-image {
+  display: flex;
+  align-items: flex-start;
+}
 .backend__image {
-  align-self: center;
-  width: 40%;
-  height: auto;
-  position: relative;
-  left: calc(3.2rem + 2rem);
-  bottom: calc(3.2rem + 2rem);
+  align-self: flex-end;
+  width: 50%;
+  height: 100%;
 }
 
 .portfolio {
@@ -948,7 +951,7 @@ body {
   width: 100%;
   display: flex;
   align-items: center;
-  padding: 1.5rem 1rem 0 1rem;
+  padding: 0 1rem;
   scroll-snap-align: start;
 }
 .portfolio__container {
@@ -956,7 +959,7 @@ body {
   flex-direction: column;
 }
 .portfolio__description {
-  font-size: 0.7rem;
+  font-size: 0.9rem;
 }
 .portfolio__title {
   font-size: 1.75rem;
@@ -976,6 +979,7 @@ body {
 .portfolio__originalityAndConfidentiality {
   text-align: justify;
   padding-bottom: 2rem;
+  font-size: 0.7rem;
 }
 .portfolio__image {
   align-self: center;
@@ -990,7 +994,7 @@ body {
   padding: 1.5rem 1rem 0 1rem;
 }
 .portfolio__worksDescription {
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 .portfolio__list {
   padding: 0 1rem;
@@ -1030,6 +1034,49 @@ body {
   width: 100%;
   padding: 1.5rem;
   object-fit: cover;
+}
+
+.cv {
+  min-height: calc(100vh - 3.5rem - 3.2rem);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  scroll-snap-align: start;
+}
+.cv__imgContainer {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 1.5rem;
+}
+.cv__img {
+  width: 70%;
+  height: auto;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+}
+.cv__links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cv__title {
+  font-size: 1rem;
+  color: var(--firstColor);
+  padding-bottom: 0.3rem;
+}
+.cv__downloads {
+  display: flex;
+  gap: 0.6rem;
+}
+.cv__download {
+  font-size: 0.9rem;
+  background-color: white;
+  border: 0.15rem solid var(--firstColor);
+  border-radius: 3px;
+  padding: 0.5rem;
+  align-self: flex-start;
+  width: max-content;
+  list-style: none;
 }
 
 .route {
