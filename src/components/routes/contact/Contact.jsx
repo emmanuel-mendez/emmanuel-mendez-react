@@ -6,9 +6,13 @@ import { ReactComponent as Instagram } from '../../../svg/instagram.svg';
 import { ReactComponent as Twitter } from '../../../svg/twitter.svg';
 import { ReactComponent as Github } from '../../../svg/github.svg';
 
+import { ReactComponent as ContactImage } from '../../../svg/contactImage.svg';
+
 const Contact = () => {
 	return (
 		<section className="contact">
+
+			<h2 className="contact__title">Contact.</h2>
 
 			<ul className="contact__links">
 				<li className="contact__linkContainer">
@@ -48,6 +52,8 @@ const Contact = () => {
 					</a>
 				</li>
 			</ul>
+
+			<ContactImage className="contact__image" />
 
 		</section>
 	)

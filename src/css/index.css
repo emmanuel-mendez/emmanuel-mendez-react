@@ -718,6 +718,36 @@ body {
   object-fit: cover;
 }
 
+.darkMode .cv__title {
+  color: white;
+}
+.darkMode .cv__linksTitle {
+  color: #e4e6eb;
+}
+.darkMode .cv__download {
+  background-color: var(--firstColor);
+  border: 1px solid #a8abaf;
+}
+.darkMode .cv a {
+  color: #e4e6eb;
+}
+
+.darkMode .contact__title {
+  color: white;
+}
+.darkMode .contact__link {
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+  color: #e4e6eb;
+  background-color: var(--darkColor);
+}
+
+.darkMode .scrollDown {
+  color: #a8abaf;
+}
+.darkMode .scrollDown__line {
+  background-color: #a8abaf;
+}
+
 @keyframes dark {
   from {
     background: white;
@@ -1083,34 +1113,59 @@ body {
   width: max-content;
   list-style: none;
 }
+.cv__svg {
+  position: absolute;
+  height: 10%;
+  width: auto;
+  bottom: calc(3.2rem + 15%);
+  right: 1rem;
+}
 
 .contact {
   height: 100%;
   width: 100%;
   font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 1.5rem 1rem 0 1rem;
+}
+.contact__title {
+  font-size: 1.8rem;
+  color: var(--firstColor);
+  height: 5%;
+  display: flex;
+  align-items: center;
 }
 .contact__links {
   display: flex;
   flex-direction: column;
   align-items: center;
   list-style: none;
-  height: 100%;
+  height: 70%;
   justify-content: space-evenly;
 }
 .contact__linkContainer {
   width: 70%;
-  height: 10%;
+  height: 12%;
 }
 .contact__link {
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
 }
 .contact__linkLogo {
   height: 70%;
   width: auto;
+}
+.contact__image {
+  position: absolute;
+  height: 18%;
+  width: auto;
+  bottom: calc(3.2rem + 1rem);
+  right: 1rem;
 }
 
 .route {

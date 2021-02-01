@@ -1,0 +1,21 @@
+.darkMode {
+	.cv {
+		&__title {
+			color: white;
+		}
+
+		&__linksTitle {
+			color: $subtitleColor;
+		}
+
+		&__download {
+			background-color: var(--firstColor);
+
+			border: 1px solid $darkTextColor;
+		}
+
+		a {
+			color: $subtitleColor;
+		}
+	}
+}

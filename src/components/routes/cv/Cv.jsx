@@ -2,6 +2,8 @@ import React from 'react'
 
 import { useLang } from '../../hooks/useLang'
 
+import { ReactComponent as CvImage } from '../../../svg/cvImage.svg';
+
 const Cv = () => {
 	return (
 
@@ -15,6 +17,8 @@ const Cv = () => {
 						? <img src={process.env.PUBLIC_URL + '/png/EMMANUEL-MÉNDEZ.png'} width="512" height="512" alt="Emmanuel Méndez" className="cv__img" />
 						: <img src={process.env.PUBLIC_URL + '/png/EMMANUEL-MENDEZ.png'} width="512" height="512" alt="Emmanuel Méndez" className="cv__img" />
 					}
+
+					<CvImage className="cv__svg" />
 				</div>
 
 				<div className="cv__links">

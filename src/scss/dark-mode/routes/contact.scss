@@ -1,0 +1,13 @@
+.darkMode {
+	.contact {
+		&__title {
+			color: white;
+		}
+
+		&__link {
+			box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+			color: $subtitleColor;
+			background-color: var(--darkColor);
+		}
+	}
+}

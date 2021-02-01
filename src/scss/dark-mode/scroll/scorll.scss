@@ -1,0 +1,9 @@
+.darkMode {
+	.scrollDown {
+		color: $darkTextColor;
+
+		&__line {
+			background-color: $darkTextColor;
+		}
+	}
+}

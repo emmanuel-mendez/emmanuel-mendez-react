@@ -51,4 +51,12 @@
 		width: max-content;
 		list-style: none;
 	}
+
+	&__svg {
+		position: absolute;
+		height: 10%;
+		width: auto;
+		bottom: calc(#{$footerHeightM} + 15%);
+		right: 1rem;
+	}
 }
