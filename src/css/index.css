@@ -1042,7 +1042,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  scroll-snap-align: start;
   padding: 0 1rem;
 }
 .cv__title {
@@ -1079,10 +1078,39 @@ body {
   background-color: white;
   border: 0.1rem solid var(--firstColor);
   border-radius: 3px;
-  padding: 0.5rem;
+  padding: 0.5rem 1rem;
   align-self: flex-start;
   width: max-content;
   list-style: none;
+}
+
+.contact {
+  height: 100%;
+  width: 100%;
+  font-size: 1rem;
+}
+.contact__links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  height: 100%;
+  justify-content: space-evenly;
+}
+.contact__linkContainer {
+  width: 70%;
+  height: 10%;
+}
+.contact__link {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+}
+.contact__linkLogo {
+  height: 70%;
+  width: auto;
 }
 
 .route {

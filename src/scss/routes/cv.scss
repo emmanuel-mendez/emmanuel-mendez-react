@@ -4,7 +4,6 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	scroll-snap-align: start;
 	padding: 0 1rem;
 
 	&__title {
@@ -47,7 +46,7 @@
 		background-color: white;
 		border: 0.1rem solid var(--firstColor);
 		border-radius: 3px;
-		padding: 0.5rem;
+		padding: 0.5rem 1rem;
 		align-self: flex-start;
 		width: max-content;
 		list-style: none;

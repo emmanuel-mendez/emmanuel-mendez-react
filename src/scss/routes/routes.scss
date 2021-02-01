@@ -2,6 +2,7 @@
 @import "./skills";
 @import "./portfolio";
 @import "./cv";
+@import "./contact";
 
 .route {
 	height: calc(100vh - #{$headerHeightM} - #{$footerHeightM});
