@@ -1043,6 +1043,12 @@ body {
   flex-direction: column;
   justify-content: center;
   scroll-snap-align: start;
+  padding: 0 1rem;
+}
+.cv__title {
+  font-size: 1.8rem;
+  color: var(--firstColor);
+  padding-bottom: 1.5rem;
 }
 .cv__imgContainer {
   display: flex;
@@ -1050,7 +1056,7 @@ body {
   padding-bottom: 1.5rem;
 }
 .cv__img {
-  width: 70%;
+  width: 65%;
   height: auto;
   box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
 }
@@ -1059,7 +1065,7 @@ body {
   flex-direction: column;
   align-items: center;
 }
-.cv__title {
+.cv__linksTitle {
   font-size: 1rem;
   color: var(--firstColor);
   padding-bottom: 0.3rem;
@@ -1069,9 +1075,9 @@ body {
   gap: 0.6rem;
 }
 .cv__download {
-  font-size: 0.9rem;
+  font-size: 0.7rem;
   background-color: white;
-  border: 0.15rem solid var(--firstColor);
+  border: 0.1rem solid var(--firstColor);
   border-radius: 3px;
   padding: 0.5rem;
   align-self: flex-start;

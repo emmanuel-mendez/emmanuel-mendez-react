@@ -5,6 +5,13 @@
 	flex-direction: column;
 	justify-content: center;
 	scroll-snap-align: start;
+	padding: 0 1rem;
+
+	&__title {
+		font-size: 1.8rem;
+		color: var(--firstColor);
+		padding-bottom: 1.5rem;
+	}
 
 	&__imgContainer {
 		display: flex;
@@ -13,7 +20,7 @@
 	}
 
 	&__img {
-		width: 70%;
+		width: 65%;
 		height: auto;
 		box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
 	}
@@ -24,7 +31,7 @@
 		align-items: center;
 	}
 
-	&__title {
+	&__linksTitle {
 		font-size: 1rem;
 		color: var(--firstColor);
 		padding-bottom: 0.3rem;
@@ -36,9 +43,9 @@
 	}
 
 	&__download {
-		font-size: 0.9rem;
+		font-size: 0.7rem;
 		background-color: white;
-		border: 0.15rem solid var(--firstColor);
+		border: 0.1rem solid var(--firstColor);
 		border-radius: 3px;
 		padding: 0.5rem;
 		align-self: flex-start;
