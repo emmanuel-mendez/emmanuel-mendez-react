@@ -9,7 +9,7 @@
 	&__title {
 		font-size: 1.75rem;
 		color: var(--firstColor);
-		padding-bottom: 1rem;
+		padding-bottom: 0.8rem;
 
 		@include from(mm) {
 			font-size: 2rem;
@@ -25,7 +25,7 @@
 		width: 75%;
 		display: flex;
 		justify-content: center;
-		padding-bottom: 1rem;
+		padding-bottom: 0.8rem;
 	}
 
 	&__img {

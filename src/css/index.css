@@ -1357,7 +1357,7 @@ body {
 .cv__title {
   font-size: 1.75rem;
   color: var(--firstColor);
-  padding-bottom: 1rem;
+  padding-bottom: 0.8rem;
 }
 @media screen and (min-width: 375px) {
   .cv__title {
@@ -1374,7 +1374,7 @@ body {
   width: 75%;
   display: flex;
   justify-content: center;
-  padding-bottom: 1rem;
+  padding-bottom: 0.8rem;
 }
 .cv__img {
   width: 100%;
