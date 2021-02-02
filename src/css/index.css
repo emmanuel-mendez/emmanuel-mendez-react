@@ -1276,7 +1276,11 @@ body {
   }
 }
 .portfolio__list {
+  min-height: calc(100vh - 3.5rem - 3.2rem);
   padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .portfolio__item {
   min-height: calc(100vh - 3.5rem - 3.2rem);

@@ -102,7 +102,11 @@
 	}
 
 	&__list {
+		min-height: calc(100vh - #{$headerHeightM} - #{$footerHeightM});
 		padding: 0 1rem;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
 	}
 
 	&__item {
