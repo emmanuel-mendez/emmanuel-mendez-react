@@ -9,17 +9,19 @@
 	&__title {
 		font-size: 1.8rem;
 		color: var(--firstColor);
-		padding-bottom: 1.5rem;
+		padding-bottom: 1rem;
 	}
 
 	&__imgContainer {
+		align-self: center;
+		width: 75%;
 		display: flex;
 		justify-content: center;
-		padding-bottom: 1.5rem;
+		padding-bottom: 1rem;
 	}
 
 	&__img {
-		width: 65%;
+		width: 100%;
 		height: auto;
 		box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
 	}
@@ -45,18 +47,10 @@
 		font-size: 0.7rem;
 		background-color: white;
 		border: 0.1rem solid var(--firstColor);
-		border-radius: 3px;
+		border-radius: 0.3rem;
 		padding: 0.5rem 1rem;
 		align-self: flex-start;
 		width: max-content;
 		list-style: none;
-	}
-
-	&__svg {
-		position: absolute;
-		height: 10%;
-		width: auto;
-		bottom: calc(#{$footerHeightM} + 15%);
-		right: 1rem;
 	}
 }

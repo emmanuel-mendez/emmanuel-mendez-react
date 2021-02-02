@@ -140,7 +140,7 @@ del {
 
 abbr[title],
 dfn[title] {
-	border-bottom: 1px dotted;
+	border-bottom: 0.1rem dotted;
 	cursor: help;
 }
 
@@ -151,9 +151,9 @@ table {
 
 hr {
 	display: block;
-	height: 1px;
+	height: 0.1rem;
 	border: 0;
-	border-top: 1px solid #cccccc;
+	border-top: 0.1rem solid #cccccc;
 	margin: 1em 0;
 	padding: 0;
 }

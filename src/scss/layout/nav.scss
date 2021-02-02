@@ -10,7 +10,7 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	border-left: 1px solid $borderColor;
+	border-left: 0.1rem solid $borderColor;
 	padding: 1rem;
 	animation: light 0.5s ease;
 
@@ -39,7 +39,7 @@
 .menuShow {
 	right: 0;
 	height: calc(100% - #{$headerHeightM});
-	box-shadow: -5px 0 5px 1px rgba(0, 0, 0, 0.2);
+	box-shadow: -0.5rem 0 0.5rem 0.1rem rgba(0, 0, 0, 0.2);
 
 	@include from(l) {
 		box-shadow: none;
@@ -52,7 +52,7 @@
 
 .menu {
 	&__item {
-		border-bottom: 2px solid var(--firstColor);
+		border-bottom: 0.2rem solid var(--firstColor);
 		cursor: pointer;
 		height: 3rem;
 
@@ -103,7 +103,7 @@
 		left: 0;
 		right: unset;
 		border-radius: 100%;
-		box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+		box-shadow: 0 0 0.2rem 0.2rem rgba(0, 0, 0, 0.2);
 	}
 
 	&.dark {

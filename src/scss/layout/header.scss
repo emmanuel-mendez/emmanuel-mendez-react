@@ -4,7 +4,7 @@
 	width: 100vw;
 	position: fixed;
 	z-index: var(--zFixed);
-	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+	box-shadow: 0 0.4rem 0.6rem rgba(0, 0, 0, 0.2);
 
 	@include from(l) {
 		position: fixed;

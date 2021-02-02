@@ -1,26 +1,37 @@
 .skills {
-	min-height: calc(100vh - #{$headerHeightM} - #{$footerHeightM});
-	width: 100%;
+	height: calc(100vh - #{$headerHeightM} - #{$footerHeightM});
+	width: 100vw;
 	display: flex;
-	align-items: center;
 	padding: 0 1rem;
 	scroll-snap-align: start;
 
 	&__container {
 		display: flex;
 		flex-direction: column;
-		align-items: center;
+		height: 100%;
 	}
 
 	&__description {
 		font-size: 0.9rem;
-		padding-bottom: 1rem;
+		height: 60%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+
+		@include from(mm) {
+			font-size: 1.2rem;
+			height: 65%;
+		}
 	}
 
 	&__title {
 		font-size: 1.75rem;
 		color: var(--firstColor);
 		padding-bottom: 1rem;
+
+		@include from(mm) {
+			font-size: 2rem;
+		}
 	}
 
 	&__advantages {
@@ -42,37 +53,54 @@
 
 	&__image {
 		align-self: flex-end;
-		width: 85%;
-		height: auto;
+		width: 80%;
+		height: 40%;
+		margin-top: auto;
+
+		@include from(mm) {
+			height: 30%;
+		}
 	}
 }
 
 .frontend {
-	min-height: calc(100vh - #{$headerHeightM} - #{$footerHeightM});
-	width: 100%;
+	height: calc(100vh - #{$headerHeightM} - #{$footerHeightM});
+	width: 100vw;
 	display: flex;
-	align-items: center;
-	padding: 0 1rem;
+	padding: 0 1rem 1rem 1rem;
 	scroll-snap-align: start;
 
 	&__container {
 		display: flex;
 		flex-direction: column;
+		height: 100%;
+		width: 100%;
 	}
 
 	&__description {
 		font-size: 0.9rem;
+		height: 80%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+
+		@include from(mm) {
+			font-size: 1.2rem;
+		}
 	}
 
 	&__title {
 		font-size: 1.75rem;
 		color: var(--firstColor);
 		padding-bottom: 1.5rem;
+
+		@include from(mm) {
+			font-size: 2rem;
+		}
 	}
 
 	&__skills {
 		color: var(--firstColor);
-		padding-bottom: 1rem;
 		padding-left: 1rem;
 	}
 
@@ -86,16 +114,17 @@
 
 	&__image {
 		align-self: center;
-		width: 50%;
-		height: auto;
+		width: auto;
+		height: 16%;
+		margin-top: auto;
+		padding-right: 2rem;
 	}
 }
 
 .backend {
-	min-height: calc(100vh - #{$headerHeightM} - #{$footerHeightM});
-	width: 100%;
+	height: calc(100vh - #{$headerHeightM} - #{$footerHeightM});
+	width: 100vw;
 	display: flex;
-	align-items: center;
 	padding: 0 1rem;
 	scroll-snap-align: start;
 
@@ -106,6 +135,14 @@
 
 	&__description {
 		font-size: 0.9rem;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+
+		@include from(mm) {
+			font-size: 1.2rem;
+		}
 	}
 
 	&__title {
@@ -113,6 +150,10 @@
 		color: var(--firstColor);
 		padding-bottom: 1rem;
 		width: 100%;
+
+		@include from(mm) {
+			font-size: 2rem;
+		}
 	}
 
 	&__skills {
@@ -139,7 +180,7 @@
 
 	&__image {
 		align-self: flex-end;
-		width: 50%;
+		width: 70%;
 		height: 100%;
 	}
 }

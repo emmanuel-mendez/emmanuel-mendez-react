@@ -15,7 +15,7 @@
 		&__getInTouchButton {
 			background-color: var(--firstColor);
 			color: $subtitleColor;
-			border: 1px solid $darkTextColor;
+			border: 0.1rem solid $darkTextColor;
 		}
 
 		&__image {
@@ -36,7 +36,7 @@
 		}
 
 		&__imageContainer {
-			border: 1px solid $darkTextColor;
+			border: 0.1rem solid $darkTextColor;
 		}
 	}
 }
