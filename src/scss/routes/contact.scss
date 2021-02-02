@@ -6,6 +6,14 @@
 	flex-direction: column;
 	padding: 1.5rem 1rem 0 1rem;
 
+	@include from(mm) {
+		font-size: 1.2rem;
+	}
+
+	@include from(ml) {
+		font-size: 1.4rem;
+	}
+
 	&__container {
 		height: 75%;
 		width: 100%;
@@ -20,6 +28,14 @@
 		height: 10%;
 		display: flex;
 		align-items: center;
+
+		@include from(mm) {
+			font-size: 2rem;
+		}
+
+		@include from(ml) {
+			font-size: 2.2rem;
+		}
 	}
 
 	&__links {

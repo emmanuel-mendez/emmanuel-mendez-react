@@ -13,7 +13,7 @@
 
 	&__description {
 		font-size: 0.9rem;
-		height: 75%;
+		height: 65%;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -21,19 +21,27 @@
 		@include from(mm) {
 			font-size: 1.2rem;
 		}
+
+		@include from(ml) {
+			font-size: 1.4rem;
+		}
 	}
 
 	&__introduce {
-		padding-bottom: 0.6rem;
+		padding-bottom: 0.5rem;
 	}
 
 	&__title {
-		font-size: 2rem;
+		font-size: 1.9rem;
 		color: var(--firstColor);
 		padding-bottom: 0.5rem;
 
 		@include from(mm) {
 			font-size: 2.3rem;
+		}
+
+		@include from(ml) {
+			font-size: 2.7rem;
 		}
 	}
 
@@ -44,6 +52,10 @@
 
 		@include from(mm) {
 			font-size: 2rem;
+		}
+
+		@include from(ml) {
+			font-size: 2.2rem;
 		}
 	}
 
@@ -66,12 +78,17 @@
 			font-size: 1.2rem;
 			padding: 1rem;
 		}
+
+		@include from(ml) {
+			font-size: 1.4rem;
+			padding: 1.2rem;
+		}
 	}
 
 	&__image {
 		align-self: flex-end;
 		width: auto;
-		height: 25%;
+		height: 35%;
 		margin-top: auto;
 		padding-right: 1rem;
 
@@ -102,6 +119,10 @@
 		@include from(mm) {
 			font-size: 1.2rem;
 		}
+
+		@include from(ml) {
+			font-size: 1.4rem;
+		}
 	}
 
 	&__title {
@@ -111,6 +132,10 @@
 
 		@include from(mm) {
 			font-size: 2rem;
+		}
+
+		@include from(ml) {
+			font-size: 2.2rem;
 		}
 	}
 

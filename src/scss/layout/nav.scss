@@ -56,6 +56,14 @@
 		cursor: pointer;
 		height: 3rem;
 
+		@include from(mm) {
+			height: 4rem;
+		}
+
+		@include from(ml) {
+			height: 4.2rem;
+		}
+
 		@include from(l) {
 			border-bottom: none;
 			height: 100%;
@@ -74,6 +82,14 @@
 		align-items: center;
 		padding-left: 1rem;
 		padding-right: 1rem;
+
+		@include from(mm) {
+			font-size: 1.2rem;
+		}
+
+		@include from(ml) {
+			font-size: 1.4rem;
+		}
 
 		@include from(l) {
 			font-size: 1rem;
@@ -155,6 +171,14 @@
 		font-size: 0.8rem;
 		text-align: center;
 
+		@include from(mm) {
+			font-size: 1rem;
+		}
+
+		@include from(ml) {
+			font-size: 1.1rem;
+		}
+
 		@include from(l) {
 			font-size: 1rem;
 		}
@@ -167,6 +191,14 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
+
+		@include from(mm) {
+			font-size: 0.9rem;
+		}
+
+		@include from(ml) {
+			font-size: 1rem;
+		}
 
 		@include from(t) {
 			font-size: 0.8rem;

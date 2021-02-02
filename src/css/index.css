@@ -385,6 +385,16 @@ body {
   cursor: pointer;
   height: 3rem;
 }
+@media screen and (min-width: 375px) {
+  .menu__item {
+    height: 4rem;
+  }
+}
+@media screen and (min-width: 425px) {
+  .menu__item {
+    height: 4.2rem;
+  }
+}
 @media screen and (min-width: 1024px) {
   .menu__item {
     border-bottom: none;
@@ -403,6 +413,16 @@ body {
   align-items: center;
   padding-left: 1rem;
   padding-right: 1rem;
+}
+@media screen and (min-width: 375px) {
+  .menu__link {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (min-width: 425px) {
+  .menu__link {
+    font-size: 1.4rem;
+  }
 }
 @media screen and (min-width: 1024px) {
   .menu__link {
@@ -482,6 +502,16 @@ body {
   font-size: 0.8rem;
   text-align: center;
 }
+@media screen and (min-width: 375px) {
+  .copyright__copyrightDescription {
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 425px) {
+  .copyright__copyrightDescription {
+    font-size: 1.1rem;
+  }
+}
 @media screen and (min-width: 1024px) {
   .copyright__copyrightDescription {
     font-size: 1rem;
@@ -494,6 +524,16 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media screen and (min-width: 375px) {
+  .copyright__languajes {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (min-width: 425px) {
+  .copyright__languajes {
+    font-size: 1rem;
+  }
 }
 @media screen and (min-width: 768px) {
   .copyright__languajes {
@@ -778,7 +818,7 @@ body {
 }
 .home__description {
   font-size: 0.9rem;
-  height: 75%;
+  height: 65%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -788,17 +828,27 @@ body {
     font-size: 1.2rem;
   }
 }
+@media screen and (min-width: 425px) {
+  .home__description {
+    font-size: 1.4rem;
+  }
+}
 .home__introduce {
-  padding-bottom: 0.6rem;
+  padding-bottom: 0.5rem;
 }
 .home__title {
-  font-size: 2rem;
+  font-size: 1.9rem;
   color: var(--firstColor);
   padding-bottom: 0.5rem;
 }
 @media screen and (min-width: 375px) {
   .home__title {
     font-size: 2.3rem;
+  }
+}
+@media screen and (min-width: 425px) {
+  .home__title {
+    font-size: 2.7rem;
   }
 }
 .home__subtitle {
@@ -809,6 +859,11 @@ body {
 @media screen and (min-width: 375px) {
   .home__subtitle {
     font-size: 2rem;
+  }
+}
+@media screen and (min-width: 425px) {
+  .home__subtitle {
+    font-size: 2.2rem;
   }
 }
 .home__paragraph {
@@ -831,10 +886,16 @@ body {
     padding: 1rem;
   }
 }
+@media screen and (min-width: 425px) {
+  .home__getInTouchButton {
+    font-size: 1.4rem;
+    padding: 1.2rem;
+  }
+}
 .home__image {
   align-self: flex-end;
   width: auto;
-  height: 25%;
+  height: 35%;
   margin-top: auto;
   padding-right: 1rem;
 }
@@ -867,6 +928,11 @@ body {
     font-size: 1.2rem;
   }
 }
+@media screen and (min-width: 425px) {
+  .aboutMe__description {
+    font-size: 1.4rem;
+  }
+}
 .aboutMe__title {
   font-size: 1.75rem;
   color: var(--firstColor);
@@ -875,6 +941,11 @@ body {
 @media screen and (min-width: 375px) {
   .aboutMe__title {
     font-size: 2rem;
+  }
+}
+@media screen and (min-width: 425px) {
+  .aboutMe__title {
+    font-size: 2.2rem;
   }
 }
 .aboutMe__introduce {
@@ -923,6 +994,11 @@ body {
     height: 65%;
   }
 }
+@media screen and (min-width: 425px) {
+  .skills__description {
+    font-size: 1.4rem;
+  }
+}
 .skills__title {
   font-size: 1.75rem;
   color: var(--firstColor);
@@ -931,6 +1007,11 @@ body {
 @media screen and (min-width: 375px) {
   .skills__title {
     font-size: 2rem;
+  }
+}
+@media screen and (min-width: 425px) {
+  .skills__title {
+    font-size: 2.2rem;
   }
 }
 .skills__advantages {
@@ -983,6 +1064,11 @@ body {
     font-size: 1.2rem;
   }
 }
+@media screen and (min-width: 425px) {
+  .frontend__description {
+    font-size: 1.4rem;
+  }
+}
 .frontend__title {
   font-size: 1.75rem;
   color: var(--firstColor);
@@ -991,6 +1077,11 @@ body {
 @media screen and (min-width: 375px) {
   .frontend__title {
     font-size: 2rem;
+  }
+}
+@media screen and (min-width: 425px) {
+  .frontend__title {
+    font-size: 2.2rem;
   }
 }
 .frontend__skills {
@@ -1034,6 +1125,11 @@ body {
     font-size: 1.2rem;
   }
 }
+@media screen and (min-width: 425px) {
+  .backend__description {
+    font-size: 1.4rem;
+  }
+}
 .backend__title {
   font-size: 1.75rem;
   color: var(--firstColor);
@@ -1043,6 +1139,11 @@ body {
 @media screen and (min-width: 375px) {
   .backend__title {
     font-size: 2rem;
+  }
+}
+@media screen and (min-width: 425px) {
+  .backend__title {
+    font-size: 2.2rem;
   }
 }
 .backend__skills {
@@ -1064,7 +1165,7 @@ body {
 }
 .backend__image {
   align-self: flex-end;
-  width: 70%;
+  width: 50%;
   height: 100%;
 }
 
@@ -1087,11 +1188,31 @@ body {
   flex-direction: column;
   justify-content: center;
 }
+@media screen and (min-width: 375px) {
+  .portfolio__description {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (min-width: 425px) {
+  .portfolio__description {
+    font-size: 1.4rem;
+  }
+}
 .portfolio__title {
   font-size: 1.75rem;
   color: var(--firstColor);
   padding-bottom: 1rem;
   margin-left: 0;
+}
+@media screen and (min-width: 375px) {
+  .portfolio__title {
+    font-size: 2rem;
+  }
+}
+@media screen and (min-width: 425px) {
+  .portfolio__title {
+    font-size: 2.2rem;
+  }
 }
 .portfolio__paragraph {
   padding-bottom: 1.5rem;
@@ -1102,10 +1223,24 @@ body {
   text-align: center;
   padding-bottom: 0.5rem;
 }
+@media screen and (min-width: 375px) {
+  .portfolio__subtitle {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (min-width: 425px) {
+  .portfolio__subtitle {
+    font-size: 1.7rem;
+  }
+}
 .portfolio__originalityAndConfidentiality {
   text-align: justify;
-  padding-bottom: 2rem;
   font-size: 0.7rem;
+}
+@media screen and (min-width: 375px) {
+  .portfolio__originalityAndConfidentiality {
+    font-size: 1rem;
+  }
 }
 .portfolio__image {
   align-self: center;
@@ -1117,7 +1252,7 @@ body {
   min-height: calc(100vh - 3.5rem - 3.2rem);
   width: 100vw;
   display: flex;
-  padding: 0 1rem 1rem 1rem;
+  padding: 0 1rem 0 1rem;
   scroll-snap-align: start;
 }
 .portfolio__worksDescription {
@@ -1126,6 +1261,16 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+@media screen and (min-width: 375px) {
+  .portfolio__worksDescription {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (min-width: 425px) {
+  .portfolio__worksDescription {
+    font-size: 1.4rem;
+  }
 }
 .portfolio__list {
   padding: 0 1rem;
@@ -1141,6 +1286,16 @@ body {
   font-size: 1.75rem;
   color: var(--firstColor);
   padding-bottom: 1rem;
+}
+@media screen and (min-width: 375px) {
+  .portfolio__itemTitle {
+    font-size: 2rem;
+  }
+}
+@media screen and (min-width: 425px) {
+  .portfolio__itemTitle {
+    font-size: 2.2rem;
+  }
 }
 .portfolio__item::marker {
   color: var(--firstColor);
@@ -1158,6 +1313,16 @@ body {
   padding-top: 1rem;
   text-align: center;
   font-size: 0.9rem;
+}
+@media screen and (min-width: 375px) {
+  .portfolio__itemResume {
+    font-size: 1.1rem;
+  }
+}
+@media screen and (min-width: 425px) {
+  .portfolio__itemResume {
+    font-size: 1.2rem;
+  }
 }
 .portfolio__itemImageContainer {
   background: var(--firstColor);
@@ -1183,9 +1348,19 @@ body {
   padding: 0 1rem;
 }
 .cv__title {
-  font-size: 1.8rem;
+  font-size: 1.75rem;
   color: var(--firstColor);
   padding-bottom: 1rem;
+}
+@media screen and (min-width: 375px) {
+  .cv__title {
+    font-size: 2rem;
+  }
+}
+@media screen and (min-width: 425px) {
+  .cv__title {
+    font-size: 2.2rem;
+  }
 }
 .cv__imgContainer {
   align-self: center;
@@ -1209,6 +1384,16 @@ body {
   color: var(--firstColor);
   padding-bottom: 0.3rem;
 }
+@media screen and (min-width: 375px) {
+  .cv__linksTitle {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (min-width: 425px) {
+  .cv__linksTitle {
+    font-size: 1.4rem;
+  }
+}
 .cv__downloads {
   display: flex;
   gap: 0.6rem;
@@ -1223,6 +1408,16 @@ body {
   width: max-content;
   list-style: none;
 }
+@media screen and (min-width: 375px) {
+  .cv__download {
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 425px) {
+  .cv__download {
+    font-size: 1.2rem;
+  }
+}
 
 .contact {
   height: calc(100vh - 3.5rem - 3.2rem);
@@ -1231,6 +1426,16 @@ body {
   display: flex;
   flex-direction: column;
   padding: 1.5rem 1rem 0 1rem;
+}
+@media screen and (min-width: 375px) {
+  .contact {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (min-width: 425px) {
+  .contact {
+    font-size: 1.4rem;
+  }
 }
 .contact__container {
   height: 75%;
@@ -1245,6 +1450,16 @@ body {
   height: 10%;
   display: flex;
   align-items: center;
+}
+@media screen and (min-width: 375px) {
+  .contact__title {
+    font-size: 2rem;
+  }
+}
+@media screen and (min-width: 425px) {
+  .contact__title {
+    font-size: 2.2rem;
+  }
 }
 .contact__links {
   display: flex;

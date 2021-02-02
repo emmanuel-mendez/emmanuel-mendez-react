@@ -7,9 +7,17 @@
 	padding: 0 1rem;
 
 	&__title {
-		font-size: 1.8rem;
+		font-size: 1.75rem;
 		color: var(--firstColor);
 		padding-bottom: 1rem;
+
+		@include from(mm) {
+			font-size: 2rem;
+		}
+
+		@include from(ml) {
+			font-size: 2.2rem;
+		}
 	}
 
 	&__imgContainer {
@@ -36,6 +44,14 @@
 		font-size: 1rem;
 		color: var(--firstColor);
 		padding-bottom: 0.3rem;
+
+		@include from(mm) {
+			font-size: 1.2rem;
+		}
+
+		@include from(ml) {
+			font-size: 1.4rem;
+		}
 	}
 
 	&__downloads {
@@ -52,5 +68,13 @@
 		align-self: flex-start;
 		width: max-content;
 		list-style: none;
+
+		@include from(mm) {
+			font-size: 1rem;
+		}
+
+		@include from(ml) {
+			font-size: 1.2rem;
+		}
 	}
 }

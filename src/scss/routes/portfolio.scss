@@ -17,6 +17,14 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
+
+		@include from(mm) {
+			font-size: 1.2rem;
+		}
+
+		@include from(ml) {
+			font-size: 1.4rem;
+		}
 	}
 
 	&__title {
@@ -24,6 +32,14 @@
 		color: var(--firstColor);
 		padding-bottom: 1rem;
 		margin-left: 0;
+
+		@include from(mm) {
+			font-size: 2rem;
+		}
+
+		@include from(ml) {
+			font-size: 2.2rem;
+		}
 	}
 
 	&__paragraph {
@@ -35,12 +51,23 @@
 		color: #767676;
 		text-align: center;
 		padding-bottom: 0.5rem;
+
+		@include from(mm) {
+			font-size: 1.5rem;
+		}
+
+		@include from(ml) {
+			font-size: 1.7rem;
+		}
 	}
 
 	&__originalityAndConfidentiality {
 		text-align: justify;
-		padding-bottom: 2rem;
 		font-size: 0.7rem;
+
+		@include from(mm) {
+			font-size: 1rem;
+		}
 	}
 
 	&__image {
@@ -54,7 +81,7 @@
 		min-height: calc(100vh - #{$headerHeightM} - #{$footerHeightM});
 		width: 100vw;
 		display: flex;
-		padding: 0 1rem 1rem 1rem;
+		padding: 0 1rem 0 1rem;
 		scroll-snap-align: start;
 	}
 
@@ -64,6 +91,14 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
+
+		@include from(mm) {
+			font-size: 1.2rem;
+		}
+
+		@include from(ml) {
+			font-size: 1.4rem;
+		}
 	}
 
 	&__list {
@@ -82,6 +117,14 @@
 		font-size: 1.75rem;
 		color: var(--firstColor);
 		padding-bottom: 1rem;
+
+		@include from(mm) {
+			font-size: 2rem;
+		}
+
+		@include from(ml) {
+			font-size: 2.2rem;
+		}
 	}
 
 	&__item::marker {
@@ -104,6 +147,14 @@
 		padding-top: 1rem;
 		text-align: center;
 		font-size: 0.9rem;
+
+		@include from(mm) {
+			font-size: 1.1rem;
+		}
+
+		@include from(ml) {
+			font-size: 1.2rem;
+		}
 	}
 
 	&__itemImageContainer {
