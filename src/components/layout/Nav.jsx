@@ -1,7 +1,7 @@
 import React from 'react'
 import { NavLink } from "react-router-dom";
 import classNames from 'classnames';
-import { useLang } from '../hooks/useRoute'
+import { useRoute } from '../hooks/useRoute'
 import { usePathname } from '../hooks/usePathname'
 
 import { ReactComponent as Sun } from '../../svg/sun.svg';
@@ -25,32 +25,32 @@ export const Nav = ({ toggleMenu, setToggleMenu, scrollToTopButton, setScrollToT
 			<ul className="nav__menu">
 
 				<li className="menu__item" onClick={toggle}>
-					<NavLink className="menu__link" activeClassName="selectedMenuLink" exact to={useLang("skills")} >
-						{useLang("skills") === "/es/skills" ? ('Habilidades') : ('Skills')}
+					<NavLink className="menu__link" activeClassName="selectedMenuLink" exact to={useRoute("skills")} >
+						{useRoute("skills") === "/es/skills" ? ('Habilidades') : ('Skills')}
 					</NavLink>
 				</li>
 
 				<li className="menu__item" onClick={toggle}>
-					<NavLink className="menu__link" activeClassName="selectedMenuLink" exact to={useLang("portfolio")} >
-						{useLang("portfolio") === "/es/portfolio" ? ('Portafolio') : ('Portfolio')}
+					<NavLink className="menu__link" activeClassName="selectedMenuLink" exact to={useRoute("portfolio")} >
+						{useRoute("portfolio") === "/es/portfolio" ? ('Portafolio') : ('Portfolio')}
 					</NavLink>
 				</li>
 
 				<li className="menu__item" onClick={toggle}>
-					<NavLink className="menu__link" activeClassName="selectedMenuLink" exact to={useLang("cv")} >
+					<NavLink className="menu__link" activeClassName="selectedMenuLink" exact to={useRoute("cv")} >
 						{'CV'}
 					</NavLink>
 				</li>
 
 				<li className="menu__item" onClick={toggle}>
-					<NavLink className="menu__link" activeClassName="selectedMenuLink" exact to={useLang("contact")} >
-						{useLang("contact") === "/es/contact" ? ('Contacto') : ('Contact')}
+					<NavLink className="menu__link" activeClassName="selectedMenuLink" exact to={useRoute("contact")} >
+						{useRoute("contact") === "/es/contact" ? ('Contacto') : ('Contact')}
 					</NavLink>
 				</li>
 
 				<li className="menu__item" onClick={() => setDarkMode(!darkMode)}>
 					<div className="menu__link" >
-						<p className="darkDescription">{useLang("") === "/es/" ? ('Modo oscuro') : ('Dark Mode')}</p>
+						<p className="darkDescription">{useRoute("") === "/es/" ? ('Modo oscuro') : ('Dark Mode')}</p>
 						<div className={darkMode
 							? "switch dark"
 							: "switch"} >

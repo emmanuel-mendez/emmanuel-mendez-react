@@ -7,6 +7,10 @@
 	border-top: 0.1rem solid $borderColor;
 	display: flex;
 
+	@include from(t) {
+		height: $footerHeightT;
+	}
+
 	&__container {
 		width: 100%;
 		display: flex;
@@ -20,11 +24,19 @@
 		width: 30%;
 		height: auto;
 		padding-bottom: 0.4rem;
+
+		@include from(t) {
+			width: 20%;
+		}
 	}
 
 	&__iconName {
 		font-size: 0.6rem;
 		padding-bottom: 0.4rem;
+
+		@include from(t) {
+			font-size: 1rem;
+		}
 	}
 
 	&__selected {

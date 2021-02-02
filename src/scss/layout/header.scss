@@ -6,6 +6,10 @@
 	z-index: var(--zFixed);
 	box-shadow: 0 0.4rem 0.6rem rgba(0, 0, 0, 0.2);
 
+	@include from(t) {
+		height: $headerHeightT;
+	}
+
 	@include from(l) {
 		position: fixed;
 		height: $headerHeightL;

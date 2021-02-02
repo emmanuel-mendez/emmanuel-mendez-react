@@ -1,5 +1,9 @@
 import React, { lazy, Suspense } from 'react'
+
+import { Link } from "react-router-dom";
 import { useLang } from '../../hooks/useLang'
+
+import { useRoute } from '../../hooks/useRoute'
 
 import { ReactComponent as HomeImage } from '../../../svg/homeImage.svg';
 
@@ -43,13 +47,13 @@ const Home = () => {
 							}
 						</p>
 
-						<div className="home__getInTouchButton">
+						<Link exact to={useRoute("contact")} className="home__getInTouchButton" >
 							{
 								useLang()
 									? "Contáctame"
 									: "Get in touch"
 							}
-						</div>
+						</Link>
 					</div>
 
 					<HomeImage className="home__image" />

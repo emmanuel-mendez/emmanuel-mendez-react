@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { NavLink } from "react-router-dom";
 
-import { useLang } from '../hooks/useRoute'
+import { useRoute } from '../hooks/useRoute'
 
 import { ReactComponent as Home } from '../../svg/home.svg';
 import { ReactComponent as Skills } from '../../svg/skills.svg';
@@ -20,7 +20,7 @@ export const Footer = () => {
 	return (
 		<footer className="footer">
 
-			<NavLink exact to={useLang("")} className="footer__container" activeClassName="footer__selected"
+			<NavLink exact to={useRoute("")} className="footer__container" activeClassName="footer__selected"
 				isActive={(match, location) => {
 					if (match) {
 						setHome("footer__iconSelected")
@@ -31,11 +31,11 @@ export const Footer = () => {
 
 				<Home className={`footer__icon ${home}`} />
 				<p className="footer__iconName">
-					{useLang() === "/es/" ? ('Inicio') : ('Home')}
+					{useRoute() === "/es/" ? ('Inicio') : ('Home')}
 				</p>
 			</NavLink>
 
-			<NavLink exact to={useLang("skills")} className="footer__container" activeClassName="footer__selected"
+			<NavLink exact to={useRoute("skills")} className="footer__container" activeClassName="footer__selected"
 				isActive={(match, location) => {
 					if (match) {
 						setSkills("footer__iconSelected footer__iconColor")
@@ -45,11 +45,11 @@ export const Footer = () => {
 				}}>
 				<Skills className={`footer__icon ${skills}`} />
 				<p className="footer__iconName">
-					{useLang("skills") === "/es/skills" ? ('Habilidades') : ('Skills')}
+					{useRoute("skills") === "/es/skills" ? ('Habilidades') : ('Skills')}
 				</p>
 			</NavLink>
 
-			<NavLink exact to={useLang("portfolio")} className="footer__container" activeClassName="footer__selected"
+			<NavLink exact to={useRoute("portfolio")} className="footer__container" activeClassName="footer__selected"
 				isActive={(match, location) => {
 					if (match) {
 						setPorfolio("footer__iconSelected")
@@ -59,11 +59,11 @@ export const Footer = () => {
 				}}>
 				<Portfolio className={`footer__icon ${portfolio}`} />
 				<p className="footer__iconName">
-					{useLang("portfolio") === "/es/portfolio" ? ('Portafolio') : ('Portfolio')}
+					{useRoute("portfolio") === "/es/portfolio" ? ('Portafolio') : ('Portfolio')}
 				</p>
 			</NavLink>
 
-			<NavLink exact to={useLang("cv")} className="footer__container" activeClassName="footer__selected"
+			<NavLink exact to={useRoute("cv")} className="footer__container" activeClassName="footer__selected"
 				isActive={(match, location) => {
 					if (match) {
 						setCv("footer__iconSelected")
@@ -77,7 +77,7 @@ export const Footer = () => {
 				</p>
 			</NavLink>
 
-			<NavLink exact to={useLang("contact")} className="footer__container" activeClassName="footer__selected"
+			<NavLink exact to={useRoute("contact")} className="footer__container" activeClassName="footer__selected"
 				isActive={(match, location) => {
 					if (match) {
 						setContact("footer__iconSelected")
@@ -87,7 +87,7 @@ export const Footer = () => {
 				}}>
 				<Contact className={`footer__icon ${contact}`} />
 				<p className="footer__iconName">
-					{useLang("contact") === "/es/contact" ? ('Contacto') : ('Contact')}
+					{useRoute("contact") === "/es/contact" ? ('Contacto') : ('Contact')}
 				</p>
 			</NavLink>
 

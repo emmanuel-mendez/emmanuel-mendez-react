@@ -7,13 +7,19 @@ import { ReactComponent as Twitter } from '../../../svg/twitter.svg';
 import { ReactComponent as Github } from '../../../svg/github.svg';
 
 import { ReactComponent as ContactImage } from '../../../svg/contactImage.svg';
+import { useLang } from '../../hooks/useLang';
 
 const Contact = () => {
 	return (
 		<section className="contact">
 
 			<div className="contact__container">
-				<h2 className="contact__title">Contact.</h2>
+				<h2 className="contact__title">
+					{
+						useLang()
+							? "Contacto."
+							: "Contact."}
+				</h2>
 
 				<ul className="contact__links">
 					<li className="contact__linkContainer">

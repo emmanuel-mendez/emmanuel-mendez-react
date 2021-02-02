@@ -222,6 +222,11 @@ body {
   z-index: var(--zFixed);
   box-shadow: 0 0.4rem 0.6rem rgba(0, 0, 0, 0.2);
 }
+@media screen and (min-width: 768px) {
+  .header {
+    height: 4.8rem;
+  }
+}
 @media screen and (min-width: 1024px) {
   .header {
     position: fixed;
@@ -580,6 +585,11 @@ body {
   border-top: 0.1rem solid #ccc;
   display: flex;
 }
+@media screen and (min-width: 768px) {
+  .footer {
+    height: 4.5rem;
+  }
+}
 .footer__container {
   width: 100%;
   display: flex;
@@ -593,9 +603,19 @@ body {
   height: auto;
   padding-bottom: 0.4rem;
 }
+@media screen and (min-width: 768px) {
+  .footer__icon {
+    width: 20%;
+  }
+}
 .footer__iconName {
   font-size: 0.6rem;
   padding-bottom: 0.4rem;
+}
+@media screen and (min-width: 768px) {
+  .footer__iconName {
+    font-size: 1rem;
+  }
 }
 .footer__selected {
   color: var(--firstColor);
@@ -811,7 +831,7 @@ body {
   height: calc(100vh - 3.5rem - 3.2rem);
   width: 100%;
   display: flex;
-  padding: 0 1rem 1rem 1rem;
+  padding: 0 2rem 2rem 2rem;
   scroll-snap-align: start;
 }
 .home__container {
@@ -836,6 +856,12 @@ body {
     font-size: 1.4rem;
   }
 }
+@media screen and (min-width: 768px) {
+  .home__description {
+    height: 55%;
+    font-size: 1.6rem;
+  }
+}
 .home__introduce {
   padding-bottom: 0.5rem;
 }
@@ -854,6 +880,11 @@ body {
     font-size: 2.7rem;
   }
 }
+@media screen and (min-width: 768px) {
+  .home__title {
+    font-size: 2.9rem;
+  }
+}
 .home__subtitle {
   font-size: 1.75rem;
   color: #767676;
@@ -867,6 +898,11 @@ body {
 @media screen and (min-width: 425px) {
   .home__subtitle {
     font-size: 2.2rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .home__subtitle {
+    font-size: 2.4rem;
   }
 }
 .home__paragraph {
@@ -895,6 +931,12 @@ body {
     padding: 1.2rem;
   }
 }
+@media screen and (min-width: 768px) {
+  .home__getInTouchButton {
+    font-size: 1.6rem;
+    padding: 1.4rem;
+  }
+}
 .home__image {
   align-self: flex-end;
   width: auto;
@@ -905,6 +947,12 @@ body {
 @media screen and (min-width: 375px) {
   .home__image {
     height: 35%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .home__image {
+    margin-top: 0;
+    height: 40%;
   }
 }
 
@@ -936,6 +984,11 @@ body {
     font-size: 1.4rem;
   }
 }
+@media screen and (min-width: 768px) {
+  .aboutMe__description {
+    font-size: 1.6rem;
+  }
+}
 .aboutMe__title {
   font-size: 1.75rem;
   color: var(--firstColor);
@@ -951,6 +1004,11 @@ body {
     font-size: 2.2rem;
   }
 }
+@media screen and (min-width: 768px) {
+  .aboutMe__title {
+    font-size: 2.4rem;
+  }
+}
 .aboutMe__introduce {
   padding-bottom: 0.5rem;
 }
@@ -964,6 +1022,11 @@ body {
   width: auto;
   border-radius: 100%;
   display: flex;
+}
+@media screen and (min-width: 768px) {
+  .aboutMe__imageContainer {
+    height: 50%;
+  }
 }
 .aboutMe__image {
   height: 100%;
