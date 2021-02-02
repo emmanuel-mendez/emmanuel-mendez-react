@@ -780,6 +780,9 @@ body {
   color: #e4e6eb;
   background-color: var(--darkColor);
 }
+.darkMode .github__icon {
+  fill: white;
+}
 
 .darkMode .scrollDown {
   color: #a8abaf;
