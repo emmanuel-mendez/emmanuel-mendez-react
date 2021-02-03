@@ -2,8 +2,18 @@
 	height: calc(100vh - #{$headerHeightM} - #{$footerHeightM});
 	width: 100%;
 	display: flex;
-	padding: 0 2rem 2rem 2rem;
-	scroll-snap-align: start;
+	padding: 0 1rem 1rem 1rem;
+	scroll-snap-align: center;
+
+	@include from(t) {
+		height: calc(100vh - #{$headerHeightT} - #{$footerHeightT});
+		padding: 0 2rem 2rem 2rem;
+	}
+
+	@include from(l) {
+		height: calc(100vh - #{$headerHeightL});
+		padding: 0 3rem 3rem 3rem;
+	}
 
 	&__container {
 		display: flex;
@@ -28,7 +38,7 @@
 
 		@include from(t) {
 			height: 55%;
-			font-size: 1.6rem;
+			font-size: 2rem;
 		}
 	}
 
@@ -50,7 +60,7 @@
 		}
 
 		@include from(t) {
-			font-size: 2.9rem;
+			font-size: 3rem;
 		}
 	}
 
@@ -68,7 +78,7 @@
 		}
 
 		@include from(t) {
-			font-size: 2.4rem;
+			font-size: 2.5rem;
 		}
 	}
 
@@ -98,8 +108,8 @@
 		}
 
 		@include from(t) {
-			font-size: 1.6rem;
-			padding: 1.4rem;
+			font-size: 1.8rem;
+			padding: 1.6rem;
 		}
 	}
 
@@ -129,7 +139,17 @@
 	align-items: center;
 	justify-content: center;
 	padding: 0 1rem 1rem 1rem;
-	scroll-snap-align: start;
+	scroll-snap-align: center;
+
+	@include from(t) {
+		height: calc(100vh - #{$headerHeightT} - #{$footerHeightT});
+		padding: 0 2rem 2rem 2rem;
+	}
+
+	@include from(l) {
+		height: calc(100vh - #{$headerHeightL});
+		padding: 0 3rem 3rem 3rem;
+	}
 
 	&__description {
 		font-size: 0.9rem;
@@ -148,7 +168,7 @@
 		}
 
 		@include from(t) {
-			font-size: 1.6rem;
+			font-size: 2rem;
 		}
 	}
 
@@ -166,7 +186,7 @@
 		}
 
 		@include from(t) {
-			font-size: 2.4rem;
+			font-size: 2.5rem;
 		}
 	}
 

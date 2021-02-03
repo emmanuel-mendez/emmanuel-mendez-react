@@ -1,10 +1,20 @@
 .cv {
-	min-height: calc(100vh - #{$headerHeightM} - #{$footerHeightM});
+	height: calc(100vh - #{$headerHeightM} - #{$footerHeightM});
 	width: 100%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	padding: 0 1rem;
+
+	@include from(t) {
+		height: calc(100vh - #{$headerHeightT} - #{$footerHeightT});
+		padding: 0 2rem;
+	}
+
+	@include from(l) {
+		height: calc(100vh - #{$headerHeightT});
+		padding: 0 3rem 3rem 3rem;
+	}
 
 	&__title {
 		font-size: 1.75rem;
@@ -18,6 +28,11 @@
 		@include from(ml) {
 			font-size: 2.2rem;
 		}
+
+		@include from(t) {
+			padding-bottom: 1.2rem;
+			font-size: 2.5rem;
+		}
 	}
 
 	&__imgContainer {
@@ -26,6 +41,10 @@
 		display: flex;
 		justify-content: center;
 		padding-bottom: 0.8rem;
+
+		@include from(t) {
+			height: 70%;
+		}
 	}
 
 	&__img {
@@ -52,6 +71,11 @@
 		@include from(ml) {
 			font-size: 1.4rem;
 		}
+
+		@include from(t) {
+			font-size: 2rem;
+			padding-bottom: 0.5rem;
+		}
 	}
 
 	&__downloads {
@@ -75,6 +99,10 @@
 
 		@include from(ml) {
 			font-size: 1.2rem;
+		}
+
+		@include from(t) {
+			font-size: 1.4rem;
 		}
 	}
 }

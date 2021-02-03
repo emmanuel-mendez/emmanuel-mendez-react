@@ -76,6 +76,18 @@ body::-webkit-scrollbar {
 	padding-bottom: 1rem;
 	margin-top: auto;
 
+	@include from(mm) {
+		font-size: 1.2rem;
+	}
+
+	@include from(ml) {
+		font-size: 1.4rem;
+	}
+
+	@include from(t) {
+		font-size: 1.5rem;
+	}
+
 	&__line {
 		height: 10vh;
 		width: 0.01rem;

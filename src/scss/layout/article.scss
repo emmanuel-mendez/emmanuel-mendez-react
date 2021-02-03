@@ -4,8 +4,15 @@
 	min-height: calc(100% - #{$headerHeightM});
 	animation: fadeIn ease 0.3s;
 
+	@include from(t) {
+		margin-top: $headerHeightT;
+		margin-bottom: $footerHeightT;
+		min-height: calc(100% - #{$headerHeightT});
+	}
+
 	@include from(l) {
 		margin-top: $headerHeightL;
-		height: calc(100% - #{$footerHeightL} - #{$footerHeightL});
+		height: calc(100% - #{$headerHeightL});
+		margin-bottom: 0;
 	}
 }

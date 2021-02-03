@@ -5,6 +5,16 @@
 	padding: 0 1rem 1rem 1rem;
 	scroll-snap-align: start;
 
+	@include from(t) {
+		height: calc(100vh - #{$headerHeightT} - #{$footerHeightT});
+		padding: 0 2rem 2rem 2rem;
+	}
+
+	@include from(l) {
+		height: calc(100vh - #{$headerHeightL});
+		padding: 0 3rem 3rem 3rem;
+	}
+
 	&__container {
 		display: flex;
 		flex-direction: column;
@@ -25,6 +35,10 @@
 		@include from(ml) {
 			font-size: 1.4rem;
 		}
+
+		@include from(t) {
+			font-size: 2rem;
+		}
 	}
 
 	&__title {
@@ -39,6 +53,10 @@
 
 		@include from(ml) {
 			font-size: 2.2rem;
+		}
+
+		@include from(t) {
+			font-size: 2.5rem;
 		}
 	}
 
@@ -59,6 +77,11 @@
 		@include from(ml) {
 			font-size: 1.7rem;
 		}
+
+		@include from(t) {
+			padding-bottom: 1rem;
+			font-size: 2.3rem;
+		}
 	}
 
 	&__originalityAndConfidentiality {
@@ -68,6 +91,10 @@
 		@include from(mm) {
 			font-size: 1rem;
 		}
+
+		@include from(t) {
+			font-size: 1.5rem;
+		}
 	}
 
 	&__image {
@@ -75,6 +102,10 @@
 		width: auto;
 		height: 30%;
 		margin-top: auto;
+
+		@include from(t) {
+			height: 40%;
+		}
 	}
 
 	&__works {
@@ -83,6 +114,16 @@
 		display: flex;
 		padding: 0 1rem 0 1rem;
 		scroll-snap-align: start;
+
+		@include from(t) {
+			min-height: calc(100vh - #{$headerHeightT} - #{$footerHeightT});
+			padding: 0 2rem 0 2rem;
+		}
+
+		@include from(l) {
+			height: calc(100vh - #{$headerHeightL});
+			padding: 0 3rem 3rem 3rem;
+		}
 	}
 
 	&__worksDescription {
@@ -99,6 +140,10 @@
 		@include from(ml) {
 			font-size: 1.4rem;
 		}
+
+		@include from(t) {
+			font-size: 2rem;
+		}
 	}
 
 	&__list {
@@ -107,14 +152,31 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
+
+		@include from(t) {
+			min-height: calc(100vh - #{$headerHeightT} - #{$footerHeightT});
+		}
+
+		@include from(l) {
+			height: calc(100vh - #{$headerHeightL});
+			padding: 0 3rem 3rem 3rem;
+		}
 	}
 
 	&__item {
-		min-height: calc(100vh - #{$headerHeightM} - #{$footerHeightM});
+		height: calc(100vh - #{$headerHeightM} - #{$footerHeightM});
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		scroll-snap-align: start;
+
+		@include from(t) {
+			height: calc(100vh - #{$headerHeightT} - #{$footerHeightT});
+		}
+
+		@include from(l) {
+			height: calc(100vh - #{$headerHeightL});
+		}
 	}
 
 	&__itemTitle {
@@ -128,6 +190,10 @@
 
 		@include from(ml) {
 			font-size: 2.2rem;
+		}
+
+		@include from(t) {
+			font-size: 2.5rem;
 		}
 	}
 
@@ -159,6 +225,10 @@
 		@include from(ml) {
 			font-size: 1.2rem;
 		}
+
+		@include from(t) {
+			font-size: 1.5rem;
+		}
 	}
 
 	&__itemImageContainer {
@@ -168,6 +238,12 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
+
+		@include from(t) {
+			height: 30vh;
+			width: 75vw;
+			margin: 0 auto;
+		}
 	}
 
 	&__itemImage {

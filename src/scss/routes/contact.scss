@@ -14,12 +14,27 @@
 		font-size: 1.4rem;
 	}
 
+	@include from(t) {
+		height: calc(100vh - #{$headerHeightT} - #{$footerHeightT});
+		padding: 0 2rem 2rem 2rem;
+	}
+
+	@include from(l) {
+		height: calc(100vh - #{$headerHeightT});
+		padding: 0 3rem 3rem 3rem;
+	}
+
 	&__container {
 		height: 75%;
 		width: 100%;
 		display: flex;
 		flex-direction: column;
-		justify-content: flex-start;
+		justify-content: center;
+
+		@include from(t) {
+			font-size: 2.5rem;
+			height: 80%;
+		}
 	}
 
 	&__title {
@@ -36,6 +51,10 @@
 		@include from(ml) {
 			font-size: 2.2rem;
 		}
+
+		@include from(t) {
+			font-size: 2.5rem;
+		}
 	}
 
 	&__links {
@@ -45,6 +64,10 @@
 		list-style: none;
 		height: 90%;
 		justify-content: space-evenly;
+
+		@include from(t) {
+			height: 80%;
+		}
 	}
 
 	&__linkContainer {

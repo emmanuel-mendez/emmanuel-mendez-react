@@ -14,6 +14,11 @@
 	padding: 1rem;
 	animation: light 0.5s ease;
 
+	@include from(t) {
+		top: $headerHeightT;
+		height: calc(100% - #{$headerHeightT});
+	}
+
 	@include from(l) {
 		position: relative;
 		left: 0;
@@ -41,6 +46,10 @@
 	height: calc(100% - #{$headerHeightM});
 	box-shadow: -0.5rem 0 0.5rem 0.1rem rgba(0, 0, 0, 0.2);
 
+	@include from(t) {
+		height: calc(100% - #{$headerHeightT});
+	}
+
 	@include from(l) {
 		box-shadow: none;
 	}
@@ -62,6 +71,10 @@
 
 		@include from(ml) {
 			height: 4.2rem;
+		}
+
+		@include from(t) {
+			height: 4.5rem;
 		}
 
 		@include from(l) {
@@ -89,6 +102,10 @@
 
 		@include from(ml) {
 			font-size: 1.4rem;
+		}
+
+		@include from(t) {
+			font-size: 1.6rem;
 		}
 
 		@include from(l) {
@@ -179,6 +196,10 @@
 			font-size: 1.1rem;
 		}
 
+		@include from(t) {
+			font-size: 1.2rem;
+		}
+
 		@include from(l) {
 			font-size: 1rem;
 		}
@@ -201,7 +222,7 @@
 		}
 
 		@include from(t) {
-			font-size: 0.8rem;
+			font-size: 1rem;
 		}
 	}
 

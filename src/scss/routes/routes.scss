@@ -9,4 +9,16 @@
 	width: 100%;
 	overflow-y: scroll;
 	scroll-snap-type: y mandatory;
+
+	@include from(t) {
+		height: calc(100vh - #{$headerHeightT} - #{$footerHeightT});
+	}
+
+	@include from(t) {
+		height: calc(100vh - #{$headerHeightT});
+	}
+}
+
+.route::-webkit-scrollbar {
+	display: none;
 }
