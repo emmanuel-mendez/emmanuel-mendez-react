@@ -1,7 +1,8 @@
 .home {
-	height: calc(100vh - #{$headerHeightM} - #{$footerHeightM});
+	height: 100%;
 	width: 100%;
 	display: flex;
+	align-items: center;
 	padding: 0 1rem 1rem 1rem;
 	scroll-snap-align: center;
 
@@ -18,6 +19,7 @@
 	&__container {
 		display: flex;
 		flex-direction: column;
+		align-items: flex-start;
 		height: 100%;
 	}
 
@@ -115,7 +117,7 @@
 
 	&__image {
 		align-self: flex-end;
-		width: auto;
+		width: 60%;
 		height: 35%;
 		margin-top: auto;
 		padding-right: 1rem;
@@ -132,7 +134,7 @@
 }
 
 .aboutMe {
-	height: calc(100vh - #{$headerHeightM} - #{$footerHeightM});
+	height: 100%;
 	width: 100%;
 	display: flex;
 	flex-direction: column;

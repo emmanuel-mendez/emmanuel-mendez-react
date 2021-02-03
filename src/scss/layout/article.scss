@@ -1,7 +1,7 @@
 .article {
 	margin-top: $headerHeightM;
 	margin-bottom: $footerHeightM;
-	min-height: calc(100% - #{$headerHeightM});
+	min-height: 100%;
 	animation: fadeIn ease 0.3s;
 
 	@include from(t) {
