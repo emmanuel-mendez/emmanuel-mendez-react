@@ -42,6 +42,10 @@
 			height: 55%;
 			font-size: 2rem;
 		}
+
+		@include from(l) {
+			font-size: 1.6rem;
+		}
 	}
 
 	&__introduce {
@@ -171,6 +175,10 @@
 
 		@include from(t) {
 			font-size: 2rem;
+		}
+
+		@include from(l) {
+			font-size: 1.6rem;
 		}
 	}
 

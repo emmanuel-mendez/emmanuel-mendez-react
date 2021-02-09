@@ -3,6 +3,11 @@
 		background: var(--darkColor);
 		border-left: none;
 		animation: dark ease 0.5s;
+
+		@include from(l) {
+			animation: none;
+			background: var(--firstColor);
+		}
 	}
 
 	.menu {

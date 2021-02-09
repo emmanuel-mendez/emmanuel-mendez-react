@@ -31,6 +31,7 @@
 		justify-content: center;
 		border-left: none;
 		padding: 0 1rem 0 0;
+		animation: none;
 	}
 
 	&__menu {
@@ -51,6 +52,8 @@
 	}
 
 	@include from(l) {
+		right: -70%;
+		height: 100%;
 		box-shadow: none;
 	}
 }
@@ -93,8 +96,7 @@
 		width: 100%;
 		display: flex;
 		align-items: center;
-		padding-left: 1rem;
-		padding-right: 1rem;
+		padding: 0 1rem;
 
 		@include from(mm) {
 			font-size: 1.2rem;
@@ -110,7 +112,7 @@
 
 		@include from(l) {
 			font-size: 1rem;
-			padding-left: 0;
+			padding: 0;
 			justify-content: center;
 			color: white;
 		}
@@ -125,6 +127,10 @@
 	cursor: pointer;
 	display: flex;
 	outline: none;
+
+	@include from(l) {
+		border: 0.01rem solid #f1f1f1;
+	}
 	&::after {
 		content: "";
 		display: block;
@@ -167,6 +173,7 @@
 
 .selectedMenuLink {
 	background: rgba(0, 0, 0, 0.2);
+	height: 100%;
 }
 
 .copyright {
@@ -246,5 +253,11 @@
 
 	&__languajesSelected {
 		color: black;
+	}
+}
+
+.darkDescription {
+	@include from(l) {
+		display: none;
 	}
 }

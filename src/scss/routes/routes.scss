@@ -10,11 +10,19 @@
 	overflow-y: scroll;
 	scroll-snap-type: y mandatory;
 
+	@include from(mm) {
+		height: calc(100vh - #{$headerHeightMM} - #{$footerHeightM});
+	}
+
+	@include from(ml) {
+		height: calc(100vh - #{$headerHeightML} - #{$footerHeightM});
+	}
+
 	@include from(t) {
 		height: calc(100vh - #{$headerHeightT} - #{$footerHeightT});
 	}
 
-	@include from(t) {
+	@include from(l) {
 		height: calc(100vh - #{$headerHeightT});
 	}
 }

@@ -39,6 +39,10 @@
 		@include from(t) {
 			font-size: 2rem;
 		}
+
+		@include from(l) {
+			font-size: 1.6rem;
+		}
 	}
 
 	&__title {
@@ -144,6 +148,10 @@
 		@include from(t) {
 			font-size: 2rem;
 		}
+
+		@include from(l) {
+			font-size: 1.6rem;
+		}
 	}
 
 	&__list {
@@ -229,6 +237,10 @@
 		@include from(t) {
 			font-size: 1.5rem;
 		}
+
+		@include from(l) {
+			font-size: 1.4rem;
+		}
 	}
 
 	&__itemImageContainer {
@@ -242,6 +254,12 @@
 		@include from(t) {
 			height: 30vh;
 			width: 75vw;
+			margin: 0 auto;
+		}
+
+		@include from(l) {
+			height: 35vh;
+			width: 50vw;
 			margin: 0 auto;
 		}
 	}
