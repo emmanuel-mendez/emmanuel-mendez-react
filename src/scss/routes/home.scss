@@ -18,6 +18,7 @@
 
 	@include from(ll) {
 		height: calc(100vh - #{$headerHeightLL});
+		justify-content: space-between;
 	}
 
 	&__container {

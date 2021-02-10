@@ -970,6 +970,7 @@ body {
 @media screen and (min-width: 1440px) {
   .home {
     height: calc(100vh - 4.75rem);
+    justify-content: space-between;
   }
 }
 .home__container {
