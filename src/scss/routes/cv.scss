@@ -20,6 +20,10 @@
 		height: calc(100vh - #{$headerHeightLL});
 	}
 
+	@include from(4k) {
+		height: calc(100vh - #{$headerHeight4K});
+	}
+
 	&__title {
 		font-size: 1.75rem;
 		color: var(--firstColor);
@@ -43,6 +47,10 @@
 
 		@include from(ll) {
 			font-size: 3rem;
+		}
+
+		@include from(4k) {
+			font-size: 4rem;
 		}
 	}
 
@@ -99,6 +107,11 @@
 			font-size: 2rem;
 			padding-bottom: 0.5rem;
 		}
+
+		@include from(4k) {
+			font-size: 3rem;
+			padding-bottom: 1rem;
+		}
 	}
 
 	&__downloads {
@@ -126,6 +139,10 @@
 
 		@include from(t) {
 			font-size: 1.4rem;
+		}
+
+		@include from(t) {
+			font-size: 2rem;
 		}
 	}
 }

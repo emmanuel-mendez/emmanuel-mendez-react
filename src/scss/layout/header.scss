@@ -26,8 +26,12 @@
 		justify-content: center;
 	}
 
-	@include from(l) {
+	@include from(ll) {
 		height: $headerHeightLL;
+	}
+
+	@include from(4k) {
+		height: $headerHeight4K;
 	}
 
 	&__container {

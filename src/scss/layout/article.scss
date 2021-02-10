@@ -27,4 +27,8 @@
 	@include from(ll) {
 		margin-top: $headerHeightLL;
 	}
+
+	@include from(4k) {
+		margin-top: $headerHeight4K;
+	}
 }

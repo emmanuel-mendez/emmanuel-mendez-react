@@ -21,6 +21,10 @@
 		justify-content: space-between;
 	}
 
+	@include from(4k) {
+		height: calc(100vh - #{$headerHeight4K});
+	}
+
 	&__container {
 		display: flex;
 		flex-direction: column;
@@ -55,6 +59,10 @@
 		@include from(ll) {
 			font-size: 2rem;
 		}
+
+		@include from(4k) {
+			font-size: 3rem;
+		}
 	}
 
 	&__introduce {
@@ -81,6 +89,10 @@
 		@include from(ll) {
 			font-size: 3.5rem;
 		}
+
+		@include from(4k) {
+			font-size: 4.5rem;
+		}
 	}
 
 	&__subtitle {
@@ -102,6 +114,10 @@
 
 		@include from(ll) {
 			font-size: 3rem;
+		}
+
+		@include from(4k) {
+			font-size: 4rem;
 		}
 	}
 
@@ -133,6 +149,11 @@
 		@include from(t) {
 			font-size: 1.8rem;
 			padding: 1.6rem;
+		}
+
+		@include from(4k) {
+			font-size: 2.8rem;
+			padding: 2.6rem;
 		}
 	}
 
@@ -201,6 +222,10 @@
 		@include from(ll) {
 			font-size: 2rem;
 		}
+
+		@include from(4k) {
+			font-size: 3rem;
+		}
 	}
 
 	&__title {
@@ -222,6 +247,10 @@
 
 		@include from(ll) {
 			font-size: 3rem;
+		}
+
+		@include from(4k) {
+			font-size: 4rem;
 		}
 	}
 

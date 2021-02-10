@@ -20,6 +20,10 @@
 		justify-content: space-between;
 	}
 
+	@include from(4k) {
+		height: calc(100vh - #{$headerHeight4K});
+	}
+
 	&__container {
 		margin: 0 auto;
 	}
@@ -52,6 +56,10 @@
 			font-size: 2rem;
 			width: 100%;
 		}
+
+		@include from(4k) {
+			font-size: 3rem;
+		}
 	}
 
 	&__title {
@@ -73,6 +81,10 @@
 
 		@include from(ll) {
 			font-size: 3rem;
+		}
+
+		@include from(4k) {
+			font-size: 4rem;
 		}
 	}
 
@@ -130,6 +142,10 @@
 		height: calc(100vh - #{$headerHeightLL});
 	}
 
+	@include from(4k) {
+		height: calc(100vh - #{$headerHeight4K});
+	}
+
 	&__container {
 		display: flex;
 		flex-direction: column;
@@ -168,6 +184,10 @@
 		@include from(ll) {
 			font-size: 2rem;
 		}
+
+		@include from(4k) {
+			font-size: 3rem;
+		}
 	}
 
 	&__title {
@@ -189,6 +209,10 @@
 
 		@include from(ll) {
 			font-size: 3rem;
+		}
+
+		@include from(4k) {
+			font-size: 4rem;
 		}
 	}
 
@@ -235,6 +259,10 @@
 		height: calc(100vh - #{$headerHeightLL});
 	}
 
+	@include from(4k) {
+		height: calc(100vh - #{$headerHeight4K});
+	}
+
 	&__container {
 		display: flex;
 		flex-direction: column;
@@ -274,6 +302,10 @@
 			width: auto;
 			margin: 0 auto;
 		}
+
+		@include from(4k) {
+			font-size: 3rem;
+		}
 	}
 
 	&__title {
@@ -296,6 +328,10 @@
 
 		@include from(ll) {
 			font-size: 3rem;
+		}
+
+		@include from(4k) {
+			font-size: 4rem;
 		}
 	}
 

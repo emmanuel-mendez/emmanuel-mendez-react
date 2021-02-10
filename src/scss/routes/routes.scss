@@ -23,11 +23,15 @@
 	}
 
 	@include from(l) {
-		height: calc(100vh - #{$headerHeightT});
+		height: calc(100vh - #{$headerHeightL});
 	}
 
 	@include from(ll) {
-		height: calc(100vh - #{$headerHeightT});
+		height: calc(100vh - #{$headerHeightLL});
+	}
+
+	@include from(4k) {
+		height: calc(100vh - #{$headerHeight4K});
 	}
 }
 

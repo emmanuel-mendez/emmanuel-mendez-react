@@ -28,6 +28,11 @@ body::-webkit-scrollbar {
 		height: 3.5rem;
 	}
 
+	@include from(4k) {
+		width: 5rem;
+		height: 5rem;
+	}
+
 	@keyframes fadeIn {
 		0% {
 			opacity: 0;
@@ -86,6 +91,18 @@ body::-webkit-scrollbar {
 
 	@include from(t) {
 		font-size: 1.5rem;
+	}
+
+	@include from(l) {
+		font-size: 1.6rem;
+	}
+
+	@include from(ll) {
+		font-size: 1.7rem;
+	}
+
+	@include from(4k) {
+		font-size: 1.8rem;
 	}
 
 	&__line {
