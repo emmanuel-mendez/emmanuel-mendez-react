@@ -23,4 +23,8 @@
 		height: calc(100% - #{$headerHeightL});
 		margin-bottom: 0;
 	}
+
+	@include from(ll) {
+		margin-top: $headerHeightLL;
+	}
 }

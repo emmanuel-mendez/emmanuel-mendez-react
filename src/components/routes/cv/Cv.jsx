@@ -18,7 +18,10 @@ const Cv = () => {
 				</div>
 
 				<div className="cv__links">
-					<h3 className="cv__linksTitle">Download</h3>
+					<h3 className="cv__linksTitle">{
+						useLang()
+							? "Descargar"
+							: "Download"}</h3>
 
 					<ul className="cv__downloads">
 						<li className="cv__download">

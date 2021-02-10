@@ -16,7 +16,7 @@ const Skills = () => {
 		<>
 			<section className="skills">
 
-				<div className="skills__conatiner">
+				<div className="skills__container">
 					<div className="skills__description">
 						<h2 className="skills__title">{
 							useLang()

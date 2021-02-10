@@ -6,6 +6,7 @@ import { usePathname } from '../hooks/usePathname'
 
 import { ReactComponent as Sun } from '../../svg/sun.svg';
 import { ReactComponent as Moon } from '../../svg/moon.svg';
+import { ReactComponent as Lang } from '../../svg/language.svg';
 
 
 export const Nav = ({ toggleMenu, setToggleMenu, scrollToTopButton, setScrollToTopButton, darkMode, setDarkMode }) => {
@@ -46,6 +47,32 @@ export const Nav = ({ toggleMenu, setToggleMenu, scrollToTopButton, setScrollToT
 					<NavLink className="menu__link" activeClassName="selectedMenuLink" exact to={useRoute("contact")} >
 						{useRoute("contact") === "/es/contact" ? ('Contacto') : ('Contact')}
 					</NavLink>
+				</li>
+
+				<li className="menu__item menu__lang" onClick={toggle}>
+
+					{
+						usePathname().startsWith("/es/")
+							? (
+								<NavLink exact to="/" className="menu__link menu__langLink" >
+									<Lang className="languageIcon" />
+									<div className="menu__langContainer">
+										<p className="menu__langEn">EN</p>
+									</div>
+
+								</NavLink>
+							)
+							: (
+								<NavLink exact to="/es/" className="menu__link menu__langLink" >
+									<Lang className="languageIcon" />
+									<div className="menu__langContainer">
+										<p className="menu__langEs">ES</p>
+									</div>
+
+								</NavLink>
+							)
+					}
+
 				</li>
 
 				<li className="menu__item" onClick={() => setDarkMode(!darkMode)}>

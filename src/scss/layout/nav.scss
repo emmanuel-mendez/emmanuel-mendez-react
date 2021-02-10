@@ -90,6 +90,14 @@
 		}
 	}
 
+	&__lang {
+		display: none;
+
+		@include from(l) {
+			display: block;
+		}
+	}
+
 	&__link {
 		font-size: 1rem;
 		height: 100%;
@@ -117,6 +125,16 @@
 			color: white;
 		}
 	}
+
+	&__langLink {
+		padding-right: 0.3rem;
+	}
+}
+
+.languageIcon {
+	height: 40%;
+	width: auto;
+	fill: white;
 }
 
 .switch {

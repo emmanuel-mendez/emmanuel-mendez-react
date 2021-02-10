@@ -16,6 +16,10 @@
 		padding: 0 3rem 3rem 3rem;
 	}
 
+	@include from(ll) {
+		height: calc(100vh - #{$headerHeightLL});
+	}
+
 	&__container {
 		display: flex;
 		flex-direction: column;
@@ -46,6 +50,10 @@
 		@include from(l) {
 			font-size: 1.6rem;
 		}
+
+		@include from(ll) {
+			font-size: 2rem;
+		}
 	}
 
 	&__introduce {
@@ -68,6 +76,10 @@
 		@include from(t) {
 			font-size: 3rem;
 		}
+
+		@include from(ll) {
+			font-size: 3.5rem;
+		}
 	}
 
 	&__subtitle {
@@ -85,6 +97,10 @@
 
 		@include from(t) {
 			font-size: 2.5rem;
+		}
+
+		@include from(ll) {
+			font-size: 3rem;
 		}
 	}
 
@@ -180,6 +196,10 @@
 		@include from(l) {
 			font-size: 1.6rem;
 		}
+
+		@include from(ll) {
+			font-size: 2rem;
+		}
 	}
 
 	&__title {
@@ -197,6 +217,10 @@
 
 		@include from(t) {
 			font-size: 2.5rem;
+		}
+
+		@include from(ll) {
+			font-size: 3rem;
 		}
 	}
 

@@ -246,6 +246,11 @@ body {
     justify-content: center;
   }
 }
+@media screen and (min-width: 1024px) {
+  .header {
+    height: 4.75rem;
+  }
+}
 .header__container {
   justify-content: space-between;
   align-items: center;
@@ -445,6 +450,14 @@ body {
     justify-content: center;
   }
 }
+.menu__lang {
+  display: none;
+}
+@media screen and (min-width: 1024px) {
+  .menu__lang {
+    display: block;
+  }
+}
 .menu__link {
   font-size: 1rem;
   height: 100%;
@@ -475,6 +488,15 @@ body {
     justify-content: center;
     color: white;
   }
+}
+.menu__langLink {
+  padding-right: 0.3rem;
+}
+
+.languageIcon {
+  height: 40%;
+  width: auto;
+  fill: white;
 }
 
 .switch {
@@ -647,6 +669,11 @@ body {
     margin-top: 4.5rem;
     height: calc(100% - 4.5rem);
     margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .article {
+    margin-top: 4.75rem;
   }
 }
 
@@ -940,6 +967,11 @@ body {
     padding: 0 3rem 3rem 3rem;
   }
 }
+@media screen and (min-width: 1440px) {
+  .home {
+    height: calc(100vh - 4.75rem);
+  }
+}
 .home__container {
   display: flex;
   flex-direction: column;
@@ -974,6 +1006,11 @@ body {
     font-size: 1.6rem;
   }
 }
+@media screen and (min-width: 1440px) {
+  .home__description {
+    font-size: 2rem;
+  }
+}
 .home__introduce {
   padding-bottom: 0.5rem;
 }
@@ -997,6 +1034,11 @@ body {
     font-size: 3rem;
   }
 }
+@media screen and (min-width: 1440px) {
+  .home__title {
+    font-size: 3.5rem;
+  }
+}
 .home__subtitle {
   font-size: 1.75rem;
   color: #767676;
@@ -1015,6 +1057,11 @@ body {
 @media screen and (min-width: 768px) {
   .home__subtitle {
     font-size: 2.5rem;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .home__subtitle {
+    font-size: 3rem;
   }
 }
 .home__paragraph {
@@ -1118,6 +1165,11 @@ body {
     font-size: 1.6rem;
   }
 }
+@media screen and (min-width: 1440px) {
+  .aboutMe__description {
+    font-size: 2rem;
+  }
+}
 .aboutMe__title {
   font-size: 1.75rem;
   color: var(--firstColor);
@@ -1136,6 +1188,11 @@ body {
 @media screen and (min-width: 768px) {
   .aboutMe__title {
     font-size: 2.5rem;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .aboutMe__title {
+    font-size: 3rem;
   }
 }
 .aboutMe__introduce {
@@ -1183,10 +1240,14 @@ body {
     padding: 0 3rem 3rem 3rem;
   }
 }
+@media screen and (min-width: 1440px) {
+  .skills {
+    height: calc(100vh - 4.75rem);
+    justify-content: space-between;
+  }
+}
 .skills__container {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
+  margin: 0 auto;
 }
 .skills__description {
   font-size: 0.9rem;
@@ -1216,6 +1277,12 @@ body {
     font-size: 1.6rem;
   }
 }
+@media screen and (min-width: 1440px) {
+  .skills__description {
+    font-size: 2rem;
+    width: 100%;
+  }
+}
 .skills__title {
   font-size: 1.75rem;
   color: var(--firstColor);
@@ -1234,6 +1301,11 @@ body {
 @media screen and (min-width: 768px) {
   .skills__title {
     font-size: 2.5rem;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .skills__title {
+    font-size: 3rem;
   }
 }
 .skills__advantages {
@@ -1285,11 +1357,22 @@ body {
     padding: 0 3rem 3rem 3rem;
   }
 }
+@media screen and (min-width: 1440px) {
+  .frontend {
+    height: calc(100vh - 4.75rem);
+  }
+}
 .frontend__container {
   display: flex;
   flex-direction: column;
   height: 100%;
   width: 100%;
+}
+@media screen and (min-width: 1440px) {
+  .frontend__container {
+    width: auto;
+    margin: 0 auto;
+  }
 }
 .frontend__description {
   font-size: 0.9rem;
@@ -1318,6 +1401,11 @@ body {
     font-size: 1.6rem;
   }
 }
+@media screen and (min-width: 1440px) {
+  .frontend__description {
+    font-size: 2rem;
+  }
+}
 .frontend__title {
   font-size: 1.75rem;
   color: var(--firstColor);
@@ -1336,6 +1424,11 @@ body {
 @media screen and (min-width: 768px) {
   .frontend__title {
     font-size: 2.5rem;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .frontend__title {
+    font-size: 3rem;
   }
 }
 .frontend__skills {
@@ -1375,15 +1468,27 @@ body {
     padding: 0 3rem 3rem 3rem;
   }
 }
+@media screen and (min-width: 1440px) {
+  .backend {
+    height: calc(100vh - 4.75rem);
+  }
+}
 .backend__container {
   display: flex;
   flex-direction: column;
+}
+@media screen and (min-width: 1440px) {
+  .backend__container {
+    width: auto;
+    margin: 0 auto;
+  }
 }
 .backend__description {
   font-size: 0.9rem;
   height: 100%;
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
 }
 @media screen and (min-width: 375px) {
@@ -1404,6 +1509,13 @@ body {
 @media screen and (min-width: 1024px) {
   .backend__description {
     font-size: 1.6rem;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .backend__description {
+    font-size: 2rem;
+    width: auto;
+    margin: 0 auto;
   }
 }
 .backend__title {
@@ -1427,9 +1539,19 @@ body {
     font-size: 2.5rem;
   }
 }
+@media screen and (min-width: 1440px) {
+  .backend__title {
+    font-size: 3rem;
+  }
+}
 .backend__skills {
   color: var(--firstColor);
   padding-left: 1rem;
+}
+@media screen and (min-width: 1440px) {
+  .backend__skills {
+    width: auto;
+  }
 }
 .backend__skill {
   padding-top: 0.3rem;
@@ -1456,6 +1578,11 @@ body {
     margin: 0 auto;
   }
 }
+@media screen and (min-width: 1440px) {
+  .backend__image {
+    display: none;
+  }
+}
 
 .portfolio {
   height: calc(100vh - 3.5rem - 3.2rem);
@@ -1474,6 +1601,11 @@ body {
   .portfolio {
     height: calc(100vh - 4.5rem);
     padding: 0 3rem 3rem 3rem;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .portfolio {
+    height: calc(100vh - 4.75rem);
   }
 }
 .portfolio__container {
@@ -1508,6 +1640,11 @@ body {
     font-size: 1.6rem;
   }
 }
+@media screen and (min-width: 1440px) {
+  .portfolio__description {
+    font-size: 2rem;
+  }
+}
 .portfolio__title {
   font-size: 1.75rem;
   color: var(--firstColor);
@@ -1527,6 +1664,11 @@ body {
 @media screen and (min-width: 768px) {
   .portfolio__title {
     font-size: 2.5rem;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .portfolio__title {
+    font-size: 3rem;
   }
 }
 .portfolio__paragraph {
@@ -1554,6 +1696,11 @@ body {
     font-size: 2.3rem;
   }
 }
+@media screen and (min-width: 1440px) {
+  .portfolio__subtitle {
+    font-size: 2.5rem;
+  }
+}
 .portfolio__originalityAndConfidentiality {
   text-align: justify;
   font-size: 0.7rem;
@@ -1566,6 +1713,11 @@ body {
 @media screen and (min-width: 768px) {
   .portfolio__originalityAndConfidentiality {
     font-size: 1.5rem;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .portfolio__originalityAndConfidentiality {
+    font-size: 1.6rem;
   }
 }
 .portfolio__image {
@@ -1598,6 +1750,11 @@ body {
     padding: 0 3rem 3rem 3rem;
   }
 }
+@media screen and (min-width: 1440px) {
+  .portfolio__works {
+    height: calc(100vh - 4.75rem);
+  }
+}
 .portfolio__worksDescription {
   font-size: 0.9rem;
   height: 100%;
@@ -1625,6 +1782,11 @@ body {
     font-size: 1.6rem;
   }
 }
+@media screen and (min-width: 1440px) {
+  .portfolio__worksDescription {
+    font-size: 2rem;
+  }
+}
 .portfolio__list {
   min-height: calc(100vh - 3.5rem - 3.2rem);
   padding: 0 1rem;
@@ -1641,6 +1803,11 @@ body {
   .portfolio__list {
     height: calc(100vh - 4.5rem);
     padding: 0 3rem 3rem 3rem;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .portfolio__list {
+    height: calc(100vh - 4.75rem);
   }
 }
 .portfolio__item {
@@ -1660,6 +1827,14 @@ body {
     height: calc(100vh - 4.5rem);
   }
 }
+@media screen and (min-width: 1440px) {
+  .portfolio__item {
+    height: calc(100vh - 4.75rem);
+  }
+}
+.portfolio__item a {
+  cursor: pointer;
+}
 .portfolio__itemTitle {
   font-size: 1.75rem;
   color: var(--firstColor);
@@ -1678,6 +1853,11 @@ body {
 @media screen and (min-width: 768px) {
   .portfolio__itemTitle {
     font-size: 2.5rem;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .portfolio__itemTitle {
+    font-size: 3rem;
   }
 }
 .portfolio__item::marker {
@@ -1717,6 +1897,12 @@ body {
     font-size: 1.4rem;
   }
 }
+@media screen and (min-width: 1440px) {
+  .portfolio__itemResume {
+    font-size: 1.6rem;
+    padding-top: 1.5rem;
+  }
+}
 .portfolio__itemImageContainer {
   background: var(--firstColor);
   border-radius: 1rem;
@@ -1735,6 +1921,13 @@ body {
 @media screen and (min-width: 1024px) {
   .portfolio__itemImageContainer {
     height: 35vh;
+    width: 50vw;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .portfolio__itemImageContainer {
+    height: 40vh;
     width: 50vw;
     margin: 0 auto;
   }
@@ -1766,6 +1959,11 @@ body {
     padding: 0 3rem 3rem 3rem;
   }
 }
+@media screen and (min-width: 1440px) {
+  .cv {
+    height: calc(100vh - 4.75rem);
+  }
+}
 .cv__title {
   font-size: 1.75rem;
   color: var(--firstColor);
@@ -1790,6 +1988,11 @@ body {
     align-items: flex-end;
   }
 }
+@media screen and (min-width: 1440px) {
+  .cv__title {
+    font-size: 3rem;
+  }
+}
 .cv__imgContainer {
   align-self: center;
   width: 72.5%;
@@ -1806,6 +2009,12 @@ body {
   .cv__imgContainer {
     height: 70%;
     width: 35%;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .cv__imgContainer {
+    height: 70%;
+    width: 30%;
   }
 }
 .cv__img {
@@ -1901,6 +2110,11 @@ body {
     padding: 0 3rem 3rem 3rem;
   }
 }
+@media screen and (min-width: 1024px) {
+  .contact {
+    height: calc(100vh - 4.75rem);
+  }
+}
 .contact__container {
   height: 75%;
   width: 100%;
@@ -1912,6 +2126,11 @@ body {
   .contact__container {
     font-size: 2.5rem;
     height: 80%;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .contact__container {
+    font-size: 3rem;
   }
 }
 .contact__title {
@@ -1934,6 +2153,11 @@ body {
 @media screen and (min-width: 768px) {
   .contact__title {
     font-size: 2.5rem;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .contact__title {
+    font-size: 3rem;
   }
 }
 .contact__links {
@@ -1959,6 +2183,11 @@ body {
     height: 15%;
   }
 }
+@media screen and (min-width: 1440px) {
+  .contact__linkContainer {
+    width: 60%;
+  }
+}
 .contact__link {
   height: 100%;
   display: flex;
@@ -1969,6 +2198,11 @@ body {
 @media screen and (min-width: 768px) {
   .contact__link {
     font-size: 1.4rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .contact__link {
+    font-size: 1.8rem;
   }
 }
 .contact__linkLogo {
@@ -2003,6 +2237,11 @@ body {
   }
 }
 @media screen and (min-width: 1024px) {
+  .route {
+    height: calc(100vh - 4.5rem);
+  }
+}
+@media screen and (min-width: 1440px) {
   .route {
     height: calc(100vh - 4.5rem);
   }

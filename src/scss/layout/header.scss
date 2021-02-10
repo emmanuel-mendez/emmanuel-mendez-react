@@ -26,6 +26,10 @@
 		justify-content: center;
 	}
 
+	@include from(l) {
+		height: $headerHeightLL;
+	}
+
 	&__container {
 		justify-content: space-between;
 		align-items: center;

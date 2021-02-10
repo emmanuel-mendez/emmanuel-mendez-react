@@ -15,10 +15,13 @@
 		padding: 0 3rem 3rem 3rem;
 	}
 
+	@include from(ll) {
+		height: calc(100vh - #{$headerHeightLL});
+		justify-content: space-between;
+	}
+
 	&__container {
-		display: flex;
-		flex-direction: column;
-		height: 100%;
+		margin: 0 auto;
 	}
 
 	&__description {
@@ -44,6 +47,11 @@
 		@include from(l) {
 			font-size: 1.6rem;
 		}
+
+		@include from(ll) {
+			font-size: 2rem;
+			width: 100%;
+		}
 	}
 
 	&__title {
@@ -61,6 +69,10 @@
 
 		@include from(t) {
 			font-size: 2.5rem;
+		}
+
+		@include from(ll) {
+			font-size: 3rem;
 		}
 	}
 
@@ -114,11 +126,20 @@
 		padding: 0 3rem 3rem 3rem;
 	}
 
+	@include from(ll) {
+		height: calc(100vh - #{$headerHeightLL});
+	}
+
 	&__container {
 		display: flex;
 		flex-direction: column;
 		height: 100%;
 		width: 100%;
+
+		@include from(ll) {
+			width: auto;
+			margin: 0 auto;
+		}
 	}
 
 	&__description {
@@ -143,6 +164,10 @@
 		@include from(l) {
 			font-size: 1.6rem;
 		}
+
+		@include from(ll) {
+			font-size: 2rem;
+		}
 	}
 
 	&__title {
@@ -160,6 +185,10 @@
 
 		@include from(t) {
 			font-size: 2.5rem;
+		}
+
+		@include from(ll) {
+			font-size: 3rem;
 		}
 	}
 
@@ -202,9 +231,18 @@
 		padding: 0 3rem 3rem 3rem;
 	}
 
+	@include from(ll) {
+		height: calc(100vh - #{$headerHeightLL});
+	}
+
 	&__container {
 		display: flex;
 		flex-direction: column;
+
+		@include from(ll) {
+			width: auto;
+			margin: 0 auto;
+		}
 	}
 
 	&__description {
@@ -212,6 +250,7 @@
 		height: 100%;
 		display: flex;
 		flex-direction: column;
+		align-items: center;
 		justify-content: center;
 
 		@include from(mm) {
@@ -228,6 +267,12 @@
 
 		@include from(l) {
 			font-size: 1.6rem;
+		}
+
+		@include from(ll) {
+			font-size: 2rem;
+			width: auto;
+			margin: 0 auto;
 		}
 	}
 
@@ -248,11 +293,19 @@
 		@include from(t) {
 			font-size: 2.5rem;
 		}
+
+		@include from(ll) {
+			font-size: 3rem;
+		}
 	}
 
 	&__skills {
 		color: var(--firstColor);
 		padding-left: 1rem;
+
+		@include from(ll) {
+			width: auto;
+		}
 	}
 
 	&__skill {
@@ -281,6 +334,10 @@
 			width: 30%;
 			height: 100%;
 			margin: 0 auto;
+		}
+
+		@include from(ll) {
+			display: none;
 		}
 	}
 }

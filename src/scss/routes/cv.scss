@@ -16,6 +16,10 @@
 		padding: 0 3rem 3rem 3rem;
 	}
 
+	@include from(ll) {
+		height: calc(100vh - #{$headerHeightLL});
+	}
+
 	&__title {
 		font-size: 1.75rem;
 		color: var(--firstColor);
@@ -36,6 +40,10 @@
 			display: flex;
 			align-items: flex-end;
 		}
+
+		@include from(ll) {
+			font-size: 3rem;
+		}
 	}
 
 	&__imgContainer {
@@ -52,6 +60,11 @@
 		@include from(l) {
 			height: 70%;
 			width: 35%;
+		}
+
+		@include from(ll) {
+			height: 70%;
+			width: 30%;
 		}
 	}
 
