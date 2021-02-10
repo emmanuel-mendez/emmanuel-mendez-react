@@ -87,12 +87,12 @@
 		height: 12%;
 
 		@include from(t) {
-			width: 65%;
+			width: 60%;
 			height: 15%;
 		}
 
 		@include from(ll) {
-			width: 60%;
+			width: 50%;
 		}
 	}
 

@@ -75,8 +75,8 @@ export const Nav = ({ toggleMenu, setToggleMenu, scrollToTopButton, setScrollToT
 
 				</li>
 
-				<li className="menu__item" onClick={() => setDarkMode(!darkMode)}>
-					<div className="menu__link" >
+				<li className="menu__item" >
+					<div className="menu__link" onClick={() => setDarkMode(!darkMode)}>
 						<p className="darkDescription">{useRoute("") === "/es/" ? ('Modo oscuro') : ('Dark Mode')}</p>
 						<div className={darkMode
 							? "switch dark"
