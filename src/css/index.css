@@ -632,7 +632,7 @@ body {
 }
 .copyright__languajes {
   padding-top: 0.9rem;
-  color: #767676;
+  color: #6e6e6e;
   font-size: 0.7rem;
   display: flex;
   justify-content: center;
@@ -659,7 +659,7 @@ body {
   align-items: center;
 }
 .copyright__languajesLink {
-  color: #767676;
+  color: #6e6e6e;
 }
 .copyright__languajesEnglish {
   padding-right: 0.2rem;
