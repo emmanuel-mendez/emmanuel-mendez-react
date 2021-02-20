@@ -1,14 +1,14 @@
 import React, { lazy, Suspense } from 'react'
 
 import { Link } from "react-router-dom";
-import { useLang } from '../../hooks/useLang'
 
+import { useLang } from '../../hooks/useLang'
 import { useRoute } from '../../hooks/useRoute'
 
 import { ReactComponent as HomeImage } from '../../../svg/homeImage.svg';
-
 import { ReactComponent as Share } from '../../../svg/share.svg';
 
+import IfOffline from '../../ifOffline/ifOffline'
 import { ScrollDown } from '../../scroll/ScrollDown'
 
 const share = (e) => {
@@ -47,7 +47,7 @@ const Home = () => {
               }
             </p>
 
-            <h2 className="home__title">Emmanuel Méndez.</h2>
+            <h2 className="home__title">Emmanuel Méndez.<IfOffline>Offline</IfOffline></h2>
 
             <h3 className="home__subtitle">
               {
