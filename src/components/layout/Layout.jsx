@@ -7,6 +7,7 @@ import { Header } from './Header';
 import { Footer } from './Footer'
 
 import { ScrollToTopButton } from '../scroll/ScrollToTopButton'
+import IfOffline from '../ifOffline/ifOffline'
 
 const Layout = ({ children, darkMode, setDarkMode }) => {
 
@@ -38,6 +39,8 @@ const Layout = ({ children, darkMode, setDarkMode }) => {
 	return (
 		<React.Fragment>
 			<Header toggleMenu={toggleMenu} setToggleMenu={setToggleMenu} darkMode={darkMode} setDarkMode={setDarkMode} y={y} />
+
+			<IfOffline>Offline</IfOffline>
 
 			<div className="layout" onClick={setToggleFromContainer} >
 
