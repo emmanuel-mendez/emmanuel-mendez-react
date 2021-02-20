@@ -1,159 +1,156 @@
 .cv {
-	height: calc(100vh - #{$headerHeightM} - #{$footerHeightM});
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	padding: 0 1rem;
+ height: calc(100vh - #{$headerHeightM} - #{$footerHeightM});
+ width: 100%;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ padding: 0 1rem;
 
-	@include from(t) {
-		height: calc(100vh - #{$headerHeightT} - #{$footerHeightT});
-		padding: 0 2rem;
-	}
+ @include from(t) {
+  height: calc(100vh - #{$headerHeightT} - #{$footerHeightT});
+  padding: 0 2rem;
+ }
 
-	@include from(l) {
-		height: calc(100vh - #{$headerHeightT});
-		padding: 0 3rem 3rem 3rem;
-	}
+ @include from(l) {
+  height: calc(100vh - #{$headerHeightT});
+  padding: 0 3rem 3rem 3rem;
+ }
 
-	@include from(ll) {
-		height: calc(100vh - #{$headerHeightLL});
-	}
+ @include from(ll) {
+  height: calc(100vh - #{$headerHeightLL});
+ }
 
-	@include from(4k) {
-		height: calc(100vh - #{$headerHeight4K});
-	}
+ @include from(4k) {
+  height: calc(100vh - #{$headerHeight4K});
+ }
 
-	&__title {
-		font-size: 1.75rem;
-		color: var(--firstColor);
-		padding-bottom: 1rem;
-		height: 15%;
-		display: flex;
-		align-items: center;
+ &__title {
+  font-size: 1.75rem;
+  color: var(--firstColor);
+  height: 15%;
+  display: flex;
+  align-items: center;
 
-		@include from(mm) {
-			font-size: 2rem;
-		}
+  @include from(mm) {
+   font-size: 2rem;
+  }
 
-		@include from(ml) {
-			font-size: 2.2rem;
-		}
+  @include from(ml) {
+   font-size: 2.2rem;
+  }
 
-		@include from(t) {
-			padding-bottom: 1.2rem;
-			font-size: 2.5rem;
-			display: flex;
-			align-items: flex-end;
-		}
+  @include from(t) {
+   font-size: 2.5rem;
 
-		@include from(ll) {
-			font-size: 3rem;
-		}
+  }
 
-		@include from(4k) {
-			font-size: 4rem;
-		}
-	}
+  @include from(ll) {
+   font-size: 3rem;
+  }
 
-	&__imgContainer {
-		align-self: center;
-		width: 72.5%;
-		height: 70%;
-		display: flex;
-		justify-content: center;
-		padding-bottom: 1rem;
+  @include from(4k) {
+   font-size: 4rem;
+  }
+ }
 
-		@include from(t) {
-			height: 70%;
-			width: 45%;
-		}
+ &__imgContainer {
+  align-self: center;
+  width: 72.5%;
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 1rem;
 
-		@include from(l) {
-			height: 70%;
-			width: 35%;
-		}
+  @include from(t) {
+   height: 70%;
+   width: 45%;
+  }
 
-		@include from(ll) {
-			height: 70%;
-			width: 30%;
-		}
-	}
+  @include from(l) {
+   height: 70%;
+   width: 35%;
+  }
 
-	&__img {
-		width: 100%;
-		height: 100%;
-		box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
-	}
+  @include from(ll) {
+   height: 70%;
+   width: 30%;
+  }
+ }
 
-	&__links {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		height: 15%;
-	}
+ &__img {
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+ }
 
-	&__linksTitle {
-		font-size: 1rem;
-		color: var(--firstColor);
-		padding-bottom: 0.3rem;
+ &__links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 15%;
+ }
 
-		@include from(mm) {
-			font-size: 1.2rem;
-		}
+ &__linksTitle {
+  font-size: 1rem;
+  color: var(--firstColor);
+  padding-bottom: 0.3rem;
 
-		@include from(ml) {
-			font-size: 1.4rem;
-		}
+  @include from(mm) {
+   font-size: 1.2rem;
+  }
 
-		@include from(t) {
-			font-size: 2rem;
-			padding-bottom: 0.5rem;
-		}
+  @include from(ml) {
+   font-size: 1.4rem;
+  }
 
-		@include from(4k) {
-			font-size: 3rem;
-			padding-bottom: 1rem;
-		}
-	}
+  @include from(t) {
+   font-size: 2rem;
+   padding-bottom: 0.5rem;
+  }
 
-	&__downloads {
-		display: flex;
-		gap: 0.6rem;
-	}
+  @include from(4k) {
+   font-size: 3rem;
+   padding-bottom: 1rem;
+  }
+ }
 
-	&__download {
-		font-size: 0.7rem;
-		background-color: white;
-		border: 0.1rem solid var(--firstColor);
-		border-radius: 0.3rem;
-		padding: 0.5rem 1rem;
-		align-self: flex-start;
-		width: max-content;
-		list-style: none;
+ &__downloads {
+  display: flex;
+  gap: 0.6rem;
+ }
 
-		@include from(mm) {
-			font-size: 1rem;
-		}
+ &__download {
+  font-size: 0.7rem;
+  background-color: white;
+  border: 0.1rem solid var(--firstColor);
+  border-radius: 0.3rem;
+  padding: 0.5rem 1rem;
+  align-self: flex-start;
+  width: max-content;
+  list-style: none;
 
-		@include from(ml) {
-			font-size: 1.2rem;
-		}
+  @include from(mm) {
+   font-size: 1rem;
+  }
 
-		@include from(t) {
-			font-size: 1.4rem;
-		}
+  @include from(ml) {
+   font-size: 1.2rem;
+  }
 
-		@include from(l) {
-			font-size: 2rem;
-		}
+  @include from(t) {
+   font-size: 1.4rem;
+  }
 
-		@include from(ll) {
-			font-size: 2.2rem;
-		}
+  @include from(l) {
+   font-size: 2rem;
+  }
 
-		@include from(4k) {
-			font-size: 3.5rem;
-		}
-	}
+  @include from(ll) {
+   font-size: 2.2rem;
+  }
+
+  @include from(4k) {
+   font-size: 3.5rem;
+  }
+ }
 }
