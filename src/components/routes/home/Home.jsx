@@ -18,7 +18,6 @@ const share = (e) => {
     return;
   }
 
-
   navigator.share({
     title: 'Emmanuel Méndez',
     text: 'Emmanuel Méndez',
@@ -78,7 +77,10 @@ const Home = () => {
               <Link exact to={useRoute("contact")} className="home__button home__shareButton" onClick={share} >
                 {
                   useLang()
-                    ? "Compartir"
+                    ? <div className="home__shareDescription">
+                      <p>Compartir</p>
+                      <Share className="home__shareIcon" />
+                    </div>
                     : <div className="home__shareDescription">
                       <p>Share</p>
                       <Share className="home__shareIcon" />

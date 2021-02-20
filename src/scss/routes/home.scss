@@ -124,6 +124,14 @@
   &__paragraph {
     padding-bottom: 1rem;
 
+    @include from(l) {
+      padding-bottom: 1.5rem;
+    }
+
+    @include from(ll) {
+      padding-bottom: 1.75rem;
+    }
+
     @include from(4k) {
       padding-bottom: 2.5rem;
     }

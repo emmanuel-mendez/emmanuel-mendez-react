@@ -1132,6 +1132,16 @@ body {
 .home__paragraph {
   padding-bottom: 1rem;
 }
+@media screen and (min-width: 1024px) {
+  .home__paragraph {
+    padding-bottom: 1.5rem;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .home__paragraph {
+    padding-bottom: 1.75rem;
+  }
+}
 @media screen and (min-width: 2560px) {
   .home__paragraph {
     padding-bottom: 2.5rem;
