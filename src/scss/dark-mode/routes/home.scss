@@ -1,42 +1,46 @@
 .darkMode {
-	.home {
-		&__title {
-			color: white;
-		}
+  .home {
+    &__title {
+      color: white;
+    }
 
-		&__subtitle {
-			color: $subtitleColor;
-		}
+    &__subtitle {
+      color: $subtitleColor;
+    }
 
-		&__description {
-			color: $darkTextColor;
-		}
+    &__description {
+      color: $darkTextColor;
+    }
 
-		&__getInTouchButton {
-			background-color: var(--firstColor);
-			color: $subtitleColor;
-			border: 0.1rem solid $darkTextColor;
-		}
+    &__button {
+      background-color: var(--firstColor);
+      color: $subtitleColor;
+      border: 0.1rem solid $darkTextColor;
+    }
 
-		&__image {
-			fill: $subtitleColor;
-		}
-	}
+    &__shareIcon {
+      fill: $subtitleColor;
+    }
 
-	.aboutMe {
-		color: $darkTextColor;
+    &__image {
+      fill: $subtitleColor;
+    }
+  }
 
-		&__title {
-			color: white;
-		}
+  .aboutMe {
+    color: $darkTextColor;
 
-		&__unexca {
-			font-weight: bold;
-			color: $subtitleColor;
-		}
+    &__title {
+      color: white;
+    }
 
-		&__imageContainer {
-			border: 0.1rem solid $darkTextColor;
-		}
-	}
+    &__unexca {
+      font-weight: bold;
+      color: $subtitleColor;
+    }
+
+    &__imageContainer {
+      border: 0.1rem solid $darkTextColor;
+    }
+  }
 }

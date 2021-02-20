@@ -5,17 +5,16 @@ import { ExpirationPlugin } from 'workbox-expiration';
 import { precacheAndRoute, createHandlerBoundToURL } from 'workbox-precaching';
 import { registerRoute } from 'workbox-routing';
 import { StaleWhileRevalidate, CacheFirst, NetworkFirst } from 'workbox-strategies';
+import * as googleAnalytics from 'workbox-google-analytics';
 
 clientsClaim();
 
 
 // PRECACHE ASSETS
-
 precacheAndRoute(self.__WB_MANIFEST);
 
 
 // APP SHELL
-
 const fileExtensionRegexp = new RegExp('/[^/?]+\\.[^/]+$');
 registerRoute(
   ({ request, url }) => {
@@ -35,6 +34,14 @@ registerRoute(
   },
   createHandlerBoundToURL(process.env.PUBLIC_URL + '/index.html')
 );
+
+
+// GOOGLE ANALYTICS OFFLINE
+googleAnalytics.initialize({
+  parameterOverrides: {
+    cd1: 'offline',
+  },
+});
 
 
 // STALE WHILE REVALIDATE
@@ -91,7 +98,6 @@ registerRoute(
 
 
 // NETWORK FIRST
-
 registerRoute(
   ({ url }) => url.pathname.startsWith('/'),
   new NetworkFirst()

@@ -843,10 +843,13 @@ body {
 .darkMode .home__description {
   color: #a8abaf;
 }
-.darkMode .home__getInTouchButton {
+.darkMode .home__button {
   background-color: var(--firstColor);
   color: #e4e6eb;
   border: 0.1rem solid #a8abaf;
+}
+.darkMode .home__shareIcon {
+  fill: #e4e6eb;
 }
 .darkMode .home__image {
   fill: #e4e6eb;
@@ -1129,39 +1132,102 @@ body {
 .home__paragraph {
   padding-bottom: 1rem;
 }
-.home__getInTouchButton {
+@media screen and (min-width: 2560px) {
+  .home__paragraph {
+    padding-bottom: 2.5rem;
+  }
+}
+.home__buttons {
+  height: auto;
+  width: max-content;
+  display: flex;
+  justify-content: flex-start;
+}
+.home__button {
+  height: 3rem;
   font-size: 1rem;
   font-weight: bold;
   background-color: white;
   color: var(--firstColor);
   border: 0.1rem solid var(--firstColor);
   border-radius: 0.3rem;
-  padding: 0.8rem;
   align-self: flex-start;
   width: max-content;
+  padding: 0 0.5rem;
+  display: flex;
+  align-items: center;
 }
 @media screen and (min-width: 375px) {
-  .home__getInTouchButton {
+  .home__button {
     font-size: 1.2rem;
-    padding: 1rem;
   }
 }
 @media screen and (min-width: 425px) {
-  .home__getInTouchButton {
+  .home__button {
     font-size: 1.4rem;
-    padding: 1.2rem;
   }
 }
 @media screen and (min-width: 768px) {
-  .home__getInTouchButton {
+  .home__button {
     font-size: 1.8rem;
-    padding: 1.6rem;
+    height: 3.5rem;
+    padding: 0 1rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .home__button {
+    font-size: 2rem;
+    height: 4rem;
+    padding: 0 1.2rem;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .home__button {
+    font-size: 2.2rem;
+    height: 4.5rem;
+    padding: 0 1.5rem;
   }
 }
 @media screen and (min-width: 2560px) {
-  .home__getInTouchButton {
-    font-size: 2.8rem;
-    padding: 2.6rem;
+  .home__button {
+    font-size: 3rem;
+    height: 7rem;
+    padding: 0 2rem;
+  }
+}
+.home__shareDescription {
+  display: flex;
+  align-items: center;
+}
+.home__shareDescription p {
+  padding-right: 0.5rem;
+}
+.home__shareButton {
+  margin-left: 1rem;
+}
+.home__shareIcon {
+  height: 100%;
+  width: 1rem;
+  fill: var(--firstColor);
+}
+@media screen and (min-width: 375px) {
+  .home__shareIcon {
+    width: 1.2rem;
+  }
+}
+@media screen and (min-width: 425px) {
+  .home__shareIcon {
+    width: 1.4rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .home__shareIcon {
+    width: 1.8rem;
+  }
+}
+@media screen and (min-width: 2560px) {
+  .home__shareIcon {
+    width: 2.8rem;
   }
 }
 .home__image {
