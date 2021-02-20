@@ -199,7 +199,7 @@ select {
 }
 
 body {
-  font-family: Roboto;
+  font-family: system-ui;
   min-height: 100%;
   font-size: var(--bodyFontSize);
 }
