@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react'
 const IfOffline = ({ children }) => {
 
 
-  const [online, setOnline] = useState({ onLine: navigator ? navigator.onLine : true })
+  const [onLine, setOnline] = useState({ onLine: navigator ? navigator.onLine : true })
 
 
   useEffect(() => {
@@ -16,7 +16,7 @@ const IfOffline = ({ children }) => {
   return (
     <React.Fragment>
       {
-        online
+        onLine
           ? null
           : <span>{children}</span>
       }
