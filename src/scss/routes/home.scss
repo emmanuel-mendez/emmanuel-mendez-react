@@ -265,19 +265,20 @@
 
 	&__imageContainer {
 		background: var(--firstColor);
-		height: 40%;
-		width: auto;
+		height: 55vw;
+		width: 55vw;
 		border-radius: 100%;
 		display: flex;
 
-		@include from(t) {
-			height: 50%;
+		@include from(l) {
+			height: 30vw;
+			width: 30vw;
 		}
 	}
 
 	&__image {
 		height: 100%;
-		width: auto;
+		width: 100%;
 		border-radius: 100%;
 		object-fit: cover;
 	}

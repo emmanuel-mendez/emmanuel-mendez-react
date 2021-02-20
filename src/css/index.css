@@ -1282,19 +1282,20 @@ body {
 }
 .aboutMe__imageContainer {
   background: var(--firstColor);
-  height: 40%;
-  width: auto;
+  height: 55vw;
+  width: 55vw;
   border-radius: 100%;
   display: flex;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   .aboutMe__imageContainer {
-    height: 50%;
+    height: 30vw;
+    width: 30vw;
   }
 }
 .aboutMe__image {
   height: 100%;
-  width: auto;
+  width: 100%;
   border-radius: 100%;
   object-fit: cover;
 }
@@ -2118,8 +2119,8 @@ body {
   }
 }
 .portfolio__itemImage {
-  height: auto;
-  width: 90%;
+  height: 90%;
+  width: auto;
   padding: 1.5rem;
   object-fit: cover;
 }
