@@ -6,9 +6,9 @@ const IfOffline = ({ children }) => {
 
   useEffect(() => {
 
-    const goOnline = () => setOnLine({ onLine: true })
+    const goOnline = () => setOnLine(true)
 
-    const goOffline = () => setOnLine({ onLine: false })
+    const goOffline = () => setOnLine(false)
 
     if (!window) {
       window.addEventListener('online', goOnline)
