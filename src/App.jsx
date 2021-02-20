@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import {
-	BrowserRouter as Router,
+	Router,
 	Switch,
 	Route,
 } from "react-router-dom";
@@ -13,8 +13,19 @@ import Portfolio from './components/routes/portfolio/Portfolio'
 import Skills from './components/routes/skills/Skills'
 import Cv from './components/routes/cv/Cv'
 
+import { createBrowserHistory } from 'history'
+import ReactGA from 'react-ga'
 
 import './App.css';
+
+const history = createBrowserHistory()
+
+ReactGA.initialize('UA-000000-01')
+ReactGA.pageview(window.location.pathname + window.location.search)
+
+history.listen(function (location) {
+	ReactGA.pageview(window.location.pathname + window.location.search)
+})
 
 const App = () => {
 
@@ -34,7 +45,7 @@ const App = () => {
 			? "App darkMode"
 			: "App"}>
 
-			<Router>
+			<Router history={history}>
 				<Layout darkMode={darkMode} setDarkMode={setDarkMode}>
 					<Switch>
 

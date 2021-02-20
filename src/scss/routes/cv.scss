@@ -28,6 +28,9 @@
 		font-size: 1.75rem;
 		color: var(--firstColor);
 		padding-bottom: 1rem;
+		height: 15%;
+		display: flex;
+		align-items: center;
 
 		@include from(mm) {
 			font-size: 2rem;
@@ -40,7 +43,6 @@
 		@include from(t) {
 			padding-bottom: 1.2rem;
 			font-size: 2.5rem;
-			height: 15%;
 			display: flex;
 			align-items: flex-end;
 		}
@@ -57,12 +59,14 @@
 	&__imgContainer {
 		align-self: center;
 		width: 72.5%;
+		height: 70%;
 		display: flex;
 		justify-content: center;
 		padding-bottom: 1rem;
 
 		@include from(t) {
 			height: 70%;
+			width: 45%;
 		}
 
 		@include from(l) {
@@ -79,7 +83,6 @@
 	&__img {
 		width: 100%;
 		height: 100%;
-		height: auto;
 		box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
 	}
 
@@ -141,8 +144,16 @@
 			font-size: 1.4rem;
 		}
 
-		@include from(t) {
+		@include from(l) {
 			font-size: 2rem;
+		}
+
+		@include from(ll) {
+			font-size: 2.2rem;
+		}
+
+		@include from(4k) {
+			font-size: 3.5rem;
 		}
 	}
 }
