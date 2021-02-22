@@ -7,8 +7,8 @@ import { ScrollDown } from '../../scroll/ScrollDown'
 import { ReactComponent as PortfolioImage } from '../../../svg/portfolioImage.svg';
 
 const Portfolio = () => {
-	return (
 
+	return (
 		<>
 			<section className="portfolio">
 
@@ -97,7 +97,6 @@ const Portfolio = () => {
 
 			</section>
 		</>
-
 	)
 }
 

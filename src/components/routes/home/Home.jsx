@@ -29,7 +29,6 @@ const share = (e) => {
 const Home = () => {
 
   return (
-
     <>
       <section className="home">
 
@@ -126,7 +125,6 @@ const Home = () => {
 
       </section>
     </>
-
   )
 }
 

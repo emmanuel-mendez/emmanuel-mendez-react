@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 import { useLogoLink } from '../../hooks/useLogoLink'
 
-import Nav from '../Nav/NavContainer'
+import Nav from '../nav/NavContainer'
 
 import { ReactComponent as Logo } from '../../../svg/logo.svg';
 import { ReactComponent as Menu } from '../../../svg/menu.svg';
