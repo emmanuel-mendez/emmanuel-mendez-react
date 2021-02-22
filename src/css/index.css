@@ -228,6 +228,7 @@ body {
 
 .route__offlineMode {
   height: calc(100vh - 3.5rem - 3.2rem + 1rem);
+  padding-top: 1rem;
 }
 .route__offlineMode::-webkit-scrollbar {
   display: none;

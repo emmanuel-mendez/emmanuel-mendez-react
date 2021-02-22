@@ -37,6 +37,7 @@ body {
 .route {
  &__offlineMode {
   height: calc(100vh - #{$headerHeightM} - #{$footerHeightM} + 1rem);
+  padding-top: 1rem;
  }
 
  &__offlineMode::-webkit-scrollbar {
