@@ -222,7 +222,7 @@ body {
 
 .offlineMode {
   margin-top: 0;
-  margin-bottom: calc(3.2rem);
+  margin-bottom: calc(3.2rem + 1.5rem);
   min-height: 100%;
   animation: fadeIn ease 0.3s;
 }
