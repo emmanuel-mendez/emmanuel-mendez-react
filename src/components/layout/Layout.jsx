@@ -53,7 +53,9 @@ const Layout = ({ children, darkMode, setDarkMode }) => {
 			<Header toggleMenu={toggleMenu} setToggleMenu={setToggleMenu} darkMode={darkMode} setDarkMode={setDarkMode} y={y} />
 
 			{
-				useOnline() === false ?? <Offline />
+				useOnline()
+					? null
+					: <Offline />
 			}
 
 			<div className="layout" onClick={setToggleFromContainer} >
