@@ -40,11 +40,11 @@ const Layout = ({ children, darkMode, setDarkMode }) => {
 		<React.Fragment>
 			<Header toggleMenu={toggleMenu} setToggleMenu={setToggleMenu} darkMode={darkMode} setDarkMode={setDarkMode} y={y} />
 
-			<IfOffline>Offline</IfOffline>
-
 			<div className="layout" onClick={setToggleFromContainer} >
 
 				<article className="article" >
+
+					<IfOffline>Offline</IfOffline>
 					<div className="route" ref={scrollRef} id="ref">
 						{children}
 					</div>
