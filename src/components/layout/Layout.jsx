@@ -42,6 +42,8 @@ const Layout = ({ children, darkMode, setDarkMode }) => {
 
 			<div className="layout" onClick={setToggleFromContainer} >
 
+				<div className="offline">Offline</div>
+
 				<article className={useOnline()
 					? "article"
 					: "article offlineMode"}>
