@@ -24,7 +24,7 @@ export const Offline = ({ children }) => {
       {
         onLine
           ? null
-          : <div>{children}</div>
+          : <div className="offline">{children}</div>
       }
     </>
   )

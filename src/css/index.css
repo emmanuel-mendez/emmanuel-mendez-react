@@ -214,6 +214,10 @@ body {
   flex-direction: column;
 }
 
+.offline {
+  background-color: red;
+}
+
 .header {
   height: 3.5rem;
   background-color: var(--firstColor);
