@@ -4,6 +4,8 @@
 
 @import "base/base";
 
+@import "offline/offline";
+
 @import "layout/layout";
 
 @import "dark-mode/darkMode.scss";
@@ -11,5 +13,4 @@
 @import "routes/routes";
 
 @import "loader/loader";
-@import "offline/offline";
 @import "scroll/scorll";
