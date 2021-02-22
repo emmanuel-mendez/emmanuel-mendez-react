@@ -1,6 +1,6 @@
-import React, { useState, useEffect, children } from 'react'
+import React, { useState, useEffect } from 'react'
 
-const IfOffline = () => {
+const IfOffline = ({ children }) => {
 
   const [state, setState] = useState({ onLine: navigator ? navigator.onLine : true })
 
