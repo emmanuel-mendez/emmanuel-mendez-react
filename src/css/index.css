@@ -1004,6 +1004,10 @@ body {
   padding: 0 1rem 1rem 1rem;
   scroll-snap-align: center;
 }
+.home .offline {
+  background-color: red;
+  height: 5%;
+}
 @media screen and (min-width: 768px) {
   .home {
     height: calc(100vh - 4.5rem - 4.4rem);
