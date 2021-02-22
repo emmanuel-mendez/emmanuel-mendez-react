@@ -1289,7 +1289,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 1rem;
+  padding: 0 1rem 1rem 1rem;
   scroll-snap-align: end;
 }
 @media screen and (min-width: 768px) {
@@ -1403,7 +1403,7 @@ body {
   height: 100%;
   width: 100vw;
   display: flex;
-  padding: 1rem;
+  padding: 0 1rem 1rem 1rem;
   scroll-snap-align: start;
 }
 @media screen and (min-width: 768px) {
@@ -1535,7 +1535,7 @@ body {
   height: 100%;
   width: 100vw;
   display: flex;
-  padding: 1rem;
+  padding: 0 1rem 1rem 1rem;
   scroll-snap-align: start;
 }
 @media screen and (min-width: 768px) {
@@ -1661,7 +1661,7 @@ body {
   height: 100%;
   width: 100vw;
   display: flex;
-  padding: 1rem;
+  padding: 0 1rem 1rem 1rem;
   scroll-snap-align: start;
 }
 @media screen and (min-width: 768px) {
@@ -1811,7 +1811,7 @@ body {
   height: calc(100vh - 3.5rem - 3.2rem);
   width: 100vw;
   display: flex;
-  padding: 1rem;
+  padding: 0 1rem 1rem 1rem;
   scroll-snap-align: start;
 }
 @media screen and (min-width: 768px) {
