@@ -21,6 +21,7 @@ body {
 }
 
 .offline {
+ margin-top: $headerHeightM;
  background-color: red;
  height: 1.5rem;
 }

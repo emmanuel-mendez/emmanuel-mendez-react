@@ -215,6 +215,7 @@ body {
 }
 
 .offline {
+  margin-top: 3.5rem;
   background-color: red;
   height: 1.5rem;
 }
