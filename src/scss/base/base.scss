@@ -19,3 +19,112 @@ body {
  display: flex;
  flex-direction: column;
 }
+
+.offline {
+ background-color: var(--darkColor);
+ color: $textColor;
+ height: $headerOfflineM;
+ width: 100vw;
+ position: fixed;
+ top: $headerHeightM;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ font-size: 1rem;
+
+ @include from(mm) {
+  height: $headerOfflineMM;
+  top: $headerHeightMM;
+  font-size: 1rem;
+ }
+
+ @include from(ml) {
+  height: $headerOfflineML;
+  top: $headerHeightML;
+  font-size: 1.2rem;
+ }
+
+ @include from(t) {
+  height: $headerOfflineT;
+  top: $headerHeightT;
+  font-size: 1.4rem;
+ }
+
+ @include from(l) {
+  height: $headerOfflineL;
+  top: $headerHeightL;
+  font-size: 1.6rem;
+ }
+
+ @include from(ll) {
+  height: $headerOfflineLL;
+  top: $headerHeightLL;
+  font-size: 1.8rem;
+ }
+
+ @include from(4k) {
+  height: $headerOffline4K;
+  top: $headerHeight4K;
+  font-size: 2rem;
+ }
+}
+
+.article {
+ &__offlineMode {
+  margin-top: calc(#{$headerHeightM} + #{$headerOfflineM});
+
+  @include from(mm) {
+   margin-top: calc(#{$headerHeightMM} + #{$headerOfflineMM});
+  }
+
+  @include from(ml) {
+   margin-top: calc(#{$headerHeightML} + #{$headerOfflineML});
+  }
+
+  @include from(t) {
+   margin-top: calc(#{$headerHeightT} + #{$headerOfflineT});
+  }
+
+  @include from(l) {
+   margin-top: calc(#{$headerHeightL} + #{$headerOfflineL});
+  }
+
+  @include from(ll) {
+   margin-top: calc(#{$headerHeightLL} + #{$headerOfflineLL});
+  }
+
+  @include from(4k) {
+   margin-top: calc(#{$headerHeight4K} + #{$headerOffline4K});
+  }
+ }
+}
+
+.route {
+ &__offlineMode {
+  height: calc(100vh - #{$headerHeightM} - #{$footerHeightM} - #{$headerOfflineM});
+
+  @include from(mm) {
+   height: calc(100vh - #{$headerHeightMM} - #{$footerHeightM} - #{$headerOfflineMM});
+  }
+
+  @include from(ml) {
+   height: calc(100vh - #{$headerHeightML} - #{$footerHeightM} - #{$headerOfflineML});
+  }
+
+  @include from(t) {
+   height: calc(100vh - #{$headerHeightT} - #{$footerHeightT} - #{$headerOfflineT});
+  }
+
+  @include from(l) {
+   height: calc(100vh - #{$headerHeightL} - #{$footerHeightL} - #{$headerOfflineL});
+  }
+
+  @include from(ll) {
+   height: calc(100vh - #{$headerHeightLL} - #{$footerHeightL} - #{$headerOfflineLL});
+  }
+
+  @include from(4k) {
+   height: calc(100vh - #{$headerHeight4K} - #{$footerHeightL} - #{$headerOffline4K});
+  }
+ }
+}
