@@ -7,7 +7,7 @@ import { Header } from './Header';
 import { Footer } from './Footer'
 
 import { ScrollToTopButton } from '../scroll/ScrollToTopButton'
-import IfOffline from '../ifOffline/ifOffline'
+import IfOffline from '../ifOffline/IfOffline'
 
 const Layout = ({ children, darkMode, setDarkMode }) => {
 
