@@ -2,7 +2,7 @@
  height: 100%;
  width: 100vw;
  display: flex;
- padding: 0 1rem 1rem 1rem;
+ padding: 1rem;
  scroll-snap-align: start;
 
  @include from(t) {
@@ -125,7 +125,7 @@
  height: 100%;
  width: 100vw;
  display: flex;
- padding: 0 1rem 1rem 1rem;
+ padding: 1rem;
  scroll-snap-align: start;
 
  @include from(t) {
@@ -242,7 +242,7 @@
  height: 100%;
  width: 100vw;
  display: flex;
- padding: 0 1rem;
+ padding: 1rem;
  scroll-snap-align: start;
 
  @include from(t) {
