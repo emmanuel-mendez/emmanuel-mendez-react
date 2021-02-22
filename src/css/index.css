@@ -2329,7 +2329,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 0 1rem;
+  padding: 1rem 1rem 1rem 0;
 }
 @media screen and (min-width: 768px) {
   .cv {
@@ -2500,7 +2500,7 @@ body {
   font-size: 1rem;
   display: flex;
   flex-direction: column;
-  padding: 0 1rem;
+  padding: 1rem 1rem 1rem 0;
 }
 @media screen and (min-width: 375px) {
   .contact {

@@ -4,7 +4,7 @@
  display: flex;
  flex-direction: column;
  justify-content: center;
- padding: 0 1rem;
+ padding: 1rem 1rem 1rem 0;
 
  @include from(t) {
   height: calc(100vh - #{$headerHeightT} - #{$footerHeightT});
