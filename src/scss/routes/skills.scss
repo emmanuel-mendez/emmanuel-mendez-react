@@ -1,379 +1,379 @@
 .skills {
-	height: calc(100vh - #{$headerHeightM} - #{$footerHeightM});
-	width: 100vw;
-	display: flex;
-	padding: 0 1rem 1rem 1rem;
-	scroll-snap-align: start;
+ height: 100%;
+ width: 100vw;
+ display: flex;
+ padding: 0 1rem 1rem 1rem;
+ scroll-snap-align: start;
 
-	@include from(t) {
-		height: calc(100vh - #{$headerHeightT} - #{$footerHeightT});
-		padding: 0 2rem 2rem 2rem;
-	}
+ @include from(t) {
+  height: calc(100vh - #{$headerHeightT} - #{$footerHeightT});
+  padding: 0 2rem 2rem 2rem;
+ }
 
-	@include from(l) {
-		height: calc(100vh - #{$headerHeightL});
-		padding: 0 3rem 3rem 3rem;
-	}
+ @include from(l) {
+  height: calc(100vh - #{$headerHeightL});
+  padding: 0 3rem 3rem 3rem;
+ }
 
-	@include from(ll) {
-		height: calc(100vh - #{$headerHeightLL});
-		justify-content: space-between;
-	}
+ @include from(ll) {
+  height: calc(100vh - #{$headerHeightLL});
+  justify-content: space-between;
+ }
 
-	@include from(4k) {
-		height: calc(100vh - #{$headerHeight4K});
-	}
+ @include from(4k) {
+  height: calc(100vh - #{$headerHeight4K});
+ }
 
-	&__container {
-		margin: 0 auto;
-	}
+ &__container {
+  margin: 0 auto;
+ }
 
-	&__description {
-		font-size: 0.9rem;
-		height: 60%;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
+ &__description {
+  font-size: 0.9rem;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
-		@include from(mm) {
-			font-size: 1.2rem;
-			height: 65%;
-		}
+  @include from(mm) {
+   font-size: 1.2rem;
+   height: 65%;
+  }
 
-		@include from(ml) {
-			font-size: 1.4rem;
-		}
+  @include from(ml) {
+   font-size: 1.4rem;
+  }
 
-		@include from(t) {
-			font-size: 2rem;
-		}
+  @include from(t) {
+   font-size: 2rem;
+  }
 
-		@include from(l) {
-			font-size: 1.6rem;
-		}
+  @include from(l) {
+   font-size: 1.6rem;
+  }
 
-		@include from(ll) {
-			font-size: 2rem;
-			width: 100%;
-		}
+  @include from(ll) {
+   font-size: 2rem;
+   width: 100%;
+  }
 
-		@include from(4k) {
-			font-size: 3rem;
-		}
-	}
+  @include from(4k) {
+   font-size: 3rem;
+  }
+ }
 
-	&__title {
-		font-size: 1.75rem;
-		color: var(--firstColor);
-		padding-bottom: 1rem;
+ &__title {
+  font-size: 1.75rem;
+  color: var(--firstColor);
+  padding-bottom: 1rem;
 
-		@include from(mm) {
-			font-size: 2rem;
-		}
+  @include from(mm) {
+   font-size: 2rem;
+  }
 
-		@include from(ml) {
-			font-size: 2.2rem;
-		}
+  @include from(ml) {
+   font-size: 2.2rem;
+  }
 
-		@include from(t) {
-			font-size: 2.5rem;
-		}
+  @include from(t) {
+   font-size: 2.5rem;
+  }
 
-		@include from(ll) {
-			font-size: 3rem;
-		}
+  @include from(ll) {
+   font-size: 3rem;
+  }
 
-		@include from(4k) {
-			font-size: 4rem;
-		}
-	}
+  @include from(4k) {
+   font-size: 4rem;
+  }
+ }
 
-	&__advantages {
-		padding-left: 1rem;
-	}
+ &__advantages {
+  padding-left: 1rem;
+ }
 
-	&__advantage {
-		padding-top: 0.3rem;
-		color: black;
-	}
+ &__advantage {
+  padding-top: 0.3rem;
+  color: black;
+ }
 
-	&__advantage:nth-child(1) {
-		padding-top: 0;
-	}
+ &__advantage:nth-child(1) {
+  padding-top: 0;
+ }
 
-	&__advantage::marker {
-		color: var(--firstColor);
-	}
+ &__advantage::marker {
+  color: var(--firstColor);
+ }
 
-	&__image {
-		align-self: flex-end;
-		width: 80%;
-		height: 40%;
-		margin-top: auto;
+ &__image {
+  align-self: flex-end;
+  width: 80%;
+  height: 40%;
+  margin-top: auto;
 
-		@include from(mm) {
-			height: 30%;
-		}
+  @include from(mm) {
+   height: 30%;
+  }
 
-		@include from(t) {
-			height: 35%;
-		}
-	}
+  @include from(t) {
+   height: 35%;
+  }
+ }
 }
 
 .frontend {
-	height: calc(100vh - #{$headerHeightM} - #{$footerHeightM});
-	width: 100vw;
-	display: flex;
-	padding: 0 1rem 1rem 1rem;
-	scroll-snap-align: start;
+ height: 100%;
+ width: 100vw;
+ display: flex;
+ padding: 0 1rem 1rem 1rem;
+ scroll-snap-align: start;
 
-	@include from(t) {
-		height: calc(100vh - #{$headerHeightT} - #{$footerHeightT});
-		padding: 0 2rem 2rem 2rem;
-	}
+ @include from(t) {
+  height: calc(100vh - #{$headerHeightT} - #{$footerHeightT});
+  padding: 0 2rem 2rem 2rem;
+ }
 
-	@include from(l) {
-		height: calc(100vh - #{$headerHeightL});
-		padding: 0 3rem 3rem 3rem;
-	}
+ @include from(l) {
+  height: calc(100vh - #{$headerHeightL});
+  padding: 0 3rem 3rem 3rem;
+ }
 
-	@include from(ll) {
-		height: calc(100vh - #{$headerHeightLL});
-	}
+ @include from(ll) {
+  height: calc(100vh - #{$headerHeightLL});
+ }
 
-	@include from(4k) {
-		height: calc(100vh - #{$headerHeight4K});
-	}
+ @include from(4k) {
+  height: calc(100vh - #{$headerHeight4K});
+ }
 
-	&__container {
-		display: flex;
-		flex-direction: column;
-		height: 100%;
-		width: 100%;
+ &__container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
 
-		@include from(ll) {
-			width: auto;
-			margin: 0 auto;
-		}
-	}
+  @include from(ll) {
+   width: auto;
+   margin: 0 auto;
+  }
+ }
 
-	&__description {
-		font-size: 0.9rem;
-		height: 80%;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
+ &__description {
+  font-size: 0.9rem;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
-		@include from(mm) {
-			font-size: 1.2rem;
-		}
+  @include from(mm) {
+   font-size: 1.2rem;
+  }
 
-		@include from(ml) {
-			font-size: 1.4rem;
-		}
+  @include from(ml) {
+   font-size: 1.4rem;
+  }
 
-		@include from(t) {
-			font-size: 2rem;
-		}
+  @include from(t) {
+   font-size: 2rem;
+  }
 
-		@include from(l) {
-			font-size: 1.6rem;
-		}
+  @include from(l) {
+   font-size: 1.6rem;
+  }
 
-		@include from(ll) {
-			font-size: 2rem;
-		}
+  @include from(ll) {
+   font-size: 2rem;
+  }
 
-		@include from(4k) {
-			font-size: 3rem;
-		}
-	}
+  @include from(4k) {
+   font-size: 3rem;
+  }
+ }
 
-	&__title {
-		font-size: 1.75rem;
-		color: var(--firstColor);
-		padding-bottom: 1.5rem;
+ &__title {
+  font-size: 1.75rem;
+  color: var(--firstColor);
+  padding-bottom: 1.5rem;
 
-		@include from(mm) {
-			font-size: 2rem;
-		}
+  @include from(mm) {
+   font-size: 2rem;
+  }
 
-		@include from(ml) {
-			font-size: 2.2rem;
-		}
+  @include from(ml) {
+   font-size: 2.2rem;
+  }
 
-		@include from(t) {
-			font-size: 2.5rem;
-		}
+  @include from(t) {
+   font-size: 2.5rem;
+  }
 
-		@include from(ll) {
-			font-size: 3rem;
-		}
+  @include from(ll) {
+   font-size: 3rem;
+  }
 
-		@include from(4k) {
-			font-size: 4rem;
-		}
-	}
+  @include from(4k) {
+   font-size: 4rem;
+  }
+ }
 
-	&__skills {
-		color: var(--firstColor);
-		padding-left: 1rem;
-	}
+ &__skills {
+  color: var(--firstColor);
+  padding-left: 1rem;
+ }
 
-	&__skill {
-		padding-top: 0.3rem;
-	}
+ &__skill {
+  padding-top: 0.3rem;
+ }
 
-	&__skill:nth-child(1) {
-		padding-top: 0;
-	}
+ &__skill:nth-child(1) {
+  padding-top: 0;
+ }
 
-	&__image {
-		align-self: center;
-		width: auto;
-		height: 16%;
-		margin-top: auto;
-		padding-right: 2rem;
-	}
+ &__image {
+  align-self: center;
+  width: auto;
+  height: 16%;
+  margin-top: auto;
+  padding-right: 2rem;
+ }
 }
 
 .backend {
-	height: calc(100vh - #{$headerHeightM} - #{$footerHeightM});
-	width: 100vw;
-	display: flex;
-	padding: 0 1rem;
-	scroll-snap-align: start;
+ height: 100%;
+ width: 100vw;
+ display: flex;
+ padding: 0 1rem;
+ scroll-snap-align: start;
 
-	@include from(t) {
-		height: calc(100vh - #{$headerHeightT} - #{$footerHeightT});
-		padding: 0 2rem 2rem 2rem;
-	}
+ @include from(t) {
+  height: calc(100vh - #{$headerHeightT} - #{$footerHeightT});
+  padding: 0 2rem 2rem 2rem;
+ }
 
-	@include from(l) {
-		height: calc(100vh - #{$headerHeightL});
-		padding: 0 3rem 3rem 3rem;
-	}
+ @include from(l) {
+  height: calc(100vh - #{$headerHeightL});
+  padding: 0 3rem 3rem 3rem;
+ }
 
-	@include from(ll) {
-		height: calc(100vh - #{$headerHeightLL});
-	}
+ @include from(ll) {
+  height: calc(100vh - #{$headerHeightLL});
+ }
 
-	@include from(4k) {
-		height: calc(100vh - #{$headerHeight4K});
-	}
+ @include from(4k) {
+  height: calc(100vh - #{$headerHeight4K});
+ }
 
-	&__container {
-		display: flex;
-		flex-direction: column;
+ &__container {
+  display: flex;
+  flex-direction: column;
 
-		@include from(ll) {
-			width: auto;
-			margin: 0 auto;
-		}
-	}
+  @include from(ll) {
+   width: auto;
+   margin: 0 auto;
+  }
+ }
 
-	&__description {
-		font-size: 0.9rem;
-		height: 100%;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
+ &__description {
+  font-size: 0.9rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 
-		@include from(mm) {
-			font-size: 1.2rem;
-		}
+  @include from(mm) {
+   font-size: 1.2rem;
+  }
 
-		@include from(ml) {
-			font-size: 1.4rem;
-		}
+  @include from(ml) {
+   font-size: 1.4rem;
+  }
 
-		@include from(t) {
-			font-size: 2rem;
-		}
+  @include from(t) {
+   font-size: 2rem;
+  }
 
-		@include from(l) {
-			font-size: 1.6rem;
-		}
+  @include from(l) {
+   font-size: 1.6rem;
+  }
 
-		@include from(ll) {
-			font-size: 2rem;
-			width: auto;
-			margin: 0 auto;
-		}
+  @include from(ll) {
+   font-size: 2rem;
+   width: auto;
+   margin: 0 auto;
+  }
 
-		@include from(4k) {
-			font-size: 3rem;
-		}
-	}
+  @include from(4k) {
+   font-size: 3rem;
+  }
+ }
 
-	&__title {
-		font-size: 1.75rem;
-		color: var(--firstColor);
-		padding-bottom: 1rem;
-		width: 100%;
+ &__title {
+  font-size: 1.75rem;
+  color: var(--firstColor);
+  padding-bottom: 1rem;
+  width: 100%;
 
-		@include from(mm) {
-			font-size: 2rem;
-		}
+  @include from(mm) {
+   font-size: 2rem;
+  }
 
-		@include from(ml) {
-			font-size: 2.2rem;
-		}
+  @include from(ml) {
+   font-size: 2.2rem;
+  }
 
-		@include from(t) {
-			font-size: 2.5rem;
-		}
+  @include from(t) {
+   font-size: 2.5rem;
+  }
 
-		@include from(ll) {
-			font-size: 3rem;
-		}
+  @include from(ll) {
+   font-size: 3rem;
+  }
 
-		@include from(4k) {
-			font-size: 4rem;
-		}
-	}
+  @include from(4k) {
+   font-size: 4rem;
+  }
+ }
 
-	&__skills {
-		color: var(--firstColor);
-		padding-left: 1rem;
+ &__skills {
+  color: var(--firstColor);
+  padding-left: 1rem;
 
-		@include from(ll) {
-			width: auto;
-		}
-	}
+  @include from(ll) {
+   width: auto;
+  }
+ }
 
-	&__skill {
-		padding-top: 0.3rem;
-	}
+ &__skill {
+  padding-top: 0.3rem;
+ }
 
-	&__skill:nth-child(1) {
-		padding-top: 0;
-	}
+ &__skill:nth-child(1) {
+  padding-top: 0;
+ }
 
-	&__databases {
-		padding-top: 0.2rem;
-	}
+ &__databases {
+  padding-top: 0.2rem;
+ }
 
-	&__databases-image {
-		display: flex;
-		align-items: flex-start;
-	}
+ &__databases-image {
+  display: flex;
+  align-items: flex-start;
+ }
 
-	&__image {
-		align-self: flex-end;
-		width: 50%;
-		height: 100%;
+ &__image {
+  align-self: flex-end;
+  width: 50%;
+  height: 100%;
 
-		@include from(l) {
-			width: 30%;
-			height: 100%;
-			margin: 0 auto;
-		}
+  @include from(l) {
+   width: 30%;
+   height: 100%;
+   margin: 0 auto;
+  }
 
-		@include from(ll) {
-			display: none;
-		}
-	}
+  @include from(ll) {
+   display: none;
+  }
+ }
 }

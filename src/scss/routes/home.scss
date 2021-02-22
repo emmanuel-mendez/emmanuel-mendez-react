@@ -1,15 +1,10 @@
 .home {
-  height: 100%;
+  height: calc(100vh - #{$headerHeightM} - #{$footerHeightM});
   width: 100%;
   display: flex;
   align-items: center;
   padding: 0 1rem 1rem 1rem;
-  scroll-snap-align: center;
-
-  .offline {
-    background-color: red;
-    height: 5%;
-  }
+  scroll-snap-align: end;
 
   @include from(t) {
     height : calc(100vh - #{$headerHeightT} - #{$footerHeightT});
@@ -250,14 +245,14 @@
 }
 
 .aboutMe {
-  height: 100%;
+  height: calc(100vh - #{$headerHeightM} - #{$footerHeightM});
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 0 1rem 1rem 1rem;
-  scroll-snap-align: center;
+  scroll-snap-align: end;
 
   @include from(t) {
     height : calc(100vh - #{$headerHeightT} - #{$footerHeightT});

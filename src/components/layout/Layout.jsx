@@ -42,19 +42,24 @@ const Layout = ({ children, darkMode, setDarkMode }) => {
 		<React.Fragment>
 			<Header toggleMenu={toggleMenu} setToggleMenu={setToggleMenu} darkMode={darkMode} setDarkMode={setDarkMode} y={y} />
 
-			<div className="layout" onClick={setToggleFromContainer} >
+			{
+				useOnline()
+					? null
+					: <div className="offline">Offline</div>
+			}
 
+			<div className="layout" onClick={setToggleFromContainer} >
 
 				<article className={useOnline()
 					? "article"
-					: "article offlineMode"}>
+					: "article article__offlineMode"}>
 
-					<div className="route" ref={scrollRef} id="ref">
-						{
-							useOnline()
-								? null
-								: <div className="offline">Offline</div>
-						}
+					<div className={
+						useOnline()
+							? "route"
+							: "route route__offlineMode"
+					} ref={scrollRef} id="ref">
+
 						{children}
 					</div>
 				</article>
