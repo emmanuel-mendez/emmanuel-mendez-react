@@ -22,22 +22,26 @@ body {
 
 .offline {
  background-color: var(--darkColor);
- color: white;
- height: 1rem;
+ color: $textColor;
+ height: $headerOffline;
  width: 100vw;
  position: fixed;
  top: $headerHeightM;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ font-size: 1rem;
 }
 
 .article {
  &__offlineMode {
-  margin-top: calc(#{$headerHeightM} + 1rem);
+  margin-top: calc(#{$headerHeightM} + $headerOffline);
  }
 }
 
 .route {
  &__offlineMode {
-  height: calc(100vh - #{$headerHeightM} - #{$footerHeightM} - 1rem);
+  height: calc(100vh - #{$headerHeightM} - #{$footerHeightM} - $headerOffline);
  }
 
  &__offlineMode::-webkit-scrollbar {
