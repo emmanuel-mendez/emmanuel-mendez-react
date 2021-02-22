@@ -21,7 +21,7 @@ body {
 }
 
 .offline {
- background-color: red;
+ background-color: var(--darkColor);
  height: 1rem;
  width: 100vw;
  position: fixed;

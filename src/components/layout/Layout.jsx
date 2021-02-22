@@ -8,6 +8,7 @@ import { Footer } from './Footer'
 
 import { ScrollToTopButton } from '../scroll/ScrollToTopButton'
 import { useOnline } from '../hooks/useOnline'
+import { useLang } from '../hooks/useLang';
 
 const Layout = ({ children, darkMode, setDarkMode }) => {
 
@@ -36,16 +37,23 @@ const Layout = ({ children, darkMode, setDarkMode }) => {
 		}
 	}
 
-	console.log(useOnline());
+	const Offline = () => {
+		return (
+			<div className="offline">
+				{ useLang()
+					? <p>Sin conexión</p>
+					: <p>Offline</p>
+				}
+			</div>
+		)
+	}
 
 	return (
 		<React.Fragment>
 			<Header toggleMenu={toggleMenu} setToggleMenu={setToggleMenu} darkMode={darkMode} setDarkMode={setDarkMode} y={y} />
 
 			{
-				useOnline()
-					? null
-					: <div className="offline">Offline</div>
+				useOnline() === false ?? <Offline />
 			}
 
 			<div className="layout" onClick={setToggleFromContainer} >
