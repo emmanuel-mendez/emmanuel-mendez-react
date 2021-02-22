@@ -34,31 +34,37 @@ body {
 
  @include from(mm) {
   height: $headerOfflineMM;
+  top: $headerHeightMm;
   font-size: 1rem;
  }
 
  @include from(ml) {
   height: $headerOfflineML;
+  top: $headerHeightML;
   font-size: 1.2rem;
  }
 
  @include from(t) {
   height: $headerOfflineT;
+  top: $headerHeightT;
   font-size: 1.4rem;
  }
 
  @include from(l) {
   height: $headerOfflineL;
+  top: $headerHeightL;
   font-size: 1.6rem;
  }
 
  @include from(ll) {
   height: $headerOfflineLL;
+  top: $headerHeightLL;
   font-size: 1.8rem;
  }
 
  @include from(4k) {
   height: $headerOffline4K;
+  top: $headerHeight4K;
   font-size: 2rem;
  }
 }
