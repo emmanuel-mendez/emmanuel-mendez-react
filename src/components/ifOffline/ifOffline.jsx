@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 
-const IfOffline = ({ children }) => {
+export const IfOffline = ({ children }) => {
 
   const [state, setState] = useState({ onLine: navigator ? navigator.onLine : true })
 
@@ -32,5 +32,3 @@ const IfOffline = ({ children }) => {
     </>
   )
 }
-
-export default IfOffline
