@@ -24,3 +24,7 @@ body {
  background-color: red;
  height: 1.5rem;
 }
+
+.offlineMode {
+ margin-top: calc(#{$headerHeightM} + 1.5rem);
+}

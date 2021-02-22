@@ -7,7 +7,7 @@ import { Header } from './Header';
 import { Footer } from './Footer'
 
 import { ScrollToTopButton } from '../scroll/ScrollToTopButton'
-import { Offline } from '../offline/Offline'
+import { useOnline } from '../hooks/useOnline'
 
 const Layout = ({ children, darkMode, setDarkMode }) => {
 
@@ -42,9 +42,11 @@ const Layout = ({ children, darkMode, setDarkMode }) => {
 
 			<div className="layout" onClick={setToggleFromContainer} >
 
-				<article className="article" >
+				<article className={useOnline()
+					? "article"
+					: "article offlineMode"}>
 
-					<Offline>Offline</Offline>
+
 					<div className="route" ref={scrollRef} id="ref">
 						{children}
 					</div>
