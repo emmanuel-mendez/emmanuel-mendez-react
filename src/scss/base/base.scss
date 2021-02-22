@@ -35,13 +35,13 @@ body {
 
 .article {
  &__offlineMode {
-  margin-top: calc(#{$headerHeightM} + $headerOffline);
+  margin-top: calc(#{$headerHeightM} + #{$headerOffline});
  }
 }
 
 .route {
  &__offlineMode {
-  height: calc(100vh - #{$headerHeightM} - #{$footerHeightM} - $headerOffline);
+  height: calc(100vh - #{$headerHeightM} - #{$footerHeightM} - #{$headerOffline});
  }
 
  &__offlineMode::-webkit-scrollbar {
