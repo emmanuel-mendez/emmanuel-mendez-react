@@ -215,15 +215,14 @@ body {
 }
 
 .offline {
-  margin-top: 3.5rem;
   background-color: red;
   height: 1.5rem;
 }
 
 .offlineMode {
-  margin-top: 0;
-  margin-bottom: calc(3.2rem + 1.5rem);
-  min-height: calc(100% - 1.5rem);
+  margin-top: 3.5rem;
+  margin-bottom: 3.2rem;
+  min-height: 100%;
   animation: fadeIn ease 0.3s;
 }
 

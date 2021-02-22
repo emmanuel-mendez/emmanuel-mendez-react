@@ -44,15 +44,16 @@ const Layout = ({ children, darkMode, setDarkMode }) => {
 
 			<div className="layout" onClick={setToggleFromContainer} >
 
-				{
-					useOnline()
-						? null
-						: <div className="offline">Offline</div>
-				}
 
 				<article className={useOnline()
 					? "article"
 					: "offlineMode"}>
+
+					{
+						useOnline()
+							? null
+							: <div className="offline">Offline</div>
+					}
 
 
 					<div className="route" ref={scrollRef} id="ref">

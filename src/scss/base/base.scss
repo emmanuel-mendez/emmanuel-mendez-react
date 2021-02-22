@@ -21,14 +21,13 @@ body {
 }
 
 .offline {
- margin-top: $headerHeightM;
  background-color: red;
  height: 1.5rem;
 }
 
 .offlineMode {
- margin-top: 0;
- margin-bottom: calc(#{$footerHeightM} + 1.5rem);
- min-height: calc(100% - 1.5rem);
+ margin-top: $headerHeightM;
+ margin-bottom: $footerHeightM;
+ min-height: 100%;
  animation: fadeIn ease 0.3s;
 }
