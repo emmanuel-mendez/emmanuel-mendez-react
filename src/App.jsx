@@ -1,11 +1,11 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import {
 	Router,
 	Switch,
 	Route,
 } from "react-router-dom";
 
-import Layout from './components/layout/Layout'
+import Layout from './components/layout/LayoutContainer'
 
 import Contact from './components/routes/contact/Contact'
 import Home from './components/routes/home/Home'
@@ -13,32 +13,7 @@ import Portfolio from './components/routes/portfolio/Portfolio'
 import Skills from './components/routes/skills/Skills'
 import Cv from './components/routes/cv/Cv'
 
-import { createBrowserHistory } from 'history'
-import ReactGA from 'react-ga'
-
-import './App.css';
-
-const history = createBrowserHistory()
-
-ReactGA.initialize('UA-000000-01')
-ReactGA.pageview(window.location.pathname + window.location.search)
-
-history.listen(function (location) {
-	ReactGA.pageview(window.location.pathname + window.location.search)
-})
-
-const App = () => {
-
-	const getInitialMode = () => {
-		const savedMode = JSON.parse(localStorage.getItem('dark'))
-		return savedMode || false
-	}
-
-	const [darkMode, setDarkMode] = useState(getInitialMode())
-
-	useEffect(() => {
-		localStorage.setItem('dark', JSON.stringify(darkMode))
-	}, [darkMode])
+export const App = ({ darkMode, setDarkMode, history }) => {
 
 	return (
 		<div id="App" className={darkMode
@@ -76,6 +51,5 @@ const App = () => {
 		</div>
 	);
 }
-
 
 export default App

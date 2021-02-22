@@ -25,5 +25,4 @@ export const ScrollToTopButton = ({ scrollToTopButton }) => {
 	} else {
 		return null
 	}
-
 }

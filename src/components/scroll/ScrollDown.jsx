@@ -3,6 +3,7 @@ import React from 'react'
 import { useLang } from '../hooks/useLang'
 
 export const ScrollDown = () => {
+
 	return (
 		<div className="scrollDown">
 			{

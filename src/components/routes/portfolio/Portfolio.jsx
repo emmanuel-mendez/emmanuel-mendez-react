@@ -4,8 +4,6 @@ import { useLang } from '../../hooks/useLang'
 
 import { ScrollDown } from '../../scroll/ScrollDown'
 
-import QuimicosMayuluImage from './QuimicosMayuluImage'
-
 import { ReactComponent as PortfolioImage } from '../../../svg/portfolioImage.svg';
 
 const Portfolio = () => {
@@ -81,7 +79,7 @@ const Portfolio = () => {
 
 								<div className="portfolio__itemImageContainer">
 
-									<QuimicosMayuluImage />
+									<img src={process.env.PUBLIC_URL + '/png/mayuluShop.png'} alt="Mayulu Shop" width="512" height="512" className="portfolio__itemImage" />
 
 								</div>
 
