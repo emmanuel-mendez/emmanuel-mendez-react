@@ -29,7 +29,6 @@ const IfOffline = ({ children }) => {
           : <div>{children}</div>
       }
 
-
     </>
   )
 }
