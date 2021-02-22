@@ -2535,7 +2535,7 @@ body {
 }
 
 .route {
-  height: calc(100vh - 3.5rem - 3.2rem);
+  height: calc(100vh - 3.5rem - 3.2rem - 1.5rem);
   width: 100%;
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
