@@ -34,32 +34,32 @@ body {
 
  @include from(mm) {
   height: $headerOfflineMM;
-  font-size: 1.2rem;
+  font-size: 1rem;
  }
 
  @include from(ml) {
   height: $headerOfflineML;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
  }
 
  @include from(t) {
   height: $headerOfflineT;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
  }
 
  @include from(l) {
   height: $headerOfflineL;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
  }
 
  @include from(ll) {
   height: $headerOfflineLL;
-  font-size: 2rem;
+  font-size: 1.8rem;
  }
 
  @include from(4k) {
   height: $headerOffline4K;
-  font-size: 2.2rem;
+  font-size: 2rem;
  }
 }
 
@@ -68,27 +68,27 @@ body {
   margin-top: calc(#{$headerHeightM} + #{$headerOfflineM});
 
   @include from(mm) {
-   margin-top: calc(#{$headerHeightM} + #{$headerOfflineMM});
+   margin-top: calc(#{$headerHeightMM} + #{$headerOfflineMM});
   }
 
   @include from(ml) {
-   margin-top: calc(#{$headerHeightM} + #{$headerOfflineML});
+   margin-top: calc(#{$headerHeightML} + #{$headerOfflineML});
   }
 
   @include from(t) {
-   margin-top: calc(#{$headerHeightM} + #{$headerOfflineT});
+   margin-top: calc(#{$headerHeightT} + #{$headerOfflineT});
   }
 
   @include from(l) {
-   margin-top: calc(#{$headerHeightM} + #{$headerOfflineL});
+   margin-top: calc(#{$headerHeightL} + #{$headerOfflineL});
   }
 
   @include from(ll) {
-   margin-top: calc(#{$headerHeightM} + #{$headerOfflineLL});
+   margin-top: calc(#{$headerHeightLL} + #{$headerOfflineLL});
   }
 
   @include from(4k) {
-   margin-top: calc(#{$headerHeightM} + #{$headerOffline4K});
+   margin-top: calc(#{$headerHeight4K} + #{$headerOffline4K});
   }
  }
 }
@@ -98,27 +98,27 @@ body {
   height: calc(100vh - #{$headerHeightM} - #{$footerHeightM} - #{$headerOfflineM});
 
   @include from(mm) {
-   height: calc(100vh - #{$headerHeightM} - #{$footerHeightM} - #{$headerOfflineMM});
+   height: calc(100vh - #{$headerHeightMM} - #{$footerHeightM} - #{$headerOfflineMM});
   }
 
   @include from(ml) {
-   height: calc(100vh - #{$headerHeightM} - #{$footerHeightM} - #{$headerOfflineML});
+   height: calc(100vh - #{$headerHeightML} - #{$footerHeightM} - #{$headerOfflineML});
   }
 
   @include from(t) {
-   height: calc(100vh - #{$headerHeightM} - #{$footerHeightM} - #{$headerOfflineT});
+   height: calc(100vh - #{$headerHeightT} - #{$footerHeightT} - #{$headerOfflineT});
   }
 
   @include from(l) {
-   height: calc(100vh - #{$headerHeightM} - #{$footerHeightM} - #{$headerOfflineL});
+   height: calc(100vh - #{$headerHeightL} - #{$footerHeightL} - #{$headerOfflineL});
   }
 
   @include from(ll) {
-   height: calc(100vh - #{$headerHeightM} - #{$footerHeightM} - #{$headerOfflineLL});
+   height: calc(100vh - #{$headerHeightLL} - #{$footerHeightL} - #{$headerOfflineLL});
   }
 
   @include from(4k) {
-   height: calc(100vh - #{$headerHeightM} - #{$footerHeightM} - #{$headerOffline4K});
+   height: calc(100vh - #{$headerHeight4K} - #{$footerHeightL} - #{$headerOffline4K});
   }
  }
 }
