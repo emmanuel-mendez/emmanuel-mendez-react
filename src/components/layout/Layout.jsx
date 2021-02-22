@@ -49,14 +49,12 @@ const Layout = ({ children, darkMode, setDarkMode }) => {
 					? "article"
 					: "offlineMode"}>
 
-					{
-						useOnline()
-							? null
-							: <div className="offline">Offline</div>
-					}
-
-
 					<div className="route" ref={scrollRef} id="ref">
+						{
+							useOnline()
+								? null
+								: <div className="offline">Offline</div>
+						}
 						{children}
 					</div>
 				</article>
