@@ -1,33 +1,36 @@
-import React from 'react'
-export default class IfOffline extends React.Component {
+import React, { useState, useEffect, children } from 'react'
 
-  constructor(props) {
-    super(props)
-    this.state = { onLine: navigator ? navigator.onLine : true }
-  }
+const IfOffline = () => {
 
-  componentDidMount() {
+  const [state, setState] = useState({ onLine: navigator ? navigator.onLine : true })
+
+  const goOnline = () => setState({ onLine: true })
+
+  const goOffline = () => setState({ onLine: false })
+
+  useEffect(() => {
     if (!window) return
-    window.addEventListener('online', this.goOnline)
-    window.addEventListener('offline', this.goOffline)
-  }
-
-  componentWillUnmount() {
-    window.removeEventListener('online', this.goOnline)
-    window.removeEventListener('offline', this.goOffline)
-  }
-
-  goOnline = () => this.setState({ onLine: true })
-  goOffline = () => this.setState({ onLine: false })
-
-  render() {
-    const { children } = this.props
-    const { onLine } = this.state
-
-    if (onLine) {
-      return null
+    window.addEventListener('online', goOnline)
+    window.addEventListener('offline', goOffline)
+    return () => {
+      window.removeEventListener('online', goOnline)
+      window.removeEventListener('offline', goOffline)
     }
+  }, [state])
 
-    return <span>{children}</span>
-  }
+  const { onLine } = state
+
+  return (
+    <>
+
+      {
+        onLine
+          ? null
+          : <div>{children}</div>
+      }
+
+    </>
+  )
 }
+
+export default IfOffline
