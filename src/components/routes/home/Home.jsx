@@ -1,4 +1,4 @@
-import React, { lazy, Suspense } from 'react'
+import React from 'react'
 
 import { Link } from "react-router-dom";
 
@@ -26,9 +26,6 @@ const share = (e) => {
     .then(() => console.log('Contenido compartido!'))
     .catch((error) => console.log('Hubo un error'))
 }
-
-
-const AboutMeImage = lazy(() => import('./AboutMeImage'))
 
 const Home = () => {
 
@@ -124,17 +121,9 @@ const Home = () => {
 
         </div>
 
-        <Suspense fallback={
-          <div className="loader__index">
-            <div className="spinner"></div>
-          </div>
-        }>
-
-          <div className="aboutMe__imageContainer">
-            <AboutMeImage />
-          </div>
-
-        </Suspense>
+        <div className="aboutMe__imageContainer">
+          <img src={process.env.PUBLIC_URL + '/png/emmanuelMendez.png'} width="512" height="512" alt="Emmanuel Méndez" className="aboutMe__image" />
+        </div>
 
       </section>
     </>
