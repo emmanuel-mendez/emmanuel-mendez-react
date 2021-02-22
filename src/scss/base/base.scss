@@ -23,7 +23,7 @@ body {
 .offline {
  background-color: var(--darkColor);
  color: $textColor;
- height: $headerOffline;
+ height: $headerOfflineM;
  width: 100vw;
  position: fixed;
  top: $headerHeightM;
@@ -31,20 +31,94 @@ body {
  justify-content: center;
  align-items: center;
  font-size: 1rem;
+
+ @include from(mm) {
+  height: $headerOfflineMM;
+  font-size: 1.2rem;
+ }
+
+ @include from(ml) {
+  height: $headerOfflineML;
+  font-size: 1.4rem;
+ }
+
+ @include from(t) {
+  height: $headerOfflineT;
+  font-size: 1.6rem;
+ }
+
+ @include from(l) {
+  height: $headerOfflineL;
+  font-size: 1.8rem;
+ }
+
+ @include from(ll) {
+  height: $headerOfflineLL;
+  font-size: 2rem;
+ }
+
+ @include from(4k) {
+  height: $headerOffline4K;
+  font-size: 2.2rem;
+ }
 }
 
 .article {
  &__offlineMode {
-  margin-top: calc(#{$headerHeightM} + #{$headerOffline});
+  margin-top: calc(#{$headerHeightM} + #{$headerOfflineM});
+
+  @include from(mm) {
+   margin-top: calc(#{$headerHeightM} + #{$headerOfflineMM});
+  }
+
+  @include from(ml) {
+   margin-top: calc(#{$headerHeightM} + #{$headerOfflineML});
+  }
+
+  @include from(t) {
+   margin-top: calc(#{$headerHeightM} + #{$headerOfflineT});
+  }
+
+  @include from(l) {
+   margin-top: calc(#{$headerHeightM} + #{$headerOfflineL});
+  }
+
+  @include from(ll) {
+   margin-top: calc(#{$headerHeightM} + #{$headerOfflineLL});
+  }
+
+  @include from(4k) {
+   margin-top: calc(#{$headerHeightM} + #{$headerOffline4K});
+  }
  }
 }
 
 .route {
  &__offlineMode {
-  height: calc(100vh - #{$headerHeightM} - #{$footerHeightM} - #{$headerOffline});
- }
+  height: calc(100vh - #{$headerHeightM} - #{$footerHeightM} - #{$headerOfflineM});
 
- &__offlineMode::-webkit-scrollbar {
-  display: none;
+  @include from(mm) {
+   height: calc(100vh - #{$headerHeightM} - #{$footerHeightM} - #{$headerOfflineMM});
+  }
+
+  @include from(ml) {
+   height: calc(100vh - #{$headerHeightM} - #{$footerHeightM} - #{$headerOfflineML});
+  }
+
+  @include from(t) {
+   height: calc(100vh - #{$headerHeightM} - #{$footerHeightM} - #{$headerOfflineT});
+  }
+
+  @include from(l) {
+   height: calc(100vh - #{$headerHeightM} - #{$footerHeightM} - #{$headerOfflineL});
+  }
+
+  @include from(ll) {
+   height: calc(100vh - #{$headerHeightM} - #{$footerHeightM} - #{$headerOfflineLL});
+  }
+
+  @include from(4k) {
+   height: calc(100vh - #{$headerHeightM} - #{$footerHeightM} - #{$headerOffline4K});
+  }
  }
 }

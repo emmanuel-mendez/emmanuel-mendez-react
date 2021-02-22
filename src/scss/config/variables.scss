@@ -1,4 +1,11 @@
-$headerOffline: 1.5rem;
+$headerOfflineM: 1.5rem;
+$headerOfflineMM: 1.75rem;
+$headerOfflineML: 2rem;
+$headerOfflineT: 2.25rem;
+$headerOfflineL: 2.5rem;
+$headerOfflineLL: 2.75rem;
+$headerOffline4K: 3rem;
+
 
 $headerHeightM: 3.5rem;
 $headerHeightMM: 3.75rem;
@@ -24,44 +31,43 @@ $textColor: rgb(110, 110, 110);
 $darkTextColor: #a8abaf;
 $subtitleColor: #e4e6eb;
 
-$breakpoints: (
-	ms: 320px,
-	mm: 375px,
-	ml: 425px,
-	t: 768px,
-	l: 1024px,
-	ll: 1440px,
-	4k: 2560px,
+$breakpoints: (ms: 320px,
+ mm: 375px,
+ ml: 425px,
+ t: 768px,
+ l: 1024px,
+ ll: 1440px,
+ 4k: 2560px,
 );
 
 //PALETA DE COLORES
 :root {
-	--firstColor: #283e4a;
+ --firstColor: #283e4a;
 
-	--darkColor: #232323;
-	--darkFlyer1: #18191a;
+ --darkColor: #232323;
+ --darkFlyer1: #18191a;
 }
 
 //VARIABLES DE APILAMIENTO
 :root {
-	--zBack: -10;
-	--zNormal: 1;
-	--zTooltip: 10;
-	--zFixed: 100;
-	--zModal: 1000;
+ --zBack: -10;
+ --zNormal: 1;
+ --zTooltip: 10;
+ --zFixed: 100;
+ --zModal: 1000;
 }
 
 //VARIABLES DE TIPOGRAFÍA
 :root {
-	--h1FontSize: 2rem;
-	--h2FontSize: 1.5rem;
-	--bodyFontSize: 0.1rem;
-	--smallFontSize: 0.75rem;
+ --h1FontSize: 2rem;
+ --h2FontSize: 1.5rem;
+ --bodyFontSize: 0.1rem;
+ --smallFontSize: 0.75rem;
 
-	@include from(l) {
-		--h1FontSize: 2.5rem;
-		--h2FontSize: 2rem;
-		--bodyFontSize: 1rem;
-		--smallFontSize: 0.8rem;
-	}
+ @include from(l) {
+  --h1FontSize: 2.5rem;
+  --h2FontSize: 2rem;
+  --bodyFontSize: 1rem;
+  --smallFontSize: 0.8rem;
+ }
 }
