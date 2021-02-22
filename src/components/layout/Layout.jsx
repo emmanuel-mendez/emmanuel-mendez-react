@@ -7,7 +7,7 @@ import { Header } from './Header';
 import { Footer } from './Footer'
 
 import { ScrollToTopButton } from '../scroll/ScrollToTopButton'
-import { IfOffline } from '../ifOffline/IfOffline'
+import { Offline } from '../offline/Offline'
 
 const Layout = ({ children, darkMode, setDarkMode }) => {
 
@@ -44,7 +44,7 @@ const Layout = ({ children, darkMode, setDarkMode }) => {
 
 				<article className="article" >
 
-					<IfOffline>Offline</IfOffline>
+					<Offline>Offline</Offline>
 					<div className="route" ref={scrollRef} id="ref">
 						{children}
 					</div>

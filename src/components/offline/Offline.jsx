@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from 'react'
 
-export const IfOffline = ({ children }) => {
+export const Offline = ({ children }) => {
 
   const [state, setState] = useState({ onLine: navigator ? navigator.onLine : true })
 
   const goOnline = () => setState({ onLine: true })
-
   const goOffline = () => setState({ onLine: false })
 
   useEffect(() => {
@@ -22,13 +21,11 @@ export const IfOffline = ({ children }) => {
 
   return (
     <>
-
       {
         onLine
           ? null
           : <div>{children}</div>
       }
-
     </>
   )
 }
