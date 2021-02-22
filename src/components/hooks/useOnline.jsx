@@ -17,5 +17,5 @@ export const useOnline = () => {
     }
   }, [online])
 
-  return online
+  return online.onLine
 }

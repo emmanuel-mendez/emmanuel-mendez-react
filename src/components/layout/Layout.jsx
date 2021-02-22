@@ -36,6 +36,8 @@ const Layout = ({ children, darkMode, setDarkMode }) => {
 		}
 	}
 
+	console.log(useOnline());
+
 	return (
 		<React.Fragment>
 			<Header toggleMenu={toggleMenu} setToggleMenu={setToggleMenu} darkMode={darkMode} setDarkMode={setDarkMode} y={y} />
