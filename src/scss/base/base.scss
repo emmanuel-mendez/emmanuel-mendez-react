@@ -27,7 +27,7 @@ body {
 }
 
 .offlineMode {
- margin-top: calc(#{$headerHeightM} + 1.5rem);
+ margin-top: 0;
  margin-bottom: calc(#{$footerHeightM} + 1.5rem);
  min-height: calc(100% - 1.5rem);
 }
