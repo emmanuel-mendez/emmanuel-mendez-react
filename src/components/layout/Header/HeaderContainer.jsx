@@ -1,7 +1,7 @@
 import React from 'react'
 import { Header } from './Header'
 
-const HeaderContainer = ({ toggleMenu, setToggleMenu, scrollToTopButton, setScrollToTopButton, darkMode, setDarkMode }) => {
+export const HeaderContainer = ({ toggleMenu, setToggleMenu, scrollToTopButton, setScrollToTopButton, darkMode, setDarkMode }) => {
 
 	const setToggleFromToggleMenu = () => {
 		setToggleMenu(!toggleMenu)
@@ -25,5 +25,3 @@ const HeaderContainer = ({ toggleMenu, setToggleMenu, scrollToTopButton, setScro
 		/>
 	)
 }
-
-export default HeaderContainer

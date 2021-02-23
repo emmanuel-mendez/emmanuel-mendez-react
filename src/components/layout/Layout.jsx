@@ -3,8 +3,8 @@ import React from 'react'
 import { useOnline } from '../hooks/useOnline'
 import { useLang } from '../hooks/useLang';
 
-import Header from './header/headerContainer';
-import Footer from './footer/FooterContainer';
+import { HeaderContainer } from './header/HeaderContainer';
+import { FooterContainer } from './footer/FooterContainer';
 
 import ScrollToTopButton from '../scroll/scroll-to-top-button/ScrollToTopButtonContainer'
 
@@ -23,7 +23,7 @@ export const Layout = ({ children, toggleMenu, setToggleMenu, setToggleFromConta
 
   return (
     <>
-      <Header toggleMenu={toggleMenu} setToggleMenu={setToggleMenu} darkMode={darkMode} setDarkMode={setDarkMode} y={y} />
+      <HeaderContainer toggleMenu={toggleMenu} setToggleMenu={setToggleMenu} darkMode={darkMode} setDarkMode={setDarkMode} y={y} />
 
       {
         useOnline()
@@ -47,7 +47,7 @@ export const Layout = ({ children, toggleMenu, setToggleMenu, setToggleFromConta
           </div>
         </article>
 
-        <Footer />
+        <FooterContainer />
       </div>
 
       <ScrollToTopButton scrollToTopButton={scrollToTopButton} />

@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 
 import { Footer } from './Footer';
 
-const FooterContainer = () => {
+export const FooterContainer = () => {
 
 	const [home, setHome] = useState()
 	const [skills, setSkills] = useState()
@@ -19,4 +19,3 @@ const FooterContainer = () => {
 	/>
 }
 
-export default FooterContainer
