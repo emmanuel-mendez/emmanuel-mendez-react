@@ -9,10 +9,8 @@ const NavContainer = ({ toggleMenu, setToggleMenu, scrollToTopButton, setScrollT
 			setScrollToTopButton(!scrollToTopButton)
 		}
 	}
-
 	return (
 		<Nav toggle={toggle} toggleMenu={toggleMenu} darkMode={darkMode} setDarkMode={setDarkMode} />
 	)
 }
-
 export default NavContainer
