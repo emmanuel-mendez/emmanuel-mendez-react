@@ -3,8 +3,8 @@ import React from 'react'
 import { useOnline } from '../hooks/useOnline'
 import { useLang } from '../hooks/useLang';
 
-import Header from './header/HeaderContainer.jsx';
-import Footer from './footer/FooterContainer.jsx';
+import Header from './header/headerContainer';
+import Footer from './footer/FooterContainer';
 
 import ScrollToTopButton from '../scroll/scroll-to-top-button/ScrollToTopButtonContainer'
 
