@@ -1,56 +1,86 @@
-import React from 'react'
+import React, { useEffect, useState, useRef } from 'react'
+import { useLocation } from "react-router-dom";
+import { useScroll } from 'react-use';
 
+import { Header } from './Header';
+
+import { Footer } from './Footer'
+
+import { ScrollToTopButton } from '../scroll/ScrollToTopButton'
 import { useOnline } from '../hooks/useOnline'
 import { useLang } from '../hooks/useLang';
 
-import { HeaderContainer } from './header/HeaderContainer';
-import { FooterContainer } from './footer/FooterContainer';
+const Layout = ({ children, darkMode, setDarkMode }) => {
 
-import ScrollToTopButton from '../scroll/scroll-to-top-button/ScrollToTopButtonContainer'
+	const scrollRef = useRef(null);
+	const { y } = useScroll(scrollRef);
 
-export const Layout = ({ children, toggleMenu, setToggleMenu, setToggleFromContainer, y, scrollRef, scrollToTopButton, darkMode, setDarkMode }) => {
+	const [toggleMenu, setToggleMenu] = useState(false)
+	const [scrollToTopButton, setScrollToTopButton] = useState(false)
 
-  const Offline = () => {
-    return (
-      <div className="offline">
-        { useLang()
-          ? <p>Sin conexión</p>
-          : <p>Offline</p>
-        }
-      </div>
-    )
-  }
+	useEffect(() => {
+		if (y > 112 && scrollToTopButton === false) {
+			setScrollToTopButton(true)
+		} else if (y < 112) {
+			setScrollToTopButton(false)
+		}
+	}, [y]) // eslint-disable-line
 
-  return (
-    <>
-      <HeaderContainer toggleMenu={toggleMenu} setToggleMenu={setToggleMenu} darkMode={darkMode} setDarkMode={setDarkMode} y={y} />
+	useEffect(() => {
+		let a = document.getElementById("ref");
+		a.scrollTo(0, 0);
+	}, [useLocation()]); // eslint-disable-line
 
-      {
-        useOnline()
-          ? null
-          : <Offline />
-      }
+	const setToggleFromContainer = () => {
+		if (toggleMenu === true) {
+			setToggleMenu(!toggleMenu)
+		}
+	}
 
-      <div className="layout" onClick={setToggleFromContainer} >
+	const Offline = () => {
+		return (
+			<div className="offline">
+				{ useLang()
+					? <p>Sin conexión</p>
+					: <p>Offline</p>
+				}
+			</div>
+		)
+	}
 
-        <article className={useOnline()
-          ? "article"
-          : "article article__offlineMode"}>
+	return (
+		<React.Fragment>
+			<Header toggleMenu={toggleMenu} setToggleMenu={setToggleMenu} darkMode={darkMode} setDarkMode={setDarkMode} y={y} />
 
-          <div className={
-            useOnline()
-              ? "route"
-              : "route route__offlineMode"
-          } ref={scrollRef} id="ref">
+			{
+				useOnline()
+					? null
+					: <Offline />
+			}
 
-            {children}
-          </div>
-        </article>
+			<div className="layout" onClick={setToggleFromContainer} >
 
-        <FooterContainer />
-      </div>
+				<article className={useOnline()
+					? "article"
+					: "article article__offlineMode"}>
 
-      <ScrollToTopButton scrollToTopButton={scrollToTopButton} />
-    </>
-  )
+					<div className={
+						useOnline()
+							? "route"
+							: "route route__offlineMode"
+					} ref={scrollRef} id="ref">
+
+						{children}
+					</div>
+				</article>
+
+				<Footer />
+			</div>
+
+			<ScrollToTopButton scrollToTopButton={scrollToTopButton} />
+		</React.Fragment>
+
+	);
 }
+
+export default Layout

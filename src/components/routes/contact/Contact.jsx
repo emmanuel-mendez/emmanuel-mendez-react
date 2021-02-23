@@ -10,7 +10,6 @@ import { ReactComponent as ContactImage } from '../../../svg/contactImage.svg';
 import { useLang } from '../../hooks/useLang';
 
 const Contact = () => {
-
 	return (
 		<section className="contact">
 

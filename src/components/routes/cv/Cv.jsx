@@ -3,8 +3,8 @@ import React from 'react'
 import { useLang } from '../../hooks/useLang'
 
 const Cv = () => {
-
 	return (
+
 		<>
 			<section className="cv">
 
@@ -44,6 +44,7 @@ const Cv = () => {
 
 			</section>
 		</>
+
 	)
 }
 

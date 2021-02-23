@@ -8,6 +8,7 @@ import { useRoute } from '../../hooks/useRoute'
 import { ReactComponent as HomeImage } from '../../../svg/homeImage.svg';
 import { ReactComponent as Share } from '../../../svg/share.svg';
 
+
 import { ScrollDown } from '../../scroll/ScrollDown'
 
 const share = (e) => {
@@ -29,6 +30,7 @@ const share = (e) => {
 const Home = () => {
 
   return (
+
     <>
       <section className="home">
 
@@ -125,6 +127,7 @@ const Home = () => {
 
       </section>
     </>
+
   )
 }
 

@@ -5,7 +5,9 @@ import { useLang } from '../../hooks/useLang'
 import { ScrollDown } from '../../scroll/ScrollDown'
 
 import { ReactComponent as SkillsImage } from '../../../svg/skillsImage.svg';
+
 import { ReactComponent as Frontend } from '../../../svg/frontend.svg';
+
 import { ReactComponent as Backend } from '../../../svg/backend.svg';
 
 const Skills = () => {
