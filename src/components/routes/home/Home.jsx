@@ -44,7 +44,7 @@ const Home = () => {
               }
             </p>
 
-            <h2 className="home__title">Emmanuel Méndez.</h2>
+            <h2 className="home__title">Emmanuel Méndez</h2>
 
             <h3 className="home__subtitle">
               {
