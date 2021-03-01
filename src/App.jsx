@@ -20,7 +20,7 @@ import './App.css';
 
 const history = createBrowserHistory()
 
-ReactGA.initialize('UA-000000-01')
+ReactGA.initialize('G-Z0Y732289F')
 ReactGA.pageview(window.location.pathname + window.location.search)
 
 history.listen(function (location) {
